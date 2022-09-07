@@ -7,7 +7,7 @@ content:
 content_markdown: |-
     | httpStatus | 错误信息 |
     | --- | --- |
-    | 200 | 成功，请进一步查看returnCode、rc部分 |
+    | 200 | 成功，请进一步查看rc、mc部分 |
     | 404 | 接口不存在 |
     | 429 | 请求过于频繁，请控制请求速率 |
     | 500 | 服务异常 |
@@ -15,13 +15,13 @@ content_markdown: |-
     | 503 | 服务不可用，请稍后再试 |
     
 
-    | returnCode | 错误信息 |
+    | rc | 错误信息 |
     | --- | --- |
     | 0 | 成功 |
     | 1 | 失败 |
     
     
-    | rc | 错误信息 |
+    | mc | 错误信息 |
     | AUTH_P_01_0 | 缺少请求头 xt-validate-appkey |
     | AUTH_P_01_1 | 错误请求头 xt-validate-appkey |
     | AUTH_P_02_0 | 缺少请求头 xt-validate-timestamp |
