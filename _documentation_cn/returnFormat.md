@@ -10,7 +10,7 @@ left_code_blocks:
   title:
   language:
 right_code_blocks:
-- code_block: "{\r\n    \"returnCode\": 200,\r\n    \"result\": {\r\n        \"serverTime\": 1636612706739\r\n    },\r\n    \"msgInfo\": \"Success.\"\r\n    \"error\": null,\r\n}"
+- code_block: "{\r\n    \"rc\": 0,\r\n    \"result\": {\r\n        \"serverTime\": 1636612706739\r\n    },\r\n    \"mc\": \"Success.\"\r\n    \"ma\": []\r\n}"
   title: Response
   language: json
 ---
