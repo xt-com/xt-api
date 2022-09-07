@@ -3,7 +3,7 @@ title: 批量撤单
 position_number: 6
 type: delete
 split: -------------------------------------
-description: /v4/order/batch-order
+description: /v4/batch-order
 parameters:
     -
         name: orderIds

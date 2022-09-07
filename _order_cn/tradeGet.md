@@ -2,7 +2,7 @@
 title: 历史成交查询
 position_number: 10
 type: get
-description: /v4/order/trade
+description: /v4/trade
 parameters:
     -
         name: symbol

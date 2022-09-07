@@ -2,7 +2,7 @@
 title: 查询近期成交列表
 position_number: 3
 type: get
-description: /v4/market/public/trade/recent
+description: /v4/public/trade/recent
 parameters:
     -
         name: symbol

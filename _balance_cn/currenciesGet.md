@@ -2,7 +2,7 @@
 title: 币种列表
 position_number: 1
 type: get
-description: /v4/balance/public/currencies
+description: /v4/public/currencies
 parameters:
     -
         name:

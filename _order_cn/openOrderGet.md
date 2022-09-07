@@ -2,7 +2,7 @@
 title: 当前挂单查询
 position_number: 7
 type: get
-description: /v4/order/open-order
+description: /v4/open-order
 parameters:
     -
         name: symbol

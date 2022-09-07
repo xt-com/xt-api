@@ -3,7 +3,7 @@ title: 交易对24h统计
 position_number: 8
 type: get
 split: -------------------------------------
-description: /v4/market/public/ticker/24h
+description: /v4/public/ticker/24h
 parameters:
     -
         name: symbol

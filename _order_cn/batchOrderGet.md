@@ -2,7 +2,7 @@
 title: 批量订单获取
 position_number: 4
 type: get
-description: /v4/order/batch-order
+description: /v4/batch-order
 parameters:
     -
         name: orderIds

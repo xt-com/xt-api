@@ -2,7 +2,7 @@
 title: k线数据
 position_number: 9
 type: get
-description: /v4/market/public/kline
+description: /v4/public/kline
 parameters:
     -
         name: symbol

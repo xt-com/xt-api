@@ -3,7 +3,7 @@ title: 查询历史成交列表
 position_number: 4
 split: -------------------------------------
 type: get
-description: /v4/market/public/trade/history
+description: /v4/public/trade/history
 parameters:
     -
         name: symbol

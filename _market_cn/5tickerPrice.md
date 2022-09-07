@@ -2,7 +2,7 @@
 title: 交易对最新价格
 position_number: 5
 type: get
-description: /v4/market/public/ticker/price
+description: /v4/public/ticker/price
 parameters:
     -
         name: symbol

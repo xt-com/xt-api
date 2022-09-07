@@ -2,7 +2,7 @@
 title: 交易对当前最优挂单
 position_number: 7
 type: get
-description: /v4/market/public/ticker/book
+description: /v4/public/ticker/book
 parameters:
     -
         name: symbol

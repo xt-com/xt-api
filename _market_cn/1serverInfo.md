@@ -2,7 +2,7 @@
 title: 服务状态
 position_number: 1
 type: get 
-description: /v4/market/public/time
+description: /v4/public/time
 parameters:
     -
         name:
