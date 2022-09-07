@@ -1,0 +1,160 @@
+# ----
+# Site
+
+title: XT DOC
+description: XT Interface documentation.
+url: https://doc.xt.com
+google_analytics_key:
+permalink: pretty
+baseurl:
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  documentation:
+    title: Access Description
+    position_number: 1
+  market:
+    title: Market
+    position_number: 2
+  order:
+    title: Order
+    position_number: 3
+  balance:
+    title: Balance
+    position_number: 4
+  websocket_public:
+    title: WEBSOCKET(public)
+    position_number: 5
+  websocket_private:
+    title: WEBSOCKET(private)
+    position_number: 6
+  documentation_cn:
+    title: 接入说明
+    position_number: 7
+  market_cn:
+    title: 市场数据
+    position_number: 8
+  order_cn:
+    title: 订单
+    position_number: 9
+  balance_cn:
+    title: 资产
+    position_number: 10
+  websocket_public_cn:
+    title: WEBSOCKET(public)
+    position_number: 11
+  websocket_private_cn:
+    title: WEBSOCKET(private)
+    position_number: 12
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - CNAME
+  - favicon.ico
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - robots.txt
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      type: "documentation"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "market"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "order"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "balance"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "websocket_public"
+    values:
+      _hide_content: true
+  - scope:
+      type: "websocket_private"
+    values:
+      _hide_content: true
+  - scope:
+      type: "documentation_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "market_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "order_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "balance_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "websocket_public_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "websocket_private_cn"
+    values:
+      _hide_content: true
+# -----------
+# CloudCannon
+
+types:
+  - get
+  - put
+  - delete
+  - post
+
+languages:
+  bash: Bash
+  c: C
+  css: CSS
+  html: HTML
+  java: Java
+  javascript: JavaScript
+  json: JSON
+  php: PHP
+  python: Python
+  ruby: Ruby
+
+_options:
+  content_markdown:
+    format: p h4 h5 h6
+    bold: true
+    italic: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    image: true
+    table: true
+    styles: /css/editor.css

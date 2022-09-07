@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="language-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		{% seo %}
+
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" type="image/png" href="/favicon.ico">
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<button type="button" class="open-nav" id="open-nav"></button>
+				<a href="{{ site.baseurl }}/"><img src="../images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
+			</h1>
+
+			<form action="{{ site.baseurl }}/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search">
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+            <div id="sidebar_en">{% include sidebar_en.html %}</div>
+            <div id="sidebar_cn">{% include sidebar_cn.html %}</div>
+		</header>
+		<div class="main">
+			<div class="i18nHead">
+        <div class="i18nButton" id="cn">简体中文</div>
+				<div class="i18nButton" id="en">english</div>
+			</div>
+			<div class="trade-type-select" id="trade_type_en">
+				<a class="active-type">Spot</a>
+				<a href="https://futuresee.github.io/github.io/">Futures</a>
+			</div>
+			<div class="trade-type-select" id="trade_type_cn">
+				<a class="active-type">现货</a>
+				<a href="https://futuresee.github.io/github.io/">合约</a>
+			</div>
+      <div id="content" style="margin-top: 40px;">
+			    {{ content }}
+      </div>
+		</div>
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+
+			window.lang = "en";
+
+            $("#index_cn").hide();
+            $("#en").hide();
+            $("#sidebar_cn").hide();
+	    $("#trade_type_cn").hide();
+
+			$("#cn").click(function () {
+                window.lang = "cn";
+                $("#en").show();
+                $("#cn").hide();
+                $("#sidebar_cn").show();
+                $("#sidebar_en").hide();
+                $("#index_cn").show();
+                $("#index_en").hide();
+		$("#trade_type_cn").show();
+		$("#trade_type_en").hide();
+            })
+
+            $("#en").click(function () {
+                window.lang = "en";
+                $("#cn").show();
+                $("#en").hide();
+                $("#sidebar_en").show();
+                $("#sidebar_cn").hide();
+                $("#index_en").show();
+                $("#index_cn").hide();
+		$("#trade_type_en").show();
+		$("#trade_type_cn").hide();
+            })
+        </script>
+	</body>
+</html>

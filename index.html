@@ -1,0 +1,138 @@
+---
+title: API Docs
+---
+<div id="index_en">
+	{% assign sorted_collections = site.collections | sort: "position_number" %}
+	{% for collection in sorted_collections limit:7 %}
+	{% assign sorted_docs = collection.docs | sort: "position_number" %}
+	{% for doc in sorted_docs %}
+	<section class="doc-content">
+		<section class="left-docs">
+			<h3>
+				<a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
+					{{ doc.title }}
+					{% if doc.type %}
+					<span class="endpoint {{ doc.type }}"></span>
+					{% endif %}
+				</a>
+				<a class="editor-link" href="cloudcannon:collections/{{ doc.relative_path }}">Edit</a>
+			</h3>
+			{% if doc.description %}
+			<p class="description">{{ doc.description }}</p>
+			{% endif %}
+
+			{% if doc.parameters and doc.parameters[0].name %}
+			<h6>Parameters</h6>
+			<table>
+				<thead>
+				<tr>
+					<th>Parameter</th>
+					<th>Type</th>
+					<th>mandatory</th>
+					<th>Default</th>
+					<th>Description</th>
+					<th>Ranges</th>
+				</tr>
+				</thead>
+				<tbody>
+				{% for parameter in doc.parameters %}
+				<tr>
+					<td>{{ parameter.name }}</td>
+					<td>{{ parameter.type }}</td>
+					<td>{{ parameter.mandatory }}</td>
+					<td>{{ parameter.default }}</td>
+					<td>{{ parameter.description }}</td>
+					<td style = "word-break: break-all;">{{ parameter.ranges }}</td>
+				</tr>
+				{% endfor %}
+				</tbody>
+			</table>
+			{% endif %}
+
+			{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
+
+			{% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
+			{% for block in doc.left_code_blocks %}
+			{% include syntax-highlight.html block=block %}
+			{% endfor %}
+			{% endif %}
+		</section>
+		{% if doc.right_code_blocks and doc.right_code_blocks[0].code_block %}
+		<section class="right-code">
+			{% for block in doc.right_code_blocks %}
+			{% include syntax-highlight.html block=block %}
+			{% endfor %}
+		</section>
+		{% endif %}
+	</section>
+	{% endfor %}
+	{% endfor %}
+</div>
+
+<div id="index_cn">
+	{% assign sorted_collections = site.collections | sort: "position_number" %}
+	{% for collection in sorted_collections offset:7 limit:7 %}
+	{% assign sorted_docs = collection.docs | sort: "position_number" %}
+	{% for doc in sorted_docs %}
+	<section class="doc-content">
+		<section class="left-docs">
+			<h3>
+				<a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
+					{{ doc.title }}
+					{% if doc.type %}
+					<span class="endpoint {{ doc.type }}"></span>
+					{% endif %}
+				</a>
+				<a class="editor-link" href="cloudcannon:collections/{{ doc.relative_path }}">Edit</a>
+			</h3>
+			{% if doc.description %}
+			<p class="description">{{ doc.description }}</p>
+			{% endif %}
+
+			{% if doc.parameters and doc.parameters[0].name %}
+			<h6>Parameters</h6>
+			<table>
+				<thead>
+				<tr>
+					<th>参数</th>
+					<th>数据类型</th>
+					<th>是否必须</th>
+					<th>默认值</th>
+					<th>描述</th>
+					<th>取值范围</th>
+				</tr>
+				</thead>
+				<tbody>
+				{% for parameter in doc.parameters %}
+				<tr>
+					<td>{{ parameter.name }}</td>
+					<td>{{ parameter.type }}</td>
+					<td>{{ parameter.mandatory }}</td>
+					<td>{{ parameter.default }}</td>
+					<td>{{ parameter.description }}</td>
+					<td style = "word-break: break-all;">{{ parameter.ranges }}</td>
+				</tr>
+				{% endfor %}
+				</tbody>
+			</table>
+			{% endif %}
+
+			{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
+
+			{% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
+			{% for block in doc.left_code_blocks %}
+			{% include syntax-highlight.html block=block %}
+			{% endfor %}
+			{% endif %}
+		</section>
+		{% if doc.right_code_blocks and doc.right_code_blocks[0].code_block %}
+		<section class="right-code">
+			{% for block in doc.right_code_blocks %}
+			{% include syntax-highlight.html block=block %}
+			{% endfor %}
+		</section>
+		{% endif %}
+	</section>
+	{% endfor %}
+	{% endfor %}
+</div>
