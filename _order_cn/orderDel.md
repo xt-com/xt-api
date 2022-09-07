@@ -3,7 +3,7 @@ title: 单笔撤单
 position_number: 3
 type: delete
 split: -------------------------------------
-description: /sapi/v4/order/order
+description: /v4/order/order
 parameters:
     -
         name: orderId

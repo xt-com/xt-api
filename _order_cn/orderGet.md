@@ -2,7 +2,7 @@
 title: 单笔订单获取
 position_number: 1
 type: get
-description: /sapi/v4/order/order
+description: /v4/order/order
 parameters:
     -
         name: orderId

@@ -2,7 +2,7 @@
 title: 深度信息
 position_number: 10
 type: get
-description: /sapi/v4/market/public/depth
+description: /v4/market/public/depth
 parameters:
     -
         name: symbol

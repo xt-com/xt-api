@@ -2,7 +2,7 @@
 title: 单笔下单
 position_number: 2
 type: post
-description: /sapi/v4/order/order
+description: /v4/order/order
 parameters:
     -
         name: symbol

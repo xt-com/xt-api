@@ -2,7 +2,7 @@
 title: 批量下单
 position_number: 5
 type: post
-description: /sapi/v4/order/batch-order
+description: /v4/order/batch-order
 parameters:
     -
         name: clientBatchId

@@ -3,7 +3,7 @@ title: 当前挂单撤销
 position_number: 8
 type: delete
 split: -------------------------------------
-description: /sapi/v4/order/open-order
+description: /v4/order/open-order
 parameters:
     -
         name: symbol

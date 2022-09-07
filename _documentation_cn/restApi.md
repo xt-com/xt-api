@@ -6,13 +6,9 @@ parameters:
         name:
         content:
 content_markdown: |-
-    正式:
+    测试:
 
-    **U本位合约:https://fapi.xt.com**
-    {: .info}
-
-
-    **币本位合约:https://dapi.xt.com**
+    **基地址:http://sapi.xt-uat.com**
     {: .info}
 
 left_code_blocks:

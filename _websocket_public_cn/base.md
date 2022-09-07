@@ -12,7 +12,7 @@ parameters:
         default:
         description:
         ranges:
-content_markdown: '**基地址 &nbsp;wss://stream.xt.com/public**'
+content_markdown: '**基地址 &nbsp;ws://stream.xt-uat.com/public**'
 left_code_blocks:
     -
         code_block:

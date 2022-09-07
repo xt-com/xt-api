@@ -1,8 +1,9 @@
 ---
-title: 获取交易对
-position_number: 8
+title: 获取交易信息
+position_number: 2
 type: get
-description: /sapi/v4/market/public/symbol
+split: -------------------------------------
+description: /v4/market/public/symbol
 parameters:
     -
         name: symbol

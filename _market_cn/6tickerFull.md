@@ -1,8 +1,8 @@
 ---
 title: 交易对完整信息
-position_number: 5
+position_number: 6
 type: get
-description: /sapi/v4/market/public/ticker/full
+description: /v4/market/public/ticker/full
 parameters:
     -
         name: symbol

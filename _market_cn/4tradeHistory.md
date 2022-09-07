@@ -1,8 +1,9 @@
 ---
-title: 查询近期成交列表
-position_number: 1
+title: 查询历史成交列表
+position_number: 4
+split: -------------------------------------
 type: get
-description: /sapi/v4/market/public/trade/recent
+description: /v4/market/public/trade/history
 parameters:
     -
         name: symbol
@@ -18,11 +19,18 @@ parameters:
         default: '200'
         description: 数量
         ranges: 1，1000
+    -
+        name: fromId
+        type: number
+        mandatory: false
+        default:
+        description: '起始ID，eg: 6216559590087220004'
+        ranges:
 content_markdown:
 left_code_blocks:
     -
         code_block: |-
-            public String tradeRecent(){
+            public String tradeHistory(){
 
 
             }

@@ -2,7 +2,7 @@
 title: 获取币种资产列表
 position_number: 3
 type: get
-description: /sapi/v4/balance/balances
+description: /v4/balance/balances
 parameters:
     -
         name: currencies

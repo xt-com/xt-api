@@ -2,7 +2,7 @@
 title: 历史订单查询
 position_number: 9
 type: get
-description: /sapi/v4/order/history-order
+description: /v4/order/history-order
 parameters:
     -
         name: symbol

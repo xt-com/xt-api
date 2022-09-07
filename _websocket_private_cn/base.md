@@ -12,7 +12,7 @@ parameters:
         default:
         description:
         ranges:
-content_markdown: 基地址 wss://stream.xt.com/private
+content_markdown: 基地址 ws://stream.xt-uat.com/private
 left_code_blocks:
     -
         code_block:
