@@ -22,6 +22,7 @@ content_markdown: |-
     
     
     | mc | 错误信息 |
+    | --- | --- |
     | AUTH_P_01_0 | 缺少请求头 xt-validate-appkey |
     | AUTH_P_01_1 | 错误请求头 xt-validate-appkey |
     | AUTH_P_02_0 | 缺少请求头 xt-validate-timestamp |
