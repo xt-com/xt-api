@@ -1,7 +1,8 @@
 ---
 title: 获取状态
-position_number: 2
+position_number: 3
 type: get
+split: -------------------------------------
 description: /sapi/v4/market/public/time
 parameters:
     -

@@ -1,6 +1,7 @@
 ---
-title: 推送报⽂
+title: 推送报⽂格式
 position_number: 4
+split: -------------------------------------
 type:
 description: |+
 

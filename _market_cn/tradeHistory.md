@@ -1,6 +1,7 @@
 ---
 title: 查询历史成交列表
 position_number: 2
+split: -------------------------------------
 type: get
 description: /sapi/v4/market/public/trade/history
 parameters:
