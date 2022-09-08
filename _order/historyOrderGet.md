@@ -1,5 +1,5 @@
 ---
-title: 历史订单查询
+title: Query historical orders
 position_number: 9
 type: get
 split: -------------------------------------
@@ -10,81 +10,77 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 交易对，不传代表所有
+        description: Trading pair, if not filled in, represents all
         ranges:
     -
         name: bizType
         type: string
         mandatory: false
         default:
-        description: >-
-            业务类型  SPOT-现货, LEVER-杠杆, FINANCE-理财, FUTURES_U-合约U本位,
-            FUTURES_C-合约币本位, FUTURES_ALL-全币种合约
+        description: "SPOT, LEVER, FINANCE, FUTURES_U, FUTURES_C, FUTURES_ALL"
         ranges:
     -
         name: side
         type: string
         mandatory: false
         default:
-        description: BUY-买,SELL-卖
+        description: BUY,SELL
         ranges:
     -
         name: type
         type: string
         mandatory: false
         default:
-        description: 订单类型   LIMIT-现价, MARKET-市价
+        description: LIMIT, MARKET
         ranges:
     -
         name: state
         type: string
         mandatory: false
         default:
-        description: >-
-            订单状态
-            NEW-新建,PARTIALLY_FILLED-部分成交,FILLED-全部成交,CANCELED-用户撤单,REJECTED-下单失败,EXPIRED-过期(time_in_force撤单或溢价撤单)
+        description: PARTIALLY_FILLED,FILLED,CANCELED,REJECTED,EXPIRED
         ranges:
     -
         name: fromId
         type: number
         mandatory: false
         default:
-        description: 起始ID
+        description: start id
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 查询方向:PREV, NEXT
+        description: query direction:PREV, NEXT
         ranges:
     -
         name: limit
         type: number
         mandatory: false
         default: '20'
-        description: 限制数量,最大100
+        description: Limit number, max 100
         ranges:
     -
         name: startTime
         type: number
         mandatory: false
         default:
-        description: 开始时间 eg:1657682804112
+        description: eg:1657682804112
         ranges:
     -
         name: endTime
         type: number
         mandatory: false
         default:
-        description: 结束时间
+        description: 
         ranges:
     -
         name: hiddenCanceled
         type: bool
         mandatory: false
         default:
-        description: 隐藏已取消
+        description: 
         ranges:
 content_markdown:
 left_code_blocks:
@@ -108,7 +104,7 @@ right_code_blocks:
               "result": {
                 "hasPrev": true,
                 "hasNext": true,
-                "items": [   //内容信息参考单笔获取订单接口
+                "items": [   //For field information, refer to the Get single interface
                   {
                     "symbol": "BTC_USDT",
                     "orderId": "6216559590087220004",
