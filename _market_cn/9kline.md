@@ -1,7 +1,8 @@
 ---
 title: 获取k线数据
-position_number: 9
+position_number: 4
 type: get
+split: -------------------------------------
 description: /v4/public/kline
 parameters:
     -

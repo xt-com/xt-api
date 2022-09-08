@@ -1,6 +1,6 @@
 ---
 title: 查询历史成交列表
-position_number: 4
+position_number: 6
 split: -------------------------------------
 type: get
 description: /v4/public/trade/history

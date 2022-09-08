@@ -1,8 +1,7 @@
 ---
 title: 获取24h统计ticker
-position_number: 8
+position_number: 10
 type: get
-split: -------------------------------------
 description: /v4/public/ticker/24h
 parameters:
     -
