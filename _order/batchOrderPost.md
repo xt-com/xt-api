@@ -58,7 +58,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: "SPOT, LEVER, FINANCE, FUTURES_U, FUTURES_C, FUTURES_ALL"
+        description: "SPOT, LEVER"
         ranges:
     -
         name: item.price
