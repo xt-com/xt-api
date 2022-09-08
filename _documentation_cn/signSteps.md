@@ -19,18 +19,12 @@ content_markdown: >-
     
 
 
-    Header部分数据：
-    
-    
-    xt-validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
-
-    xt-validate-algorithms: HmacSHA256
-
-    xt-validate-recvwindow: 5000
-
-    xt-validate-timestamp: 1641446237201
-
-    xt-validate-signature: 2b5eb11e18796d12d88f13dc27dbbd02c2cc51ff7059765ed9821957d82bb4d9
+    > Header部分数据：
+    - xt-validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
+    - xt-validate-algorithms: HmacSHA256
+    - xt-validate-recvwindow: 5000
+    - xt-validate-timestamp: 1641446237201
+    - xt-validate-signature: 2b5eb11e18796d12d88f13dc27dbbd02c2cc51ff7059765ed9821957d82bb4d9
 
 
 
