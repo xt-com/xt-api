@@ -1,5 +1,5 @@
 ---
-title: 单笔下单
+title: Submit order
 position_number: 2
 type: post
 description: /v4/order
@@ -9,65 +9,63 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: 交易对
+        description: 
         ranges:
     -
         name: clientOrderId
         type: string
         mandatory: false
         default:
-        description: 客户端ID(最长32位)
+        description: The longest number is 32 characters
         ranges:
     -
         name: side
         type: string
         mandatory: true
         default:
-        description: "买卖方向 \_BUY-买,SELL-卖"
+        description: "BUY,SELL"
         ranges:
     -
         name: type
         type: string
         mandatory: true
         default:
-        description: "订单类型 \_LIMIT-现价,MARKET-市价\_"
+        description: "order type:LIMIT,MARKET"
         ranges:
     -
         name: timeInForce
         type: string
         mandatory: true
         default:
-        description: 有效方式 GTC, FOK, IOC, GTX
+        description: effective way:GTC, FOK, IOC, GTX
         ranges:
     -
         name: bizType
         type: string
         mandatory: true
         default:
-        description: >-
-            业务类型  SPOT-现货, LEVER-杠杆, FINANCE-理财, FUTURES_U-合约U本位,
-            FUTURES_C-合约币本位, FUTURES_ALL-全币种合约
+        description: "SPOT, LEVER, FINANCE, FUTURES_U, FUTURES_C, FUTURES_ALL"
         ranges:
     -
         name: price
         type: number
         mandatory: false
         default:
-        description: 价格。现价必填; 市价不填
+        description: price. Required if it is the LIMIT price; blank if it is the MARKET price
         ranges:
     -
         name: quantity
         type: number
         mandatory: false
         default:
-        description: 数量。现价必填；市价按数量下单时必填
+        description: quantity. Required if it is the LIMIT price or the order is placed at the market price by quantity
         ranges:
     -
         name: quoteQty
         type: number
         mandatory: false
         default:
-        description: 金额。现价不填；市价按金额下单时必填
+        description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
         ranges:
 content_markdown:
 left_code_blocks:
@@ -85,7 +83,7 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"orderId\": \"6216559590087220004\"   //订单ID\r\n  }\r\n}"
+        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"orderId\": \"6216559590087220004\"  \r\n  }\r\n}"
         title: Response
         language: json
 ---

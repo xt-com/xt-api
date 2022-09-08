@@ -1,5 +1,5 @@
 ---
-title: 撤销当前挂单
+title: Cancel the current pending order
 position_number: 8
 type: delete
 split: -------------------------------------
@@ -10,23 +10,21 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 交易对，不传代表所有
+        description: Trading pair, if not filled in, represents all
         ranges:
     -
         name: bizType
         type: string
         mandatory: false
         default:
-        description: >-
-            业务类型  SPOT-现货, LEVER-杠杆, FINANCE-理财, FUTURES_U-合约U本位,
-            FUTURES_C-合约币本位, FUTURES_ALL-全币种合约
+        description: "SPOT, LEVER, FINANCE, FUTURES_U, FUTURES_C, FUTURES_ALL"
         ranges:
     -
         name: side
         type: string
         mandatory: false
         default:
-        description: BUY-买,SELL-卖
+        description: BUY,SELL
         ranges:
 content_markdown:
 left_code_blocks:
