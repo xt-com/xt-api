@@ -38,6 +38,22 @@ content_markdown: |-
     | AUTH_104 | 非绑定IP请求 |
     | AUTH_105 | 报文过时 |
     | AUTH_106 | 超出apikey权限 |
+    | ORDER_001 | 平台拒单 |
+    | ORDER_002 | 资金不足 |
+    | ORDER_003 | 交易对暂停交易 |
+    | ORDER_004 | 禁止交易 |
+    | ORDER_F0101 | 触发价格过滤器-最小值 |
+    | ORDER_F0102 | 触发价格过滤器-最大值 |
+    | ORDER_F0103 | 触发价格过滤器-步进值 |
+    | ORDER_F0201 | 触发数量过滤器-最小值 |
+    | ORDER_F0202 | 触发数量过滤器-最大值 |
+    | ORDER_F0203 | 触发数量过滤器-步进值 |
+    | ORDER_F0301 | 触发金额过滤器-最小值 |
+    | ORDER_F0401 | 触发开盘保护滤器 |
+    | ORDER_F0501 | 触发限价保护滤器 |
+    | ORDER_F0601 | 触发市价保护滤器 |
+    | ORDER_F0701 | 过多的未完成订单 |
+    | ORDER_F0801 | 过多未完成计划委托 |
 left_code_blocks:
 - code_block:
   title:
