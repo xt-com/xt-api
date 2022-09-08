@@ -120,8 +120,8 @@ content_markdown: >-
 
 
       2、请求头部分
-            按照如下顺序，使用&方式拼接在一起，如：
-            X="xt-validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&xt-validate-algorithms=HmacSHA256&xt-validate-recvwindow=5000&xt-validate-timestamp=1641446237201"
+            将key升序后，使用&方式拼接在一起，如：
+            X="xt-validate-algorithms=HmacSHA256&xt-validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&xt-validate-recvwindow=5000&xt-validate-timestamp=1641446237201"
 
 
 
