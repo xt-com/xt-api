@@ -4,7 +4,7 @@ position_number: 3
 parameters:
 - name:
 content:
-content_markdown: 获取资产每秒3次，其他方法单个用户每秒10次，单个IP每分钟1000次，超出锁定账户10分钟。
+content_markdown: 待定
 left_code_blocks:
 - code_block:
   title:

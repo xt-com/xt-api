@@ -5,7 +5,7 @@ parameters:
 - name:
 content:
 content_markdown: |-
-    | httpStatus | 错误信息 |
+    | httpStatus | 描述 |
     | --- | --- |
     | 200 | 成功，请进一步查看rc、mc部分 |
     | 404 | 接口不存在 |
@@ -15,14 +15,16 @@ content_markdown: |-
     | 503 | 服务不可用，请稍后再试 |
     
 
-    | rc | 错误信息 |
+    | rc | return Code |
     | --- | --- |
     | 0 | 成功 |
     | 1 | 失败 |
     
     
-    | mc | 错误信息 |
+    | mc | message code |
     | --- | --- |
+    | SUCCESS | 成功 |
+    | FAILURE | 失败 |
     | AUTH_P_01_0 | 缺少请求头 xt-validate-appkey |
     | AUTH_P_01_1 | 错误请求头 xt-validate-appkey |
     | AUTH_P_02_0 | 缺少请求头 xt-validate-timestamp |

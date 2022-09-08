@@ -6,9 +6,8 @@ parameters:
         name:
         content:
 content_markdown: |-
-    测试:
-
-    **基地址:http://sapi.xt-uat.com**
+    **测试环境: http://sapi.xt-uat.com**
+    **生产环境: https://sapi.xt.com**
     {: .info}
 
 left_code_blocks:

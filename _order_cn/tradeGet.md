@@ -1,5 +1,5 @@
 ---
-title: 历史成交查询
+title: 成交查询
 position_number: 10
 type: get
 description: /v4/trade
@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: "业务类型 \_SPOT-现货, LEVER-杠杆, FINANCE-理财, FUTURES_U-合约U本位, FUTURES_C-合约币本位, FUTURES_ALL-全币种合约"
+        description: "业务类型 \_SPOT-现货, LEVER-杠杆"
         ranges:
     -
         name: orderSide

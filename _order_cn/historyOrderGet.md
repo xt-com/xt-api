@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: "业务类型 \_SPOT-现货, LEVER-杠杆, FINANCE-理财, FUTURES_U-合约U本位, FUTURES_C-合约币本位, FUTURES_ALL-全币种合约"
+        description: "业务类型 \_SPOT-现货, LEVER-杠杆"
         ranges:
     -
         name: side
