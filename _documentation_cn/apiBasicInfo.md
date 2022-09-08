@@ -14,8 +14,8 @@ content_markdown: >-
     请求头信息请设置为：Content-Type=application/x-www-form-urlencoded
 
 
-    除了接口本身所需的参数外，还需要在request header 中传递 signature,
-    即签名参数，所有请求路径中含有public的接口不需要签名参数。
+    对于/public以外开头的请求，需要对请求报文进行签名
+    
 left_code_blocks:
 - code_block:
   title:

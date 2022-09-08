@@ -1,5 +1,5 @@
 ---
-title: 返回格式
+title: 响应格式
 position_number: 8
 parameters:
 - name:
@@ -10,7 +10,7 @@ left_code_blocks:
   title:
   language:
 right_code_blocks:
-- code_block: "{\r\n    \"rc\": 0,\r\n    \"result\": {\r\n        \"serverTime\": 1636612706739\r\n    },\r\n    \"mc\": \"Success.\"\r\n    \"ma\": []\r\n}"
+- code_block: "{\r\n    \"rc\": 0,\r\n    \"result\": {\r\n      },\r\n    \"mc\": \"SUCCESS\"\r\n    \"ma\": []\r\n}"
   title: Response
   language: json
 ---
