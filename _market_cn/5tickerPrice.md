@@ -1,5 +1,5 @@
 ---
-title: 交易对最新价格
+title: 获取最新价格ticker
 position_number: 5
 type: get
 description: /v4/public/ticker/price

@@ -1,5 +1,5 @@
 ---
-title: 交易对当前最优挂单
+title: 获取最优挂单ticker
 position_number: 7
 type: get
 description: /v4/public/ticker/book

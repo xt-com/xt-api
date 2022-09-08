@@ -1,5 +1,5 @@
 ---
-title: 币种列表
+title: 获取币种信息
 position_number: 1
 type: get
 description: /v4/public/currencies

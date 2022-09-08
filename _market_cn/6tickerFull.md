@@ -1,5 +1,5 @@
 ---
-title: 交易对完整信息
+title: 获取完整ticker
 position_number: 6
 type: get
 description: /v4/public/ticker/full

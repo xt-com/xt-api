@@ -1,5 +1,5 @@
 ---
-title: 当前挂单查询
+title: 查询当前挂单
 position_number: 7
 type: get
 description: /v4/open-order

@@ -1,5 +1,5 @@
 ---
-title: k线数据
+title: 获取k线数据
 position_number: 9
 type: get
 description: /v4/public/kline

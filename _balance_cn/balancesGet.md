@@ -2,6 +2,7 @@
 title: 获取币种资产列表
 position_number: 3
 type: get
+split: -------------------------------------
 description: /v4/balances
 parameters:
     -

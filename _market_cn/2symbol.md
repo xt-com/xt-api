@@ -1,5 +1,5 @@
 ---
-title: 获取交易信息
+title: 获取交易对信息
 position_number: 2
 type: get
 split: -------------------------------------

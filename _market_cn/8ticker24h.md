@@ -1,5 +1,5 @@
 ---
-title: 交易对24h统计
+title: 获取24h统计ticker
 position_number: 8
 type: get
 split: -------------------------------------

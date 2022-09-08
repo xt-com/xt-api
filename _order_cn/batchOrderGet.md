@@ -1,5 +1,5 @@
 ---
-title: 批量订单获取
+title: 批量获取
 position_number: 4
 type: get
 description: /v4/batch-order

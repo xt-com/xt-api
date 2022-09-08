@@ -1,5 +1,5 @@
 ---
-title: 单笔订单获取
+title: 单笔获取
 position_number: 1
 type: get
 description: /v4/order

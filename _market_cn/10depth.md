@@ -1,5 +1,5 @@
 ---
-title: 深度信息
+title: 获取深度数据
 position_number: 10
 type: get
 description: /v4/public/depth
