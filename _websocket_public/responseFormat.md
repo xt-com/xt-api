@@ -1,5 +1,5 @@
 ---
-title: 响应报文格式
+title: Response message format
 position_number: 3
 type:
 description: |+
@@ -17,19 +17,19 @@ left_code_blocks:
     -
         code_block: |-
             {
-                "id": "{id}",   //请求回调ID
-                "code": 1,      //结果0=成功;1=失败;2=listenKey⽆效
+                "id": "{id}",   //call back ID
+                "code": 1,      //result 0=success;1=fail;2=listenKey invalid
                 "msg": ""
             }
-        title: 响应报文格式
+        title: format
         language: json
 right_code_blocks:
     -
         code_block: '{"id":"123", "code": 0, "msg": "success"}   '
-        title: Response-成功
+        title: Response-success
         language: json
     -
         code_block: '{"id":"123", "code": 401, "msg": "token expire"}'
-        title: response-token失效
+        title: response-token invalid
         language: json
 ---
