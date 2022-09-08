@@ -8,10 +8,8 @@ content_markdown: >-
   Java connector
 
 
-  一个轻量级的Java代码库，提供让用户直接调用API的方法。
+  一个轻量级的Java代码库，提供让用户直接调用API的方法。 TODO
 
-
-  [https://github.com/futuresee/api-demo-java](https://github.com/futuresee/api-demo-java)
 
 left_code_blocks:
 - code_block:
