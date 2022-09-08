@@ -6,11 +6,18 @@ split: -------------------------------------
 description: /v4/batch-order
 parameters:
     -
-        name: orderIds
+        name: clientBatchId
         type: string
+        mandatory: false
+        default:
+        description: client batch id
+        ranges:
+    -
+        name: orderIds
+        type: array
         mandatory: true
         default:
-        description: order ids,eg:[ "6216559590087220004", "6216559590087220004" ]
+        description: [6216559590087220004,6216559590087220005]
         ranges:
 content_markdown:
 left_code_blocks:
