@@ -2,7 +2,6 @@
 title: Query historical orders
 position_number: 9
 type: get
-split: -------------------------------------
 description: /v4/history-order
 parameters:
     -
