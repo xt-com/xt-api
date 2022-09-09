@@ -14,10 +14,10 @@ parameters:
         ranges:
     -
         name: symbols
-        type: string
+        type: array
         mandatory: false
         default:
-        description: '交易对集合 eg: ["BTC_USDT", "ETH_USDT"]'
+        description: '交易对集合，优先级高于symbol。 eg: btc_usdt,eth_usdt'
         ranges:
     -
         name: version
