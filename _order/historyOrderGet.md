@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: "SPOT, LEVER, FINANCE, FUTURES_U, FUTURES_C, FUTURES_ALL"
+        description: "SPOT, LEVER"
         ranges:
     -
         name: side

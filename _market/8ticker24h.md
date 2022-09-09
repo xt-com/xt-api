@@ -14,10 +14,10 @@ parameters:
         ranges:
     -
         name: symbols
-        type: string
+        type: array
         mandatory: false
         default:
-        description: 'Collection of trading pairs eg: ["BTC_USDT", "ETH_USDT"]'
+        description: 'Collection of trading pairs. Priority is higher than symbol. eg: btc_usdt,eth_usdt''
         ranges:
 content_markdown:
 left_code_blocks:

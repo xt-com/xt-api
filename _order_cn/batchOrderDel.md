@@ -6,12 +6,20 @@ split: -------------------------------------
 description: /v4/batch-order
 parameters:
     -
-        name: orderIds
+        name: clientBatchId
         type: string
+        mandatory: false
+        default:
+        description: 客户端批次号
+        ranges:
+    -
+        name: orderIds
+        type: array
         mandatory: true
         default:
-        description: 订单ID集合,eg:[ "6216559590087220004", "6216559590087220004" ]
+        description: 集合[6216559590087220004,6216559590087220005]
         ranges:
+
 content_markdown:
 left_code_blocks:
     -
