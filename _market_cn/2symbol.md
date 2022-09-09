@@ -82,10 +82,10 @@ content_markdown: >-
     为了通过限价保护，订单price必须满足以下条件(latestPrice为最新成交价)
 
 
-    买单: price &gt; latestPrice-latestPrice\*buyMaxDeviation&nbsp;
+    买单: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
 
 
-    卖单: price&lt;latestPrice+latestPrice\*sellMaxDeviation
+    卖单: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
 
 
     ##### **市价保护过滤器 PROTECTION\_MARKET FILTER**
@@ -98,10 +98,10 @@ content_markdown: >-
     买一价格，latestPrice 最新成交价,这些数据均通过历史成交数据获得)
 
 
-    买单: latestPrice + latestPrice\* maxDeviation &gt; sellBestPrice&nbsp;
+    买单: latestPrice + latestPrice\* maxDeviation &gt;= sellBestPrice&nbsp;
 
 
-    卖单: latestPrice - latestPrice\* maxDeviation &lt; buyBestPrice
+    卖单: latestPrice - latestPrice\* maxDeviation &lt;= buyBestPrice
 
 
     对于以上情况maxDeviation，latestPrice，sellBestPrice ，buyBestPrice
