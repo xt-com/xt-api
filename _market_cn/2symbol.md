@@ -94,7 +94,7 @@ content_markdown: >-
     对于订单类型为MARKET的订单具有价格限制保护机制，其内部规定了maxDeviation最大偏差率。
 
 
-    对于非市价订单市场价格须满足以下条件,订单才会通过(sellBestPrice&nbsp; 卖一价格，buyBestPrice
+    对于市价类型订单，市场价格须满足以下条件，订单才会通过(sellBestPrice&nbsp; 卖一价格，buyBestPrice
     买一价格，latestPrice 最新成交价,这些数据均通过历史成交数据获得)
 
 
