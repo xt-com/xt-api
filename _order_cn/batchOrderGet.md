@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: '订单ID集合 eg:  ["6216559590087220004","6216559590087220004"]'
+        description: '订单ID集合，逗号分割 eg:  6216559590087220004,6216559590087220004'
         ranges:
 content_markdown: reponse 字段信息参考单笔订单获取接口
 left_code_blocks:
