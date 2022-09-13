@@ -23,33 +23,39 @@ collections:
   order:
     title: Order
     position_number: 3
+  trade:
+    title: Trade
+    position_number: 4
   balance:
     title: Balance
-    position_number: 4
+    position_number: 5
   websocket_public:
     title: WEBSOCKET(public)
-    position_number: 5
+    position_number: 6
   websocket_private:
     title: WEBSOCKET(private)
-    position_number: 6
+    position_number: 7
   documentation_cn:
     title: 接入说明
-    position_number: 7
+    position_number: 8
   market_cn:
     title: 市场数据
-    position_number: 8
+    position_number: 9
   order_cn:
     title: 订单
-    position_number: 9
+    position_number: 10
+  trade_cn:
+    title: 成交
+    position_number: 11
   balance_cn:
     title: 资产
-    position_number: 10
+    position_number: 12
   websocket_public_cn:
     title: WEBSOCKET(public)
-    position_number: 11
+    position_number: 13
   websocket_private_cn:
     title: WEBSOCKET(private)
-    position_number: 12
+    position_number: 14
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -84,6 +90,10 @@ defaults:
       type: "order"
     values:
       _hide_content: true
+  - scope:
+      type: "trade"
+    values:
+      _hide_content: true
   -
     scope:
       type: "balance"
@@ -110,6 +120,10 @@ defaults:
   -
     scope:
       type: "order_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "trade_cn"
     values:
       _hide_content: true
   -
