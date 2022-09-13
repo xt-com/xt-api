@@ -42,6 +42,7 @@ content_markdown: |-
     | ORDER_002 | insufficient funds |
     | ORDER_003 | Trading Pair Suspended |
     | ORDER_004 | no transaction |
+    | ORDER_005 | Order not exist |
     | ORDER_F0101 | Trigger Price Filter - Min |
     | ORDER_F0102 | Trigger Price Filter - Max |
     | ORDER_F0103 | Trigger Price Filter - Step Value |
