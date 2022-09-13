@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: 'order Ids eg:  ["6216559590087220004","6216559590087220004"]'
+        description: 'order Ids eg:  6216559590087220004,6216559590087220004'
         ranges:
 content_markdown: reponse field information, refer to the Get single interface
 left_code_blocks:
