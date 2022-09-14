@@ -1,13 +1,20 @@
 ---
-title: Get single 
+title: Get single by query param
 position_number: 1
 type: get
-description: /v4/order/{orderId}
+description: /v4/order
 parameters:
     -
         name: orderId
         type: number
-        mandatory: true
+        mandatory: false
+        default:
+        description: 
+        ranges:
+    -
+        name: clientOrderId
+        type: string
+        mandatory: false
         default:
         description: 
         ranges:

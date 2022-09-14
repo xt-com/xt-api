@@ -1,15 +1,16 @@
 ---
-title: Cancell order
+title: 单笔撤单-查询参数
 position_number: 3
 type: delete
-description: /v4/order/{orderId}
+split: -------------------------------------
+description: /v4/order
 parameters:
     -
         name: orderId
         type: number
         mandatory: true
         default:
-        description: 
+        description: 订单ID
         ranges:
 content_markdown:
 left_code_blocks:

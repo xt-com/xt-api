@@ -1,8 +1,9 @@
 ---
-title: Cancell order
+title: Cancell order by query param
 position_number: 3
 type: delete
-description: /v4/order/{orderId}
+split: -------------------------------------
+description: /v4/order
 parameters:
     -
         name: orderId
