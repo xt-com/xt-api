@@ -1,5 +1,5 @@
 ---
-title: 单笔获取-查询参数
+title: 单笔查询
 position_number: 1
 type: get
 description: /v4/order

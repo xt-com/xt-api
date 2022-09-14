@@ -1,5 +1,5 @@
 ---
-title: Get single by query param
+title: Query single
 position_number: 1
 type: get
 description: /v4/order
