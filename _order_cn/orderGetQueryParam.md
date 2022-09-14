@@ -1,15 +1,22 @@
 ---
-title: 单笔获取
+title: 单笔获取-查询参数
 position_number: 1
 type: get
-description: /v4/order/{orderId}
+description: /v4/order
 parameters:
     -
         name: orderId
         type: number
-        mandatory: true
+        mandatory: false
         default:
         description: 订单ID
+        ranges:
+    -
+        name: clientOrderId
+        type: string
+        mandatory: false
+        default:
+        description: 客户端订单号
         ranges:
 content_markdown:
 left_code_blocks:
