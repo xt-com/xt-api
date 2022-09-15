@@ -50,7 +50,8 @@ content_markdown: >-
 
     1、数据部分
 
-    
+        method: 大写的请求方法，例如：GET、POST、DELETE、PUT
+
         path: 按照path中顺序将所有value进行拼接。形如/test/{var1}/{var2}/的restful路径将按填入的实际参数后路径拼接，示例：/sign/test/bb/aa
   
         query: 按照key的字典序排序，将所有key=value进行拼接。示例：userName=dfdfdf&password=ggg
@@ -64,6 +65,8 @@ content_markdown: >-
   
         如果存在多种数据形式，则按照path、query、body的顺序进行再拼接，得到所有数据的拼接值。
 
+    方法method示例：
+        POST
 
 
     路径path示例:
@@ -110,15 +113,15 @@ content_markdown: >-
 
 
 
-    整个数据最且拼接值由#符号分别与path、query、body进行拼接成#path、#query、#body，最终拼接值记作为Y=#path#query#body。
+    整个数据最且拼接值由#符号分别与method、path、query、body进行拼接成#method、#path、#query、#body，最终拼接值记作为Y=#method#path#query#body。
 
     注意：
 
-        query无数据，body有数据：Y=#path#body
+        query有数据，body无数据：Y=#method#path#query
 
-        query有数据，body无数据：Y=#path#query
+        query无数据，body有数据：Y=#method#path#body
 
-        query有数据，body有数据：Y=#path#query#body
+        query有数据，body有数据：Y=#method#path#query#body
 
 
 

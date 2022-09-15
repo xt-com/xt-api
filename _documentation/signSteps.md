@@ -50,6 +50,7 @@ content_markdown: >-
 
     1.data part
 
+        method: UpperCase method. eg: GET, POST, DELETE, PUT
     
         path: Concatenate all values in the order in path. The restful path in the form of /test/{var1}/{var2}/ will be spliced according to the actual parameters filled in, for example: /sign/test/bb/aa
   
@@ -65,8 +66,10 @@ content_markdown: >-
         If there are multiple data forms, re-splicing is performed in the order of path, query, and body to obtain the splicing value of all data.
 
 
+    Method example:
+        POST
 
-    Path path example:
+    Path example:
 
         /v4/order
 
@@ -110,15 +113,15 @@ content_markdown: >-
 
 
 
-    The most concatenated value of the entire data is spliced with path, query, and body by the # symbol to form #path, #query, and #body, and the final spliced value is recorded as Y=#path#query#body.
+    The most concatenated value of the entire data is spliced with method, path, query, and body by the # symbol to form #method, #path, #query, and #body, and the final spliced value is recorded as Y=#method#path#query#body.
 
     Notice：
 
-        query has no data, body has data: Y=#path#body
+        The query has data, but the body has no data: Y=#method#path#query
 
-        The query has data, but the body has no data: Y=#path#query
+        query has no data, body has data: Y=#method#path#body
 
-        query has data, body has data: Y=#path#query#body
+        query has data, body has data: Y=#method#path#query#body
 
 
 
