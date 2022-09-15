@@ -67,6 +67,7 @@ content_markdown: >-
 
 
     Method example:
+        
         POST
 
     Path example:
