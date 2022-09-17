@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 客户端ID(最长32位)
+        description: 客户端ID正则：^[a-zA-Z0-9_]{4,32}$
         ranges:
     -
         name: side

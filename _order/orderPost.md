@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: The longest number is 32 characters
+        description: Pattern: ^[a-zA-Z0-9_]{4,32}$
         ranges:
     -
         name: side
