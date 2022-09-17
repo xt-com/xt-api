@@ -36,6 +36,9 @@ content_markdown: >-
     For symbols, there are two kinds of filters, one is a global filter, and the other is a filter customized for a certain trading pair.
 
 
+    ---
+
+
     ##### **PRICE FILTER**
 
 
@@ -64,71 +67,7 @@ content_markdown: >-
     * price % tickSize == 0
 
 
-    ##### **Current Price Protection Filter(PROTECTION\_LIMIT FILTER)**
-
-
-    There are price protection restrictions for orders whose order type (orderType) is LIMIT, including the following two parts：
-
-
-    1\.buyMaxDeviation The maximum deviation of the buy order, which limits the difference between the buy order price and the latest transaction price
-
-
-    2\.sellMaxDeviation The maximum deviation of the sell order, which limits the difference between the sell order price and the latest transaction price
-
-
-    If there is no latest transaction price, there will be no restrictions, or if the above parameters are null, the corresponding direction type orders will not be restricted.
-
-
-    In order to pass the limit price protection, the order price must meet the following conditions (latestPrice is the latest transaction price)
-
-
-    buy order: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
-
-
-    sell order: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
-
-
-    ##### **Market price protection filter(PROTECTION\_MARKET FILTER)**
-
-
-    There is a price limit protection mechanism for orders of the order type MARKET, which internally specifies the maximum deviation rate(maxDeviation).
-
-
-    For market type orders, the market price must meet the following conditions for the order to pass(sellBestPrice&nbsp; sell one price，buyBestPrice
-    buy one price，latestPrice The latest transaction price, these data are obtained through historical transaction data)
-
-
-    buy order: latestPrice + latestPrice\* maxDeviation &gt;= sellBestPrice&nbsp;
-
-
-    sell order: latestPrice - latestPrice\* maxDeviation &lt;= buyBestPrice
-
-
-    For the above situation maxDeviation,latestPrice,sellBestPrice,buyBestPrice
-
-
-    All may be empty or there is no latest transaction price, buy one price, sell one price, there is no limit
-
-
-    ##### **Open protection filter(PROTECTION\_ONLINE FILTER)**
-
-
-    Limit the price of orders of the MARKET type within the specified time range after the opening
-
-
-    The maximum price multiple is defined inside this filter(maxPriceMultiple)，duration(durationSeconds)。
-
-
-    Limitation logic: when it is within the durationSeconds time range after the opening of the symbol, Orders with an order type of LIMIT must meet the following conditions to pass
-
-
-    price&lt;=openPrice\*maxPriceMultiple,（openPrice is the opening price）.
-
-
-    There are no restrictions on other types of orders or orders outside the opening time frame.
-
-
-    For maxPriceMultiple, durationSeconds can be null, when they are null, no opening protection limit is applied.
+    ---
 
 
     ##### **QUANTITY FILTER**
@@ -162,7 +101,10 @@ content_markdown: >-
     * quantity% tickSize == 0
 
 
-    ##### **Amount filter(QUOTE\_QTY FILTER)**
+    ---
+
+
+    ##### **QUOTE\_QTY FILTER**
 
 
     Limit the amount of the order
@@ -181,6 +123,85 @@ content_markdown: >-
 
 
     2\.For orders of the MARKET type and BUY type,must meet the following conditions: quoteQty&gt;=min,(quoteQty,The required amount when placing an order of MARKET type by amount)
+
+
+    ---
+
+
+    ##### **PROTECTION\_LIMIT FILTER**
+
+
+    There are price protection restrictions for orders whose order type (orderType) is LIMIT, including the following two parts：
+
+
+    1\.buyMaxDeviation The maximum deviation of the buy order, which limits the difference between the buy order price and the latest transaction price
+
+
+    2\.sellMaxDeviation The maximum deviation of the sell order, which limits the difference between the sell order price and the latest transaction price
+
+
+    If there is no latest transaction price, there will be no restrictions, or if the above parameters are null, the corresponding direction type orders will not be restricted.
+
+
+    In order to pass the limit price protection, the order price must meet the following conditions (latestPrice is the latest transaction price)
+
+
+    buy order: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
+
+
+    sell order: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
+
+
+    ---
+
+
+    ##### **PROTECTION\_MARKET FILTER**
+
+
+    There is a price limit protection mechanism for orders of the order type MARKET, which internally specifies the maximum deviation rate(maxDeviation).
+
+
+    For market type orders, the market price must meet the following conditions for the order to pass(sellBestPrice&nbsp; sell one price，buyBestPrice
+    buy one price，latestPrice The latest transaction price, these data are obtained through historical transaction data)
+
+
+    buy order: latestPrice + latestPrice\* maxDeviation &gt;= sellBestPrice&nbsp;
+
+
+    sell order: latestPrice - latestPrice\* maxDeviation &lt;= buyBestPrice
+
+
+    For the above situation maxDeviation,latestPrice,sellBestPrice,buyBestPrice
+
+
+    All may be empty or there is no latest transaction price, buy one price, sell one price, there is no limit
+
+
+    ---
+
+
+    ##### **PROTECTION\_ONLINE FILTER**
+
+
+    Limit the price of orders of the MARKET type within the specified time range after the opening
+
+
+    The maximum price multiple is defined inside this filter(maxPriceMultiple)，duration(durationSeconds)。
+
+
+    Limitation logic: when it is within the durationSeconds time range after the opening of the symbol, Orders with an order type of LIMIT must meet the following conditions to pass
+
+
+    price&lt;=openPrice\*maxPriceMultiple,（openPrice is the opening price）.
+
+
+    There are no restrictions on other types of orders or orders outside the opening time frame.
+
+
+    For maxPriceMultiple, durationSeconds can be null, when they are null, no opening protection limit is applied.
+
+
+
 left_code_blocks:
     -
         code_block:

@@ -36,6 +36,9 @@ content_markdown: >-
     对于symbol来说，有两种过滤器，一种是全局过滤器，一种是针对某个交易对定制的过滤器。
 
 
+    ---
+
+
     ##### **价格过滤器 PRICE FILTER**
 
 
@@ -64,71 +67,7 @@ content_markdown: >-
     * price % tickSize == 0
 
 
-    ##### **现价保护过滤器 PROTECTION\_LIMIT FILTER**
-
-
-    对于订单类型(orderType)为LIMIT(现价) 类型的订单具有价格保护限制，包含以下两个部分
-
-
-    1\.buyMaxDeviation 买单最大偏离度，限制了买单价格与最新成交价之间的差值
-
-
-    2\.sellMaxDeviation 卖单最大偏离度，限制了卖单价格与最新成交价之间的差值
-
-
-    若没有最新成交价则不做限制，或者以上参数为null,则对应方向类型订单不做限制
-
-
-    为了通过限价保护，订单price必须满足以下条件(latestPrice为最新成交价)
-
-
-    买单: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
-
-
-    卖单: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
-
-
-    ##### **市价保护过滤器 PROTECTION\_MARKET FILTER**
-
-
-    对于订单类型为MARKET的订单具有价格限制保护机制，其内部规定了maxDeviation最大偏差率。
-
-
-    对于市价类型订单，市场价格须满足以下条件，订单才会通过(sellBestPrice&nbsp; 卖一价格，buyBestPrice
-    买一价格，latestPrice 最新成交价,这些数据均通过历史成交数据获得)
-
-
-    买单: latestPrice + latestPrice\* maxDeviation &gt;= sellBestPrice&nbsp;
-
-
-    卖单: latestPrice - latestPrice\* maxDeviation &lt;= buyBestPrice
-
-
-    对于以上情况maxDeviation，latestPrice，sellBestPrice ，buyBestPrice
-
-
-    均有可能为空或者没有最新成交价，买一价格，卖一价格，则不做限制
-
-
-    ##### **开盘保护过滤器 PROTECTION\_ONLINE FILTER**
-
-
-    对处于开盘之后指定的时间范围内，对于现价类型的订单的价格进行限制
-
-
-    该过滤器内部定义了最大价格倍数(maxPriceMultiple)，持续时间(durationSeconds)。
-
-
-    限制逻辑:当处于交易对开盘后durationSeconds时间范围内，订单类型为现价类（LIMIT）的订单
-
-
-    须满足订单价格price&lt;=openPrice\*maxPriceMultiple,才会通过（openPrice为开盘价）。
-
-
-    其他类型的订单或者不在开盘时间范围内的订单不做限制。
-
-
-    对于maxPriceMultiple,durationSeconds均可为null,为null时，不做开盘保护限制。
+    ---
 
 
     ##### **数量过滤器&nbsp; QUANTITY FILTER**
@@ -162,6 +101,9 @@ content_markdown: >-
     * quantity% tickSize == 0
 
 
+    ---
+
+
     ##### **金额过滤器 QUOTE\_QTY FILTER**
 
 
@@ -181,6 +123,84 @@ content_markdown: >-
 
 
     2\.对于市价MARKET类型并且是购买类型(orderSide=BUY)订单，需满足quoteQty&gt;=min,(quoteQty,市价按金额下单时必填的金额)
+
+
+    ---
+
+
+    ##### **开盘保护过滤器 PROTECTION\_ONLINE FILTER**
+
+
+    对处于开盘之后指定的时间范围内，对于现价类型的订单的价格进行限制
+
+
+    该过滤器内部定义了最大价格倍数(maxPriceMultiple)，持续时间(durationSeconds)。
+
+
+    限制逻辑:当处于交易对开盘后durationSeconds时间范围内，订单类型为现价类（LIMIT）的订单
+
+
+    须满足订单价格price&lt;=openPrice\*maxPriceMultiple,才会通过（openPrice为开盘价）。
+
+
+    其他类型的订单或者不在开盘时间范围内的订单不做限制。
+
+
+    对于maxPriceMultiple,durationSeconds均可为null,为null时，不做开盘保护限制。
+
+
+    ---
+
+
+    ##### **现价保护过滤器 PROTECTION\_LIMIT FILTER**
+
+
+    对于订单类型(orderType)为LIMIT(现价) 类型的订单具有价格保护限制，包含以下两个部分
+
+
+    1\.buyMaxDeviation 买单最大偏离度，限制了买单价格与最新成交价之间的差值
+
+
+    2\.sellMaxDeviation 卖单最大偏离度，限制了卖单价格与最新成交价之间的差值
+
+
+    若没有最新成交价则不做限制，或者以上参数为null,则对应方向类型订单不做限制
+
+
+    为了通过限价保护，订单price必须满足以下条件(latestPrice为最新成交价)
+
+
+    买单: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
+
+
+    卖单: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
+
+
+    ---
+
+
+    ##### **市价保护过滤器 PROTECTION\_MARKET FILTER**
+
+
+    对于订单类型为MARKET的订单具有价格限制保护机制，其内部规定了maxDeviation最大偏差率。
+
+
+    对于市价类型订单，市场价格须满足以下条件，订单才会通过(sellBestPrice&nbsp; 卖一价格，buyBestPrice
+    买一价格，latestPrice 最新成交价,这些数据均通过历史成交数据获得)
+
+
+    买单: latestPrice + latestPrice\* maxDeviation &gt;= sellBestPrice&nbsp;
+
+
+    卖单: latestPrice - latestPrice\* maxDeviation &lt;= buyBestPrice
+
+
+    对于以上情况maxDeviation，latestPrice，sellBestPrice ，buyBestPrice
+
+
+    均有可能为空或者没有最新成交价，买一价格，卖一价格，则不做限制
+
+
 left_code_blocks:
     -
         code_block:
