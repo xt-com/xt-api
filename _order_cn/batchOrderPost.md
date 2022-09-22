@@ -105,7 +105,7 @@ right_code_blocks:
         title: Request
         language: json
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"items\": [  //订单id集合\r\n      {\r\n        \"orderId\": \"6216559590087220004\"\r\n      }\r\n    ]\r\n  }\r\n}"
+        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"batchId\": \"123\", // 批次号 \r\n    \"items\": [  //订单集合\r\n      {\r\n        \"index\": \"0\", // 下标，从0开始 \r\n        \"clientOrderId\": \"123\", // 客户端订单ID \r\n        \"orderId\": \"123\", // 订单ID \r\n        \"reject\": \"false\", // 是否拒单 \r\n        \"reason\": \"invalid price precision\" // 拒单原因 \r\n      }\r\n    ]\r\n  }\r\n}"
         title: Response
         language: json
 ---
