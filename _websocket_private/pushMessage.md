@@ -1,7 +1,6 @@
 ---
 title: Push message format
 position_number: 4
-split: -------------------------------------
 type:
 description: |+
 

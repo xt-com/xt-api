@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: Pattern: ^[a-zA-Z0-9_]{4,32}$
+        description: 'Pattern: ^[a-zA-Z0-9_]{4,32}$'
         ranges:
     -
         name: side
