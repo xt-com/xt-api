@@ -64,7 +64,7 @@ content_markdown: >-
 
     * price &lt;= max
 
-    * price % tickSize == 0
+    * (price-minPrice) % tickSize == 0
 
 
     ---
@@ -98,7 +98,7 @@ content_markdown: >-
 
     * quantity&lt;= max
 
-    * quantity% tickSize == 0
+    * (quantity-minQuantity)% tickSize == 0
 
 
     ---
