@@ -43,6 +43,7 @@ content_markdown: |-
     | ORDER_003 | Trading Pair Suspended |
     | ORDER_004 | no transaction |
     | ORDER_005 | Order not exist |
+    | ORDER_006 | Too many open orders |
     | ORDER_F0101 | Trigger Price Filter - Min |
     | ORDER_F0102 | Trigger Price Filter - Max |
     | ORDER_F0103 | Trigger Price Filter - Step Value |
@@ -53,8 +54,6 @@ content_markdown: |-
     | ORDER_F0401 | Trigger PROTECTION_ONLINE Filter |
     | ORDER_F0501 | Trigger PROTECTION_LIMIT Filter |
     | ORDER_F0601 | Trigger PROTECTION_MARKET Filter |
-    | ORDER_F0701 | Too many outstanding orders |
-    | ORDER_F0801 | Too many outstanding plan delegations |
 left_code_blocks:
 - code_block:
   title:
