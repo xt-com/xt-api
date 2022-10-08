@@ -42,7 +42,12 @@ parameters:
         default: '100'
         description: 限制数量
         ranges: 1~1000
-content_markdown:
+content_markdown: >-
+    #### **网关限流**
+
+    100/s/ip
+
+
 left_code_blocks:
     -
         code_block:

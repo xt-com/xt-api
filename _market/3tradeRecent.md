@@ -18,7 +18,11 @@ parameters:
         default: '200'
         description: 
         ranges: 1，1000
-content_markdown:
+content_markdown: >-
+    #### **Gateway Current Limit**
+    
+    100/s/ip
+
 left_code_blocks:
     -
         code_block: |-

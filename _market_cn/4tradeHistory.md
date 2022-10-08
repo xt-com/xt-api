@@ -26,7 +26,11 @@ parameters:
         default:
         description: '起始ID，eg: 6216559590087220004'
         ranges:
-content_markdown:
+content_markdown: >-
+    #### **网关限流**
+
+    100/s/ip
+
 left_code_blocks:
     -
         code_block: |-

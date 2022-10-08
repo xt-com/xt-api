@@ -81,10 +81,12 @@ parameters:
         default:
         description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
         ranges:
-content_markdown: |-
-    &nbsp;
+content_markdown: >-
+    #### **Gateway Current Limit**
+    
+    30/s/apikey
 
-    &nbsp;
+
 left_code_blocks:
     -
         code_block: |-

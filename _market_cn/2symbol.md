@@ -29,6 +29,18 @@ parameters:
             eg: 2e14d2cd5czcb2c2af2c1db65078d075
         ranges:
 content_markdown: >-
+    #### **网关限流**
+
+
+    1\.获取单个交易对：100/s/ip
+
+
+    2\.获取多个交易对：10/s/ip
+
+
+    ---
+
+
     #### **过滤器**
 
 

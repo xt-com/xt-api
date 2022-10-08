@@ -68,7 +68,11 @@ parameters:
         default:
         description: 金额。现价不填；市价按金额下单时必填
         ranges:
-content_markdown:
+content_markdown: >-
+    #### **网关限流**
+
+    50/s/apikey
+
 left_code_blocks:
     -
         code_block: |-

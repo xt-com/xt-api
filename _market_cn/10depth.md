@@ -19,7 +19,13 @@ parameters:
         default: '50'
         description: 数量
         ranges: 1~500
-content_markdown:
+content_markdown: >-
+    #### **网关限流**
+
+    200/s/ip
+
+
+
 left_code_blocks:
     -
         code_block: |-
