@@ -83,7 +83,7 @@ parameters:
         description: 金额。现价不填；市价按金额下单时必填
         ranges:
 content_markdown: >-
-    #### **网关限流**
+    #### **限流规则**
 
     30/s/apikey
 

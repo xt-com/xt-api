@@ -29,7 +29,7 @@ parameters:
             eg: 2e14d2cd5czcb2c2af2c1db65078d075
         ranges:
 content_markdown: >-
-    #### **Gateway Current Limit**
+    #### **Limit Flow Rules**
 
 
     1\.single symbol：100/s/ip

@@ -19,7 +19,7 @@ parameters:
         description: 'Collection of trading pairs. Priority is higher than symbol. eg: btc_usdt,eth_usdt'
         ranges:
 content_markdown: >-
-    #### **Gateway Current Limit**
+    #### **Limit Flow Rules**
 
 
     1\.single symbol：100/s/ip

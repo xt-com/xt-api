@@ -19,7 +19,7 @@ parameters:
         description: '交易对集合，优先级高于symbol。 eg: btc_usdt,eth_usdt'
         ranges:
 content_markdown: >-
-    #### **网关限流**
+    #### **限流规则**
 
 
     1\.单个交易对：100/s/ip

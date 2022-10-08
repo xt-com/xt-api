@@ -19,7 +19,7 @@ parameters:
         description: 
         ranges: 1~500
 content_markdown: >-
-    #### **Gateway Current Limit**
+    #### **Limit Flow Rules**
     
     200/s/ip
 

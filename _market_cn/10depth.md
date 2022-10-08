@@ -20,7 +20,7 @@ parameters:
         description: 数量
         ranges: 1~500
 content_markdown: >-
-    #### **网关限流**
+    #### **限流规则**
 
     200/s/ip
 

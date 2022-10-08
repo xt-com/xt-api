@@ -29,7 +29,7 @@ parameters:
             eg: 2e14d2cd5czcb2c2af2c1db65078d075
         ranges:
 content_markdown: >-
-    #### **网关限流**
+    #### **限流规则**
 
 
     1\.获取单个交易对：100/s/ip

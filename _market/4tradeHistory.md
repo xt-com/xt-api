@@ -27,7 +27,7 @@ parameters:
         description: 'Start ID，eg: 6216559590087220004'
         ranges:
 content_markdown: >-
-    #### **Gateway Current Limit**
+    #### **Limit Flow Rules**
     
     100/s/ip
 

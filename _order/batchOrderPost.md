@@ -82,7 +82,7 @@ parameters:
         description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
         ranges:
 content_markdown: >-
-    #### **Gateway Current Limit**
+    #### **Limit Flow Rules**
     
     30/s/apikey
 

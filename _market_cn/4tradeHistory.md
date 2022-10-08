@@ -27,7 +27,7 @@ parameters:
         description: '起始ID，eg: 6216559590087220004'
         ranges:
 content_markdown: >-
-    #### **网关限流**
+    #### **限流规则**
 
     100/s/ip
 
