@@ -39,7 +39,7 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",  //交易对(symbol)\r\n      \"ap\": null,  //asks price(卖一价)\r\n      \"aq\": null,  //asks qty(卖一量)\r\n      \"bp\": null,   //bids price(买一价)\r\n      \"bq\": null    //bids qty(买一量)\r\n    }\r\n  ]\r\n}"
+        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",  //交易对(symbol)\r\n      \"t\": \"1661856036925\",  //时间(time) \r\n      \"ap\": null,  //asks price(卖一价)\r\n      \"aq\": null,  //asks qty(卖一量)\r\n      \"bp\": null,   //bids price(买一价)\r\n      \"bq\": null    //bids qty(买一量)\r\n    }\r\n  ]\r\n}"
         title: Response
         language: json
 ---

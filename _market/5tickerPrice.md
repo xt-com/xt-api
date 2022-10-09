@@ -43,7 +43,7 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",   //symbol\r\n      \"p\": \"9000.0000\",   //price\r\n      \"t\": 1661856036925   //time\r\n    }\r\n  ]\r\n}"
+        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",   //symbol\r\n      \"t\": 1661856036925   //time\r\n      \"p\": \"9000.0000\",   //price\r\n      }\r\n  ]\r\n}"
         title: Response
         language: json
 ---
