@@ -38,6 +38,10 @@ content_markdown: |-
     | AUTH_104 | 非绑定IP请求 |
     | AUTH_105 | 报文过时 |
     | AUTH_106 | 超出apikey权限 |
+    | SYMBOL_001 | 交易对不存在 |
+    | SYMBOL_002 | 交易对未开盘 |
+    | SYMBOL_003 | 交易对暂停交易 |
+    | SYMBOL_004 | 此交易对不支持您所在的国家 |
     | ORDER_001 | 平台拒单 |
     | ORDER_002 | 资金不足 |
     | ORDER_003 | 交易对暂停交易 |

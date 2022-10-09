@@ -38,6 +38,10 @@ content_markdown: |-
     | AUTH_104 | Unbound IP request |
     | AUTH_105 | outdated message |
     | AUTH_106 | Exceeded apikey permission |
+    | SYMBOL_001 | Symbol not exist |
+    | SYMBOL_002 | Symbol offline |
+    | SYMBOL_003 | Symbol suspend trading |
+    | SYMBOL_004 | Symbol country disallow trading |
     | ORDER_001 | Platform rejection |
     | ORDER_002 | insufficient funds |
     | ORDER_003 | Trading Pair Suspended |
