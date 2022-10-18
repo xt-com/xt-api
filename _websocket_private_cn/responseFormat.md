@@ -17,7 +17,7 @@ left_code_blocks:
     -
         code_block: "{\r\n    \"id\": \"{id}\", //请求回调ID\r\n    \"code\": 1,     //结果1=成功;0=失败;2=listenKey⽆效\r\n    \"msg\": \"\"\r\n}"
         title: 格式
-        language: json
+        language: javascript
 right_code_blocks:
     -
         code_block:

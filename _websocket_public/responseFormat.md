@@ -22,7 +22,7 @@ left_code_blocks:
                 "msg": ""
             }
         title: format
-        language: json
+        language: javascript
 right_code_blocks:
     -
         code_block: '{"id":"123", "code": 0, "msg": "success"}   '

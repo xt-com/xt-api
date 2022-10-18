@@ -31,7 +31,22 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"kline\", \r\n    \"event\": \"kline@btc_usdt,5m\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",       // symbol 交易对\r\n        \"t\": 1656043200000,    // time 时间\r\n        \"i\": \"5m\",             // interval 间隔\r\n        \"o\": \"44000\",          // open 开盘价\r\n        \"c\": \"50000\",          // close 收盘价\r\n        \"h\": \"52000\",           // high 最⾼价\r\n        \"l\": \"36000\",           // low 最低价\r\n        \"q\": \"34.2\",           // qty 成交量\r\n        \"v\": \"230000\"           // volume 成交额\r\n    }\r\n}"
+        code_block: |-
+                {
+                        "topic": "kline",
+                        "event": "kline@btc_usdt,5m",
+                            "data": {
+                            "s": "btc_usdt",       // symbol 交易对
+                            "t": 1656043200000,    // time 时间
+                            "i": "5m",             // interval 间隔
+                            "o": "44000",          // open 开盘价
+                            "c": "50000",          // close 收盘价
+                            "h": "52000",           // high 最⾼价
+                            "l": "36000",           // low 最低价
+                            "q": "34.2",           // qty 成交量
+                            "v": "230000"           // volume 成交额
+                            }
+                }
         title: Response
         language: json
 ---

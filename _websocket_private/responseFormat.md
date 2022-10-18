@@ -17,7 +17,7 @@ left_code_blocks:
     -
         code_block: "{\r\n    \"id\": \"{id}\", //call back ID\r\n    \"code\": 1,     //result 0=success;1=fail;2=listenKey invalid\r\n    \"msg\": \"\"\r\n}"
         title: format
-        language: json
+        language: javascript
 right_code_blocks:
     -
         code_block:

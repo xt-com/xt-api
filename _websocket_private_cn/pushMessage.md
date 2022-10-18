@@ -17,7 +17,7 @@ left_code_blocks:
     -
         code_block: "{\r\n    \"topic\": \"trade\",          //主题\r\n    \"event\": \"trade@btc_usdt\", //事件\r\n    \"data\": { }                //数据\r\n}"
         title: 格式
-        language: json
+        language: javascript
 right_code_blocks:
     -
         code_block:

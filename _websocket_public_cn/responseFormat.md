@@ -22,7 +22,7 @@ left_code_blocks:
                 "msg": ""
             }
         title: 响应报文格式
-        language: json
+        language: javascript
 right_code_blocks:
     -
         code_block: '{"id":"123", "code": 0, "msg": "success"}   '
