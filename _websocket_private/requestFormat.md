@@ -18,7 +18,16 @@ content_markdown: |-
     \{topic\}@\{arg\},\{arg\},…
 left_code_blocks:
     -
-        code_block: "{\r\n    \"method\": \"subscribe\", \r\n    \"params\": [\r\n        \"{topic}@{arg},{arg}\",    //event\r\n        \"{topic}@{arg}\"\r\n    ], \r\n    \"listenKey\": \"512312356123123123\",   //the listener Key, Apply through the rest interface\r\n    \"id\": \"{id}\"\r\n}"
+        code_block: |-
+                {
+                    "method": "subscribe", 
+                    "params": [
+                        "{topic}@{arg},{arg}",    //event
+                        "{topic}@{arg}"
+                    ], 
+                    "listenKey": "512312356123123123",   //the listener Key, Apply through the rest interface
+                    "id": "{id}"
+                }
         title: subscribe
         language: javascript
     -

@@ -35,7 +35,15 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {}\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": {}
+                }
         title: Response
         language: json
 ---

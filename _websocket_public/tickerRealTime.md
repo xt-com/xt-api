@@ -25,7 +25,23 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"ticker\", \r\n    \"event\": \"ticker@btc_usdt\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",      // symbol\r\n        \"t\": 1657586700119,   // time(Last transaction time)\r\n        \"cv\": \"-200\",         // priceChangeValue(24 hour price change)\r\n        \"cr\": \"-0.02\",        // priceChangeRate 24-hour price change (percentage)\r\n        \"o\": \"30000\",         // open price\r\n        \"c\": \"39000\",         // close price\r\n        \"h\": \"38000\",         // highest price\r\n        \"l\": \"40000\",         // lowest price\r\n        \"q\": \"4\",             // quantity\r\n        \"v\": \"150000\",         // volume\r\n   }\r\n}"
+        code_block: |-
+                {
+                    "topic": "ticker", 
+                    "event": "ticker@btc_usdt", 
+                    "data": {
+                        "s": "btc_usdt",      // symbol
+                        "t": 1657586700119,   // time(Last transaction time)
+                        "cv": "-200",         // priceChangeValue(24 hour price change)
+                        "cr": "-0.02",        // priceChangeRate 24-hour price change (percentage)
+                        "o": "30000",         // open price
+                        "c": "39000",         // close price
+                        "h": "38000",         // highest price
+                        "l": "40000",         // lowest price
+                        "q": "4",             // quantity
+                        "v": "150000",        // volume
+                   }
+                }
         title: Response
         language: json
 ---

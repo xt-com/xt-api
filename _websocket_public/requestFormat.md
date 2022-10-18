@@ -14,11 +14,26 @@ parameters:
 content_markdown:
 left_code_blocks:
     -
-        code_block: "{\r\n    \"method\": \"subscribe\", \r\n    \"params\": [\r\n        \"{topic}@{arg},{arg}\", \r\n        \"{topic}@{arg}\"\r\n    ], \r\n    \"id\": \"{id}\"    //call back ID\r\n}"
+        code_block: |-
+                {
+                    "method": "subscribe", 
+                    "params": [
+                        "{topic}@{arg},{arg}", 
+                        "{topic}@{arg}"
+                    ], 
+                    "id": "{id}"    //call back ID
+                }
         title: subscribe
         language: javascript
     -
-        code_block: "{\r\n    \"method\": \"unsubscribe\", \r\n    \"params\": [\r\n        \"{topic}@{arg},{arg}\"\r\n    ], \r\n    \"id\": \"{id}\"   //call back ID\r\n}"
+        code_block: |-
+                {
+                    "method": "unsubscribe", 
+                    "params": [
+                        "{topic}@{arg},{arg}"
+                    ], 
+                    "id": "{id}"   //call back ID
+                }
         title: unsubscribe
         language: javascript
 right_code_blocks:

@@ -59,7 +59,25 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": [\r\n    {\r\n      \"t\": 1662601014832,  //开盘时间(time)\r\n      \"o\": \"30000\", //开盘价(open)\r\n      \"c\": \"32000\",  //收盘价(close)\r\n      \"h\": \"35000\",  //最高价(high)\r\n      \"l\": \"25000\",  //最低价(low)\r\n      \"q\": \"512\",  //成交量(quantity)\r\n      \"v\": \"15360000\"    //成交额(volume)\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": [
+                    {
+                      "t": 1662601014832,   //开盘时间(time)
+                      "o": "30000",         //开盘价(open)
+                      "c": "32000",         //收盘价(close)
+                      "h": "35000",         //最高价(high)
+                      "l": "25000",         //最低价(low)
+                      "q": "512",           //成交量(quantity)
+                      "v": "15360000"       //成交额(volume)
+                    }
+                  ]
+                }
         title: Response
         language: json
 ---

@@ -15,12 +15,29 @@ parameters:
 content_markdown:
 left_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\",             \r\n    \"event\": \"trade@btc_usdt\",    //title\r\n    \"data\": { }                   \r\n}"
+        code_block: |-
+            {
+                "topic": "trade",             
+                "event": "trade@btc_usdt",    //title
+                "data": { }                   
+            }
         title: format
         language: javascript
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\", \r\n    \"event\": \"trade@btc_usdt\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\", \r\n        \"i\": 6316559590087222000, \r\n        \"t\": 1655992403617, \r\n        \"p\": \"43000\", \r\n        \"q\": \"0.21\", \r\n        \"b\": true\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "trade", 
+                    "event": "trade@btc_usdt", 
+                    "data": {
+                        "s": "btc_usdt", 
+                        "i": 6316559590087222000, 
+                        "t": 1655992403617, 
+                        "p": "43000", 
+                        "q": "0.21", 
+                        "b": true
+                    }
+                }
         title: Example of transaction record (real-time push message)
         language: json
 ---

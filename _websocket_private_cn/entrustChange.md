@@ -25,7 +25,17 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trigger\", \r\n    \"event\": \"trigger\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",                // symbol 交易对\r\n        \"t\": 1656043204763,             // time 发⽣时间\r\n        \"i\": \"6216559590087220004\",     // triggerId 订单号\r\n        \"st\": \"NEW\"                     // state 状态\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "trigger", 
+                    "event": "trigger", 
+                    "data": {
+                        "s": "btc_usdt",                // symbol 交易对
+                        "t": 1656043204763,             // time 发⽣时间
+                        "i": "6216559590087220004",     // triggerId 订单号
+                        "st": "NEW"                     // state 状态
+                    }
+                }
         title: 推送
         language: json
 ---

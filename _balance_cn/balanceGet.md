@@ -23,7 +23,22 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"currency\": \"usdt\",  //币种\r\n    \"currencyId\": 0,   //币种ID\r\n    \"frozenAmount\": 0,  //冻结数量\r\n    \"availableAmount\": 0,  //可用数量\r\n    \"totalAmount\": 0,    //总数量\r\n    \"convertBtcAmount\": 0  //折算BTC数量\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": {
+                    "currency": "usdt",     //币种
+                    "currencyId": 0,        //币种ID
+                    "frozenAmount": 0,      //冻结数量
+                    "availableAmount": 0,   //可用数量
+                    "totalAmount": 0,       //总数量
+                    "convertBtcAmount": 0   //折算BTC数量
+                  }
+                }
         title: Response
         language: json
 ---

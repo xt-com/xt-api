@@ -25,7 +25,23 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"ticker\", \r\n    \"event\": \"ticker@btc_usdt\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",      // symbol 交易对\r\n        \"t\": 1657586700119,   // time 最后成交时间\r\n        \"cv\": \"-200\",         // priceChangeValue 24⼩时价格变化\r\n        \"cr\": \"-0.02\",        // priceChangeRate 24⼩时价格变化(百分⽐)\r\n        \"o\": \"30000\",         // open 第⼀笔\r\n        \"c\": \"39000\",         // close 最后⼀笔\r\n        \"h\": \"38000\",         // high 最⾼价\r\n        \"l\": \"40000\",         // low 最低价\r\n        \"q\": \"4\",             // quantity 成交量\r\n        \"v\": \"150000\",         // volume 成交额\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "ticker", 
+                    "event": "ticker@btc_usdt", 
+                    "data": {
+                        "s": "btc_usdt",      // symbol 交易对
+                        "t": 1657586700119,   // time 最后成交时间
+                        "cv": "-200",         // priceChangeValue 24⼩时价格变化
+                        "cr": "-0.02",        // priceChangeRate 24⼩时价格变化(百分⽐)
+                        "o": "30000",         // open 第⼀笔
+                        "c": "39000",         // close 最后⼀笔
+                        "h": "38000",         // high 最⾼价
+                        "l": "40000",         // low 最低价
+                        "q": "4",             // quantity 成交量
+                        "v": "150000",        // volume 成交额
+                    }
+                }
         title: Response
         language: json
 ---

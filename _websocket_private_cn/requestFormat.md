@@ -18,7 +18,16 @@ content_markdown: |-
     \{topic\}@\{arg\},\{arg\},…
 left_code_blocks:
     -
-        code_block: "{\r\n    \"method\": \"subscribe\", \r\n    \"params\": [\r\n        \"{topic}@{arg},{arg}\",    //event\r\n        \"{topic}@{arg}\"\r\n    ], \r\n    \"listenKey\": \"512312356123123123\",   //监听Key，先通过rest接⼝申请\r\n    \"id\": \"{id}\"\r\n}"
+        code_block: |-
+                {
+                    "method": "subscribe", 
+                    "params": [
+                        "{topic}@{arg},{arg}",    //event
+                        "{topic}@{arg}"
+                    ], 
+                    "listenKey": "512312356123123123",   //监听Key，先通过rest接⼝申请
+                    "id": "{id}"
+                }
         title: 订阅
         language: javascript
     -

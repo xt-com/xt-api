@@ -40,7 +40,26 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",   //symbol\r\n      \"t\": 1661856036925,  //time \r\n      \"cv\": \"0.0000\",   //price change value\r\n      \"cr\": \"0.00\",     //price change rate\r\n      \"o\": \"9000.0000\",   //open price\r\n      \"l\": \"9000.0000\",   //lowest price\r\n      \"h\": \"9000.0000\",   //highest price\r\n      \"c\": \"9000.0000\",   //close price\r\n      \"q\": \"0.0136\",      //transaction quantity\r\n      \"v\": \"122.9940\"    //transaction volume\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "SUCCESS",
+                  "ma": [],
+                  "result": [
+                    {
+                      "s": "btc_usdt",      //symbol
+                      "t": 1661856036925,   //time 
+                      "cv": "0.0000",       //price change value
+                      "cr": "0.00",         //price change rate
+                      "o": "9000.0000",     //open price
+                      "l": "9000.0000",     //lowest price
+                      "h": "9000.0000",     //highest price
+                      "c": "9000.0000",     //close price
+                      "q": "0.0136",        //transaction quantity
+                      "v": "122.9940"       //transaction volume
+                    }
+                  ]
+                }
         title: Response
         language: json
 ---

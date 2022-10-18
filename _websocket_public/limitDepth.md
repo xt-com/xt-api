@@ -29,7 +29,35 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"depth\", \r\n    \"event\": \"depth@btc_usdt,20\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",        // symbol\r\n        \"t\": 1657699200000,     // time\r\n        \"a\": [                  // asks(sell order)\r\n            [                   //[0]price, [1]quantity\r\n                \"34000\",        //price\r\n                \"1.2\"           //quantity \r\n            ], \r\n            [\r\n                \"34001\", \r\n                \"2.3\"\r\n            ]\r\n        ], \r\n        \"b\": [                   // bids(buy order)\r\n            [\r\n                \"32000\", \r\n                \"0.2\"\r\n            ], \r\n            [\r\n                \"31000\", \r\n                \"0.5\"\r\n            ]\r\n        ]\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "depth", 
+                    "event": "depth@btc_usdt,20", 
+                    "data": {
+                        "s": "btc_usdt",        // symbol
+                        "t": 1657699200000,     // time
+                        "a": [                  // asks(sell order)
+                            [                   //[0]price, [1]quantity
+                                "34000",        //price
+                                "1.2"           //quantity 
+                            ], 
+                            [
+                                "34001", 
+                                "2.3"
+                            ]
+                        ], 
+                        "b": [                   // bids(buy order)
+                            [
+                                "32000", 
+                                "0.2"
+                            ], 
+                            [
+                                "31000", 
+                                "0.5"
+                            ]
+                        ]
+                    }
+                }
         title: Response
         language: json
 ---

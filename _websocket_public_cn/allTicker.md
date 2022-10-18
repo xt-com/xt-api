@@ -23,7 +23,12 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"tickers\", \r\n    \"event\": \"tickers\", \r\n    \"data\": [ ]  // 同 ticker\r\n}"
+        code_block: |-
+            {
+                "topic": "tickers", 
+                "event": "tickers", 
+                "data": [ ]  // 同 ticker
+            }
         title: Response
         language: json
 ---

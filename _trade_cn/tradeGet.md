@@ -87,7 +87,37 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"hasPrev\": true,\r\n    \"hasNext\": true,\r\n    \"items\": [\r\n      {\r\n        \"symbol\": \"BTC_USDT\",  //交易对\r\n        \"tradeId\": \"6316559590087222001\",  //成交单号\r\n        \"orderId\": \"6216559590087220004\",  //订单号\r\n        \"orderSide\": \"BUY\",    //订单方向\r\n        \"orderType\": \"LIMIT\",  //订单类型\r\n        \"bizType\": \"SPOT\",    //业务类型\r\n        \"time\": 1655958915583,  //成交时间\r\n        \"price\": \"40000\",     //成交价格\r\n        \"quantity\": \"1.2\",    //成交数量\r\n        \"quoteQty\": \"48000\",   //成交金额\r\n        \"baseCurrency\": \"BTC\",  //标的币种类型\r\n        \"quoteCurrency\": \"USDT\",  //报价币种类型\r\n        \"fee\": \"0.5\",    //手续费资产金额\r\n        \"feeCurrency\": \"USDT\",  //手续费资产类型\r\n        \"takerMaker\": \"taker\"  //takerMaker\r\n      }\r\n    ]\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": {
+                    "hasPrev": true,
+                    "hasNext": true,
+                    "items": [
+                      {
+                        "symbol": "BTC_USDT",               //交易对
+                        "tradeId": "6316559590087222001",   //成交单号
+                        "orderId": "6216559590087220004",   //订单号
+                        "orderSide": "BUY",                 //订单方向
+                        "orderType": "LIMIT",               //订单类型
+                        "bizType": "SPOT",                  //业务类型
+                        "time": 1655958915583,              //成交时间
+                        "price": "40000",                   //成交价格
+                        "quantity": "1.2",                  //成交数量
+                        "quoteQty": "48000",                //成交金额
+                        "baseCurrency": "BTC",              //标的币种类型
+                        "quoteCurrency": "USDT",            //报价币种类型
+                        "fee": "0.5",                       //手续费资产金额
+                        "feeCurrency": "USDT",              //手续费资产类型
+                        "takerMaker": "taker"               //takerMaker
+                      }
+                    ]
+                  }
+                }
         title: Response
         language: json
 ---

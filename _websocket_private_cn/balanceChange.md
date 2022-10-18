@@ -25,7 +25,17 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"balance\", \r\n    \"event\": \"balance\", \r\n    \"data\": {\r\n        \"t\": 1656043204763,   // time 发⽣时间\r\n        \"c\": \"btc\",           // currency 币种\r\n        \"b\": \"123\",           // balance 可⽤资产\r\n        \"z\": \"SPOT\"           // bizType 业务类型[SPOT,LEVER]\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "balance", 
+                    "event": "balance", 
+                    "data": {
+                        "t": 1656043204763,   // time 发⽣时间
+                        "c": "btc",           // currency 币种
+                        "b": "123",           // balance 可⽤资产
+                        "z": "SPOT"           // bizType 业务类型[SPOT,LEVER]
+                    }
+                }
         title: 推送
         language: json
 ---

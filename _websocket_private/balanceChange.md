@@ -25,7 +25,17 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"balance\", \r\n    \"event\": \"balance\", \r\n    \"data\": {\r\n        \"t\": 1656043204763,   // time happened time\r\n        \"c\": \"btc\",           // currency\r\n        \"b\": \"123\",           // balance available balance\r\n        \"z\": \"SPOT\"           // bizType [SPOT,LEVER]\r\n    }\r\n}"
+        code_block: |-
+            {
+                "topic": "balance", 
+                "event": "balance", 
+                "data": {
+                    "t": 1656043204763,   // time happened time
+                    "c": "btc",           // currency
+                    "b": "123",           // balance available balance
+                    "z": "SPOT"           // bizType [SPOT,LEVER]
+                }
+            }
         title: push
         language: json
 ---

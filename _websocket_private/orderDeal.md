@@ -25,7 +25,20 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\", \r\n    \"event\": \"trade\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",              // symbol\r\n        \"t\": 1656043204763,            //time \r\n        \"i\": \"6316559590087251233\",    // tradeId\r\n        \"oi\": \"6216559590087220004\",    // orderId\r\n        \"p\": \"30000\",                   // trade price\r\n        \"q\": \"3\",                       // qty quantity\r\n        \"v\": \"90000\"                    //volumn trade amount\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "trade", 
+                    "event": "trade", 
+                    "data": {
+                        "s": "btc_usdt",                // symbol
+                        "t": 1656043204763,             //time 
+                        "i": "6316559590087251233",     // tradeId
+                        "oi": "6216559590087220004",    // orderId
+                        "p": "30000",                   // trade price
+                        "q": "3",                       // qty quantity
+                        "v": "90000"                    //volumn trade amount
+                    }
+                }
         title: push
         language: json
 ---

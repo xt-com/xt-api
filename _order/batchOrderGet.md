@@ -27,7 +27,39 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": [\r\n    {\r\n      \"symbol\": \"BTC_USDT\",\r\n      \"orderId\": \"6216559590087220004\",\r\n      \"clientOrderId\": \"16559590087220001\",\r\n      \"baseCurrency\": \"string\",\r\n      \"quoteCurrency\": \"string\",\r\n      \"side\": \"BUY\",\r\n      \"type\": \"LIMIT\",\r\n      \"timeInForce\": \"GTC\",\r\n      \"price\": \"40000\",\r\n      \"origQty\": \"2\",\r\n      \"origQuoteQty\": \"48000\",\r\n      \"executedQty\": \"1.2\",\r\n      \"leavingQty\": \"string\",\r\n      \"tradeBase\": \"2\",\r\n      \"tradeQuote\": \"48000\",\r\n      \"avgPrice\": \"42350\",\r\n      \"fee\": \"string\",\r\n      \"feeCurrency\": \"string\",\r\n      \"state\": \"NEW\",\r\n      \"time\": 1655958915583,\r\n      \"updatedTime\": 1655958915583\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                    {
+                      "rc": 0,
+                      "mc": "string",
+                      "ma": [
+                        {}
+                      ],
+                      "result": [
+                        {
+                          "symbol": "BTC_USDT",
+                          "orderId": "6216559590087220004",
+                          "clientOrderId": "16559590087220001",
+                          "baseCurrency": "string",
+                          "quoteCurrency": "string",
+                          "side": "BUY",
+                          "type": "LIMIT",
+                          "timeInForce": "GTC",
+                          "price": "40000",
+                          "origQty": "2",
+                          "origQuoteQty": "48000",
+                          "executedQty": "1.2",
+                          "leavingQty": "string",
+                          "tradeBase": "2",
+                          "tradeQuote": "48000",
+                          "avgPrice": "42350",
+                          "fee": "string",
+                          "feeCurrency": "string",
+                          "state": "NEW",
+                          "time": 1655958915583,
+                          "updatedTime": 1655958915583
+                        }
+                      ]
+                    }
         title: Response
         language: json
 ---

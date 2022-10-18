@@ -15,7 +15,12 @@ parameters:
 content_markdown:
 left_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\",          //主题\r\n    \"event\": \"trade@btc_usdt\", //事件\r\n    \"data\": { }                //数据\r\n}"
+        code_block: |-
+                {
+                    "topic": "trade",          //主题
+                    "event": "trade@btc_usdt", //事件
+                    "data": { }                //数据
+                }
         title: 格式
         language: javascript
 right_code_blocks:

@@ -27,7 +27,15 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": {\r\n    \"serverTime\": 1662435658062  //服务器时间\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "SUCCESS",
+                  "ma": [],
+                  "result": {
+                    "serverTime": 1662435658062  //服务器时间
+                  }
+                }
         title: Response
         language: json
 ---

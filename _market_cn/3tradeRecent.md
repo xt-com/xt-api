@@ -38,7 +38,24 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": [\r\n    {\r\n      \"i\": 0,   //ID\r\n      \"t\": 0,   //成交时间(time)\r\n      \"p\": \"string\", //成交价(price)\r\n      \"q\": \"string\",  //成交量(quantity)\r\n      \"v\": \"string\",  //成交额(volume)\r\n      \"b\": true   //方向(buyerMaker)\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": [
+                    {
+                      "i": 0,           //ID
+                      "t": 0,           //成交时间(time)
+                      "p": "string",    //成交价(price)
+                      "q": "string",    //成交量(quantity)
+                      "v": "string",    //成交额(volume)
+                      "b": true         //方向(buyerMaker)
+                    }
+                  ]
+                }
         title: Response
         language: json
 ---

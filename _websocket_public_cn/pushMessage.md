@@ -15,12 +15,29 @@ parameters:
 content_markdown:
 left_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\",             //事件\r\n    \"event\": \"trade@btc_usdt\",    //主题\r\n    \"data\": { }                   //数据\r\n}"
+        code_block: |-
+            {
+                "topic": "trade",             //事件
+                "event": "trade@btc_usdt",    //主题
+                "data": { }                   //数据
+            }
         title: 格式
         language: javascript
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\", \r\n    \"event\": \"trade@btc_usdt\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\", \r\n        \"i\": 6316559590087222000, \r\n        \"t\": 1655992403617, \r\n        \"p\": \"43000\", \r\n        \"q\": \"0.21\", \r\n        \"b\": true\r\n    }\r\n}"
+        code_block: |-
+                {
+                    "topic": "trade", 
+                    "event": "trade@btc_usdt", 
+                    "data": {
+                        "s": "btc_usdt", 
+                        "i": 6316559590087222000, 
+                        "t": 1655992403617, 
+                        "p": "43000", 
+                        "q": "0.21", 
+                        "b": true
+                    }
+                }
         title: 成交记录(实时推送报文)样例
         language: json
 ---

@@ -25,7 +25,17 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trigger\", \r\n    \"event\": \"trigger\", \r\n    \"data\": {\r\n        \"s\": \"btc_usdt\",                // symbol\r\n        \"t\": 1656043204763,             // time happened time\r\n        \"i\": \"6216559590087220004\",     // triggerId\r\n        \"st\": \"NEW\"                     // state\r\n    }\r\n}"
+        code_block: |-
+            {
+                "topic": "trigger", 
+                "event": "trigger", 
+                "data": {
+                    "s": "btc_usdt",                // symbol
+                    "t": 1656043204763,             // time happened time
+                    "i": "6216559590087220004",     // triggerId
+                    "st": "NEW"                     // state
+                }
+            }
         title: push
         language: json
 ---

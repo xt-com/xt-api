@@ -38,7 +38,24 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": [\r\n    {\r\n      \"i\": 0,   //ID\r\n      \"t\": 0,   //transaction time\r\n      \"p\": \"string\", //transaction price\r\n      \"q\": \"string\",  //transaction quantity\r\n      \"v\": \"string\",  //transaction volume\r\n      \"b\": true   //buyerMaker\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": [
+                    {
+                      "i": 0,           //ID
+                      "t": 0,           //transaction time
+                      "p": "string",    //transaction price
+                      "q": "string",    //transaction quantity
+                      "v": "string",    //transaction volume
+                      "b": true         //buyerMaker
+                    }
+                  ]
+                }
         title: Response
         language: json
 ---

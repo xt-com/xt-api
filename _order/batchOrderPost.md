@@ -102,11 +102,46 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"clientBatchId\": \"51232\",\r\n  \"items\": [\r\n    {\r\n      \"symbol\": \"BTC_USDT\",\r\n      \"clientOrderId\": \"16559590087220001\",\r\n      \"side\": \"BUY\",\r\n      \"type\": \"LIMIT\",\r\n      \"timeInForce\": \"GTC\",\r\n      \"bizType\": \"SPOT\",\r\n      \"price\": 40000,\r\n      \"quantity\": 2,\r\n      \"quoteQty\": 80000\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "clientBatchId": "51232",
+                  "items": [
+                    {
+                      "symbol": "BTC_USDT",
+                      "clientOrderId": "16559590087220001",
+                      "side": "BUY",
+                      "type": "LIMIT",
+                      "timeInForce": "GTC",
+                      "bizType": "SPOT",
+                      "price": 40000,
+                      "quantity": 2,
+                      "quoteQty": 80000
+                    }
+                  ]
+                }
         title: Request
         language: json
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"batchId\": \"123\", \r\n    \"items\": [   \r\n      {\r\n        \"index\": \"0\", // start with 0 \r\n        \"clientOrderId\": \"123\", \r\n        \"orderId\": \"123\", \r\n        \"reject\": \"false\", \r\n        \"reason\": \"invalid price precision\" \r\n      }\r\n    ]\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": {
+                    "batchId": "123", 
+                    "items": [   
+                      {
+                        "index": "0", // start with 0 
+                        "clientOrderId": "123", 
+                        "orderId": "123", 
+                        "reject": "false", 
+                        "reason": "invalid price precision" 
+                      }
+                    ]
+                  }
+                }
         title: Response
         language: json
 ---

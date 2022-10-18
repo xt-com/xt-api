@@ -39,7 +39,31 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": {\r\n    \"timestamp\": 1662445330524,  \r\n    \"lastUpdateId\": 137333589606963580,  //Last updated record\r\n    \"bids\": [     //buy order([?][0]=price;[?][1]=pending order volume)\r\n      [\r\n        \"200.0000\",   //price\r\n        \"0.996000\"    //pending order volume\r\n      ],\r\n      [\r\n        \"100.0000\",\r\n        \"0.001000\"\r\n      ],\r\n      [\r\n        \"20.0000\",\r\n        \"10.000000\"\r\n      ]\r\n    ],\r\n    \"asks\": []    //sell order([?][0]=price;[?][1]=pending order volume)\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "SUCCESS",
+                  "ma": [],
+                  "result": {
+                    "timestamp": 1662445330524,  
+                    "lastUpdateId": 137333589606963580,     //Last updated record
+                    "bids": [                               //buy order([?][0]=price;[?][1]=pending order volume)
+                      [
+                        "200.0000",                         //price
+                        "0.996000"                          //pending order volume
+                      ],
+                      [
+                        "100.0000",
+                        "0.001000"
+                      ],
+                      [
+                        "20.0000",
+                        "10.000000"
+                      ]
+                    ],
+                    "asks": []                              //sell order([?][0]=price;[?][1]=pending order volume)
+                  }
+                }
         title: Response
         language: json
 ---

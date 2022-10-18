@@ -15,7 +15,12 @@ parameters:
 content_markdown:
 left_code_blocks:
     -
-        code_block: "{\r\n    \"topic\": \"trade\",          \r\n    \"event\": \"trade@btc_usdt\", \r\n    \"data\": { }                \r\n}"
+        code_block: |-
+            {
+                "topic": "trade",          
+                "event": "trade@btc_usdt", 
+                "data": { }                
+            }
         title: format
         language: javascript
 right_code_blocks:

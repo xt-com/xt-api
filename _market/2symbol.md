@@ -225,7 +225,80 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": {\r\n    \"time\": 1662444177871,  \r\n    \"version\": \"7cd2cfab0dc979339f1de904bd90c9cb\",  \r\n    \"symbols\": [                   \r\n      {\r\n        \"id\": 614,                        //ID\r\n        \"symbol\": \"btc_usdt\",         \r\n        \"state\": \"ONLINE\",                 //symbol state[ONLINE;OFFLINE,DELISTED]\r\n        \"tradingEnabled\": true,           \r\n        \"nextStateTime\": null,              \r\n        \"nextState\": null,                 \r\n        \"depthMergePrecision\": 5,             //Depth Merge Accuracy\r\n        \"baseCurrency\": \"btc\",                  \r\n        \"baseCurrencyPrecision\": 5,              \r\n        \"baseCurrencyId\": 2,                 \r\n        \"quoteCurrency\": \"usdt\",             \r\n        \"quoteCurrencyPrecision\": 6,        \r\n        \"quoteCurrencyId\": 11,             \r\n        \"pricePrecision\": 4,              //Transaction price accuracy\r\n        \"quantityPrecision\": 6,           \r\n        \"orderTypes\": [                   //Order Type[LIMIT;MARKET]\r\n          \"LIMIT\",\r\n          \"MARKET\"\r\n        ],\r\n        \"timeInForces\": [                  //Effective ways[GTC=It remains valid until the transaction is concluded; IOC=Cancel the part that cannot be transacted immediately (taking orders); FOK=Cancellation if all transactions cannot be completed immediately; GTX=Revoke if unable to become a pending party]\r\n          \"GTC\",\r\n          \"FOK\",\r\n          \"IOC\",\r\n          \"GTX\"\r\n        ],\r\n        \"displayWeight\": 1,             //Show the weight, the greater the weight, the more forward\r\n        \"displayLevel\": \"FULL\",           //Presentation level,[FULL=Full display,SEARCH=Search display,DIRECT=Direct display,NONE=Don't show]\r\n        \"plates\": [],                    //  eg:22,23,24\r\n        \"filters\": [                       \r\n          {\r\n            \"filter\": \"PROTECTION_LIMIT\",\r\n            \"buyMaxDeviation\": \"0.8\"\r\n            \"sellMaxDeviation\": \"0.8\"\r\n          },\r\n          {\r\n            \"filter\": \"PROTECTION_MARKET\",\r\n            \"maxDeviation\": \"0.1\"\r\n          },\r\n          {\r\n            \"filter\": \"PROTECTION_ONLINE\",\r\n            \"durationSeconds\": \"300\",\r\n            \"maxPriceMultiple\": \"5\"\r\n          },\r\n          {\r\n            \"filter\": \"PRICE\",\r\n            \"min\": null,\r\n            \"max\": null,\r\n            \"tickSize\": null\r\n          },\r\n          {\r\n            \"filter\": \"QUANTITY\",\r\n            \"min\": null,\r\n            \"max\": null,\r\n            \"tickSize\": null\r\n          },\r\n          {\r\n            \"filter\": \"QUOTE_QTY\",\r\n            \"min\": null\r\n          },\r\n       ]\r\n      }\r\n    ]\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "SUCCESS",
+                  "ma": [],
+                  "result": {
+                    "time": 1662444177871,  
+                    "version": "7cd2cfab0dc979339f1de904bd90c9cb",  
+                    "symbols": [                   
+                      {
+                        "id": 614,                              //ID
+                        "symbol": "btc_usdt",         
+                        "state": "ONLINE",                      //symbol state[ONLINE;OFFLINE,DELISTED]
+                        "tradingEnabled": true,           
+                        "nextStateTime": null,              
+                        "nextState": null,                 
+                        "depthMergePrecision": 5,               //Depth Merge Accuracy
+                        "baseCurrency": "btc",                  
+                        "baseCurrencyPrecision": 5,              
+                        "baseCurrencyId": 2,                 
+                        "quoteCurrency": "usdt",             
+                        "quoteCurrencyPrecision": 6,        
+                        "quoteCurrencyId": 11,             
+                        "pricePrecision": 4,                    //Transaction price accuracy
+                        "quantityPrecision": 6,           
+                        "orderTypes": [                         //Order Type[LIMIT;MARKET]
+                          "LIMIT",
+                          "MARKET"
+                        ],
+                        "timeInForces": [                       //Effective ways[GTC=It remains valid until the transaction is concluded; IOC=Cancel the part that cannot be transacted immediately (taking orders); FOK=Cancellation if all transactions cannot be completed immediately; GTX=Revoke if unable to become a pending party]
+                          "GTC",
+                          "FOK",
+                          "IOC",
+                          "GTX"
+                        ],
+                        "displayWeight": 1,                     //Show the weight, the greater the weight, the more forward
+                        "displayLevel": "FULL",                 //Presentation level,[FULL=Full display,SEARCH=Search display,DIRECT=Direct display,NONE=Don't show]
+                        "plates": [],                           //  eg:22,23,24
+                        "filters": [                       
+                          {
+                            "filter": "PROTECTION_LIMIT",
+                            "buyMaxDeviation": "0.8"
+                            "sellMaxDeviation": "0.8"
+                          },
+                          {
+                            "filter": "PROTECTION_MARKET",
+                            "maxDeviation": "0.1"
+                          },
+                          {
+                            "filter": "PROTECTION_ONLINE",
+                            "durationSeconds": "300",
+                            "maxPriceMultiple": "5"
+                          },
+                          {
+                            "filter": "PRICE",
+                            "min": null,
+                            "max": null,
+                            "tickSize": null
+                          },
+                          {
+                            "filter": "QUANTITY",
+                            "min": null,
+                            "max": null,
+                            "tickSize": null
+                          },
+                          {
+                            "filter": "QUOTE_QTY",
+                            "min": null
+                          },
+                       ]
+                      }
+                    ]
+                  }
+                }
         title: Response
         language: json
 ---

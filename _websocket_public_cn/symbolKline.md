@@ -41,10 +41,10 @@ right_code_blocks:
                             "i": "5m",             // interval 间隔
                             "o": "44000",          // open 开盘价
                             "c": "50000",          // close 收盘价
-                            "h": "52000",           // high 最⾼价
-                            "l": "36000",           // low 最低价
+                            "h": "52000",          // high 最⾼价
+                            "l": "36000",          // low 最低价
                             "q": "34.2",           // qty 成交量
-                            "v": "230000"           // volume 成交额
+                            "v": "230000"          // volume 成交额
                             }
                 }
         title: Response

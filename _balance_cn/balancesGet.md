@@ -24,7 +24,27 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"totalBtcAmount\": 0,\r\n    \"assets\": [    //参数内容参考获取单个币种资产接口\r\n      {        \r\n        \"currency\": \"string\",\r\n        \"currencyId\": 0,\r\n        \"frozenAmount\": 0,\r\n        \"availableAmount\": 0,\r\n        \"totalAmount\": 0,\r\n        \"convertBtcAmount\": 0\r\n      }\r\n    ]\r\n  }\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": {
+                    "totalBtcAmount": 0,
+                    "assets": [    //参数内容参考获取单个币种资产接口
+                      {        
+                        "currency": "string",
+                        "currencyId": 0,
+                        "frozenAmount": 0,
+                        "availableAmount": 0,
+                        "totalAmount": 0,
+                        "convertBtcAmount": 0
+                      }
+                    ]
+                  }
+                }
         title: Response
         language: json
 ---

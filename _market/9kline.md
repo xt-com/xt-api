@@ -57,7 +57,25 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": [\r\n    {\r\n      \"t\": 1662601014832,  //open time\r\n      \"o\": \"30000\", //open price\r\n      \"c\": \"32000\",  //close price\r\n      \"h\": \"35000\",  //highest price\r\n      \"l\": \"25000\",  //lowest price\r\n      \"q\": \"512\",  //transaction quantity\r\n      \"v\": \"15360000\"    //transaction volume\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "rc": 0,
+                  "mc": "string",
+                  "ma": [
+                    {}
+                  ],
+                  "result": [
+                    {
+                      "t": 1662601014832,   //open time
+                      "o": "30000",         //open price
+                      "c": "32000",         //close price
+                      "h": "35000",         //highest price
+                      "l": "25000",         //lowest price
+                      "q": "512",           //transaction quantity
+                      "v": "15360000"       //transaction volume
+                    }
+                  ]
+                }
         title: Response
         language: json
 ---
