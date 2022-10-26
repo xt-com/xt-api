@@ -11,7 +11,7 @@ content_markdown: >-
     GET请求参数放入query Params中，POST请求参数放入request body中
 
 
-    请求头信息请设置为：Content-Type=application/x-www-form-urlencoded
+    请求头信息请设置为：Content-Type=application/json 或者 application/x-www-form-urlencoded
 
 
     对于/public以外开头的请求，需要对请求报文进行签名
