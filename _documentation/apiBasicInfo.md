@@ -11,7 +11,7 @@ content_markdown: >-
     GET request parameters are placed in query Params, POST request parameters are placed in request body
 
 
-    Please set the request header information to：Content-Type=application/json or application/x-www-form-urlencoded
+    Please set the request header information to：Content-Type=application/json
 
 
     For requests that start other than /public, the request message needs to be signed
