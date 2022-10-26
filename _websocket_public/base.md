@@ -12,7 +12,7 @@ parameters:
         default:
         description:
         ranges:
-content_markdown: '**ws://stream.xt-uat.com/public**'
+content_markdown: '**wss://stream.xt.com/public**'
 left_code_blocks:
     -
         code_block:
