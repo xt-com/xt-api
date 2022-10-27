@@ -6,8 +6,6 @@ parameters:
         name:
         content:
 content_markdown: |-
-    **test environment: http://sapi.xt-uat.com**
-    {: .info}
 
     **production environment: https://sapi.xt.com**
     {: .info}

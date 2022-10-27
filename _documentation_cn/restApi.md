@@ -6,8 +6,6 @@ parameters:
         name:
         content:
 content_markdown: |-
-    **测试环境: http://sapi.xt-uat.com**
-    {: .info}
 
     **生产环境: https://sapi.xt.com**
     {: .info}
