@@ -25,7 +25,7 @@ left_code_blocks:
                         "{topic}@{arg},{arg}",    //event
                         "{topic}@{arg}"
                     ], 
-                    "listenKey": "512312356123123123",   //the listener Key, Apply through the /v4/ws-token interface
+                    "listenKey": "512312356123123123",   //the listener Key, Apply through  /v4/ws-token interface
                     "id": "{id}"
                 }
         title: subscribe
@@ -38,7 +38,7 @@ left_code_blocks:
                     "{topic}@{arg},{arg}",    //event
                     "{topic}@{arg}"
                 ], 
-                "listenKey": "512312356123123123",   //the listener Key, Apply through the rest interface
+                "listenKey": "512312356123123123",   //the listener Key, Apply through /v4/ws-token interface
                 "id": "{id}"
             }
         title: unsubscribe
