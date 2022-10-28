@@ -10,6 +10,12 @@ content_markdown: |-
     **production environment: https://sapi.xt.com**
     {: .info}
 
+    Sdks for each language:
+        
+        java : https://github.com/xt-com/xt4-java-demo
+        python : https://github.com/xt-com/xt4-python-demo
+        golang : https://github.com/xt-com/xt4-go-demo        
+
 left_code_blocks:
     -
         code_block:
