@@ -14,7 +14,11 @@ content_markdown: |-
         
         java : https://github.com/xt-com/xt4-java-demo
         python : https://github.com/xt-com/xt4-python-demo
-        golang : https://github.com/xt-com/xt4-go-demo        
+        golang : https://github.com/xt-com/xt4-go-demo    
+
+    Sample request information for each interface：
+        
+        https://github.com/xt-com/xt4-request-demo/blob/master/request-xt.txt
 
 left_code_blocks:
     -
