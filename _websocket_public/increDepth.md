@@ -1,5 +1,5 @@
 ---
-title: Incremental depth (real-time push)
+title: Incremental depth (push every second)
 position_number: 10
 type:
 description: |+

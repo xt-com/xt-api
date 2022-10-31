@@ -1,5 +1,5 @@
 ---
-title: 增量深度(实时推)
+title: 增量深度(1秒推一次)
 position_number: 10
 type:
 description: |+

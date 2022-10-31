@@ -1,5 +1,5 @@
 ---
-title: All ticker(Push per 3 seconds)
+title: All ticker(Push for changes)
 position_number: 12
 type:
 description: |+
