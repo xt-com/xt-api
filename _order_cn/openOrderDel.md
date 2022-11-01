@@ -27,7 +27,7 @@ parameters:
         default:
         description: BUY-买,SELL-卖
         ranges:
-content_markdown:
+content_markdown: 注意：参数以json形式放在body中
 left_code_blocks:
     -
         code_block:

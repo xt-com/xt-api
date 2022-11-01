@@ -19,7 +19,7 @@ parameters:
         default:
         description: [6216559590087220004,6216559590087220005]
         ranges:
-content_markdown:
+content_markdown: Note: The parameters are placed in the body in the form of json
 left_code_blocks:
     -
         code_block: |-
