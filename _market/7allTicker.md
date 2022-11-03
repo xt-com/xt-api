@@ -1,5 +1,5 @@
 ---
-title: All ticker
+title: Full ticker
 position_number: 7
 type: get
 description: /v4/public/ticker
