@@ -18,6 +18,13 @@ parameters:
         default:
         description: 'Collection of trading pairs. Priority is higher than symbol. eg: btc_usdt,eth_usdt'
         ranges:
+    -
+        name: tags
+        type: string
+        mandatory: false
+        default:
+        description: 'Set of tags, separated by commas, currently only supports spot'
+        ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
 
