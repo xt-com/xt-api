@@ -1,8 +1,8 @@
 ---
-title: Get the best pending order ticker
-position_number: 7
+title: Get latest prices ticker
+position_number: 8
 type: get
-description: /v4/public/ticker/book
+description: /v4/public/ticker/price
 parameters:
     -
         name: symbol
@@ -30,7 +30,11 @@ content_markdown: >-
 
 left_code_blocks:
     -
-        code_block:
+        code_block: |-
+            public String price(){
+
+
+            }
         title: Java
         language: java
     -
@@ -40,21 +44,18 @@ left_code_blocks:
 right_code_blocks:
     -
         code_block: |-
+            {
+              "rc": 0,
+              "mc": "SUCCESS",
+              "ma": [],
+              "result": [
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": [
-                    {
-                      "s": "btc_usdt",      //symbol
-                      "t": 1661856036925,   //time 
-                      "ap": null,           //asks price(sell one price)
-                      "aq": null,           //asks qty(sell one quantity)
-                      "bp": null,           //bids price(buy one price)
-                      "bq": null            //bids qty(buy one quantity)
-                    }
-                  ]
-                }
+                  "s": "btc_usdt",      //symbol
+                  "t": 1661856036925    //time
+                  "p": "9000.0000",     //price
+                  }
+              ]
+            }
         title: Response
         language: json
 ---

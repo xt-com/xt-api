@@ -1,7 +1,8 @@
 ---
 title: Get depth data
-position_number: 10
+position_number: 3
 type: get
+split: -------------------------------------
 description: /v4/public/depth
 parameters:
     -

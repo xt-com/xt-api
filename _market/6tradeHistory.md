@@ -1,6 +1,6 @@
 ---
 title: Query historical transaction list
-position_number: 4
+position_number: 6
 split: -------------------------------------
 type: get
 description: /v4/public/trade/history

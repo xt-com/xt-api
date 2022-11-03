@@ -1,6 +1,6 @@
 ---
 title: 获取最新价格ticker
-position_number: 7
+position_number: 8
 type: get
 description: /v4/public/ticker/price
 parameters:
@@ -17,6 +17,13 @@ parameters:
         mandatory: false
         default:
         description: '交易对集合，优先级高于symbol。 eg: btc_usdt,eth_usdt'
+        ranges:
+    -
+        name: tags
+        type: string
+        mandatory: false
+        default:
+        description: '标签集合,逗号分割，当前仅支持 spot'
         ranges:
 content_markdown: >-
     #### **限流规则**
