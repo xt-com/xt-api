@@ -15,6 +15,7 @@ content_markdown: >-
         java : https://github.com/xt-com/xt4-java-demo
         python : https://github.com/xt-com/xt4-python-demo
         golang : https://github.com/xt-com/xt4-go-demo
+        c# : https://github.com/xt-com/xt4-c--demo
     
     各个接口的请求信息样例
         
