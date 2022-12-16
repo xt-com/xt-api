@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: |-
     1.AUTH_105：服务器在校验请求头参数xt-validate-timestamp(validTimeStamp)、xt-validate-recvwindow（recvwindow）时，
-    需要符合以下规则：dealTimeStamp（请求被处理时服务器时间）- validTimeStamp < recvwindow ，否则就会返回AUTH_105，为了避免此错误，建议xt-validate-timestamp 设置为请求发出的时间，xt-validate-recvwindow设置的大一点
+    需要符合以下规则：dealTimeStamp（请求被处理时服务器时间,单位毫秒）- validTimeStamp < recvwindow ，否则就会返回AUTH_105，为了避免此错误，建议xt-validate-timestamp 设置为请求发出的时间，以毫秒为单位，xt-validate-recvwindow设置的大一点
     
 
 
