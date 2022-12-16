@@ -7,7 +7,7 @@ content:
 content_markdown: |-
     1.AUTH_ 105: The server verifies the request header parameters xt-validate-timestamp (validTimeStamp) and xt-validate-recvwindow (recvwindow)
     The following rules must be followed: dealTimeStamp (server time when the request is processed, in milliseconds) - validTimeStamp < recvwindow, otherwise AUTH_105 will be returned.
-    To avoid this error, xt-validate-timestamp recommends using the time when the request was issued, and it is measured in milliseconds. The xt-validate-recvwindow is set a little larger
+    To avoid this error, xt-validate-timestamp recommends using the time when the request was sent, and it is measured in milliseconds. The xt-validate-recvwindow is set a little larger
     
 
 
