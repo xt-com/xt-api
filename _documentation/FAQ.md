@@ -1,5 +1,5 @@
 ---
-title: Common error code
+title: FAQ
 position_number: 10
 parameters:
 - name:

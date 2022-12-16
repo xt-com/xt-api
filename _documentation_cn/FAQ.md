@@ -1,5 +1,5 @@
 ---
-title: 常见错误
+title: FAQ
 position_number: 10
 parameters:
 - name:
