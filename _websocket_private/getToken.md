@@ -2,7 +2,7 @@
 title: Get token
 position_number: 4
 split: '-------------------------------------'
-type:
+type: post
 description: /v4/ws-token
 parameters:
     -
