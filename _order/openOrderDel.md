@@ -26,7 +26,8 @@ parameters:
         default:
         description: BUY,SELL
         ranges:
-content_markdown: The parameters are placed in the body in the form of json
+content_markdown: |-
+        Note: The parameters should be placed in the request body in the form of json
 left_code_blocks:
     -
         code_block:
