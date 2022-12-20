@@ -25,7 +25,7 @@ left_code_blocks:
                         "{topic}@{arg},{arg}",    //event
                         "{topic}@{arg}"
                     ], 
-                    "listenKey": "512312356123123123",   //监听Key，先通过/v4/ws-token接⼝申请
+                    "listenKey": "512312356123123123",   //监听Key，先通过/v4/ws-token接⼝获取accessToken
                     "id": "{id}"
                 }
         title: 订阅
@@ -38,7 +38,7 @@ left_code_blocks:
                     "{topic}@{arg},{arg}",    //event
                     "{topic}@{arg}"
                 ], 
-                "listenKey": "512312356123123123",   //监听Key，先通过/v4/ws-token接⼝申请
+                "listenKey": "512312356123123123",   //监听Key，先通过/v4/ws-token接⼝获取accessToken
                 "id": "{id}"
             }
         title: 取消订阅
