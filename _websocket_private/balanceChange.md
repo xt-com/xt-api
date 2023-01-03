@@ -30,10 +30,13 @@ right_code_blocks:
                 "topic": "balance", 
                 "event": "balance", 
                 "data": {
+                    "a": "123",           // accountId                     
                     "t": 1656043204763,   // time happened time
                     "c": "btc",           // currency
                     "b": "123",           // balance available balance
-                    "z": "SPOT"           // bizType [SPOT,LEVER]
+                    "f": "11",            // frozen
+                    "z": "SPOT",           // bizType [SPOT,LEVER]
+                    "s": "btc_usdt"       // symbol
                 }
             }
         title: push
