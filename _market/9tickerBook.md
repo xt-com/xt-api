@@ -54,7 +54,7 @@ right_code_blocks:
                   "result": [
                     {
                       "s": "btc_usdt",      //symbol
-                      "t": 1661856036925,   //time 
+                      "t": 1661856036925,   //last updated time 
                       "ap": null,           //asks price(sell one price)
                       "aq": null,           //asks qty(sell one quantity)
                       "bp": null,           //bids price(buy one price)
