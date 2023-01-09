@@ -1,5 +1,5 @@
 ---
-title: ticker(实时推)
+title: ticker(1000ms推送一次)
 position_number: 11
 type:
 description: |+

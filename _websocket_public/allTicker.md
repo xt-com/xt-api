@@ -1,5 +1,5 @@
 ---
-title: All ticker(Push for changes)
+title: All ticker(Push once for 1000ms, only when there are changes)
 position_number: 12
 type:
 description: |+

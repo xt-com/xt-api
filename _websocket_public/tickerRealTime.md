@@ -1,5 +1,5 @@
 ---
-title: ticker(real-time push)
+title: ticker(Push once every 1000ms)
 position_number: 11
 type:
 description: |+

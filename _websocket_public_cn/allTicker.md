@@ -1,5 +1,5 @@
 ---
-title: 所有ticker(有变化才推)
+title: 所有ticker(1000ms推送一次，有变化才推)
 position_number: 12
 type:
 description: |+
