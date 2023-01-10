@@ -42,6 +42,7 @@ content_markdown: |-
     | SYMBOL_002 | 交易对未开盘 |
     | SYMBOL_003 | 交易对暂停交易 |
     | SYMBOL_004 | 此交易对不支持您所在的国家 |
+    | SYMBOL_005 | 该市场不支持通过API进行交易 |
     | ORDER_001 | 平台拒单 |
     | ORDER_002 | 资金不足 |
     | ORDER_003 | 交易对暂停交易 |

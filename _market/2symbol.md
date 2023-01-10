@@ -238,7 +238,8 @@ right_code_blocks:
                         "id": 614,                              //ID
                         "symbol": "btc_usdt",         
                         "state": "ONLINE",                      //symbol state[ONLINE;OFFLINE,DELISTED]
-                        "tradingEnabled": true,           
+                        "tradingEnabled": true,
+                        "openapiEnabled": true,                 //Whether the openapi transaction channel is enable
                         "nextStateTime": null,              
                         "nextState": null,                 
                         "depthMergePrecision": 5,               //Depth Merge Accuracy

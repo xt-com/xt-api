@@ -42,6 +42,7 @@ content_markdown: |-
     | SYMBOL_002 | Symbol offline |
     | SYMBOL_003 | Symbol suspend trading |
     | SYMBOL_004 | Symbol country disallow trading |
+    | SYMBOL_005 | The symbol does not support trading via API |
     | ORDER_001 | Platform rejection |
     | ORDER_002 | insufficient funds |
     | ORDER_003 | Trading Pair Suspended |

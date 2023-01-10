@@ -238,6 +238,7 @@ right_code_blocks:
                         "symbol": "btc_usdt",                       //交易对
                         "state": "ONLINE",                          //交易对状态[ONLINE=上线的;OFFLINE=下线的,DELISTED=退市]
                         "tradingEnabled": true,                     //启用交易
+                        "openapiEnabled": true,                     //启用OPENAPI
                         "nextStateTime": null,                      //下一个状态时间
                         "nextState": null,                          //下一个状态
                         "depthMergePrecision": 5,                   //深度合并精度
