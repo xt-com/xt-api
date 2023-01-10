@@ -54,7 +54,7 @@ right_code_blocks:
                   "result": [
                     {
                       "s": "btc_usdt",      //交易对(symbol)
-                      "t": 1661856036925,   //时间(time) 
+                      "t": 1661856036925,   //最后更新时间(last updated time) 
                       "ap": null,           //asks price(卖一价)
                       "aq": null,           //asks qty(卖一量)
                       "bp": null,           //bids price(买一价)
