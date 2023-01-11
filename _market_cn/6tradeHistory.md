@@ -20,6 +20,13 @@ parameters:
         description: 数量
         ranges: 1，1000
     -
+        name: direction
+        type: string
+        mandatory: true
+        default:
+        description: '查询方向'
+        ranges: 'PREV-上一页,NEXT-下一页'
+    -
         name: fromId
         type: number
         mandatory: false

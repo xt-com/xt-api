@@ -20,6 +20,13 @@ parameters:
         description: 
         ranges: 1，1000
     -
+        name: direction
+        type: string
+        mandatory: true
+        default:
+        description: 'query direction'
+        ranges: 'PREV-previous page,NEXT-next page'
+    -
         name: fromId
         type: number
         mandatory: false
