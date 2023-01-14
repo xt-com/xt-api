@@ -30,7 +30,7 @@ collections:
     title: Balance
     position_number: 5
   deposit_withdrawal:
-    title: Recharge/Withdrawal
+    title: Deposit/Withdrawal
     position_number: 6
   websocket_public:
     title: WEBSOCKET(public)

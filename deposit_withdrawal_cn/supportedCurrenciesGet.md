@@ -1,6 +1,6 @@
 ---
 title: 获取XT可充提的币种
-position_number: 2
+position_number: 1
 type: get
 description: /v4/balance
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: Obtain the supported currencies for deposit and withdrawal by XT
-position_number: 2
+position_number: 1
 type: get
 description: /v4/balance
 parameters:
