@@ -1,5 +1,5 @@
 ---
-title: Transaction record (real-time push)
+title: Trade record
 position_number: 7
 type:
 description: |+
@@ -18,6 +18,8 @@ content_markdown: |-
     format: trade@\{symbol\}
 
     eg: trade@btc\_usdt
+    
+    rate: 1000ms
 left_code_blocks:
     -
         code_block:
