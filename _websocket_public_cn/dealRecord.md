@@ -1,5 +1,5 @@
 ---
-title: 成交记录(实时推)
+title: 成交记录
 position_number: 7
 type:
 description: |+
@@ -18,6 +18,8 @@ content_markdown: |-
     语法: trade@\{symbol\}
 
     示例: trade@btc\_usdt
+    
+    速率: 实时
 left_code_blocks:
     -
         code_block:
