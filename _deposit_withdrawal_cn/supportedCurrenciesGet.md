@@ -2,15 +2,9 @@
 title: 获取XT可充提的币种
 position_number: 1
 type: get
-description: /v4/balance
+description: /openapi/public/support/currency
 parameters:
-    -
-        name: 'currency '
-        type: string
-        mandatory: true
-        default:
-        description: eg:usdt
-        ranges:
+        
 content_markdown:
 left_code_blocks:
     -

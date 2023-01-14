@@ -107,6 +107,11 @@ defaults:
       _hide_content: true
   -
     scope:
+      type: "deposit_withdrawal"
+    values:
+      _hide_content: true
+  -
+    scope:
       type: "websocket_public"
     values:
       _hide_content: true
@@ -135,6 +140,11 @@ defaults:
   -
     scope:
       type: "balance_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "deposit_withdrawal_cn"
     values:
       _hide_content: true
   -
