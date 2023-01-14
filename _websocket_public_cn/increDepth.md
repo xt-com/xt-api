@@ -1,5 +1,5 @@
 ---
-title: 增量深度(1秒推一次)
+title: 增量深度
 position_number: 10
 type:
 description: |+
@@ -18,6 +18,8 @@ content_markdown: |-
     语法: depth\_update@\{symbol\}
 
     示例: depth\_update@btc\_usdt
+    
+    速率：200ms
 left_code_blocks:
     -
         code_block:
@@ -31,7 +33,8 @@ right_code_blocks:
                     "event": "depth_update@btc_usdt", 
                     "data": {
                         "s": "btc_usdt",        // symbol 交易对
-                        "i": 123,               // updateId
+                        "fi": 121,              // firstUpdateId 等于上一次推送的lastUpdateId + 1，如果不连续
+                        "i": 123,               // lastUpdateId
                         "a": [                  // asks 卖盘
                             [                   // [0]价格, [1]数量
                                 "34000",        //价格
