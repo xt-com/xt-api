@@ -1,5 +1,5 @@
 ---
-title: 有限深度(周期推)
+title: 有限深度
 position_number: 9
 type:
 description: |+
@@ -22,6 +22,8 @@ content_markdown: |-
     levels: 5, 10, 20, 50
 
     示例: depth@btc\_usdt,20
+    
+    速率: 1000ms
 left_code_blocks:
     -
         code_block:
@@ -35,6 +37,7 @@ right_code_blocks:
                     "event": "depth@btc_usdt,20", 
                     "data": {
                         "s": "btc_usdt",        // symbol 交易对
+                        "i": 12345678,          // updateId
                         "t": 1657699200000,     // time 时间戳
                         "a": [                  // asks 卖盘
                             [                   //[0]价格, [1]数量
