@@ -1,5 +1,5 @@
 ---
-title: ticker(Push once every 1000ms)
+title: ticker
 position_number: 11
 type:
 description: |+
@@ -18,6 +18,8 @@ content_markdown: |-
     format: ticker@\{symbol\}
 
     eg: ticker@btc\_usdt
+    
+    rate: 1000ms
 left_code_blocks:
     -
         code_block:
