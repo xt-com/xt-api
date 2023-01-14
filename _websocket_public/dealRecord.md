@@ -19,7 +19,7 @@ content_markdown: |-
 
     eg: trade@btc\_usdt
     
-    rate: 1000ms
+    rate: real
 left_code_blocks:
     -
         code_block:
