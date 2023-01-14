@@ -1,5 +1,5 @@
 ---
-title: K-line according to symbol(real-time push) 
+title: K-line according to symbol
 position_number: 8
 type:
 description: |+
@@ -22,6 +22,8 @@ content_markdown: |-
     interval: 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M
 
     eg: kline@btc\_usdt,5m
+    
+    rate: 1000ms
 
     &nbsp;
 left_code_blocks:
