@@ -33,7 +33,7 @@ right_code_blocks:
                     "event": "depth_update@btc_usdt", 
                     "data": {
                         "s": "btc_usdt",        // symbol 交易对
-                        "fi": 121,              // firstUpdateId 等于上一次推送的lastUpdateId + 1，如果不连续
+                        "fi": 121,              // firstUpdateId 等于上一次推送的lastUpdateId + 1
                         "i": 123,               // lastUpdateId
                         "a": [                  // asks 卖盘
                             [                   // [0]价格, [1]数量
