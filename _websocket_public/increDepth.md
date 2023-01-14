@@ -1,5 +1,5 @@
 ---
-title: Incremental depth (push every second)
+title: Incremental depth
 position_number: 10
 type:
 description: |+
@@ -18,6 +18,8 @@ content_markdown: |-
     format: depth\_update@\{symbol\}
 
     eg: depth\_update@btc\_usdt
+    
+    rate:  200ms
 left_code_blocks:
     -
         code_block:
@@ -31,7 +33,8 @@ right_code_blocks:
                     "event": "depth_update@btc_usdt", 
                     "data": {
                         "s": "btc_usdt",        // symbol
-                        "i": 123,               // updateId
+                        "fi": 121,              // firstUpdateId = previous lastUpdateId + 1
+                        "i": 123,               // lastUpdateId
                         "a": [                  // asks  sell order
                             [                   // [0]price, [1]quantity
                                 "34000",        //price
