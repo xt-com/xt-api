@@ -29,33 +29,39 @@ collections:
   balance:
     title: Balance
     position_number: 5
+  deposit_withdrawal:
+    title: Recharge/Withdrawal
+    position_number: 6
   websocket_public:
     title: WEBSOCKET(public)
-    position_number: 6
+    position_number: 7
   websocket_private:
     title: WEBSOCKET(private)
-    position_number: 7
+    position_number: 8
   documentation_cn:
     title: 接入说明
-    position_number: 8
+    position_number: 9
   market_cn:
     title: 市场数据
-    position_number: 9
+    position_number: 10
   order_cn:
     title: 订单
-    position_number: 10
+    position_number: 11
   trade_cn:
     title: 成交
-    position_number: 11
+    position_number: 12
   balance_cn:
     title: 资产
-    position_number: 12
+    position_number: 13
+  deposit_withdrawal_cn:
+    title: 充值/提现
+    position_number: 14
   websocket_public_cn:
     title: WEBSOCKET(public)
-    position_number: 13
+    position_number: 15
   websocket_private_cn:
     title: WEBSOCKET(private)
-    position_number: 14
+    position_number: 16
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
