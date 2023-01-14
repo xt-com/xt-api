@@ -1,5 +1,5 @@
 ---
-title: All ticker(Push once for 1000ms, only when there are changes)
+title: All ticker
 position_number: 12
 type:
 description: |+
@@ -16,6 +16,8 @@ content_markdown: |-
     **request**
 
     format: tickers
+    
+    rate: 1000ms, only when there are changes
 left_code_blocks:
     -
         code_block:
