@@ -1,5 +1,5 @@
 ---
-title: 所有ticker(1000ms推送一次，有变化才推)
+title: 所有ticker
 position_number: 12
 type:
 description: |+
@@ -16,6 +16,8 @@ content_markdown: |-
     **请求**
 
     语法: tickers
+    
+    速率: 1000ms，(只推送有变化部分)
 left_code_blocks:
     -
         code_block:
