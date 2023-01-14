@@ -1,5 +1,5 @@
 ---
-title: 按symbol的K线
+title: K线
 position_number: 8
 type:
 description: |+
