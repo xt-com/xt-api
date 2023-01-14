@@ -1,5 +1,5 @@
 ---
-title: ticker(1000ms推送一次)
+title: ticker
 position_number: 11
 type:
 description: |+
@@ -18,6 +18,8 @@ content_markdown: |-
     语法: ticker@\{symbol\}
 
     示例: ticker@btc\_usdt
+    
+    速率: 1000ms
 left_code_blocks:
     -
         code_block:
