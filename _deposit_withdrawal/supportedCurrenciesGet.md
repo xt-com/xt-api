@@ -1,16 +1,11 @@
 ---
-title: Obtain the supported currencies for deposit and withdrawal by XT
+title: Get the supported currencies for deposit or withdrawal
 position_number: 1
 type: get
-description: /v4/balance
+description: /openapi/public/support/currency
 parameters:
-    -
-        name: 'currency '
-        type: string
-        mandatory: true
-        default:
-        description: eg:usdt
-        ranges:
+    
+        
 content_markdown:
 left_code_blocks:
     -
@@ -30,14 +25,33 @@ right_code_blocks:
                   "ma": [
                     {}
                   ],
-                  "result": {
-                    "currency": "usdt",     //币种
-                    "currencyId": 0,        //币种ID
-                    "frozenAmount": 0,      //冻结数量
-                    "availableAmount": 0,   //可用数量
-                    "totalAmount": 0,       //总数量
-                    "convertBtcAmount": 0   //折算BTC数量
-                  }
+                  "result": [
+                    {
+                        "currency": "string",
+                        "supportChains": [
+                            {
+                                "chain": "Bitcon",     //Supported Transfer Networks
+                                "depositEnabled": true,     //deposit is supported or not
+                                "withdrawEnabled": true     //withdraw is supported or not
+                            }
+                            {
+                                "chain": "FIO",
+                                "depositEnabled": true,
+                                "withdrawEnabled": true
+                            }
+                        ]           
+                    },
+                    {
+                        "currency": "string",
+                        "supportChains": [
+                            {
+                                "chain": "Ethereum",
+                                "depositEnabled": true,
+                                "withdrawEnabled": true
+                            }
+                        ]
+                    }
+                  ]
                 }
         title: Response
         language: json
