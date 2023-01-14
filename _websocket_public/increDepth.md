@@ -19,7 +19,7 @@ content_markdown: |-
 
     eg: depth\_update@btc\_usdt
     
-    rate:  200ms
+    rate:  100ms
 left_code_blocks:
     -
         code_block:
