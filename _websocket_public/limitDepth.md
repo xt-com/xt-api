@@ -1,5 +1,5 @@
 ---
-title: Limited depth (cycle push)
+title: Limited depth
 position_number: 9
 type:
 description: |+
@@ -22,6 +22,8 @@ content_markdown: |-
     levels: 5, 10, 20, 50
 
     eg: depth@btc\_usdt,20
+    
+    rate: 1000ms
 left_code_blocks:
     -
         code_block:
