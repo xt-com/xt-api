@@ -33,7 +33,7 @@ right_code_blocks:
                         "currency": "string",
                         "supportChains": [
                             {
-                                "chain": "Bitcon",     //Supported Transfer Networks
+                                "chain": "Bitcon",     //Supported Transfer Network
                                 "depositEnabled": true,     //deposit is supported or not
                                 "withdrawEnabled": true     //withdraw is supported or not
                             }
