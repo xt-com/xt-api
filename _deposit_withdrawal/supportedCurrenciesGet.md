@@ -2,7 +2,7 @@
 title: Get the supported currencies for deposit or withdrawal
 position_number: 1
 type: get
-description: /openapi/public/support/currency
+description: /v4/public/wallet/support/currency
 parameters:
     
         
