@@ -5,8 +5,11 @@ type: get
 description: /openapi/public/support/currency
 parameters:
     
-        
-content_markdown:
+
+content_markdown: >-
+    #### **备注**
+
+    currency  、chain 字段需要在后续充值/提现接口中使用
 left_code_blocks:
     -
         code_block:

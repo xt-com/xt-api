@@ -6,7 +6,10 @@ description: /openapi/public/support/currency
 parameters:
     
         
-content_markdown:
+content_markdown: >-
+    #### **Remark**
+
+    The currency and chain in the response need to be used in other deposit/withdrawal API
 left_code_blocks:
     -
         code_block:
