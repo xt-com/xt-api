@@ -90,16 +90,16 @@ right_code_blocks:
                     {}
                   ],
                   "result": {
-                    "hasPrev": true,     //Is there a previous page
-                    "hasNext": true,     //Is there a next page
+                    "hasPrev": true,            //Is there a previous page
+                    "hasNext": true,            //Is there a next page
                     "items": [
                       {
-                         "id": 169669597,   //Unique ID of the deposit record
+                         "id": 169669597,       //Unique ID of the deposit record
                          "currency": "xlm2",    //Currency name
-                         "chain": "XLM",    //Transfer Network
+                         "chain": "XLM",        //Transfer Network
                          "memo": "441824256",   //memo
                          "status": "SUCCESS",   //The status of deposit
-                         "amount": "0.1",   //Deposit amount
+                         "amount": "0.1",       //Deposit amount
                          "confirmations": 12,   //Number of block confirmations
                          "transactionId": "28dd15b5c119e00886517f129e5e1f8283f0286b277bcd3cd1f95f7fd4a1f7fc",   //Unique ID of transaction
                          "address": "GBY6UIYEYLAAXRQXVO7X5I4BSSCS54EAHTUILXWMW6ONPM3PNEA3LWEC",     //Target address of deposit

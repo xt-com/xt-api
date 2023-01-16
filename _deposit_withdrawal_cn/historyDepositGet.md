@@ -90,16 +90,16 @@ right_code_blocks:
                     {}
                   ],
                   "result": {
-                    "hasPrev": true,     //是否有上一页
-                    "hasNext": true,     //是否有下一页
+                    "hasPrev": true,            //是否有上一页
+                    "hasNext": true,            //是否有下一页
                     "items": [
                       {
-                         "id": 169669597,   //提现记录id
+                         "id": 169669597,       //提现记录id
                          "currency": "xlm2",    //币种名称
-                         "chain": "XLM",    //转账网络名称
+                         "chain": "XLM",        //转账网络名称
                          "memo": "441824256",   //memo
                          "status": "SUCCESS",   //充值状态
-                         "amount": "0.1",   //充值金额
+                         "amount": "0.1",       //充值金额
                          "confirmations": 12,   //区块确认数
                          "transactionId": "28dd15b5c119e00886517f129e5e1f8283f0286b277bcd3cd1f95f7fd4a1f7fc",   //交易哈希
                          "address": "GBY6UIYEYLAAXRQXVO7X5I4BSSCS54EAHTUILXWMW6ONPM3PNEA3LWEC",     //充值目标地址
