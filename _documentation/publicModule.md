@@ -18,9 +18,9 @@ content_markdown: >-
     | FAIL | The deposit or withdraw failed. |
     | CANCEL | The deposit or withdraw has been canceled by the user. |
 
-  #### **<span id="orderStatus">Order status</span>**
+  #### **<span id="orderStatus">Order state</span>**
 
-    | Status | Description |
+    | State | Description |
     | --- | --- |
     | NEW | The order has been accepted by the engine. |
     | PARTIALLY_FILLED | A part of the order has been filled. |
@@ -28,6 +28,14 @@ content_markdown: >-
     | CANCELED | The order has been canceled by the user. |
     | REJECTED | The order was not accepted by the engine and not processed. |
     | EXPIRED | The order has expired (e.g. Order canceled due to timeout or canceled due to premium) |   
+
+  #### **<span id="symbolStatuCn">Symbol state</span>**
+
+    | State | Description |
+    | --- | --- |
+    | ONLINE | The symbol is online |
+    | OFFLINE | The symbol is offline |
+    | DELISTED | The symbol has been delisted |
   
 
 left_code_blocks:

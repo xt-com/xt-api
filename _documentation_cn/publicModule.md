@@ -28,6 +28,14 @@ content_markdown: >-
     | CANCELED | 用户撤单 |
     | REJECTED | 下单失败 |
     | EXPIRED | 过期(time_in_force撤单或溢价撤单) |
+
+  #### **<span id="symbolStatuCn">交易对状态及含义</span>**
+
+    | state | 说明 |
+    | --- | --- |
+    | ONLINE | 上线的 |
+    | OFFLINE | 下线的 |
+    | DELISTED | 退市的 |
   
 
 left_code_blocks:
