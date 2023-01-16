@@ -17,7 +17,7 @@ content_markdown: |-
         **How to manage a local order book correctly**
         
 
-        1.Open a stream to wss://stream.xt.com/public,depth_update@btc_usdt
+        1.Open a stream to wss://stream.xt.com/public , depth_update@btc_usdt
 
 
         2.Buffer the events you receive from the stream.
@@ -47,7 +47,7 @@ content_markdown: |-
         Note: Due to depth snapshots having a limit on the number of price levels, a price level outside of the initial snapshot that doesn't have a quantity change won't have an update in the Diff. 
         Depth Stream. Consequently, those price levels will not be visible in the local order book even when applying all updates from the Diff. 
         Depth Stream correctly and cause the local order book to have some slight differences with the real order book. However, 
-        for most use cases the depth limit of 5000 is enough to understand the market and trade effectively.
+        for most use cases the depth limit of 500 is enough to understand the market and trade effectively.
             
 left_code_blocks:
     -

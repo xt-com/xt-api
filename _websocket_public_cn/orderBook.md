@@ -17,7 +17,7 @@ content_markdown: |-
         **如何正确在本地维护一个orderbook副本**
         
 
-        1.订阅 wss://stream.xt.com/public,depth_update@btc_usdt
+        1.订阅 wss://stream.xt.com/public，depth_update@btc_usdt
 
 
         2.开始缓存收到的更新。同一个价位，后收到的更新覆盖前面的。
@@ -42,7 +42,7 @@ content_markdown: |-
 
 
         注意: 因为深度快照对价格档位数量有限制，初始快照之外的价格档位并且没有数量变化的价格档位不会出现在增量深度的更新信息内。因此，即使应用来自增量深度的所有更新，这些价格档位也不会在本地 order book 中可见，
-        所以本地的 order book 与真实的 order book 可能会有一些差异。 不过对于大多数用例，5000 的深度限制足以有效地了解市场和交易。
+        所以本地的 order book 与真实的 order book 可能会有一些差异。 不过对于大多数用例，500 的深度限制足以有效地了解市场和交易。
             
 left_code_blocks:
     -
