@@ -1,6 +1,6 @@
 ---
-title: API enum parameter description
-position_number: 10
+title: Public module
+position_number: 9
 parameters:
 - name:
 content:
