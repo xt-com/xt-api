@@ -1,6 +1,6 @@
 ---
 title: FAQ
-position_number: 10
+position_number: 12
 parameters:
 - name:
 content:
