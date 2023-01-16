@@ -23,7 +23,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 充值记录的状态，含义见接口备注
+        description: 充值记录的<a href="#depositWithdrawStatusCn">状态</a>
         ranges: SUBMIT、REVIEW、AUDITED、PENDING、SUCCESS、FAIL、CANCEL
     -
         name: fromId
@@ -61,15 +61,7 @@ parameters:
         description: 查询范围结束边界，毫秒级时间戳
         ranges:
 
-content_markdown: |-
-    #### **备注**
-
-    充值记录状态描述
-
-    * <font size=3>PENDING: 已上链</font>
-    * <font size=3>SUCCESS: 完成</font>
-    * <font size=3>FAIL: 失败</font>
-    * <font size=3>CANCEL: 已取消</font>
+content_markdown: 
 
 left_code_blocks:
     -

@@ -23,7 +23,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: The status of deposit. for details, refer to the interface notes
+        description: The <a href="#depositWithdrawStatus">status</a> of deposit
         ranges: SUBMIT、REVIEW、AUDITED、PENDING、SUCCESS、FAIL、CANCEL
     -
         name: fromId
@@ -61,15 +61,7 @@ parameters:
         description: End time used for filtering deposit list, timestamp in milliseconds
         ranges:
 
-content_markdown: |-
-    #### **Remark**
-
-    The status of deposit status description
-
-    * <font size=3>PENDING: Deposit has been created</font>
-    * <font size=3>SUCCESS: Successfully deposit</font>
-    * <font size=3>FAIL: Deposit failed</font>
-    * <font size=3>CANCEL: Cancel deposit</font>
+content_markdown: 
 
 left_code_blocks:
     -
