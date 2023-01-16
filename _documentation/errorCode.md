@@ -60,6 +60,42 @@ content_markdown: |-
     | ORDER_F0501 | Trigger PROTECTION_LIMIT Filter - Buy Max Deviation |
     | ORDER_F0502 | Trigger PROTECTION_LIMIT Filter - Sell Max Deviation |
     | ORDER_F0601 | Trigger PROTECTION_MARKET Filter |
+    | COMMON_001  | The user does not exist |
+    | COMMON_002  | System busy, please try it later |
+    | COMMON_003  | Operation failed, please try it later |
+    | CURRENCY_001  | Information of currency is abnormal |
+    | DEPOSIT_001  | Deposit is not open |
+    | DEPOSIT_002  | The current account security level is low, please bind any two security verifications in mobile phone/email/Google Authenticator before deposit |
+    | DEPOSIT_003  | The format of address is incorrect, please enter again |
+    | DEPOSIT_004  | The address is already exists, please enter again |
+    | DEPOSIT_005  | Can not find the address of offline wallet |
+    | DEPOSIT_006  | No deposit address, please try it later |
+    | DEPOSIT_007  | Address is being generated, please try it later |
+    | DEPOSIT_008  | Deposit is not available |
+    | WITHDRAW_001  | Withdraw is not open |
+    | WITHDRAW_002  | The withdrawal address is invalid |
+    | WITHDRAW_003  | The current account security level is low, please bind any two security verifications in mobile phone/email/Google Authenticator before withdraw |
+    | WITHDRAW_004  | The withdrawal address is not added |
+    | WITHDRAW_005  | The withdrawal address cannot be empty |
+    | WITHDRAW_006  | Memo cannot be empty |
+    | WITHDRAW_008  | Risk control is triggered, withdraw of this currency is not currently supported |
+    | WITHDRAW_009  | Withdraw failed, some assets in this withdraw are restricted by T+1 withdraw |
+    | WITHDRAW_010  | The precision of withdrawal is invalid |
+    | WITHDRAW_011  | free balance is not enough |
+    | WITHDRAW_012  | Withdraw failed, your remaining withdrawal limit today is not enough |
+    | WITHDRAW_013  | Withdraw failed, your remaining withdrawal limit today is not enough, the withdrawal amount can be increased by completing a higher level of real-name authentication |
+    | WITHDRAW_014  | This withdrawal address cannot be used in the internal transfer function, please cancel the internal transfer function before submitting |
+    | WITHDRAW_015  | The withdrawal amount is not enough to deduct the handling fee |
+    | WITHDRAW_016  | This withdrawal address is already exists |
+    | WITHDRAW_017  | This withdrawal has been processed and cannot be canceled |
+    | WITHDRAW_018  | Memo must be a number |
+    | WITHDRAW_019  | Memo is incorrect, please enter again |
+    | WITHDRAW_020  | Your withdrawal amount has reached the upper limit for today, please try it tomorrow |
+    | WITHDRAW_021  | Your withdrawal amount has reached the upper limit for today, you can only withdraw up to {0} this time |
+    | WITHDRAW_022  | Withdrawal amount must be greater than {0} |
+    | WITHDRAW_023  | Withdrawal amount must be less than {0} |
+    | WITHDRAW_024  | Withdraw is not supported |
+    | WITHDRAW_025  | Please create a FIO address in the deposit page  |
 left_code_blocks:
 - code_block:
   title:

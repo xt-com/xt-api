@@ -1,5 +1,5 @@
 ---
-title: Get the supported currencies for deposit or withdrawal
+title: Get information of currencies (available for deposit and withdraw)
 position_number: 1
 type: get
 description: /v4/public/wallet/support/currency
