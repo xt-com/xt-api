@@ -39,7 +39,7 @@ parameters:
         mandatory: false
         default:
         description: >-
-            订单状态
+            订单<a href="#orderStatusCn">状态</a>
             NEW-新建,PARTIALLY_FILLED-部分成交,FILLED-全部成交,CANCELED-用户撤单,REJECTED-下单失败,EXPIRED-过期(time_in_force撤单或溢价撤单)
         ranges:
     -

@@ -6,7 +6,6 @@ parameters:
 content:
 content_markdown: >-
   #### **<span id="depositWithdrawStatusCn">充值/提现记录状态码及含义</span>**
-  
 
 
     | status | 说明 |
@@ -18,7 +17,17 @@ content_markdown: >-
     | SUCCESS | 完成 |
     | FAIL | 失败 |
     | CANCEL | 已取消 |
-    
+
+  #### **<span id="orderStatusCn">订单状态码及含义</span>**
+
+    | status | 说明 |
+    | --- | --- |
+    | NEW | 新建 |
+    | PARTIALLY_FILLED | 部分成交 |
+    | FILLED | 全部成交 |
+    | CANCELED | 用户撤单 |
+    | REJECTED | 下单失败 |
+    | EXPIRED | 过期(time_in_force撤单或溢价撤单) |
   
 
 left_code_blocks:

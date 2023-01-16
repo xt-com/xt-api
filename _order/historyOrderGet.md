@@ -37,7 +37,7 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: PARTIALLY_FILLED,FILLED,CANCELED,REJECTED,EXPIRED
+        description: order <a href="#orderStatus">state</a>, PARTIALLY_FILLED,FILLED,CANCELED,REJECTED,EXPIRED
         ranges:
     -
         name: fromId
