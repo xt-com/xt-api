@@ -36,6 +36,16 @@ content_markdown: >-
     | ONLINE | The symbol is online |
     | OFFLINE | The symbol is offline |
     | DELISTED | The symbol has been delisted |
+
+  #### **<span id="timeInForces">有效方式及含义</span>**
+    This sets how long an order will be active before expiration.
+
+    | TimeInForces | Description |
+    | --- | --- |
+    | GTC | It remains valid until the transaction is concluded. |
+    | IOC | ancel the part that cannot be transacted immediately (taking orders) |
+    | FOK | Cancellation if all transactions cannot be completed immediately |
+    | GTX | Revoke if unable to become a pending party |
   
 
 left_code_blocks:

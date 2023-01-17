@@ -8,7 +8,7 @@ content_markdown: >-
   #### **<span id="depositWithdrawStatusCn">充值/提现记录状态码及含义</span>**
 
 
-    | status | 说明 |
+    | Status | 说明 |
     | --- | --- |
     | SUBMIT | 提现: 未冻结 |
     | REVIEW | 提现: 已冻结,待审核 |
@@ -20,7 +20,7 @@ content_markdown: >-
 
   #### **<span id="orderStatusCn">订单状态码及含义</span>**
 
-    | status | 说明 |
+    | State | 说明 |
     | --- | --- |
     | NEW | 新建 |
     | PARTIALLY_FILLED | 部分成交 |
@@ -31,11 +31,21 @@ content_markdown: >-
 
   #### **<span id="symbolStatuCn">交易对状态及含义</span>**
 
-    | state | 说明 |
+    | State | 说明 |
     | --- | --- |
     | ONLINE | 上线的 |
     | OFFLINE | 下线的 |
     | DELISTED | 退市的 |
+
+  #### **<span id="timeInForcesCn">有效方式及含义</span>**
+    这里定义了订单多久能够失效
+
+    | TimeInForces | 说明 |
+    | --- | --- |
+    | GTC | 成交为止,一直有效 |
+    | IOC | 无法立即成交(吃单)的部分就撤销 |
+    | FOK | 无法全部立即成交就撤销 |
+    | GTX | 无法成为挂单方就撤销 |
   
 
 left_code_blocks:
