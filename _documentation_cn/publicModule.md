@@ -5,20 +5,8 @@ parameters:
 - name:
 content:
 content_markdown: >-
-  #### **<span id="depositWithdrawStatusCn">充值/提现记录状态码及含义</span>**
-
-
-    | Status | 说明 |
-    | --- | --- |
-    | SUBMIT | 提现: 未冻结 |
-    | REVIEW | 提现: 已冻结,待审核 |
-    | AUDITED | 提现: 已审核,发送钱包,待上链 |
-    | PENDING | 充值/提现: 已上链 |
-    | SUCCESS | 完成 |
-    | FAIL | 失败 |
-    | CANCEL | 已取消 |
-
   #### **<span id="orderStatusCn">订单状态码及含义</span>**
+
 
     | State | 说明 |
     | --- | --- |
@@ -53,6 +41,19 @@ content_markdown: >-
     | IOC | 无法立即成交(吃单)的部分就撤销 |
     | FOK | 无法全部立即成交就撤销 |
     | GTX | 无法成为挂单方就撤销 |
+
+  #### **<span id="depositWithdrawStatusCn">充值/提现记录状态码及含义</span>**
+
+
+    | Status | 说明 |
+    | --- | --- |
+    | SUBMIT | 提现: 未冻结 |
+    | REVIEW | 提现: 已冻结,待审核 |
+    | AUDITED | 提现: 已审核,发送钱包,待上链 |
+    | PENDING | 充值/提现: 已上链 |
+    | SUCCESS | 完成 |
+    | FAIL | 失败 |
+    | CANCEL | 已取消 |
   
 
 left_code_blocks:

@@ -5,20 +5,8 @@ parameters:
 - name:
 content:
 content_markdown: >-
-  #### **<span id="depositWithdrawStatus">Deposit/Withdraw status</span>**
-
-
-    | Status | Description |
-    | --- | --- |
-    | SUBMIT | The withdrawal amount is not frozen. |
-    | REVIEW | The withdrawal amount has been frozen and is pending review. |
-    | AUDITED | The withdraw has been reviewed and is ready to on-chaining. |
-    | PENDING | The deposit or withdraw is already on-chaining.  |
-    | SUCCESS | The deposit or withdraw is success. |
-    | FAIL | The deposit or withdraw failed. |
-    | CANCEL | The deposit or withdraw has been canceled by the user. |
-
   #### **<span id="orderStatus">Order state</span>**
+
 
     | State | Description |
     | --- | --- |
@@ -53,6 +41,19 @@ content_markdown: >-
     | IOC | ancel the part that cannot be transacted immediately (taking orders) |
     | FOK | Cancellation if all transactions cannot be completed immediately |
     | GTX | Revoke if unable to become a pending party |
+
+  #### **<span id="depositWithdrawStatus">Deposit/Withdraw status</span>**
+
+
+    | Status | Description |
+    | --- | --- |
+    | SUBMIT | The withdrawal amount is not frozen. |
+    | REVIEW | The withdrawal amount has been frozen and is pending review. |
+    | AUDITED | The withdraw has been reviewed and is ready to on-chaining. |
+    | PENDING | The deposit or withdraw is already on-chaining.  |
+    | SUCCESS | The deposit or withdraw is success. |
+    | FAIL | The deposit or withdraw failed. |
+    | CANCEL | The deposit or withdraw has been canceled by the user. |
   
 
 left_code_blocks:
