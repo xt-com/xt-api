@@ -2,7 +2,6 @@
 title: Subscription parameters
 position_number: 6
 type:
-split: -------------------------------------
 description: |+
 
 parameters:
