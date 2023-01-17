@@ -37,7 +37,7 @@ content_markdown: >-
     | OFFLINE | The symbol is offline |
     | DELISTED | The symbol has been delisted |
 
-  #### **<span id="timeInForces">有效方式及含义</span>**
+  #### **<span id="timeInForces">Time in force</span>**
     This sets how long an order will be active before expiration.
 
     | TimeInForces | Description |
