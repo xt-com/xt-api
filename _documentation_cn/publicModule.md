@@ -29,6 +29,13 @@ content_markdown: >-
     | REJECTED | 下单失败 |
     | EXPIRED | 过期(time_in_force撤单或溢价撤单) |
 
+  #### **<span id="orderTypeCn">订单类型及含义</span>**
+
+    | Type | 说明 |
+    | --- | --- |
+    | LIMIT | 限价单 |
+    | MARKET | 市价单 |
+
   #### **<span id="symbolStatuCn">交易对状态及含义</span>**
 
     | State | 说明 |

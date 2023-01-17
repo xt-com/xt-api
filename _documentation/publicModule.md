@@ -27,7 +27,14 @@ content_markdown: >-
     | FILLED | The order has been completed. |
     | CANCELED | The order has been canceled by the user. |
     | REJECTED | The order was not accepted by the engine and not processed. |
-    | EXPIRED | The order has expired (e.g. Order canceled due to timeout or canceled due to premium) |   
+    | EXPIRED | The order has expired (e.g. Order canceled due to timeout or canceled due to premium) |  
+
+  #### **<span id="orderType">Order type</span>**
+
+    | Type | Description |
+    | --- | --- |
+    | LIMIT | Limit price order |
+    | MARKET | Market price order |
 
   #### **<span id="symbolStatuCn">Symbol state</span>**
 
