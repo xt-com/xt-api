@@ -3,7 +3,7 @@ title: API Docs
 ---
 <div id="index_en">
 	{% assign sorted_collections = site.collections | sort: "position_number" %}
-	{% for collection in sorted_collections limit:8 %}
+	{% for collection in sorted_collections limit:9 %}
 	{% assign sorted_docs = collection.docs | sort: "position_number" %}
 	{% for doc in sorted_docs %}
 	<section class="doc-content">
@@ -71,7 +71,7 @@ title: API Docs
 
 <div id="index_cn">
 	{% assign sorted_collections = site.collections | sort: "position_number" %}
-	{% for collection in sorted_collections offset:8 limit:8 %}
+	{% for collection in sorted_collections offset:9 limit:9 %}
 	{% assign sorted_docs = collection.docs | sort: "position_number" %}
 	{% for doc in sorted_docs %}
 	<section class="doc-content">
