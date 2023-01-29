@@ -5,7 +5,8 @@ parameters:
 - name:
 content:
 content_markdown: |-
-  XT API Telegram Group: [XT API Support Group](https://t.me/XT_api)
+  XT API Telegram Group: [XT API Support Group](https://t.me/XT_api)<br />
+  XT API Ticket： [Create API Ticket](https://xtsupport.zendesk.com/hc/zh-cn/requests/new?ticket_form_id=14988676408857)
   * <font size=3>For any general questions about the API not covered in the documentation.</font>
   * <font size=3>For any MM questions</font>
 
