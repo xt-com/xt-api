@@ -1,17 +1,3 @@
-<header>
-    <h1>
-        <button type="button" class="open-nav" id="open-nav"></button>
-        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
-    </h1>
-
-    <form action="{{ site.baseurl }}/search/" method="get">
-        <input type="text" name="q" id="search-input" placeholder="Search">
-        <input type="submit" value="Search" style="display: none;">
-    </form>
-    <div class="sidebar_en">{% include sidebar_en.html %}</div>
-    <div class="sidebar_cn">{% include sidebar_cn.html %}</div>
-</header>
-
 <div class="index_en">
     {% assign sorted_collections = site.collections | sort: "position_number" %}
     {% for collection in sorted_collections %}
