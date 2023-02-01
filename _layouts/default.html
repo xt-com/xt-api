@@ -68,6 +68,7 @@
 			window.lang = "en";
 
 			$("#futures_content").hide();
+			$("#futures_search").hide();
 			$("#futures_sidebar").hide();
 
             $(".index_cn").hide();
@@ -78,8 +79,10 @@
 			// 展示现货
 			$(".show_spot").click(function (){
 				$("#spot_content").show();
+				$("#spot_search").show();
 				$("#spot_sidebar").show();
 				$("#futures_content").hide();
+				$("#futures_search").hide();
 				$("#futures_sidebar").hide();
 				$(".show_spot").addClass("active-type");
 				$(".show_futures").removeClass("active-type");
@@ -87,8 +90,10 @@
 			// 展示合约
 			$(".show_futures").click(function (){
 				$("#spot_content").hide();
+				$("#spot_search").hide();
 				$("#spot_sidebar").hide();
 				$("#futures_content").show();
+				$("#futures_search").show();
 				$("#futures_sidebar").show();
 				$(".show_futures").addClass("active-type");
 				$(".show_spot").removeClass("active-type");
