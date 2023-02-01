@@ -2,7 +2,7 @@
 title: Push message format
 position_number: 4
 type:
-description: |+
+description: 
 
 parameters:
     -

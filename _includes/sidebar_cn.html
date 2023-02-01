@@ -1,7 +1,7 @@
 <div id="sidebar" class="sidebar">
 	{% assign sorted_collections = site.collections | sort: "position_number" %}
-	{% for collection in sorted_collections offset:9 limit:9 %}
-		{% if collection.label != "posts" %}
+	{% for collection in sorted_collections %}
+		{% if collection.label != "posts" and collection.type=="spot" and collection.language=="cn" %}
 		<section>
 			<h6>{{ collection.title }}</h6>
 			<ul>

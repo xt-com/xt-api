@@ -4,11 +4,24 @@ sitemap: false
 permalink: /search/
 ---
 
-<div class="search-page">
-	<h2>Search Results</h2>
+<!--现货-->
+<div id="spot_search">
+	<div class="search-page">
+		<h2>Search Results</h2>
 
-	<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
-	<ul id="search-results"></ul>
+		<p><span id="spot-search-process">Loading</span> results <span id="spot-search-query-container" style="display: none;">for "<strong id="spot-search-query"></strong>"</span></p>
+		<ul id="spot-search-results"></ul>
+	</div>
+</div>
+
+<!--合约-->
+<div id="futures_search">
+	<div class="search-page">
+		<h2>Search Results</h2>
+
+		<p><span id="futures-search-process">Loading</span> results <span id="futures-search-query-container" style="display: none;">for "<strong id="futures-search-query"></strong>"</span></p>
+		<ul id="futures-search-results"></ul>
+	</div>
 </div>
 
 <script>
@@ -24,7 +37,7 @@ permalink: /search/
 							"title": "{{ item.title | xml_escape }}",
 							"category": "{{ collection.label | xml_escape }}",
 							"description": "{{item.description | xml_escape }}",
-		  				"type": "{{item.type | xml_escape}}",
+		  					"type": "{{item.type | xml_escape}}",
 							"url": "{{ site.baseurl }}/#{{ item.id | replace: '/', '' | replace: '.', '' | xml_escape }}",
 							"content": {{ item.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
 						}

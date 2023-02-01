@@ -56,24 +56,35 @@
 	}
 
 	function displaySearchResults(results, query) {
-		var searchResultsEl = document.getElementById("search-results"),
-			searchProcessEl = document.getElementById("search-process");
+		var spotSearchResultsEl = document.getElementById("spot-search-results"),
+			futuresSearchResultsEl = document.getElementById("futures-search-results"),
+			spotSearchProcessEl = document.getElementById("spot-search-process"),
+			futuresSearchProcessEl = document.getElementById("futures-search-process");
 
 		if (results.length) {
-			var resultsHTML = "";
+			var spotResultsHTML = "";
+			var futuresResultsHTML = "";
 			results.forEach(function (result) {
 				var item = window.data[result.ref],
 					contentPreview = getPreview(query, item.content, 170),
 					titlePreview = getPreview(query, item.title);
 
-				resultsHTML += "<li><h4><a href='" + item.url + "'>" + titlePreview + "</a></h4><p><small>" + contentPreview + "</small></p></li>";
+				if(item.category.indexOf("futures_") == 0){
+					futuresResultsHTML += "<li><h4><a href='" + item.url + "'>" + titlePreview + "</a></h4><p><small>" + contentPreview + "</small></p></li>";
+				} else {
+					spotResultsHTML += "<li><h4><a href='" + item.url + "'>" + titlePreview + "</a></h4><p><small>" + contentPreview + "</small></p></li>";
+				}
 			});
 
-			searchResultsEl.innerHTML = resultsHTML;
-			searchProcessEl.innerText = "Showing";
+			spotSearchResultsEl.innerHTML = spotResultsHTML;
+			futuresSearchResultsEl.innerHTML = futuresResultsHTML;
+			spotSearchProcessEl.innerText = "Showing";
+			futuresSearchProcessEl.innerText = "Showing";
 		} else {
-			searchResultsEl.style.display = "none";
-			searchProcessEl.innerText = "No";
+			spotSearchResultsEl.style.display = "none";
+			futuresSearchResultsEl.style.display = "none";
+			spotSearchProcessEl.innerText = "No";
+			futuresSearchProcessEl.innerText = "No";
 		}
 	}
 
@@ -86,17 +97,22 @@
 	});
 
 	var query = decodeURIComponent((getQueryVariable("q") || "").replace(/\+/g, "%20")),
-		searchQueryContainerEl = document.getElementById("search-query-container"),
-		searchQueryEl = document.getElementById("search-query"),
+		spotSearchQueryContainerEl = document.getElementById("spot-search-query-container"),
+		futuresSearchQueryContainerEl = document.getElementById("futures-search-query-container"),
+		spotSearchQueryEl = document.getElementById("spot-search-query"),
+		futuresSearchQueryEl = document.getElementById("futures-search-query"),
 		searchInputEl = document.getElementById("search-input");
 
 	searchInputEl.value = query;
-	searchQueryEl.innerText = query;
-	searchQueryContainerEl.style.display = "inline";
+	spotSearchQueryEl.innerText = query;
+	futuresSearchQueryEl.innerText = query;
+	spotSearchQueryContainerEl.style.display = "inline";
+	futuresSearchQueryContainerEl.style.display = "inline";
 
 	for (var key in window.data) {
 		window.index.add(window.data[key]);
 	}
 
 	displaySearchResults(window.index.search(query), query); // Hand the results off to be displayed
+
 })();

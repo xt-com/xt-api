@@ -2,7 +2,7 @@
 title: 所有ticker
 position_number: 12
 type:
-description: |+
+description: 
 
 parameters:
     -

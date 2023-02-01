@@ -2,7 +2,7 @@
 title: Heartbeat
 position_number: 5
 type:
-description: |+
+description: 
 
 parameters:
     -

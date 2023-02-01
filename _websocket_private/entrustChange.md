@@ -2,7 +2,7 @@
 title: Change of entrust
 position_number: 6
 type:
-description: |+
+description: 
 
 parameters:
     -

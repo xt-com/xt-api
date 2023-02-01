@@ -16,52 +16,156 @@ timezone: Etc/UTC
 collections:
   documentation:
     title: Access Description
+    type: spot
+    language: en
     position_number: 1
   market:
     title: Market
+    type: spot
+    language: en
     position_number: 2
   order:
     title: Order
+    type: spot
+    language: en
     position_number: 3
   trade:
     title: Trade
+    type: spot
+    language: en
     position_number: 4
   balance:
     title: Balance
+    type: spot
+    language: en
     position_number: 5
   deposit_withdrawal:
     title: Deposit/Withdrawal
+    type: spot
+    language: en
     position_number: 6
   websocket_public:
     title: WEBSOCKET(public)
+    type: spot
+    language: en
     position_number: 7
   websocket_private:
     title: WEBSOCKET(private)
+    type: spot
+    language: en
     position_number: 8
   documentation_cn:
     title: 接入说明
+    type: spot
+    language: cn
     position_number: 9
   market_cn:
     title: 市场数据
+    type: spot
+    language: cn
     position_number: 10
   order_cn:
     title: 订单
+    type: spot
+    language: cn
     position_number: 11
   trade_cn:
     title: 成交
+    type: spot
+    language: cn
     position_number: 12
   balance_cn:
     title: 资产
+    type: spot
+    language: cn
     position_number: 13
   deposit_withdrawal_cn:
     title: 充值/提现
+    type: spot
+    language: cn
     position_number: 14
   websocket_public_cn:
     title: WEBSOCKET(public)
+    type: spot
+    language: cn
     position_number: 15
   websocket_private_cn:
     title: WEBSOCKET(private)
+    type: spot
+    language: cn
     position_number: 16
+
+  futures_documentation:
+    title: Access Description
+    type: futures
+    language: en
+    position_number: 1
+  futures_quotes:
+    title: Market data
+    type: futures
+    language: en
+    position_number: 2
+  futures_order:
+    title: Order
+    type: futures
+    language: en
+    position_number: 3
+  futures_entrust:
+    title: Entrust
+    type: futures
+    language: en
+    position_number: 4
+  futures_user:
+    title: User
+    type: futures
+    language: en
+    position_number: 5
+  futures_market_websocket:
+    title: WEBSOCKET
+    type: futures
+    language: en
+    position_number: 6
+  futures_user_websocket:
+    title: USER WEBSOCKET
+    type: futures
+    language: en
+    position_number: 7
+  futures_documentation_cn:
+    title: 接入说明
+    type: futures
+    language: cn
+    position_number: 8
+  futures_quotes_cn:
+    title: 行情数据
+    type: futures
+    language: cn
+    position_number: 9
+  futures_order_cn:
+    title: 限价委托和市价委托
+    type: futures
+    language: cn
+    position_number: 10
+  futures_entrust_cn:
+    title: 计划委托与止盈止损
+    type: futures
+    language: cn
+    position_number: 11
+  futures_user_cn:
+    title: 用户相关
+    type: futures
+    language: cn
+    position_number: 12
+  futures_market_websocket_cn:
+    title: 行情WEBSOCKET
+    type: futures
+    language: cn
+    position_number: 13
+  futures_user_websocket_cn:
+    title: 用户WEBSOCKET
+    type: futures
+    language: cn
+    position_number: 14
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -154,6 +258,63 @@ defaults:
       _hide_content: true
   - scope:
       type: "websocket_private_cn"
+    values:
+      _hide_content: true
+
+  - scope:
+      type: "futures_documentation"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_quotes"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_order"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_entrust"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_market_websocket"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user_websocket"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_documentation_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_quotes_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_order_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_entrust_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_market_websocket_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user_websocket_cn"
     values:
       _hide_content: true
 # -----------

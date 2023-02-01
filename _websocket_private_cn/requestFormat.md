@@ -2,7 +2,7 @@
 title: 请求报文格式
 position_number: 2
 type:
-description: |+
+description: 
 
 parameters:
     -

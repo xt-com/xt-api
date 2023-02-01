@@ -2,7 +2,7 @@
 title: Incremental depth
 position_number: 10
 type:
-description: |+
+description: 
 
 parameters:
     -

@@ -22,31 +22,39 @@
 		<script src="{{ site.baseurl }}/js/main.js"></script>
 	</head>
 	<body>
-		<header>
-			<h1>
-				<button type="button" class="open-nav" id="open-nav"></button>
-				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
-			</h1>
 
-			<form action="{{ site.baseurl }}/search/" method="get">
-				<input type="text" name="q" id="search-input" placeholder="Search">
-				<input type="submit" value="Search" style="display: none;">
-			</form>
-            <div id="sidebar_en">{% include sidebar_en.html %}</div>
-            <div id="sidebar_cn">{% include sidebar_cn.html %}</div>
-		</header>
+	<header>
+		<h1>
+			<button type="button" class="open-nav" id="open-nav"></button>
+			<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
+		</h1>
+
+		<form action="{{ site.baseurl }}/search/" method="get">
+			<input type="text" name="q" id="search-input" placeholder="Search">
+			<input type="submit" value="Search" style="display: none;">
+		</form>
+		<div id="spot_sidebar">
+			<div class="sidebar_en">{% include sidebar_en.html %}</div>
+			<div class="sidebar_cn">{% include sidebar_cn.html %}</div>
+		</div>
+		<div id="futures_sidebar">
+			<div class="sidebar_en">{% include futures_sidebar_en.html %}</div>
+			<div class="sidebar_cn">{% include futures_sidebar_cn.html %}</div>
+		</div>
+	</header>
+
 		<div class="main">
 			<div class="i18nHead">
         <div class="i18nButton" id="cn">简体中文</div>
 				<div class="i18nButton" id="en">english</div>
 			</div>
 			<div class="trade-type-select" id="trade_type_en">
-				<a class="active-type">Spot</a>
-				<a href="https://futuresee.github.io/github.io/">Futures</a>
+				<a class="active-type show_spot" >Spot</a>
+				<a class="show_futures">Futures</a>
 			</div>
 			<div class="trade-type-select" id="trade_type_cn">
-				<a class="active-type">现货</a>
-				<a href="https://futuresee.github.io/github.io/">合约</a>
+				<a class="active-type show_spot">现货</a>
+				<a class="show_futures">合约</a>
 			</div>
       <div id="content" style="margin-top: 40px;">
 			    {{ content }}
@@ -57,36 +65,110 @@
 				document.body.classList.toggle("nav-open");
 			});
 
+			//默认显示语言
 			window.lang = "en";
+			//默认展示模块
+			var model = "spot";
 
-            $("#index_cn").hide();
-            $("#en").hide();
-            $("#sidebar_cn").hide();
-	    $("#trade_type_cn").hide();
+			var query = window.location.toString();
+			//有锚点定位
+			if(query.indexOf("#")>0){
+				var anchorPoint = query.split("#")[1];
+				//合约
+				if(anchorPoint.indexOf("futures_")==0){
+					model= "futures";
+					if(anchorPoint.indexOf("_cn")>0){
+						window.lang = "cn";
+					}else {
+						window.lang = "en";
+					}
+				}else {//现货
+					model= "spot";
+					if(anchorPoint.indexOf("_cn")>0){
+						window.lang = "cn";
+					}else {
+						window.lang = "en";
+					}
+				}
+			}
+
+			if(model=="spot"){
+				showSpot();
+			}else {
+				showFutures();
+			}
+			if(window.lang=="en"){
+				showEN();
+			}else {
+				showCN();
+			}
+
+			//展示现货
+			function showSpot(){
+				$("#spot_content").show();
+				$("#spot_search").show();
+				$("#spot_sidebar").show();
+				$("#futures_content").hide();
+				$("#futures_search").hide();
+				$("#futures_sidebar").hide();
+				$(".show_spot").addClass("active-type");
+				$(".show_futures").removeClass("active-type");
+			}
+
+			//展示合约
+			function showFutures(){
+				$("#spot_content").hide();
+				$("#spot_search").hide();
+				$("#spot_sidebar").hide();
+				$("#futures_content").show();
+				$("#futures_search").show();
+				$("#futures_sidebar").show();
+				$(".show_futures").addClass("active-type");
+				$(".show_spot").removeClass("active-type");
+			}
+
+			//展示中文
+			function showCN(){
+				window.lang = "cn";
+				$("#en").show();
+				$("#cn").hide();
+				$(".sidebar_cn").show();
+				$(".sidebar_en").hide();
+				$(".index_cn").show();
+				$(".index_en").hide();
+				$("#trade_type_cn").show();
+				$("#trade_type_en").hide();
+			}
+
+			//展示英文
+			function showEN(){
+				window.lang = "en";
+				$("#cn").show();
+				$("#en").hide();
+				$(".sidebar_en").show();
+				$(".sidebar_cn").hide();
+				$(".index_en").show();
+				$(".index_cn").hide();
+				$("#trade_type_en").show();
+				$("#trade_type_cn").hide();
+			}
+
+			// 展示现货
+			$(".show_spot").click(function (){
+				showSpot();
+			});
+			// 展示合约
+			$(".show_futures").click(function (){
+				showFutures();
+			});
 
 			$("#cn").click(function () {
-                window.lang = "cn";
-                $("#en").show();
-                $("#cn").hide();
-                $("#sidebar_cn").show();
-                $("#sidebar_en").hide();
-                $("#index_cn").show();
-                $("#index_en").hide();
-		$("#trade_type_cn").show();
-		$("#trade_type_en").hide();
-            })
+				showCN();
+			})
 
-            $("#en").click(function () {
-                window.lang = "en";
-                $("#cn").show();
-                $("#en").hide();
-                $("#sidebar_en").show();
-                $("#sidebar_cn").hide();
-                $("#index_en").show();
-                $("#index_cn").hide();
-		$("#trade_type_en").show();
-		$("#trade_type_cn").hide();
-            })
+			$("#en").click(function () {
+				showEN();
+			})
         </script>
 	</body>
 </html>
