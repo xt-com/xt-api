@@ -16,4 +16,4 @@ XT提供了灵活的 API 皆在帮助用户快速、高效的将XT交易功能�
 
 XT 同时支持 Rest API 与 WebSocket API。
 
-建议开发者进行币币交易或者资产提现等功能时使用 Rest API，获取市场行情和买卖深度等信息使用 WebSocket API。
+建议开发者进行币币交易或者资产提现等功能时使用 Rest API，获取市场行情和买卖深度等信息使用 WebSocket API。 
