@@ -2,7 +2,7 @@
 title: 响应报⽂格式
 position_number: 3
 type:
-description: |+
+description: 
 
 parameters:
     -

@@ -2,7 +2,7 @@
 title: Change of balance
 position_number: 5
 type:
-description: |+
+description: 
 
 parameters:
     -

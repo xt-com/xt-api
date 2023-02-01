@@ -2,7 +2,7 @@
 title: 成交记录
 position_number: 8
 type:
-description: |+
+description: 
 
 parameters:
     -

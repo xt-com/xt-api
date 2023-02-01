@@ -2,7 +2,7 @@
 title: K线
 position_number: 8
 type:
-description: |+
+description: 
 
 parameters:
     -

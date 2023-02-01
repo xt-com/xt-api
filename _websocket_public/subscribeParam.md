@@ -2,7 +2,7 @@
 title: Subscription parameters
 position_number: 6
 type:
-description: |+
+description: 
 
 parameters:
     -

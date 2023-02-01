@@ -2,7 +2,7 @@
 title: Request message format
 position_number: 2
 type:
-description: |+
+description: 
 
 parameters:
     -

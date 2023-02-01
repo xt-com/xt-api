@@ -2,7 +2,7 @@
 title: ticker
 position_number: 11
 type:
-description: |+
+description: 
 
 parameters:
     -

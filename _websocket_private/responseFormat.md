@@ -2,7 +2,7 @@
 title: Response message format
 position_number: 3
 type:
-description: |+
+description: 
 
 parameters:
     -

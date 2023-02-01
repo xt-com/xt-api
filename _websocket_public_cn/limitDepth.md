@@ -2,7 +2,7 @@
 title: 有限深度
 position_number: 9
 type:
-description: |+
+description: 
 
 parameters:
     -

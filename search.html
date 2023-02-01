@@ -24,7 +24,7 @@ permalink: /search/
 							"title": "{{ item.title | xml_escape }}",
 							"category": "{{ collection.label | xml_escape }}",
 							"description": "{{item.description | xml_escape }}",
-		  				"type": "{{item.type | xml_escape}}",
+		  					"type": "{{item.type | xml_escape}}",
 							"url": "{{ site.baseurl }}/#{{ item.id | replace: '/', '' | replace: '.', '' | xml_escape }}",
 							"content": {{ item.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
 						}

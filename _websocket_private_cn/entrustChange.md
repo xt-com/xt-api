@@ -2,7 +2,7 @@
 title: 委托变动
 position_number: 6
 type:
-description: |+
+description: 
 
 parameters:
     -
