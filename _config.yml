@@ -260,6 +260,63 @@ defaults:
       type: "websocket_private_cn"
     values:
       _hide_content: true
+
+  - scope:
+      type: "futures_documentation"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_quotes"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_order"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_entrust"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_market_websocket"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user_websocket"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_documentation_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_quotes_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_order_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_entrust_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_market_websocket_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_user_websocket_cn"
+    values:
+      _hide_content: true
 # -----------
 # CloudCannon
 
