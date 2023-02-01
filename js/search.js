@@ -115,13 +115,4 @@
 
 	displaySearchResults(window.index.search(query), query); // Hand the results off to be displayed
 
-	//根据spot和futures的标签头判断是显示spot和futures
-	var isSpotActive = $(".show_spot").is(".active-type");
-	if(isSpotActive){
-		$("#spot_search").show();
-		$("#futures_search").hide();
-	}else {
-		$("#spot_search").hide();
-		$("#futures_search").show();
-	}
 })();
