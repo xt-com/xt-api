@@ -65,19 +65,46 @@
 				document.body.classList.toggle("nav-open");
 			});
 
+			//默认显示语言
 			window.lang = "en";
+			//默认展示模块
+			var model = "spot";
 
-			$("#futures_content").hide();
-			$("#futures_search").hide();
-			$("#futures_sidebar").hide();
+			var query = window.location.toString();
+			//有锚点定位
+			if(query.indexOf("#")>0){
+				var anchorPoint = query.split("#")[1];
+				//合约
+				if(anchorPoint.indexOf("futures_")==0){
+					model= "futures";
+					if(anchorPoint.indexOf("_cn")>0){
+						window.lang = "cn";
+					}else {
+						window.lang = "en";
+					}
+				}else {//现货
+					model= "spot";
+					if(anchorPoint.indexOf("_cn")>0){
+						window.lang = "cn";
+					}else {
+						window.lang = "en";
+					}
+				}
+			}
 
-            $(".index_cn").hide();
-            $("#en").hide();
-            $(".sidebar_cn").hide();
-	    	$("#trade_type_cn").hide();
+			if(model=="spot"){
+				showSpot();
+			}else {
+				showFutures();
+			}
+			if(window.lang=="en"){
+				showEN();
+			}else {
+				showCN();
+			}
 
-			// 展示现货
-			$(".show_spot").click(function (){
+			//展示现货
+			function showSpot(){
 				$("#spot_content").show();
 				$("#spot_search").show();
 				$("#spot_sidebar").show();
@@ -86,9 +113,10 @@
 				$("#futures_sidebar").hide();
 				$(".show_spot").addClass("active-type");
 				$(".show_futures").removeClass("active-type");
-			});
-			// 展示合约
-			$(".show_futures").click(function (){
+			}
+
+			//展示合约
+			function showFutures(){
 				$("#spot_content").hide();
 				$("#spot_search").hide();
 				$("#spot_sidebar").hide();
@@ -97,31 +125,50 @@
 				$("#futures_sidebar").show();
 				$(".show_futures").addClass("active-type");
 				$(".show_spot").removeClass("active-type");
+			}
+
+			//展示中文
+			function showCN(){
+				window.lang = "cn";
+				$("#en").show();
+				$("#cn").hide();
+				$(".sidebar_cn").show();
+				$(".sidebar_en").hide();
+				$(".index_cn").show();
+				$(".index_en").hide();
+				$("#trade_type_cn").show();
+				$("#trade_type_en").hide();
+			}
+
+			//展示英文
+			function showEN(){
+				window.lang = "en";
+				$("#cn").show();
+				$("#en").hide();
+				$(".sidebar_en").show();
+				$(".sidebar_cn").hide();
+				$(".index_en").show();
+				$(".index_cn").hide();
+				$("#trade_type_en").show();
+				$("#trade_type_cn").hide();
+			}
+
+			// 展示现货
+			$(".show_spot").click(function (){
+				showSpot();
+			});
+			// 展示合约
+			$(".show_futures").click(function (){
+				showFutures();
 			});
 
 			$("#cn").click(function () {
-                window.lang = "cn";
-                $("#en").show();
-                $("#cn").hide();
-                $(".sidebar_cn").show();
-                $(".sidebar_en").hide();
-                $(".index_cn").show();
-                $(".index_en").hide();
-				$("#trade_type_cn").show();
-				$("#trade_type_en").hide();
-            })
+				showCN();
+			})
 
-            $("#en").click(function () {
-                window.lang = "en";
-                $("#cn").show();
-                $("#en").hide();
-                $(".sidebar_en").show();
-                $(".sidebar_cn").hide();
-                $(".index_en").show();
-                $(".index_cn").hide();
-				$("#trade_type_en").show();
-				$("#trade_type_cn").hide();
-            })
+			$("#en").click(function () {
+				showEN();
+			})
         </script>
 	</body>
 </html>
