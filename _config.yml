@@ -125,46 +125,56 @@ collections:
     type: futures
     language: en
     position_number: 6
+  futures_market_websocket_v2:
+    title: WEBSOCKET(Beta)
+    type: futures
+    language: en
+    position_number: 7
   futures_user_websocket:
     title: USER WEBSOCKET
     type: futures
     language: en
-    position_number: 7
+    position_number: 8
   futures_documentation_cn:
     title: 接入说明
     type: futures
     language: cn
-    position_number: 8
+    position_number: 1
   futures_quotes_cn:
     title: 行情数据
     type: futures
     language: cn
-    position_number: 9
+    position_number: 2
   futures_order_cn:
     title: 限价委托和市价委托
     type: futures
     language: cn
-    position_number: 10
+    position_number: 3
   futures_entrust_cn:
     title: 计划委托与止盈止损
     type: futures
     language: cn
-    position_number: 11
+    position_number: 4
   futures_user_cn:
     title: 用户相关
     type: futures
     language: cn
-    position_number: 12
+    position_number: 5
   futures_market_websocket_cn:
     title: 行情WEBSOCKET
     type: futures
     language: cn
-    position_number: 13
+    position_number: 6
+  futures_market_websocket_v2_cn:
+    title: 行情WEBSOCKET(Beta)
+    type: futures
+    language: cn
+    position_number: 7
   futures_user_websocket_cn:
     title: 用户WEBSOCKET
     type: futures
     language: cn
-    position_number: 14
+    position_number: 8
 
 plugins:
   - jekyll-sitemap
@@ -286,6 +296,10 @@ defaults:
     values:
       _hide_content: true
   - scope:
+      type: "futures_market_websocket_v2"
+    values:
+      _hide_content: true
+  - scope:
       type: "futures_user_websocket"
     values:
       _hide_content: true
@@ -311,6 +325,10 @@ defaults:
       _hide_content: true
   - scope:
       type: "futures_market_websocket_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "futures_market_websocket_v2_cn"
     values:
       _hide_content: true
   - scope:

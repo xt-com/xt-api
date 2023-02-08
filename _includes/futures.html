@@ -72,11 +72,11 @@
             </table>
             {% endif %}
 
-            <!-- {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
+            {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block and collection.title=="WEBSOCKET(Beta)" %}
                     {% for block in doc.left_code_blocks %}
                             {% include syntax-highlight.html block=block %}
                             {% endfor %}
-                    {% endif %} -->
+                    {% endif %}
         </section>
         {% if doc.right_code_blocks and doc.right_code_blocks[0].code_block %}
         <section class="right-code">
@@ -165,11 +165,11 @@
             </table>
             {% endif %}
 
-            <!-- {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
+            {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block and collection.title=="行情WEBSOCKET(Beta)" %}
             {% for block in doc.left_code_blocks %}
             {% include syntax-highlight.html block=block %}
             {% endfor %}
-            {% endif %} -->
+            {% endif %}
         </section>
         {% if doc.right_code_blocks and doc.right_code_blocks[0].code_block %}
         <section class="right-code">
