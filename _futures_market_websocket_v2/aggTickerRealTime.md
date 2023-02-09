@@ -15,9 +15,9 @@ parameters:
 content_markdown: |-
     **request**
 
-    format: aggTicker@\{symbol\}
+    format: agg_ticker@\{symbol\}
 
-    eg: aggTicker@btc\_usdt
+    eg: agg_ticker@btc\_usdt
     
     rate: 1000ms
 left_code_blocks:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "aggTicker", 
-                    "event": "aggTicker@btc_usdt", 
+                    "topic": "agg_ticker", 
+                    "event": "agg_ticker@btc_usdt", 
                     "data": {
                         "s":"btc_index", //trading pair
                         "o":"49000",     // opening price

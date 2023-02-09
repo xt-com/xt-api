@@ -15,7 +15,7 @@ parameters:
 content_markdown: |-
     **request**
 
-    format: aggTickers
+    format: agg_tickers
     
     rate: 1000ms, only when there are changes
 left_code_blocks:
@@ -27,9 +27,9 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "aggTickers", 
-                    "event": "aggTickers", 
-                    "data": [ ]  // refer to aggTicker(real-time push)
+                    "topic": "agg_tickers", 
+                    "event": "agg_tickers", 
+                    "data": [ ]  // refer to agg_ticker(real-time push)
                 }
         title: Response
         language: json

@@ -15,9 +15,9 @@ parameters:
 content_markdown: |-
     **请求**
 
-    语法: markPrice@\{symbol\}
+    语法: mark_price@\{symbol\}
 
-    示例: markPrice@btc\_usdt
+    示例: mark_price@btc\_usdt
     
     速率: 1000ms
 left_code_blocks:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "markPrice", 
-                    "event": "markPrice@btc_usdt", 
+                    "topic": "mark_price", 
+                    "event": "mark_price@btc_usdt", 
                     "data": {
                         "s":"btc_usdt", //交易对
                         "p":"50000",    //价格

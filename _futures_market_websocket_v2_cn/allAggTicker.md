@@ -15,7 +15,7 @@ parameters:
 content_markdown: |-
     **请求**
 
-    语法: aggTickers
+    语法: agg_tickers
     
     速率: 1000ms，(只推送有变化部分)
 left_code_blocks:
@@ -27,9 +27,9 @@ right_code_blocks:
     -
         code_block: |-
             {
-                "topic": "aggTickers", 
-                "event": "aggTickers", 
-                "data": [ ]  // 同 aggTicker
+                "topic": "agg_tickers", 
+                "event": "agg_tickers", 
+                "data": [ ]  // 同 agg_ticker
             }
         title: Response
         language: json

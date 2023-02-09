@@ -15,9 +15,9 @@ parameters:
 content_markdown: |-
     **请求**
 
-    语法: indexPrice@\{symbol\}
+    语法: index_price@\{symbol\}
 
-    示例: indexPrice@btc\_usdt
+    示例: index_price@btc\_usdt
     
     速率: 1000ms
 left_code_blocks:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "indexPrice", 
-                    "event": "indexPrice@btc_usdt", 
+                    "topic": "index_price", 
+                    "event": "index_price@btc_usdt", 
                     "data": {
                         "s":"btc_usdt", //交易对
                         "p":"50000",    //价格

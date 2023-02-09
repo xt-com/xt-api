@@ -15,11 +15,11 @@ parameters:
 content_markdown: |-
     **请求**
 
-    语法: fundRate@\{symbol\}
+    语法: fund_rate@\{symbol\}
 
-    示例: fundRate@btc\_usdt
+    示例: fund_rate@btc\_usdt
     
-    速率: 1000ms
+    速率: 60s
 left_code_blocks:
     -
         code_block:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "fundRate", 
-                    "event": "fundRate@btc_usdt", 
+                    "topic": "fund_rate", 
+                    "event": "fund_rate@btc_usdt", 
                     "data": {
                         "s":"btc_usdt", //交易对
                         "r":"0.01",    // 资金费率

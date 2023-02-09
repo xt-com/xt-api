@@ -15,11 +15,11 @@ parameters:
 content_markdown: |-
     **request**
 
-    format: fundRate@\{symbol\}
+    format: fund_rate@\{symbol\}
 
-    eg: fundRate@btc\_usdt
+    eg: fund_rate@btc\_usdt
     
-    rate: 1000ms
+    rate: 60s
 left_code_blocks:
     -
         code_block:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "fundRate", 
-                    "event": "fundRate@btc_usdt", 
+                    "topic": "fund_rate", 
+                    "event": "fund_rate@btc_usdt", 
                     "data": {
                         "s":"btc_usdt", //Trading pair
                         "r":"0.01",    // Fund fee

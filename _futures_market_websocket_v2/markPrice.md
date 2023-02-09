@@ -15,9 +15,9 @@ parameters:
 content_markdown: |-
     **request**
 
-    format: markPrice@\{symbol\}
+    format: mark_price@\{symbol\}
 
-    eg: markPrice@btc\_usdt
+    eg: mark_price@btc\_usdt
     
     rate: 1000ms
 left_code_blocks:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "markPrice", 
-                    "event": "markPrice@btc_usdt", 
+                    "topic": "mark_price", 
+                    "event": "mark_price@btc_usdt", 
                     "data": {
                         "s":"btc_usdt", //trading pair
                         "p":"50000",    //price

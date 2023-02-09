@@ -15,9 +15,9 @@ parameters:
 content_markdown: |-
     **请求**
 
-    语法: aggTicker@\{symbol\}
+    语法: agg_ticker@\{symbol\}
 
-    示例: aggTicker@btc\_usdt
+    示例: agg_ticker@btc\_usdt
     
     速率: 1000ms
 left_code_blocks:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "aggTicker", 
-                    "event": "aggTicker@btc_usdt", 
+                    "topic": "agg_ticker", 
+                    "event": "agg_ticker@btc_usdt", 
                     "data": {
                         "s":"btc_index", //交易对
                         "o":"49000",     // open 开盘价

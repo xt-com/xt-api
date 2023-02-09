@@ -15,9 +15,9 @@ parameters:
 content_markdown: |-
     **request**
 
-    format: indexPrice@\{symbol\}
+    format: index_price@\{symbol\}
 
-    eg: indexPrice@btc\_usdt
+    eg: index_price@btc\_usdt
     
     rate: 1000ms
 left_code_blocks:
@@ -29,8 +29,8 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "topic": "indexPrice", 
-                    "event": "indexPrice@btc_usdt", 
+                    "topic": "index_price", 
+                    "event": "index_price@btc_usdt", 
                     "data": {
                         "s":"btc_usdt", //trading pair
                         "p":"50000",    //price
