@@ -175,6 +175,27 @@ collections:
     type: futures
     language: cn
     position_number: 8
+  third_party_document:
+    title: Access Description
+    type: third_party
+    language: en
+    position_number: 1
+  third_party_document_cn:
+    title: 接入说明
+    type: third_party
+    language: cn
+    position_number: 1
+  third_party_oauth2:
+    title: OAuth Interface
+    type: third_party
+    language: en
+    position_number: 2
+  third_party_oauth2_cn:
+    title: OAuth2接口
+    type: third_party
+    language: cn
+    position_number: 2
+
 
 plugins:
   - jekyll-sitemap
@@ -333,6 +354,18 @@ defaults:
       _hide_content: true
   - scope:
       type: "futures_user_websocket_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "third_party_oauth"
+    values:
+      _hide_content: true
+  - scope:
+      type: "third_party_document_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "third_party_document"
     values:
       _hide_content: true
 # -----------

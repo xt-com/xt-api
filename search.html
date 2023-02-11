@@ -24,6 +24,16 @@ permalink: /search/
 	</div>
 </div>
 
+<!--合约-->
+<div id="third_party_search">
+	<div class="search-page">
+		<h2>Search Results</h2>
+
+		<p><span id="third-party-search-process">Loading</span> results <span id="third-party-search-query-container" style="display: none;">for "<strong id="third-party-search-query"></strong>"</span></p>
+		<ul id="third-party-search-results"></ul>
+	</div>
+</div>
+
 <script>
 	window.data = {
 		{% for collection in site.collections %}

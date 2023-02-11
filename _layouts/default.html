@@ -41,6 +41,10 @@
 			<div class="sidebar_en">{% include futures_sidebar_en.html %}</div>
 			<div class="sidebar_cn">{% include futures_sidebar_cn.html %}</div>
 		</div>
+		<div id="third_party_sidebar">
+			<div class="sidebar_en">{% include third_party_sidebar_en.html %}</div>
+			<div class="sidebar_cn">{% include third_party_sidebar_cn.html %}</div>
+		</div>
 	</header>
 
 		<div class="main">
@@ -51,10 +55,12 @@
 			<div class="trade-type-select" id="trade_type_en">
 				<a style="cursor:pointer;" class="active-type show_spot" >Spot</a>
 				<a style="cursor:pointer;" class="show_futures">Futures</a>
+				<a style="cursor:pointer;" class="show_third_party">Third Party</a>
 			</div>
 			<div class="trade-type-select" id="trade_type_cn">
 				<a style="cursor:pointer;" class="active-type show_spot">现货</a>
 				<a style="cursor:pointer;" class="show_futures">合约</a>
+				<a style="cursor:pointer;" class="show_third_party">第三方平台</a>
 			</div>
       <div id="content" style="margin-top: 40px;">
 			    {{ content }}
@@ -82,8 +88,15 @@
 					}else {
 						window.lang = "en";
 					}
-				}else {//现货
+				}else if(anchorPoint.indexOf("spot_")==0) {//现货
 					model= "spot";
+					if(anchorPoint.indexOf("_cn")>0){
+						window.lang = "cn";
+					}else {
+						window.lang = "en";
+					}
+				}else {//第三方
+					model= "third_party";
 					if(anchorPoint.indexOf("_cn")>0){
 						window.lang = "cn";
 					}else {
@@ -94,8 +107,10 @@
 
 			if(model=="spot"){
 				showSpot();
-			}else {
+			}else if(model == "futures"){
 				showFutures();
+			}else {
+				showThirdParty();
 			}
 			if(window.lang=="en"){
 				showEN();
@@ -111,8 +126,12 @@
 				$("#futures_content").hide();
 				$("#futures_search").hide();
 				$("#futures_sidebar").hide();
+				$("#third_party_content").hide();
+				$("#third_party_search").hide();
+				$("#third_party_sidebar").hide();
 				$(".show_spot").addClass("active-type");
 				$(".show_futures").removeClass("active-type");
+				$(".show_third_party").removeClass("active-type");
 			}
 
 			//展示合约
@@ -123,8 +142,29 @@
 				$("#futures_content").show();
 				$("#futures_search").show();
 				$("#futures_sidebar").show();
+				$("#third_party_content").hide();
+				$("#third_party_search").hide();
+				$("#third_party_sidebar").hide();
 				$(".show_futures").addClass("active-type");
 				$(".show_spot").removeClass("active-type");
+				$(".show_third_party").removeClass("active-type");
+			}
+
+
+			//展示第三方平台
+			function showThirdParty(){
+				$("#spot_content").hide();
+				$("#spot_search").hide();
+				$("#spot_sidebar").hide();
+				$("#futures_content").hide();
+				$("#futures_search").hide();
+				$("#futures_sidebar").hide();
+				$("#third_party_content").show();
+				$("#third_party_search").show();
+				$("#third_party_sidebar").show();
+				$(".show_third_party").addClass("active-type");
+				$(".show_spot").removeClass("active-type");
+				$(".show_futures").removeClass("active-type");
 			}
 
 			//展示中文
@@ -160,6 +200,11 @@
 			// 展示合约
 			$(".show_futures").click(function (){
 				showFutures();
+			});
+
+			// 展示合约
+			$(".show_third_party").click(function (){
+				showThirdParty();
 			});
 
 			$("#cn").click(function () {
