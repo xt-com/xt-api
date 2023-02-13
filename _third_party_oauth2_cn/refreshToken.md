@@ -26,11 +26,11 @@ parameters:
         description: 授权类型，固定值
         ranges: authorization_code
     -
-        name: code
+        name: refresh_token
         type: string
         mandatory: true
         default:
-        description: 用户授权后重定向到机构页面，会在url中携带code字段
+        description: 申请token时返回的refresh_token字段
 ranges:
 content_markdown:
 left_code_blocks:

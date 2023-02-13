@@ -10,14 +10,14 @@ parameters:
         mandatory: true
         default:
         description: 机构标识
-        ranges:
+        ranges: 请向XT.COM申请
     -
         name: client_secret
         type: string
         mandatory: true
         default:
         description: 机构Access Key
-        ranges:
+        ranges: 请向XT.COM申请
     -
         name: grant_type
         type: string
