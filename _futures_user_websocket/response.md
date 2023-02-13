@@ -22,6 +22,7 @@ content_markdown: |-
            "walletBalance":"123", // Balance
            "openOrderMarginFrozen":"123", // Frozen order
            "isolatedMargin":"213"  // Isolated Margin
+           "crossedMargin":"0" //Crossed Margin
      }}
      ```
 
@@ -31,7 +32,8 @@ content_markdown: |-
       {"channel":"user.position",
        "data":{
            "symbol":"btc_usdt",
-           "positionType": "ISOLATED",  
+           "contractType": "PERPUTUAL", //PERPUTUAL，DELIVERY
+           "positionType": "ISOLATED",  //ISOLATED, CROSSED
            "positionSide": "LONG",
            "positionSize":"123",  // Position quantity
 
@@ -69,7 +71,8 @@ content_markdown: |-
       "data":{
 
           "symbol":"btc_usdt",  // Trading pair
-
+          "orderId": "1234", // Order Id
+          "origQty": "34244", // Original Quantity
           "positionType": "123",    //   Quantity
           "avgPrice": "123", // Average price
           "executedQty":"34244", // Volume (Cont)
@@ -78,7 +81,7 @@ content_markdown: |-
 
           "sourceId" : "1231231",// Triggering conditions ID
           "state": "", // state:NEW：New order (unfilled);PARTIALLY_FILLED:Partial deal;PARTIALLY_CANCELED:Partial revocation;FILLED:Filled;CANCELED:Cancled;REJECTED:Order failed;EXPIRED：Expired
-          "timestamp": 1731231231 // Timestamp
+          "createTime": 1731231231 // CreateTime
     }}
     ```
 
