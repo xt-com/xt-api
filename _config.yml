@@ -186,27 +186,38 @@ collections:
     language: cn
     position_number: 1
 
+  third_party_user_reg:
+    title: User registration
+    type: third_party
+    language: en
+    position_number: 2
+  third_party_user_reg_cn:
+    title: 用户注册
+    type: third_party
+    language: cn
+    position_number: 2
+
   third_party_authorization_page:
     title: Authorization Page
     type: third_party
     language: en
-    position_number: 2
+    position_number: 3
   third_party_authorization_page_cn:
     title: 授权页跳转
     type: third_party
     language: cn
-    position_number: 2
+    position_number: 3
 
   third_party_oauth2:
     title: OAuth Interface
     type: third_party
     language: en
-    position_number: 3
+    position_number: 4
   third_party_oauth2_cn:
     title: OAuth2接口
     type: third_party
     language: cn
-    position_number: 3
+    position_number: 4
 
 plugins:
   - jekyll-sitemap
