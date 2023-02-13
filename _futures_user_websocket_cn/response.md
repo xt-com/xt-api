@@ -23,6 +23,7 @@ content_markdown: |-
             "walletBalance":"123", // 钱包余额
             "openOrderMarginFrozen":"123", // 订单冻结
             "isolatedMargin":"213"  // 逐仓保证金
+            "crossedMargin":"0" //全仓保证金
      }}
      ```
 
@@ -32,7 +33,8 @@ content_markdown: |-
       {"channel":"user.position",
        "data":{
            "symbol":"btc_usdt",
-           "positionType": "ISOLATED",  
+           "contractType": "PERPUTUAL", //合约类型，PERPUTUAL，DELIVERY
+           "positionType": "ISOLATED",  // "ISOLATED", "CROSSED"
            "positionSide": "LONG",
            "positionSize":"123",  // 持仓数量
 
@@ -46,6 +48,7 @@ content_markdown: |-
            "isolatedMargin":"213",  //  逐仓保证金
 
            "openOrderMarginFrozen": "123", //  开仓订单占用保证金
+           "underlyingType": ""// COIN_BASED, U_BASED
            "leverage":20  // 杠杆倍数
     }}
     ```
@@ -70,16 +73,19 @@ content_markdown: |-
       "data":{
 
           "symbol":"btc_usdt",  // 交易对
-
-          "positionType": "123",    //   数量
+          "orderId": "1234", //订单id
+          "origQty": "34244", // 下单数量
           "avgPrice": "123", // 成交均价
+          "price": "1111", //下单价格
           "executedQty":"34244", // 已成交数量
+          "orderSide": "BUY", // BUY, SELL
+          "positionSide": "LONG", // LONG, SHORT
           "marginFrozen":"123", // 占用保证金
           "sourceType":"default", //  DEFAULT:普通订单， ENTRUST:计划委托，PROFIR:止盈止损
 
           "sourceId" : "1231231",// 条件订单出发ID
           "state": "", // 订单状态 NEW：新建订单;未成交; PARTIALLY_FILLED：部分成交；PARTIALLY_CANCELED：部分撤销；FILLED：全部成交；CANCELED：已撤销；REJECTED：下单失败；EXPIRED：已过期
-          "timestamp": 1731231231 // 时间戳
+          "createTime": 1731231231 // 时间戳
     }}
     ```
 
