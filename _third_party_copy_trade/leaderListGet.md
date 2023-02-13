@@ -2,7 +2,7 @@
 title: leader list 
 position_number: 1
 type: get
-description: /v1/public/copy-trade/third/leader-list
+description: /futures/public/v1/public/copy-trade/third/leader-list
 parameters:
     -
         name: appKey

@@ -2,7 +2,7 @@
 title: 选择交易员
 position_number: 2
 type: get
-description: /v1/copy-trade/third/choose-leader
+description: /futures/v1/copy-trade/third/choose-leader
 parameters:
     -
         name: leaderAccountId
