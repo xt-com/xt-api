@@ -2,7 +2,7 @@
 title: 刷新Token
 position_number: 2
 type: get
-_description: /uaa/public/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&code={code}_
+description: /uaa/public/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&code={code}_
 parameters:
     -
         name: client_id
