@@ -185,17 +185,28 @@ collections:
     type: third_party
     language: cn
     position_number: 1
-  third_party_oauth2:
-    title: OAuth Interface
+
+  third_party_authorization_page:
+    title: Authorization Page
     type: third_party
     language: en
     position_number: 2
-  third_party_oauth2_cn:
-    title: OAuth2接口
+  third_party_authorization_page_cn:
+    title: 授权页跳转
     type: third_party
     language: cn
     position_number: 2
 
+  third_party_oauth2:
+    title: OAuth Interface
+    type: third_party
+    language: en
+    position_number: 3
+  third_party_oauth2_cn:
+    title: OAuth2接口
+    type: third_party
+    language: cn
+    position_number: 3
 
 plugins:
   - jekyll-sitemap
