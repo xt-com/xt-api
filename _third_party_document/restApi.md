@@ -13,7 +13,7 @@ content_markdown: |-
 
     Test:
 
-    **https://oapi.xt-qa.com**  //Please use this environment for development and testing
+    **http://oapi.xt-qa.com**  //Please use this environment for development and testing
     {: .info}
 
 left_code_blocks:
