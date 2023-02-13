@@ -1,7 +1,7 @@
 ---
 title: 选择交易员
 position_number: 2
-type: get
+type: post
 description: /futures/v1/copy-trade/third/choose-leader
 parameters:
     -

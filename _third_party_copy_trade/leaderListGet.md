@@ -1,5 +1,5 @@
 ---
-title: leader list 
+title: Leader List 
 position_number: 1
 type: get
 description: /futures/public/v1/public/copy-trade/third/leader-list
