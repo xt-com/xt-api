@@ -1,5 +1,5 @@
 ---
-title: Instructions
+title: Authorization Link
 position_number: 1
 parameters:
 - name:

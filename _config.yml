@@ -187,7 +187,7 @@ collections:
     position_number: 1
 
   third_party_user_reg:
-    title: User registration
+    title: User Registration
     type: third_party
     language: en
     position_number: 2
