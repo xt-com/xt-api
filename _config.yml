@@ -218,6 +218,16 @@ collections:
     type: third_party
     language: cn
     position_number: 4
+  third_party_copy_trade:
+    title: Copy Trade
+    type: third_party
+    language: en
+    position_number: 5
+  third_party_copy_trade_cn:
+    title: 跟单接口
+    type: third_party
+    language: cn
+    position_number: 5
 
 plugins:
   - jekyll-sitemap
