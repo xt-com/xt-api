@@ -24,7 +24,7 @@ parameters:
         mandatory: true
         default:
         description: 授权类型，固定值
-        ranges: authorization_code
+        ranges: refresh_token
     -
         name: refresh_token
         type: string
