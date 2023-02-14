@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: Institutional Access Key
+        description: Institutional Secret Key
         ranges: Please apply to XT.COM
     -
         name: grant_type

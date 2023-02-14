@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: 机构Access Key
+        description: 机构Secret Key
         ranges: 请向XT.COM申请
     -
         name: grant_type
