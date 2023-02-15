@@ -2,7 +2,7 @@
 title: 申请Token
 position_number: 1
 type: get
-description: /uaa/public/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&code={code}
+description: /public/uaa/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&code={code}
 parameters:
     -
         name: client_id

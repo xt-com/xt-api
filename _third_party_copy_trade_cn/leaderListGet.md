@@ -2,7 +2,7 @@
 title: 交易员列表 
 position_number: 1
 type: get
-description: /futures/public/v1/public/copy-trade/third/leader-list
+description: /public/futures/user/v1/public/copy-trade/third/leader-list
 parameters:
     -
         name: appKey

@@ -2,7 +2,7 @@
 title: Refresh Token
 position_number: 2
 type: get
-description: /uaa/public/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&refresh_token={refresh_token}
+description: /public/uaa/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&refresh_token={refresh_token}
 parameters:
     -
         name: client_id
