@@ -120,13 +120,13 @@ collections:
     type: futures
     language: en
     position_number: 5
-  futures_market_websocket:
-    title: WEBSOCKET
-    type: futures
-    language: en
-    position_number: 6
+  # futures_market_websocket:
+  #   title: WEBSOCKET
+  #   type: futures
+  #   language: en
+  #   position_number: 6
   futures_market_websocket_v2:
-    title: WEBSOCKET(Beta)
+    title: WEBSOCKET(V2)
     type: futures
     language: en
     position_number: 7
@@ -160,13 +160,13 @@ collections:
     type: futures
     language: cn
     position_number: 5
-  futures_market_websocket_cn:
-    title: 行情WEBSOCKET
-    type: futures
-    language: cn
-    position_number: 6
+  # futures_market_websocket_cn:
+  #   title: 行情WEBSOCKET
+  #   type: futures
+  #   language: cn
+  #   position_number: 6
   futures_market_websocket_v2_cn:
-    title: 行情WEBSOCKET(Beta)
+    title: 行情WEBSOCKET(V2)
     type: futures
     language: cn
     position_number: 7
@@ -185,17 +185,49 @@ collections:
     type: third_party
     language: cn
     position_number: 1
-  third_party_oauth2:
-    title: OAuth Interface
+
+  third_party_user_reg:
+    title: User Registration
     type: third_party
     language: en
     position_number: 2
-  third_party_oauth2_cn:
-    title: OAuth2接口
+  third_party_user_reg_cn:
+    title: 用户注册
     type: third_party
     language: cn
     position_number: 2
 
+  third_party_authorization_page:
+    title: Authorization Page
+    type: third_party
+    language: en
+    position_number: 3
+  third_party_authorization_page_cn:
+    title: 授权页跳转
+    type: third_party
+    language: cn
+    position_number: 3
+
+  third_party_oauth2:
+    title: OAuth Interface
+    type: third_party
+    language: en
+    position_number: 4
+  third_party_oauth2_cn:
+    title: OAuth2接口
+    type: third_party
+    language: cn
+    position_number: 4
+  third_party_copy_trade:
+    title: Copy Trade
+    type: third_party
+    language: en
+    position_number: 5
+  third_party_copy_trade_cn:
+    title: 跟单接口
+    type: third_party
+    language: cn
+    position_number: 5
 
 plugins:
   - jekyll-sitemap
@@ -312,10 +344,10 @@ defaults:
       type: "futures_user"
     values:
       _hide_content: true
-  - scope:
-      type: "futures_market_websocket"
-    values:
-      _hide_content: true
+  # - scope:
+  #     type: "futures_market_websocket"
+  #   values:
+  #     _hide_content: true
   - scope:
       type: "futures_market_websocket_v2"
     values:
@@ -344,10 +376,10 @@ defaults:
       type: "futures_user_cn"
     values:
       _hide_content: true
-  - scope:
-      type: "futures_market_websocket_cn"
-    values:
-      _hide_content: true
+  # - scope:
+  #     type: "futures_market_websocket_cn"
+  #   values:
+  #     _hide_content: true
   - scope:
       type: "futures_market_websocket_v2_cn"
     values:

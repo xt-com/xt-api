@@ -33,6 +33,7 @@ right_code_blocks:
                         "s": "btc_usdt",                // symbol 交易对
                         "t": 1656043204763,             // time 发⽣时间
                         "i": "6216559590087220004",     // orderId 订单号
+                        "ci": "test123",                // clientOrderId 客户端订单号
                         "st": "PARTIALLY_FILLED",       // state 状态
                         "eq": "2",                      // executedQty 已执⾏数量
                         "ap": "30000"                   // avg price 均价

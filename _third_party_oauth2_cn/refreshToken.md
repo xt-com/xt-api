@@ -2,7 +2,7 @@
 title: 刷新Token
 position_number: 2
 type: get
-description: /uaa/public/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&refresh_token={refresh_token}
+description: /public/uaa/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&refresh_token={refresh_token}
 parameters:
     -
         name: client_id
@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: 机构Access Key
+        description: 机构Secret Key
         ranges:
     -
         name: grant_type
@@ -24,7 +24,7 @@ parameters:
         mandatory: true
         default:
         description: 授权类型，固定值
-        ranges: authorization_code
+        ranges: refresh_token
     -
         name: refresh_token
         type: string

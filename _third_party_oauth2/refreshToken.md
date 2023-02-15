@@ -2,7 +2,7 @@
 title: Refresh Token
 position_number: 2
 type: get
-description: /uaa/public/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&refresh_token={refresh_token}
+description: /public/uaa/oauth2/token?client_id={client_id}&client_secret=${client_secret}&grant_type={grant_type}&refresh_token={refresh_token}
 parameters:
     -
         name: client_id
@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: Institutional Access Key
+        description: Institutional Secret Key
         ranges: Please apply to XT.COM
     -
         name: grant_type
