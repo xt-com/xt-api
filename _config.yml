@@ -120,13 +120,13 @@ collections:
     type: futures
     language: en
     position_number: 5
-  futures_market_websocket:
-    title: WEBSOCKET
-    type: futures
-    language: en
-    position_number: 6
+  # futures_market_websocket:
+  #   title: WEBSOCKET
+  #   type: futures
+  #   language: en
+  #   position_number: 6
   futures_market_websocket_v2:
-    title: WEBSOCKET(Beta)
+    title: WEBSOCKET(V2)
     type: futures
     language: en
     position_number: 7
@@ -160,13 +160,13 @@ collections:
     type: futures
     language: cn
     position_number: 5
-  futures_market_websocket_cn:
-    title: 行情WEBSOCKET
-    type: futures
-    language: cn
-    position_number: 6
+  # futures_market_websocket_cn:
+  #   title: 行情WEBSOCKET
+  #   type: futures
+  #   language: cn
+  #   position_number: 6
   futures_market_websocket_v2_cn:
-    title: 行情WEBSOCKET(Beta)
+    title: 行情WEBSOCKET(V2)
     type: futures
     language: cn
     position_number: 7
@@ -344,10 +344,10 @@ defaults:
       type: "futures_user"
     values:
       _hide_content: true
-  - scope:
-      type: "futures_market_websocket"
-    values:
-      _hide_content: true
+  # - scope:
+  #     type: "futures_market_websocket"
+  #   values:
+  #     _hide_content: true
   - scope:
       type: "futures_market_websocket_v2"
     values:
@@ -376,10 +376,10 @@ defaults:
       type: "futures_user_cn"
     values:
       _hide_content: true
-  - scope:
-      type: "futures_market_websocket_cn"
-    values:
-      _hide_content: true
+  # - scope:
+  #     type: "futures_market_websocket_cn"
+  #   values:
+  #     _hide_content: true
   - scope:
       type: "futures_market_websocket_v2_cn"
     values:
