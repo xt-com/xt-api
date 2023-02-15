@@ -5,9 +5,6 @@
     {% assign sorted_docs = collection.docs | sort: "position_number" %}
     {% for doc in sorted_docs %}
     <section class="doc-content">
-        <script>
-            alert(sorted_docs)
-        </script>
         <section class="left-docs">
             <h3>
                 <a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">

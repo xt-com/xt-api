@@ -88,15 +88,15 @@
 					}else {
 						window.lang = "en";
 					}
-				}else if(anchorPoint.indexOf("spot_")==0) {//现货
-					model= "spot";
+				}else if(anchorPoint.indexOf("third_party_")==0) {//第三方
+					model= "third_party";
 					if(anchorPoint.indexOf("_cn")>0){
 						window.lang = "cn";
 					}else {
 						window.lang = "en";
 					}
-				}else {//第三方
-					model= "third_party";
+				}else {//现货
+					model= "spot";
 					if(anchorPoint.indexOf("_cn")>0){
 						window.lang = "cn";
 					}else {

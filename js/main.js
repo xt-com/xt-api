@@ -71,8 +71,14 @@ jQuery(function() {
 });
 
 function getClosestHeader() {
-	var $links = $('.sidebar a'),
-	top = window.scrollY,
+	var $links;
+	var showSidebar = getShowSidebar();
+	if (showSidebar.val != '') {
+		$links = showSidebar.find("a")
+	}else {
+		$links = $('.sidebar a');
+	}
+	var top = window.scrollY,
 	$last = $links.first();
 
 	if (top < 300) {
@@ -102,4 +108,34 @@ function getClosestHeader() {
 		}
 	}
 	return $last;
+}
+
+function getShowSidebar(){
+	//默认显示语言
+	var lang = "en";
+	//默认展示模块
+	var model = "spot";
+
+	var query = window.location.toString();
+	//有锚点定位
+	if(query.indexOf("#")>0){
+		var anchorPoint = query.split("#")[1];
+		if(anchorPoint.indexOf("_cn")>0){
+			lang = "cn";
+		}else {
+			lang = "en";
+		}
+
+		//合约
+		if(anchorPoint.indexOf("futures_")==0){
+			model= "futures";
+		}else if(anchorPoint.indexOf("third_party_")==0) {//第三方
+			model= "third_party";
+		}else {//现货
+			model= "spot";
+		}
+		var firstDiv = model+"_sidebar";
+		var secondDiv = "sidebar_"+lang;
+		return $("#"+firstDiv).children("."+secondDiv);
+	}
 }
