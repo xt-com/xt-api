@@ -32,7 +32,8 @@ right_code_blocks:
                     "data": {
                         "s": "btc_usdt",                // symbol
                         "t": 1656043204763,             // time happened time
-                        "i": "6216559590087220004",     // orderId
+                        "i": "6216559590087220004",     // orderId,
+                        "ci": "test123",                // clientOrderId
                         "st": "PARTIALLY_FILLED",       // state
                         "eq": "2",                      // executedQty executed quantity
                         "ap": "30000"                   // avg price

@@ -72,7 +72,7 @@
             </table>
             {% endif %}
 
-            {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block and collection.title=="WEBSOCKET(Beta)" %}
+            {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block and collection.title=="WEBSOCKET(V2)" %}
                     {% for block in doc.left_code_blocks %}
                             {% include syntax-highlight.html block=block %}
                             {% endfor %}
@@ -165,7 +165,7 @@
             </table>
             {% endif %}
 
-            {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block and collection.title=="行情WEBSOCKET(Beta)" %}
+            {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block and collection.title=="行情WEBSOCKET(V2)" %}
             {% for block in doc.left_code_blocks %}
             {% include syntax-highlight.html block=block %}
             {% endfor %}
