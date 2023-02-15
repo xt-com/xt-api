@@ -53,6 +53,12 @@ jQuery(function() {
 
 	var href = $('.sidebar a').first().attr("href");
 
+	$('.sidebar a').click(function (){
+		$('.sidebar a').removeClass('active');
+		$(this).addClass('active');
+		document.title = $(this).text();
+	});
+
 	if (href !== undefined && href.charAt(0) === "#") {
 		setActiveSidebarLink();
 
