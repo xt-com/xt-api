@@ -5,11 +5,11 @@ type: get
 description: /public/futures/user/v1/public/copy-trade/third/leader-list
 parameters:
     -
-        name: appKey
+        name: appId
         type: String
         mandatory: true
         default:
-        description: app key
+        description: app id
         ranges:
     -
         name: id
