@@ -79,7 +79,7 @@ jQuery(function() {
 function getClosestHeader() {
 	var $links;
 	var showSidebar = getShowSidebar();
-	if (showSidebar.val != '') {
+	if (typeof(showSidebar) != "undefined" && showSidebar.val != '') {
 		$links = showSidebar.find("a")
 	}else {
 		$links = $('.sidebar a');
