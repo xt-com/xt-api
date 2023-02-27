@@ -37,7 +37,7 @@ right_code_blocks:
                     "t": 1655992403617,       // trade time
                     "p": "43000",             // trade price
                     "q": "0.21",              // qty，trade quantity
-                    "b": true                 // buyer
+                    "b": true                 // whether is buyerMaker or not
                 }
             }
         title: Response

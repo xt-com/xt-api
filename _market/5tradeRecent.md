@@ -52,7 +52,7 @@ right_code_blocks:
                       "p": "string",    //transaction price
                       "q": "string",    //transaction quantity
                       "v": "string",    //transaction volume
-                      "b": true         //buyerMaker
+                      "b": true         //whether is buyerMaker or not
                     }
                   ]
                 }

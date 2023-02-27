@@ -37,7 +37,7 @@ right_code_blocks:
                     "t": 1655992403617,       // time，成交时间
                     "p": "43000",             // price，成交价格
                     "q": "0.21",              // qty，成交数量
-                    "b": true                 // buyer
+                    "b": true                 // 方向(buyerMaker)
                 }
             }
         title: Response
