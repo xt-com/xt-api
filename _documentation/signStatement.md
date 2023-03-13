@@ -5,29 +5,29 @@ parameters:
 - name:
 content:
 content_markdown: >-
-    Since XT needs to provide some open interfaces for third-party platforms, it requires data security issues of the interface, such as whether the data has been tampered with, whether the data is outdated, whether the data can be submitted repeatedly, and the frequency of access to the interface within a certain period of time. Among them, whether the data has been tampered with is the most important.
+    Since XT needs to provide some open interfaces for third-party platforms，therefore, the issue of data security needs to be considered. Such as whether the data has been tampered with, whether the data is outdated, whether the data can be submitted repeatedly, and the access frequency of the interface, and whether data has been tampered with is the most important issue.
 
 
-    1. First apply for appkey and secretkey through the user center, and provide different appkey and secretkey for different calls
+    1. Please apply for appkey and secretkey in the user center first, each user's appkey and secretkey are different
     
 
-    2. Add timestamp (timestamp), its value should be the unix timestamp (milliseconds) of the time when the request is sent, and the suburban time of the data is calculated according to this value.
+    2. Add timestamp, its value should be the unix timestamp (milliseconds) of the time when the request is sent, and the time of the data is calculated based on this value.
     
 
-    3. Add signature (data signature), the signature information of all data.
+    3. Add signature, its value is obtained by a certain rule of signature algorithm.
     
 
-    4. Add recvwindow (custom request valid time), the valid time is relatively simple and fixed to a certain value.
+    4. Add recvwindow (defining the valid time of the request), the valid time is currently relatively simple and uniformly fixed at a certain value.
     
 
-      When the server receives the request, it will judge the timestamp in the request. The longest is 60 seconds and the minimum is 2 seconds. If it was sent 5000 milliseconds ago, the request will be considered invalid. This time window value can be set by sending the optional parameter recvWindow.
-      In addition, the server will also reject the request if it calculates that the client timestamp is more than one second 'in the future' of server time.
-      Regarding the transaction timeliness, the Internet is not 100% reliable and cannot be completely relied upon. Therefore, the delay from your program to the XT server will be jittery. This is the purpose of setting recvwindow. If you are engaged in high-frequency trading, the timeliness requirements for transactions are high, and you can flexibly set recvwindow to meet your requirements.
-
-      Recvwindow longer than 5 seconds is not recommended
+      When the server receives the request, it will judge the timestamp in the request, maximum 60 seconds, minimum 2 seconds. If sent before the time defined by recvwindow, the request will be considered invalid, the value of this recvWindow can be defined by the user. 
+      In addition, if the server calculates that the request's timestamp is more than one second "in the future" of the server's time, the request will also be rejected. 
+      Since internet conditions are not 100% reliable, the delay of your program from the client to the XT server will jitter, this is the purpose of setting recvwindow. If you are engaged in high-frequency transactions, you have higher requirements for transaction timeliness, you can flexibly set recvwindow to meet your requirements.
+      
+      Recvwindow longer than 5 seconds is not recommended.
       
 
-    5、Added algorithm (signature method/algorithm), the user's signature is a hash-based protocol, and HmacSHA256 is recommended. For those protocols that are supported, see the table below.
+    5、Added algorithm (signature method/algorithm), the user calculates the signature according to the protocol of the hash, and HmacSHA256 is recommended. For those protocols that are supported, see the table below.
 
         HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256(recommended)、HmacSHA384、HmacSHA512
 examples:
