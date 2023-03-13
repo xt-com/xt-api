@@ -22,7 +22,7 @@ content_markdown: >-
 
       When the server receives the request, it will judge the timestamp in the request. The longest is 60 seconds and the minimum is 2 seconds. If it was sent 5000 milliseconds ago, the request will be considered invalid. This time window value can be set by sending the optional parameter recvWindow.
       In addition, the server will also reject the request if it calculates that the client timestamp is more than one second 'in the future' of server time.
-      Regarding the transaction timeliness, the Internet is not 100% reliable and cannot be completely relied upon. Therefore, the delay from your program to the XT server will be jittery. This is the purpose of setting recvwindow. If you are engaged in high-frequency trading, the transaction timeliness There are high requirements for sex, and you can flexibly set recvwindow to meet your requirements.
+      Regarding the transaction timeliness, the Internet is not 100% reliable and cannot be completely relied upon. Therefore, the delay from your program to the XT server will be jittery. This is the purpose of setting recvwindow. If you are engaged in high-frequency trading, the timeliness requirements for transactions are high, and you can flexibly set recvwindow to meet your requirements.
 
       Recvwindow longer than 5 seconds is not recommended
       
