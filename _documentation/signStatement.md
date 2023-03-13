@@ -8,7 +8,7 @@ content_markdown: >-
     Since XT needs to provide some open interfaces for third-party platforms，therefore, the issue of data security needs to be considered. Such as whether the data has been tampered with, whether the data is outdated, whether the data can be submitted repeatedly, and the access frequency of the interface, and whether data has been tampered with is the most important issue.
 
 
-    1. Please apply for appkey and secretkey in the user center first, each user's appkey and secretkey are different
+    1. Please apply for appkey and secretkey in the user center first, each user's appkey and secretkey are different.
     
 
     2. Add timestamp, its value should be the unix timestamp (milliseconds) of the time when the request is sent, and the time of the data is calculated based on this value.
