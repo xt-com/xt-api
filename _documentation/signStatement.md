@@ -20,9 +20,9 @@ content_markdown: >-
     4. Add recvwindow (defining the valid time of the request), the valid time is currently relatively simple and uniformly fixed at a certain value.
     
 
-      When the server receives the request, it will judge the timestamp in the request, maximum 60 seconds, minimum 2 seconds. If sent before the time defined by recvwindow, the request will be considered invalid, the value of this recvWindow can be defined by the user. 
-      In addition, if the server calculates that the request's timestamp is more than one second "in the future" of the server's time, the request will also be rejected. 
-      Since internet conditions are not 100% reliable, the delay of your program from the client to the XT server will jitter, this is the purpose of setting recvwindow. If you are engaged in high-frequency transactions, you have higher requirements for transaction timeliness, you can flexibly set recvwindow to meet your requirements.
+      When a request is received by the server, the timestamp in the request is checked to ensure it falls between 2 to 60 seconds. Any request with a timestamp older than 5,000 milliseconds is considered invalid. 
+      The time window value can be set using the optional parameter: "recvWindow". Additionally, if the server determines that the client's timestamp is more than one second ahead of the server, the request will also be invalid. 
+      Online conditions are not always 100% reliable in terms of the timeliness of trades, resulting in varying levels of latency between your local program and the XT server. This is why we provide the "recvWindow" parameter - if you engage in high-frequency trading and require stricter transaction timeliness, you can adjust the "recvWindow" parameter to better meet your needs.
       
       Recvwindow longer than 5 seconds is not recommended.
       
