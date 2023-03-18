@@ -35,8 +35,10 @@ right_code_blocks:
                         "i": "6216559590087220004",     // orderId 订单号
                         "ci": "test123",                // clientOrderId 客户端订单号
                         "st": "PARTIALLY_FILLED",       // state 状态
+                        "sd": "BUY",                    // side 方向 BUY/SELL
                         "eq": "2",                      // executedQty 已执⾏数量
-                        "ap": "30000"                   // avg price 均价
+                        "ap": "30000",                  // avg price 均价
+                        "f": "0.001"                    // fee 手续费
                     }
                 }
         title: 推送
