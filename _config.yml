@@ -239,8 +239,8 @@ collections:
     type: user_center
     language: en
     position_number: 2
-  user_center_apiKey:
-    title: ApiKey
+  user_center_api_key:
+    title: Api Key
     type: user_center
     language: en
     position_number: 3
@@ -443,7 +443,7 @@ defaults:
     values:
       _hide_content: true
   - scope:
-      type: "user_center_apiKey"
+      type: "user_center_api_key"
     values:
       _hide_content: true
   - scope:
