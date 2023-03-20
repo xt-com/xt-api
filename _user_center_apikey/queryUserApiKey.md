@@ -1,5 +1,5 @@
 ---
-title: Query user's apiKey（applicable to  master and sub account）
+title: Query user's apiKey (applicable to  master and sub account)
 position_number: 1
 type: get
 description: /v4/user/account/api-key
