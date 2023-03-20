@@ -164,14 +164,7 @@ function getShowSidebarNew(){
 
 	$("#"+domId).children("a").each(function (index, domEle) {
 		if($(domEle).hasClass("active-type")){
-			var classInfo = $(domEle).attr('class');
-			classInfo = classInfo.replace("active-type","").trim();
-			var modelArray = classInfo.split("_")
-			if(modelArray.length<=2){
-				model = modelArray[1]
-			}else {
-				model = modelArray[1]+"_"+modelArray[2]
-			}
+			model = $(domEle).attr('class').replace("active-type","").replace("show_","").trim();
 		}
 	});
 

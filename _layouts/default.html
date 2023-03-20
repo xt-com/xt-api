@@ -81,137 +81,51 @@
 			window.lang = "en";
 			//默认展示模块
 			var model = "spot";
+			//所有模块数组
+			var models = new Array("spot", "futures", "third_party", "user_center");
 
 			var query = window.location.toString();
 			//有锚点定位
 			if(query.indexOf("#")>0){
 				var anchorPoint = query.split("#")[1];
-				//合约
-				if(anchorPoint.indexOf("futures_")==0){
-					model= "futures";
-					if(anchorPoint.indexOf("_cn")>0){
-						window.lang = "cn";
-					}else {
-						window.lang = "en";
-					}
-				}else if(anchorPoint.indexOf("third_party_")==0) {//第三方
-					model= "third_party";
-					if(anchorPoint.indexOf("_cn")>0){
-						window.lang = "cn";
-					}else {
-						window.lang = "en";
-					}
-				}else if(anchorPoint.indexOf("user_center_")==0) {//第三方
-					model= "user_center";
-					if(anchorPoint.indexOf("_cn")>0){
-						window.lang = "cn";
-					}else {
-						window.lang = "en";
-					}
-				} else {//现货
-					model= "spot";
-					if(anchorPoint.indexOf("_cn")>0){
-						window.lang = "cn";
-					}else {
-						window.lang = "en";
+
+				for(var md in models){
+					var modelName = models[md];
+					if(anchorPoint.indexOf(modelName+"_")==0){
+						model= modelName;
+						if(anchorPoint.indexOf("_cn")>0){
+							window.lang = "cn";
+						}else {
+							window.lang = "en";
+						}
 					}
 				}
 			}
+			//根据当前url地址，显示对应的模块
+			showModel(model);
 
-			if(model=="spot"){
-				showSpot();
-			}else if(model == "futures"){
-				showFutures();
-			}else if(model == "third_party"){
-				showThirdParty();
-			}else {
-				showUserCenter();
-			}
 			if(window.lang=="en"){
 				showEN();
 			}else {
 				showCN();
 			}
 
-			//展示现货
-			function showSpot(){
-				$("#spot_content").show();
-				$("#spot_search").show();
-				$("#spot_sidebar").show();
-				$("#futures_content").hide();
-				$("#futures_search").hide();
-				$("#futures_sidebar").hide();
-				$("#third_party_content").hide();
-				$("#third_party_search").hide();
-				$("#third_party_sidebar").hide();
-				$("#user_center_content").hide();
-				$("#user_center_search").hide();
-				$("#user_center_sidebar").hide();
-				$(".show_spot").addClass("active-type");
-				$(".show_futures").removeClass("active-type");
-				$(".show_third_party").removeClass("active-type");
-				$(".show_user_center").removeClass("active-type");
-			}
-
-			//展示合约
-			function showFutures(){
-				$("#spot_content").hide();
-				$("#spot_search").hide();
-				$("#spot_sidebar").hide();
-				$("#futures_content").show();
-				$("#futures_search").show();
-				$("#futures_sidebar").show();
-				$("#third_party_content").hide();
-				$("#third_party_search").hide();
-				$("#third_party_sidebar").hide();
-				$("#user_center_content").hide();
-				$("#user_center_search").hide();
-				$("#user_center_sidebar").hide();
-				$(".show_futures").addClass("active-type");
-				$(".show_spot").removeClass("active-type");
-				$(".show_third_party").removeClass("active-type");
-				$(".show_user_center").removeClass("active-type");
-			}
-
-
-			//展示第三方平台
-			function showThirdParty(){
-				$("#spot_content").hide();
-				$("#spot_search").hide();
-				$("#spot_sidebar").hide();
-				$("#futures_content").hide();
-				$("#futures_search").hide();
-				$("#futures_sidebar").hide();
-				$("#third_party_content").show();
-				$("#third_party_search").show();
-				$("#third_party_sidebar").show();
-				$("#user_center_content").hide();
-				$("#user_center_search").hide();
-				$("#user_center_sidebar").hide();
-				$(".show_third_party").addClass("active-type");
-				$(".show_spot").removeClass("active-type");
-				$(".show_futures").removeClass("active-type");
-				$(".show_user_center").removeClass("active-type");
-			}
-
-			//展示用户中心
-			function showUserCenter(){
-				$("#spot_content").hide();
-				$("#spot_search").hide();
-				$("#spot_sidebar").hide();
-				$("#futures_content").hide();
-				$("#futures_search").hide();
-				$("#futures_sidebar").hide();
-				$("#third_party_content").hide();
-				$("#third_party_search").hide();
-				$("#third_party_sidebar").hide();
-				$("#user_center_content").show();
-				$("#user_center_search").show();
-				$("#user_center_sidebar").show();
-				$(".show_third_party").removeClass("active-type");
-				$(".show_spot").removeClass("active-type");
-				$(".show_futures").removeClass("active-type");
-				$(".show_user_center").addClass("active-type");
+			//根据模块名控制tag的显示和隐藏
+			function showModel(model){
+				for(var md in models){
+					var modelName = models[md];
+					if(modelName==model){
+						$("#"+modelName+"_content").show();
+						$("#"+modelName+"_search").show();
+						$("#"+modelName+"_sidebar").show();
+						$(".show_"+modelName).addClass("active-type");
+					}else {
+						$("#"+modelName+"_content").hide();
+						$("#"+modelName+"_search").hide();
+						$("#"+modelName+"_sidebar").hide();
+						$(".show_"+modelName).removeClass("active-type");
+					}
+				}
 			}
 
 			//展示中文
@@ -240,24 +154,14 @@
 				$("#trade_type_cn").hide();
 			}
 
-			// 展示现货
-			$(".show_spot").click(function (){
-				showSpot();
-			});
-			// 展示合约
-			$(".show_futures").click(function (){
-				showFutures();
-			});
-
-			// 展示合约
-			$(".show_third_party").click(function (){
-				showThirdParty();
-			});
-
-			//展示用户中心
-			$(".show_user_center").click(function (){
-				showUserCenter();
-			});
+			//点击不同的tag显示对应的内容
+			for(var md in models){
+				var modelName = models[md];
+				$(".show_"+modelName).click(function (){
+					var model = $(this).attr('class').replace("active-type","").replace("show_","").trim();
+					showModel(model);
+				});
+			}
 
 			$("#cn").click(function () {
 				showCN();
