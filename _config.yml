@@ -240,7 +240,7 @@ collections:
     language: en
     position_number: 2
   user_center_api_key:
-    title: Apikey
+    title: ApiKey
     type: user_center
     language: en
     position_number: 3
