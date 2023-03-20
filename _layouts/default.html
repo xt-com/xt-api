@@ -45,6 +45,10 @@
 			<div class="sidebar_en">{% include third_party_sidebar_en.html %}</div>
 			<div class="sidebar_cn">{% include third_party_sidebar_cn.html %}</div>
 		</div>
+		<div id="user_center_sidebar">
+			<div class="sidebar_en">{% include user_center_sidebar_en.html %}</div>
+			<div class="sidebar_cn">{% include user_center_sidebar_cn.html %}</div>
+		</div>
 	</header>
 
 		<div class="main">
@@ -56,11 +60,13 @@
 				<a style="cursor:pointer;" class="active-type show_spot" >Spot</a>
 				<a style="cursor:pointer;" class="show_futures">Futures</a>
 				<a style="cursor:pointer;" class="show_third_party">Third Party</a>
+				<a style="cursor:pointer;" class="show_user_center">User Center</a>
 			</div>
 			<div class="trade-type-select" id="trade_type_cn">
 				<a style="cursor:pointer;" class="active-type show_spot">现货</a>
 				<a style="cursor:pointer;" class="show_futures">合约</a>
 				<a style="cursor:pointer;" class="show_third_party">第三方平台</a>
+				<a style="cursor:pointer;" class="show_user_center">用户中心</a>
 			</div>
       <div id="content" style="margin-top: 40px;">
 			    {{ content }}
@@ -95,7 +101,14 @@
 					}else {
 						window.lang = "en";
 					}
-				}else {//现货
+				}else if(anchorPoint.indexOf("user_center_")==0) {//第三方
+					model= "user_center";
+					if(anchorPoint.indexOf("_cn")>0){
+						window.lang = "cn";
+					}else {
+						window.lang = "en";
+					}
+				} else {//现货
 					model= "spot";
 					if(anchorPoint.indexOf("_cn")>0){
 						window.lang = "cn";
@@ -109,8 +122,10 @@
 				showSpot();
 			}else if(model == "futures"){
 				showFutures();
-			}else {
+			}else if(model == "third_party"){
 				showThirdParty();
+			}else {
+				showUserCenter();
 			}
 			if(window.lang=="en"){
 				showEN();
@@ -129,9 +144,13 @@
 				$("#third_party_content").hide();
 				$("#third_party_search").hide();
 				$("#third_party_sidebar").hide();
+				$("#user_center_content").hide();
+				$("#user_center_search").hide();
+				$("#user_center_sidebar").hide();
 				$(".show_spot").addClass("active-type");
 				$(".show_futures").removeClass("active-type");
 				$(".show_third_party").removeClass("active-type");
+				$(".show_user_center").removeClass("active-type");
 			}
 
 			//展示合约
@@ -145,9 +164,13 @@
 				$("#third_party_content").hide();
 				$("#third_party_search").hide();
 				$("#third_party_sidebar").hide();
+				$("#user_center_content").hide();
+				$("#user_center_search").hide();
+				$("#user_center_sidebar").hide();
 				$(".show_futures").addClass("active-type");
 				$(".show_spot").removeClass("active-type");
 				$(".show_third_party").removeClass("active-type");
+				$(".show_user_center").removeClass("active-type");
 			}
 
 
@@ -162,9 +185,33 @@
 				$("#third_party_content").show();
 				$("#third_party_search").show();
 				$("#third_party_sidebar").show();
+				$("#user_center_content").hide();
+				$("#user_center_search").hide();
+				$("#user_center_sidebar").hide();
 				$(".show_third_party").addClass("active-type");
 				$(".show_spot").removeClass("active-type");
 				$(".show_futures").removeClass("active-type");
+				$(".show_user_center").removeClass("active-type");
+			}
+
+			//展示用户中心
+			function showUserCenter(){
+				$("#spot_content").hide();
+				$("#spot_search").hide();
+				$("#spot_sidebar").hide();
+				$("#futures_content").hide();
+				$("#futures_search").hide();
+				$("#futures_sidebar").hide();
+				$("#third_party_content").hide();
+				$("#third_party_search").hide();
+				$("#third_party_sidebar").hide();
+				$("#user_center_content").show();
+				$("#user_center_search").show();
+				$("#user_center_sidebar").show();
+				$(".show_third_party").removeClass("active-type");
+				$(".show_spot").removeClass("active-type");
+				$(".show_futures").removeClass("active-type");
+				$(".show_user_center").addClass("active-type");
 			}
 
 			//展示中文
@@ -205,6 +252,11 @@
 			// 展示合约
 			$(".show_third_party").click(function (){
 				showThirdParty();
+			});
+
+			//展示用户中心
+			$(".show_user_center").click(function (){
+				showUserCenter();
 			});
 
 			$("#cn").click(function () {

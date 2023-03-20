@@ -34,6 +34,16 @@ permalink: /search/
 	</div>
 </div>
 
+<!--用户中心-->
+<div id="user_center_search">
+	<div class="search-page">
+		<h2>Search Results</h2>
+
+		<p><span id="user-center-search-process">Loading</span> results <span id="user-center-search-query-container" style="display: none;">for "<strong id="user-center-search-query"></strong>"</span></p>
+		<ul id="user-center-search-results"></ul>
+	</div>
+</div>
+
 <script>
 	window.data = {
 		{% for collection in site.collections %}

@@ -78,7 +78,7 @@ jQuery(function() {
 
 function getClosestHeader() {
 	var $links;
-	var showSidebar = getShowSidebar();
+	var showSidebar = getShowSidebarNew();
 	if (typeof(showSidebar) != "undefined" && showSidebar.val != '') {
 		$links = showSidebar.find("a")
 	}else {
@@ -137,6 +137,8 @@ function getShowSidebar(){
 			model= "futures";
 		}else if(anchorPoint.indexOf("third_party_")==0) {//第三方
 			model= "third_party";
+		}else if(anchorPoint.indexOf("user_center_")==0) {//用户中心
+			model= "user_center";
 		}else {//现货
 			model= "spot";
 		}
@@ -144,4 +146,36 @@ function getShowSidebar(){
 		var secondDiv = "sidebar_"+lang;
 		return $("#"+firstDiv).children("."+secondDiv);
 	}
+}
+
+function getShowSidebarNew(){
+	//默认显示语言
+	var lang = "en";
+	//默认展示模块
+	var model = "spot";
+
+	var domId;
+	$('.trade-type-select').each(function (index, domEle) {
+		if(domEle.style.display!="none"){
+			domId = domEle.id;
+			lang = domId.split("_")[2];
+		}
+	});
+
+	$("#"+domId).children("a").each(function (index, domEle) {
+		if($(domEle).hasClass("active-type")){
+			var classInfo = $(domEle).attr('class');
+			classInfo = classInfo.replace("active-type","").trim();
+			var modelArray = classInfo.split("_")
+			if(modelArray.length<=2){
+				model = modelArray[1]
+			}else {
+				model = modelArray[1]+"_"+modelArray[2]
+			}
+		}
+	});
+
+	var firstDiv = model+"_sidebar";
+	var secondDiv = "sidebar_"+lang;
+	return $("#"+firstDiv).children("."+secondDiv);
 }
