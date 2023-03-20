@@ -35,7 +35,7 @@ right_code_blocks:
                   "ma": [
                     {}
                   ],
-                  "result": true
+                  "result": true   //true 成功；false或null未成功
                 }
         title: Response
         language: json

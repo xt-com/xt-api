@@ -17,24 +17,28 @@ parameters:
         mandatory: true
         default:
         description: apiKey name
+        ranges:
     -
         name: bindIps
         type: string
         mandatory: false
         default:
         description: bind ip list, multiple can be separated by commas
+        ranges:
     -
         name: roleScopes
         type: string
         mandatory: true
         default:
-        description: permissions code, QUERY_TRADE：trade is enabled; QUERY_NO_TRADE：trade is not enabled
+        description: permissions code
+        ranges: QUERY_TRADE：trade is enabled; QUERY_NO_TRADE：trade is not enabled
     -
         name: tags
         type: string
         mandatory: false
         default:
-        description:
+        description: tags
+        ranges:
 
 content_markdown:
 left_code_blocks:

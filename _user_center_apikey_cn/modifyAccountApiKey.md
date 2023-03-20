@@ -24,18 +24,21 @@ parameters:
         mandatory: false
         default:
         description: 绑定ip 多个ip英文逗号分割
+        ranges:
     -
         name: roleScopes
         type: string
         mandatory: true
         default:
-        description: 权限code,QUERY_TRADE 开启交易权限；QUERY_NO_TRADE 不开启交易权限
+        description: 权限code
+        ranges: QUERY_TRADE 开启交易权限；QUERY_NO_TRADE 不开启交易权限
     -
         name: tags
         type: string
         mandatory: false
         default:
         description: 标签
+        ranges:
 
 content_markdown:
 left_code_blocks:

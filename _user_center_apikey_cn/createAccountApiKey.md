@@ -17,24 +17,28 @@ parameters:
         mandatory: true
         default:
         description: apiKey名称
+        ranges:
     -
         name: bindIps
         type: string
         mandatory: false
         default:
         description: 绑定ip，多个用逗号分隔
+        ranges:
     -
         name: roleScopes
         type: string
         mandatory: true
         default:
-        description: 权限code,QUERY_TRADE 开启交易权限,QUERY_NO_TRADE 不开启交易权限
+        description: 权限code
+        ranges: QUERY_TRADE 开启交易权限,QUERY_NO_TRADE 不开启交易权限
     -
         name: tags
         type: string
         mandatory: false
         default:
-        description:
+        description: 标签
+        ranges:
 
 content_markdown:
 left_code_blocks:
