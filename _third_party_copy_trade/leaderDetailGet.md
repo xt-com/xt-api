@@ -1,5 +1,5 @@
 ---
-title: leader detail 
+title: Leader detail 
 position_number: 4
 type: get
 description: /public/futures/user/v1/public/copy-trade/leader-detail-v2

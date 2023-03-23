@@ -2,7 +2,7 @@
 title: 交易员的带单历史
 position_number: 7
 type: get
-description: /public/futures/user/v1/public/copy-trade/leader-order-history
+description: /public/futures/trade/v1/public/copy-trade/leader-order-history
 parameters:
     -
         name: leaderAccountId

@@ -1,5 +1,5 @@
 ---
-title: cancel choose leader
+title: Cancel choose leader
 position_number: 3
 type: post
 description: /futures/user/v1/copy-trade/cancel-choose-leader

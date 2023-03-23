@@ -1,5 +1,5 @@
 ---
-title: leader order history
+title: Leader order history
 position_number: 7
 type: get
 description: /public/futures/user/v1/public/copy-trade/leader-order-history

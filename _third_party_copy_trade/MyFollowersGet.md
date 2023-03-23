@@ -1,5 +1,5 @@
 ---
-title: my followers
+title: My followers
 position_number: 5
 type: get
 description: /public/futures/user/v1/public/copy-trade/leader-follower-page
