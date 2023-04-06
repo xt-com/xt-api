@@ -3,6 +3,7 @@ title: 下单
 position_number: 1
 type: post
 description: /future/trade/v1/order/create
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: clientOrderId

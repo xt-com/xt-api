@@ -3,6 +3,7 @@ title: 修改自动追加保证金
 position_number: 10
 type: post
 description: /future/user/v1/position/auto-margin
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol

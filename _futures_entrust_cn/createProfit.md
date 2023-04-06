@@ -3,6 +3,7 @@ title: 创建止盈止损
 position_number: 7
 type: post
 description: /future/trade/v1/entrust/create-profit
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol

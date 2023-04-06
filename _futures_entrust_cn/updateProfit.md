@@ -3,6 +3,7 @@ title: 修改止盈止损
 position_number: 12
 type: post
 description: /future/trade/v1/entrust/update-profit-stop
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: profitId
     type: integer
@@ -14,7 +15,7 @@ parameters:
     type: number
     mandatory: false
     default: N/A
-    description: 止盈触发价
+    description: 止盈触发价s
     ranges:
   - name: triggerStopPrice
     type: number

@@ -18,6 +18,9 @@
             {% if doc.description %}
             <p class="description">{{ doc.description }}</p>
             {% endif %}
+            {% if doc.remark %}
+            <p class="remark">{{ doc.remark }}</p>
+            {% endif %}
 
             {% if doc.parameters and doc.parameters[0].name %}
             <h6>Parameters</h6>
@@ -110,6 +113,9 @@
             </h3>
             {% if doc.description %}
             <p class="description">{{ doc.description }}</p>
+            {% endif %}
+            {% if doc.remark %}
+            <p class="remark">{{ doc.remark }}</p>
             {% endif %}
 
             {% if doc.parameters and doc.parameters[0].name %}

@@ -3,6 +3,7 @@ title: Create Trigger Orders
 position_number: 1
 type: post
 description: /future/trade/v1/entrust/create-profit
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol
