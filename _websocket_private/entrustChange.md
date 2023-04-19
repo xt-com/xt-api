@@ -1,6 +1,7 @@
 ---
 title: Change of entrust
 position_number: 6
+display: 0
 type:
 description: 
 

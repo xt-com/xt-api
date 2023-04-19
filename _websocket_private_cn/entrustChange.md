@@ -1,6 +1,7 @@
 ---
 title: 委托变动
 position_number: 6
+display: 0
 type:
 description: 
 
