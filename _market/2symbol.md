@@ -235,35 +235,35 @@ right_code_blocks:
                     "version": "7cd2cfab0dc979339f1de904bd90c9cb",  
                     "symbols": [                   
                       {
-                        "id": 614,                              //ID
+                        "id": 614,                   //ID
                         "symbol": "btc_usdt",         
-                        "state": "ONLINE",                      //symbol state[ONLINE;OFFLINE,DELISTED]
+                        "state": "ONLINE",           //symbol state [ONLINE;OFFLINE,DELISTED]
                         "tradingEnabled": true,
-                        "openapiEnabled": true,                 //Openapi transaction is available or not
+                        "openapiEnabled": true,      //Openapi transaction is available or not
                         "nextStateTime": null,              
                         "nextState": null,                 
-                        "depthMergePrecision": 5,               //Depth Merge Accuracy
+                        "depthMergePrecision": 5,    //Depth Merge Accuracy
                         "baseCurrency": "btc",                  
                         "baseCurrencyPrecision": 5,              
                         "baseCurrencyId": 2,                 
                         "quoteCurrency": "usdt",             
                         "quoteCurrencyPrecision": 6,        
                         "quoteCurrencyId": 11,             
-                        "pricePrecision": 4,                    //Transaction price accuracy
+                        "pricePrecision": 4,         //Transaction price accuracy
                         "quantityPrecision": 6,           
-                        "orderTypes": [                         //Order Type[LIMIT;MARKET]
+                        "orderTypes": [              //Order Type [LIMIT;MARKET]
                           "LIMIT",
                           "MARKET"
                         ],
-                        "timeInForces": [                       //Effective ways[GTC=It remains valid until the transaction is concluded; IOC=Cancel the part that cannot be transacted immediately (taking orders); FOK=Cancellation if all transactions cannot be completed immediately; GTX=Revoke if unable to become a pending party]
+                        "timeInForces": [            //Effective ways [GTC=It remains valid until the transaction is concluded; IOC=Cancel the part that cannot be transacted immediately (taking orders); FOK=Cancellation if all transactions cannot be completed immediately; GTX=Revoke if unable to become a pending party]
                           "GTC",
                           "FOK",
                           "IOC",
                           "GTX"
                         ],
-                        "displayWeight": 1,                     //Show the weight, the greater the weight, the more forward
-                        "displayLevel": "FULL",                 //Presentation level,[FULL=Full display,SEARCH=Search display,DIRECT=Direct display,NONE=Don't show]
-                        "plates": [],                           //  eg:22,23,24
+                        "displayWeight": 1,          //Show the weight, the greater the weight, the more forward
+                        "displayLevel": "FULL",      //Presentation level, [FULL=Full display,SEARCH=Search display,DIRECT=Direct display,NONE=Don't show]
+                        "plates": [],                //  eg:22,23,24
                         "filters": [                       
                           {
                             "filter": "PROTECTION_LIMIT",
