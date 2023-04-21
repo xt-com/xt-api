@@ -30,27 +30,28 @@ right_code_blocks:
                   ],
                   "result": [
                     {
-                        "currency": "string",               //Currency name
+                        "currency": "BTC",                  //Currency name
                         "supportChains": [
                             {
                                 "chain": "Bitcon",          //Supported transfer network
                                 "depositEnabled": true,     //deposit is supported or not
                                 "withdrawEnabled": true     //withdraw is supported or not
-                            }
-                            {
-                                "chain": "FIO",
-                                "depositEnabled": true,
-                                "withdrawEnabled": true
+                                "withdrawFeeAmount": 0.2,   //withdraw fee
+                                "withdrawMinAmount": 10,    //minimum withdrawal amount
+                                "depositFeeRate": 0.2       //deposit fee rate
                             }
                         ]           
                     },
                     {
-                        "currency": "string",
+                        "currency": "ETH",                  //Currency name
                         "supportChains": [
                             {
-                                "chain": "Ethereum",
-                                "depositEnabled": true,
-                                "withdrawEnabled": true
+                                "chain": "Ethereum",        //Supported transfer network
+                                "depositEnabled": true,     //deposit is supported or not
+                                "withdrawEnabled": true     //withdraw is supported or not
+                                "withdrawFeeAmount": 0.2,   //withdraw fee
+                                "withdrawMinAmount": 10,    //minimum withdrawal amount
+                                "depositFeeRate": 0.2       //deposit fee rate
                             }
                         ]
                     }

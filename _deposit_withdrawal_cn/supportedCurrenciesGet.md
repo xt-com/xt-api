@@ -30,27 +30,28 @@ right_code_blocks:
                   ],
                   "result": [
                     {
-                        "currency": "string",               //币种
+                        "currency": "BTC",                  //币种
                         "supportChains": [
                             {
                                 "chain": "Bitcon",          //支持的转账网络
                                 "depositEnabled": true,     //是否支持充值，true:支持，false:不支持
-                                "withdrawEnabled": true     //是否支持提现，true:支持，false:不支持
-                            }
-                            {
-                                "chain": "FIO",
-                                "depositEnabled": true,
-                                "withdrawEnabled": true
+                                "withdrawEnabled": true,    //是否支持提现，true:支持，false:不支持
+                                "withdrawFeeAmount": 0.2,   //提现手续费
+                                "withdrawMinAmount": 10,    //最小提现数量
+                                "depositFeeRate": 0.2       //充值费率，百分比
                             }
                         ]           
                     },
                     {
-                        "currency": "string",
+                        "currency": "ETF",                  //币种
                         "supportChains": [
                             {
-                                "chain": "Ethereum",
-                                "depositEnabled": true,
-                                "withdrawEnabled": true
+                                "chain": "Ethereum",        //支持的转账网络
+                                "depositEnabled": true,     //是否支持充值，true:支持，false:不支持
+                                "withdrawEnabled": true,    //是否支持提现，true:支持，false:不支持
+                                "withdrawFeeAmount": 0.2,   //提现手续费
+                                "withdrawMinAmount": 10,    //最小提现数量
+                                "depositFeeRate": 0.2       //充值费率，百分比
                             }
                         ]
                     }
