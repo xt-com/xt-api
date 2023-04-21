@@ -30,10 +30,10 @@ right_code_blocks:
                   ],
                   "result": [
                     {
-                        "currency": "BTC",                  //Currency name
+                        "currency": "BTC",                  //currency name
                         "supportChains": [
                             {
-                                "chain": "Bitcon",          //Supported transfer network
+                                "chain": "Bitcon",          //supported transfer network
                                 "depositEnabled": true,     //deposit is supported or not
                                 "withdrawEnabled": true     //withdraw is supported or not
                                 "withdrawFeeAmount": 0.2,   //withdraw fee
@@ -43,10 +43,10 @@ right_code_blocks:
                         ]           
                     },
                     {
-                        "currency": "ETH",                  //Currency name
+                        "currency": "ETH",                  //currency name
                         "supportChains": [
                             {
-                                "chain": "Ethereum",        //Supported transfer network
+                                "chain": "Ethereum",        //supported transfer network
                                 "depositEnabled": true,     //deposit is supported or not
                                 "withdrawEnabled": true     //withdraw is supported or not
                                 "withdrawFeeAmount": 0.2,   //withdraw fee

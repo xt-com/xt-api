@@ -26,7 +26,7 @@ parameters:
         default:
         description: |-
             Version number, when the request version number is consistent with the response content version, the list will not be returned, reducing IO
-            eg: 2e14d2cd5czcb2c2af2c1db65078d075
+            eg: 2e14d2cd5czcb2c2af2c1db6
         ranges:
 content_markdown: >-
     #### **Limit Flow Rules**

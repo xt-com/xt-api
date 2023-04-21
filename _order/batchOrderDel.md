@@ -17,7 +17,7 @@ parameters:
         type: array
         mandatory: true
         default:
-        description: [6216559590087220004,6216559590087220005]
+        description: '6216559590087220004, <br> 6216559590087220005'
         ranges:
 content_markdown: |-
     Note: The parameters should be placed in the request body in the form of json
