@@ -49,6 +49,7 @@ content_markdown: |-
     | ORDER_004 | no transaction |
     | ORDER_005 | Order not exist |
     | ORDER_006 | Too many open orders |
+    | ORDER_007 | The sub-account has no transaction authority |
     | ORDER_F0101 | Trigger Price Filter - Min |
     | ORDER_F0102 | Trigger Price Filter - Max |
     | ORDER_F0103 | Trigger Price Filter - Step Value |
