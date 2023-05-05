@@ -3,6 +3,7 @@ title: Cancel Trading Pair Collection
 position_number: 14
 type: post
 description: /future/user/v1/user/collection/cancel
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol

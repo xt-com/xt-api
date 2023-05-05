@@ -3,6 +3,7 @@ title: 修改持仓模式
 position_number: 16
 type: post
 description: /future/user/v1/position/change-type
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol

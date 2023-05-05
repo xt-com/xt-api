@@ -3,6 +3,7 @@ title: 撤销所有计划委托
 position_number: 3
 type: post
 description: /future/trade/v1/entrust/cancel-all-plan
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol

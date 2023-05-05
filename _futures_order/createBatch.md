@@ -3,6 +3,7 @@ title: Bulk Orders
 position_number: 2
 type: post
 description: /future/trade/v1/order/create-batch
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: list
     type: string
