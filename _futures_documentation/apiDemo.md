@@ -8,10 +8,12 @@ content_markdown: >-
   Java connector
 
 
-  A lightweight Java code library that provides a method for users to directly call the API
+    A lightweight Java code library that provides a method for users to directly call the API
 
-
-  [https://github.com/futuresee/api-demo-java](https://github.com/futuresee/api-demo-java)
+    Sdks for each language:
+        
+        java: https://github.com/futuresee/api-demo-java
+        python: https://github.com/xt-com/xt4-python-demo
 
 left_code_blocks:
 - code_block:
