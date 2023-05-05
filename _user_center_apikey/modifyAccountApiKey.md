@@ -31,7 +31,7 @@ parameters:
         mandatory: true
         default:
         description: permissions code
-        ranges: QUERY_TRADE：trade is enabled; QUERY_NO_TRADE：trade is not enabled
+        ranges: QUERY：query is enabled; TRADE：trade is enabled; WITHDRAW：withdraw is enabled
     -
         name: tags
         type: string

@@ -31,7 +31,7 @@ parameters:
         mandatory: true
         default:
         description: 权限code
-        ranges: QUERY_TRADE 开启交易权限,QUERY_NO_TRADE 不开启交易权限
+        ranges: QUERY 查询权限开启,TRADE 交易权限开启, WITHDRAW 提币权限开启
     -
         name: tags
         type: string

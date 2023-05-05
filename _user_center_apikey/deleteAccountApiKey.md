@@ -2,15 +2,8 @@
 title: Delete user account apiKey
 position_number: 4
 type: delete
-description: /v4/user/account/api-key
+description: /v4/user/account/{apikeyId}
 parameters:
-    -
-        name: accessKey
-        type: string
-        mandatory: true
-        default:
-        description: encryption key
-        ranges:
     -
         name: apikeyId
         type: string

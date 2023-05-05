@@ -2,15 +2,8 @@
 title: 删除用户账户apiKey
 position_number: 4
 type: delete
-description: /v4/user/account/api-key
+description: /v4/user/account/{apikeyId}
 parameters:
-    -
-        name: accessKey
-        type: string
-        mandatory: true
-        default:
-        description: 加密key
-        ranges:
     -
         name: apikeyId
         type: string
