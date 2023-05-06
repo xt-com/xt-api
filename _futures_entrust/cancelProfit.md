@@ -3,6 +3,7 @@ title: Cancel Stop Limit
 position_number: 8
 type: post
 description: /future/trade/v1/entrust/cancel-profit-stop
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: profitId

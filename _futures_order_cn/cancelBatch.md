@@ -3,6 +3,7 @@ title: 撤销所有订单
 position_number: 6
 type: post
 description: /future/trade/v1/order/cancel-all
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: symbol
     type: String

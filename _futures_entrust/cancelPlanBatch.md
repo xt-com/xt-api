@@ -3,6 +3,7 @@ title: Cancel All Trigger Orders
 position_number: 3
 type: post
 description: /future/trade/v1/entrust/cancel-all-plan
+remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
         name: symbol
