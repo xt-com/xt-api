@@ -97,6 +97,34 @@ content_markdown: |-
     | WITHDRAW_023  | Withdrawal amount must be less than {0} |
     | WITHDRAW_024  | Withdraw is not supported |
     | WITHDRAW_025  | Please create a FIO address in the deposit page  |
+    | FUND_001  | Duplicate request (a bizId can only be requested once)  |
+    | FUND_002  | Insufficient account balance  |
+    | FUND_003  | Transfer operations are not supported (for example, sub-accounts do not support financial transfers)  |
+    | FUND_004  | Unfreeze failed  |
+    | FUND_005  | Transfer prohibited  |
+    | FUND_014  | The transfer-in account id and transfer-out account ID cannot be the same  |
+    | FUND_015  | From and to business types cannot be the same  |
+    | FUND_016  | Leverage transfer, symbol cannot be empty  |
+    | FUND_017  | Parameter error  |
+    | FUND_018  | Invalid freeze record  |
+    | FUND_019  | Freeze users not equal  |
+    | FUND_020  | Freeze currency are not equal  |
+    | FUND_021  | Operation not supported  |
+    | FUND_022  | Freeze record does not exist  |
+    | FUND_044  | The maximum length of the amount is 113 and cannot exceed the limit  |
+    | SYMBOL_001  | Symbol does not exist  |
+    | TRANSFER_001  | Duplicate request (a bizId can only be requested once)  |
+    | TRANSFER_002  | Insufficient account balance  |
+    | TRANSFER_003  | User not registered  |
+    | TRANSFER_004  | The currency is not allowed to be transferred  |
+    | TRANSFER_005  | The user's currency is not allowed to be transferred  |
+    | TRANSFER_006  | Transfer prohibited  |
+    | TRANSFER_007  | Request timed out  |
+    | TRANSFER_008  | Transferring to a leveraged account is abnormal  |
+    | TRANSFER_009  | Departing from a leveraged account is abnormal  |
+    | TRANSFER_010  | Leverage cleared, transfer prohibited  |
+    | TRANSFER_011  | Leverage with borrowing, transfer prohibited  |
+    | TRANSFER_012  | Currency transfer prohibited  |
 left_code_blocks:
 - code_block:
   title:

@@ -44,56 +44,66 @@ collections:
     type: spot
     language: en
     position_number: 6
+  transfer:
+    title: Transfer
+    type: spot
+    language: en
+    position_number: 7
   websocket_public:
     title: WEBSOCKET(public)
     type: spot
     language: en
-    position_number: 7
+    position_number: 8
   websocket_private:
     title: WEBSOCKET(private)
     type: spot
     language: en
-    position_number: 8
+    position_number: 9
   documentation_cn:
     title: 接入说明
     type: spot
     language: cn
-    position_number: 9
+    position_number: 10
   market_cn:
     title: 市场数据
     type: spot
     language: cn
-    position_number: 10
+    position_number: 11
   order_cn:
     title: 订单
     type: spot
     language: cn
-    position_number: 11
+    position_number: 12
   trade_cn:
     title: 成交
     type: spot
     language: cn
-    position_number: 12
+    position_number: 13
   balance_cn:
     title: 资产
     type: spot
     language: cn
-    position_number: 13
+    position_number: 14
   deposit_withdrawal_cn:
     title: 充值/提现
     type: spot
     language: cn
-    position_number: 14
+    position_number: 15
+  transfer_cn:
+    title: 划转
+    type: spot
+    language: cn
+    position_number: 16
   websocket_public_cn:
     title: WEBSOCKET(public)
     type: spot
     language: cn
-    position_number: 15
+    position_number: 17
   websocket_private_cn:
     title: WEBSOCKET(private)
     type: spot
     language: cn
-    position_number: 16
+    position_number: 18
 
   futures_documentation:
     title: Access Description

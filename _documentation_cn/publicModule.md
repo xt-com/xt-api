@@ -54,6 +54,17 @@ content_markdown: >-
     | SUCCESS | 完成 |
     | FAIL | 失败 |
     | CANCEL | 已取消 |
+
+  #### **<span id="bizTypeCn">BizType</span>**
+
+
+    | Status | Description |
+    | --- | --- |
+    | SPOT | 现货 |
+    | LEVER | 杠杠 |
+    | FINANCE | 理财 |
+    | FUTURES_U | 合约u本位  |
+    | FUTURES_C | 合约币本位 |
   
 
 left_code_blocks:

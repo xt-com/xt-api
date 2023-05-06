@@ -97,6 +97,34 @@ content_markdown: |-
     | WITHDRAW_023  | 提现金额必须小于{0} |
     | WITHDRAW_024  | 不支持提现 |
     | WITHDRAW_025  | 请前往充值页面创建FIO地址 |
+    | FUND_001  | 请求重复（一个bizId请求多次接口）  |
+    | FUND_002  | 余额不足  |
+    | FUND_003  | 划转操作不支持 （比如子账户不支持理财划入划出）  |
+    | FUND_004  | 解冻失败  |
+    | FUND_005  | 划转禁止  |
+    | FUND_014  | 划入账户id和划出账户id不可以一样  |
+    | FUND_015  | from和to 业务类型不可相同（用户不可以操作自己现货划转到现货）  |
+    | FUND_016  | 杠杆交易对不可为空  |
+    | FUND_017  | 参数错误  |
+    | FUND_018  | 冻结记录无效  |
+    | FUND_019  | 解冻用户不相等  |
+    | FUND_020  | 解冻币种不相等  |
+    | FUND_021  | 操作不支持  |
+    | FUND_022  | 冻结记录不存在  |
+    | FUND_044  | 金额最大长度为113 不可超过限制  |
+    | SYMBOL_001  | 交易对不存在  |
+    | TRANSFER_001  | 请求重复（一个bizId请求多次接口）  |
+    | TRANSFER_002  | 余额不足  |
+    | TRANSFER_003  | 用户未注册  |
+    | TRANSFER_004  | 币种不允许划转  |
+    | TRANSFER_005  | 用户币种不允许划转  |
+    | TRANSFER_006  | 划转禁止  |
+    | TRANSFER_007  | 请求超时  |
+    | TRANSFER_008  | 杠杆划入异常  |
+    | TRANSFER_009  | 杠杆划出异常  |
+    | TRANSFER_010  | 杠杆清零 划出禁止  |
+    | TRANSFER_011  | 杠杆有借贷 划出禁止  |
+    | TRANSFER_012  | 币种划转禁止  |
 
 left_code_blocks:
 - code_block:

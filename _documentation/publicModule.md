@@ -54,6 +54,17 @@ content_markdown: >-
     | SUCCESS | The deposit or withdraw is success. |
     | FAIL | The deposit or withdraw failed. |
     | CANCEL | The deposit or withdraw has been canceled by the user. |
+
+  #### **<span id="bizType">BizType</span>**
+
+
+    | Status | Description |
+    | --- | --- |
+    | SPOT | spot account |
+    | LEVER | Leverage account |
+    | FINANCE | Financial account |
+    | FUTURES_U | USDT-M futures account  |
+    | FUTURES_C | COIN-M futures account |
   
 
 left_code_blocks:
