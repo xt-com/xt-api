@@ -27,7 +27,7 @@ parameters:
         default:
         description: >-
                 提现记录的<a href="#depositWithdrawStatusCn">状态</a>，字符串类型（含义见公共模块-充值/提现记录状态码及含义）
-        ranges: SUBMIT、REVIEW、AUDITED、PENDING、SUCCESS、FAIL、CANCEL
+        ranges: SUBMIT、REVIEW、AUDITED、AUDITED_AGAIN、PENDING、SUCCESS、FAIL、CANCEL
     -
         name: 'fromId'
         type: Long

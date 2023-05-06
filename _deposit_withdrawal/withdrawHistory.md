@@ -27,7 +27,7 @@ parameters:
         default:
         description: >-
                 The <a href="#depositWithdrawStatus">status</a> of the withdrawal record, string type，Refer to public module-Deposit/withdrawal status
-        ranges: SUBMIT、REVIEW、AUDITED、PENDING、SUCCESS、FAIL、CANCEL
+        ranges: SUBMIT、REVIEW、AUDITED、AUDITED_AGAIN、PENDING、SUCCESS、FAIL、CANCEL
     -
         name: 'fromId'
         type: Long

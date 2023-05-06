@@ -50,6 +50,7 @@ content_markdown: >-
     | SUBMIT | 提现: 未冻结 |
     | REVIEW | 提现: 已冻结,待审核 |
     | AUDITED | 提现: 已审核,发送钱包,待上链 |
+    | AUDITED_AGAIN | 复审中 |
     | PENDING | 充值/提现: 已上链 |
     | SUCCESS | 完成 |
     | FAIL | 失败 |

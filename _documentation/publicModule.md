@@ -50,6 +50,7 @@ content_markdown: >-
     | SUBMIT | The withdrawal amount is not frozen. |
     | REVIEW | The withdrawal amount has been frozen and is pending review. |
     | AUDITED | The withdraw has been reviewed and is ready to on-chaining. |
+    | AUDITED_AGAIN | Reexamine |
     | PENDING | The deposit or withdraw is already on-chaining.  |
     | SUCCESS | The deposit or withdraw is success. |
     | FAIL | The deposit or withdraw failed. |
