@@ -1,6 +1,6 @@
 ---
 title: 用户推送
-position_number: 2
+position_number: 6
 type:
 description:
 parameters:
