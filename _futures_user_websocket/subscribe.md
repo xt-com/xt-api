@@ -1,6 +1,6 @@
 ---
 title: Users subscription
-position_number: 1
+position_number: 5
 type:
 description:
 parameters:
