@@ -12,17 +12,20 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-left_code_blocks:
-    -
-      code_block: |-
-         {
+
+     ```js
+     {
           "id": "{id}",   //用户自己定义
           "method": "LOGIN",
           "params": [
-               "login@{listenKey}"
-           ]
-         }
-      language: javascript
+          "login@{listenKey}"
+            ]
+     }
+     ```
+left_code_blocks:
+    -
+      code_block: 
+      language: 
 right_code_blocks:
      -
         code_block: '{"method":"LOGIN","params":["login@A246C3DF8EE532DC75007BC5D86698541678596355681"],"id":"test1"}'
