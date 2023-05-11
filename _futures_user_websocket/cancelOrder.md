@@ -21,8 +21,8 @@ left_code_blocks:
           "op": "order_cancel",
           "args": {},//The parameters are consistent with the single order interface.
          }
-         title: subscription request
-         language: javascript
+      title: subscription request
+      language: javascript
     -
        code_block: |-
           {
@@ -35,8 +35,8 @@ left_code_blocks:
                "clientOrderId":"1213"
             }
            }
-        title: response push
-        language: javascript
+       title: response push
+       language: javascript
 right_code_blocks:
      -
         code_block: '{"id":"test2","op":"order_cancel","args":{"clientOrderId":"204788317630342733"}}'

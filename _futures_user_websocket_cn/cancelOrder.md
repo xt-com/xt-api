@@ -21,8 +21,8 @@ left_code_blocks:
           "op": "order_cancel",
           "args": {},//参数和单个下单接口一致。
          }
-         title: 订阅请求
-         language: javascript
+      title: 订阅请求 
+      language: javascript
     -
        code_block: |-
           {
@@ -35,8 +35,8 @@ left_code_blocks:
                "clientOrderId":"1213"
             }
            }
-        title: 响应推送
-        language: javascript
+       title: 响应推送
+       language: javascript
 right_code_blocks:
      -
         code_block: '{"id":"test2","op":"order_cancel","args":{"clientOrderId":"204788317630342733"}}'
