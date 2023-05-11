@@ -26,8 +26,8 @@ left_code_blocks:
                "notify@{listenKey}"
            ]
          }
-         title: subscription
-         language: javascript
+      title: subscription
+      language: javascript
     -
        code_block: |-
           {
@@ -41,8 +41,8 @@ left_code_blocks:
                  "notify@{listenKey}"
            ]
            }
-        title: unsubscribe
-        language: javascript
+       title: unsubscribe
+       language: javascript
 right_code_blocks:
      -
         code_block: '{"method":"SUBSCRIBE","params":["order@A246C3DF8EE532DC75007BC5D86698541678596355681"],"id":"test1"}   '
