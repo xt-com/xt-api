@@ -140,7 +140,7 @@ collections:
     type: futures
     language: en
     position_number: 7
-  futures_user_websocket:
+  futures_user_websocket_v2:
     title: USER WEBSOCKET
     type: futures
     language: en
@@ -180,7 +180,7 @@ collections:
     type: futures
     language: cn
     position_number: 7
-  futures_user_websocket_cn:
+  futures_user_websocket_v2_cn:
     title: 用户WEBSOCKET
     type: futures
     language: cn
