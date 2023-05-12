@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **请求**
-
-    语法: balance@\{accountId\}
-
-    示例: balance@123456
 left_code_blocks:
     -
         code_block:

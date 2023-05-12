@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **request**
-
-    format: notify
-
-    eg: notify
 left_code_blocks:
     -
         code_block:

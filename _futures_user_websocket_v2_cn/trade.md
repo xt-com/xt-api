@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **请求**
-
-    语法: trade@\{accountId\}
-    
-    示例: trade@123456
 left_code_blocks:
     -
         code_block:

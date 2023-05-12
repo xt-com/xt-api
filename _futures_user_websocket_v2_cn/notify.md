@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **请求**
-
-    语法: notify
-
-    示例: notify
 left_code_blocks:
     -
         code_block:

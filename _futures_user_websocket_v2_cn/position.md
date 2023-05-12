@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **请求**
-
-    语法: position@\{accountId\}
-
-    示例: position@123456
 left_code_blocks:
     -
         code_block:
