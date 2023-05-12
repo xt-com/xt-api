@@ -11,7 +11,7 @@ parameters:
         default:
         description:
         ranges:
-content_markdown:
+content_markdown:|-
         subscribe:
         ```js
           {
