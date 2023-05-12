@@ -42,7 +42,11 @@ left_code_blocks:
         language: javascript
 right_code_blocks:
     -
-        code_block:'{"method":"SUBSCRIBE","params":["order@A246C3DF8EE532DC75007BC5D86698541678596355681"],"id":"test1"}'
+        code_block: |-
+               {"method":"SUBSCRIBE",
+                "params":["order@A246C3DF8EE532DC75007BC5D86698541678596355681"],
+                "id":"test1"
+                }
         title: subscribe
         language: json
 ---
