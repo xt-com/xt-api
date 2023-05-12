@@ -23,7 +23,7 @@ content_markdown: |-
                   "{position}@{listenKey}",
                   "{notify}@{listenKey}"
                 ],
-           "id": "{id}"    //user defined
+           "id": "{id}"    //用户自己定义
            }
         ```
 left_code_blocks:
