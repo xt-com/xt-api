@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **request**
-
-    format: order@\{accountId\}
-
-    eg: order@123456
 left_code_blocks:
     -
         code_block:
@@ -42,7 +37,8 @@ right_code_blocks:
                           "sourceType":"default", //  DEFAULT:normal order,ENTRUST:plan commission,PROFIR:Take Profit and Stop Loss
                           "sourceId" : "1231231",// Triggering conditions ID
                           "state": "", // state:NEW：New order (unfilled);PARTIALLY_FILLED:Partial deal;PARTIALLY_CANCELED:Partial revocation;FILLED:Filled;CANCELED:Cancled;REJECTED:Order failed;EXPIRED：Expired
-                          "createTime": 1731231231 // CreateTime
+                          "createTime": 1731231231, // CreateTime
+                          "clientOrderId":"204788317630342726"
                        }
                 }
         title: Response

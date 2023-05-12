@@ -12,20 +12,23 @@ parameters:
         description:
         ranges:
 content_markdown:
+        subscribe:
+        ```js
+          {
+           "method": "SUBSCRIBE/UNSUBSCRIBE",
+           "params": [
+                  "{order}@{listenKey}",
+                  "{trade}@{listenKey}",
+                  "{balance}@{listenKey}",
+                  "{position}@{listenKey}",
+                  "{notify}@{listenKey}"
+                ],
+           "id": "{id}"    //user defined
+           }
+        ```
 left_code_blocks:
     -
-        code_block: |-
-                {
-                    "method": "subscribe", 
-                    "params": [
-                         "{order}@{listenKey}",
-                         "{trade}@{listenKey}",
-                         "{balance}@{listenKey}",
-                         "{position}@{listenKey}",
-                         "{notify}@{listenKey}"
-                       ], 
-                    "id": "{id}"    //回调ID
-                }
+        code_block: 
         title: 订阅
         language: javascript
     -

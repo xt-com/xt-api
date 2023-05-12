@@ -12,32 +12,27 @@ parameters:
         description:
         ranges:
 content_markdown:
-        listenKey是之前的接口申请的
+        subscribe:
+        ```js
+          {
+             "method": "SUBSCRIBE/UNSUBSCRIBE",
+             "params": [
+                 "{order}@{listenKey}",
+                 "{trade}@{listenKey}",
+                 "{balance}@{listenKey}",
+                 "{position}@{listenKey}",
+                 "{notify}@{listenKey}"
+              ],
+             "id": "{id}"    //user defined
+          }
+        ```
 left_code_blocks:
     -
-        code_block: |-
-                {
-                    "method": "subscribe", 
-                    "params": [
-                        "{order}@{listenKey}", 
-                        "{trade}@{listenKey}",
-                        "{balance}@{listenKey}",
-                        "{position}@{listenKey}",
-                        "{notify}@{listenKey}"
-                    ], 
-                    "id": "{id}"    //call back ID
-                }
+        code_block:
         title: subscribe
         language: javascript
     -
-        code_block: |-
-                {
-                    "method": "unsubscribe", 
-                    "params": [
-                        "{topic}@{listenKey}"
-                    ], 
-                    "id": "{id}"   //call back ID
-                }
+        code_block: 
         title: unsubscribe
         language: javascript
 right_code_blocks:

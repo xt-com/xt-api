@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **请求**
-
-    语法: order@\{accountId\}
-
-    示例: order@123456
 left_code_blocks:
     -
         code_block:
@@ -42,7 +37,8 @@ right_code_blocks:
                           "sourceType":"default", //  DEFAULT:普通订单， ENTRUST:计划委托，PROFIR:止盈止损
                           "sourceId" : "1231231",// 条件订单出发ID
                           "state": "", // 订单状态 NEW：新建订单;未成交; PARTIALLY_FILLED：部分成交；PARTIALLY_CANCELED：部分撤销；FILLED：全部成交；CANCELED：已撤销；REJECTED：下单失败；EXPIRED：已过期
-                          "createTime": 1731231231 // 时间戳
+                          "createTime": 1731231231,// 时间戳
+                          "clientOrderId":"204788317630342726"
                        }
                 }
         title: Response

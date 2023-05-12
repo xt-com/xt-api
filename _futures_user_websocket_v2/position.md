@@ -13,11 +13,6 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **request**
-
-    format: position@\{accountId\}
-
-    eg: position@123456
 left_code_blocks:
     -
         code_block:
