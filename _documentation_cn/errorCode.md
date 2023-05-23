@@ -25,13 +25,13 @@ content_markdown: |-
     | --- | --- |
     | SUCCESS | 成功 |
     | FAILURE | 失败 |
-    | AUTH_001 | 缺少请求头 xt-validate-appkey |
-    | AUTH_002 | 缺少请求头 xt-validate-timestamp |
-    | AUTH_003 | 缺少请求头 xt-validate-recvwindow |
-    | AUTH_004 | 错误的请求头 xt-validate-recvwindow |
-    | AUTH_005 | 缺少请求头 xt-validate-algorithms |
-    | AUTH_006 | 错误的请求头 xt-validate-algorithms |
-    | AUTH_007 | 缺少请求头 xt-validate-signature |
+    | AUTH_001 | 缺少请求头 validate-appkey |
+    | AUTH_002 | 缺少请求头 validate-timestamp |
+    | AUTH_003 | 缺少请求头 validate-recvwindow |
+    | AUTH_004 | 错误的请求头 validate-recvwindow |
+    | AUTH_005 | 缺少请求头 validate-algorithms |
+    | AUTH_006 | 错误的请求头 validate-algorithms |
+    | AUTH_007 | 缺少请求头 validate-signature |
     | AUTH_101 | ApiKey不存在 |
     | AUTH_102 | ApiKey未激活 |
     | AUTH_103 | 签名错误 |

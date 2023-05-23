@@ -25,13 +25,13 @@ content_markdown: |-
     | --- | --- |
     | SUCCESS | success |
     | FAILURE | fail |
-    | AUTH_001 | missing request header xt-validate-appkey |
-    | AUTH_002 | missing request header xt-validate-timestamp |
-    | AUTH_003 | missing request header xt-validate-recvwindow |
-    | AUTH_004 | bad request header xt-validate-recvwindow |
-    | AUTH_005 | missing request header xt-validate-algorithms |
-    | AUTH_006 | bad request header xt-validate-algorithms |
-    | AUTH_007 | missing request header xt-validate-signature |
+    | AUTH_001 | missing request header validate-appkey |
+    | AUTH_002 | missing request header validate-timestamp |
+    | AUTH_003 | missing request header validate-recvwindow |
+    | AUTH_004 | bad request header validate-recvwindow |
+    | AUTH_005 | missing request header validate-algorithms |
+    | AUTH_006 | bad request header validate-algorithms |
+    | AUTH_007 | missing request header validate-signature |
     | AUTH_101 | ApiKey does not exist |
     | AUTH_102 | ApiKey is not activated |
     | AUTH_103 | Signature error |
