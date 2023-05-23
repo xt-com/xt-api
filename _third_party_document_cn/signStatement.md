@@ -30,37 +30,37 @@ content_markdown: >-
     5、加入algorithms (签名方法/算法)，用户计算签名是基于哈希的协议，此处默认使用HmacSHA256。具体支持那些协议，请参见下面表格中所列出
 examples:
   -
-    name: xt-validate-appkey
+    name: validate-appkey
     mandatory: true
     example: dbefbc809e3e83c283a984c3a1459732ea7db1360ca80c5c2c8867408d28cc83
     description:
   -
-    name: xt-validate-timestamp
+    name: validate-timestamp
     mandatory: true
     example: 1641446237201
     description:
   -
-    name: xt-validate-signature
+    name: validate-signature
     mandatory: true
     example: 0a7d0b5e802eb5e52ac0cfcd6311b0faba6e2503a9a8d1e2364b38617877574d
     description:
   -
-    name: xt-validate-recvwindow
+    name: validate-recvwindow
     mandatory: false
     example: 5000(毫秒)
     description:
   -
-    name: xt-validate-algorithms
+    name: validate-algorithms
     mandatory: false
     example: HmacSHA256
     description: HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256、HmacSHA384、HmacSHA512，默认为：HmacSHA256
   -
-    name: xt-api-version
+    name: api-version
     mandatory: false
     example: 1.0
     description: 保留，API版本号
   -
-    name: xt-validate-signversion
+    name: validate-signversion
     mandatory: false
     example: 1.0
     description: 保留，签名版本号

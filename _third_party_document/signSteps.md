@@ -22,13 +22,13 @@ content_markdown: >-
     Partial data of Header：
     
     
-    xt-validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
+    validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
 
 
-    xt-validate-timestamp: 1641446237201
+    validate-timestamp: 1641446237201
     
     
-    xt-validate-algorithms: HmacSHA256
+    validate-algorithms: HmacSHA256
 
 
 
@@ -114,7 +114,7 @@ content_markdown: >-
 
 
       2:Request header
-            X=”xt-validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&xt-validate-timestamp=1641446237201”
+            X=”validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&validate-timestamp=1641446237201”
 
 
 
@@ -126,7 +126,7 @@ content_markdown: >-
 
       signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, sign);
 
-      Put the generated signature in the request header, with xt-validate-signature as the key and singature as the value.
+      Put the generated signature in the request header, with validate-signature as the key and singature as the value.
       
 left_code_blocks:
 - code_block:
