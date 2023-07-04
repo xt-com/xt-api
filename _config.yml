@@ -238,6 +238,16 @@ collections:
     type: third_party
     language: cn
     position_number: 5
+  third_party_user:
+    title: User
+    type: third_party
+    language: en
+    position_number: 6
+  third_party_user_cn:
+    title: 用户
+    type: third_party
+    language: cn
+    position_number: 6
 
   user_center_documentation:
     title: Access Description
