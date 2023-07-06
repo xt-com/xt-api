@@ -26,7 +26,10 @@ parameters:
         default:
         description: BUY-买,SELL-卖
         ranges:
-content_markdown:
+content_markdown: >-
+    #### **限流规则**
+
+    10/s/apikey
 left_code_blocks:
     -
         code_block:

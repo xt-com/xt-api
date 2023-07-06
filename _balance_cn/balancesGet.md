@@ -12,7 +12,10 @@ parameters:
         default:
         description: '币种列表,逗号分隔，eg:  usdt,btc'
         ranges:
-content_markdown:
+content_markdown: >-
+    #### **限流规则**
+
+    10/s/apikey
 left_code_blocks:
     -
         code_block:

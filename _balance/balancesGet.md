@@ -12,7 +12,10 @@ parameters:
         default:
         description: 'List of currencies, comma separated,eg:  usdt,btc'
         ranges:
-content_markdown:
+content_markdown: >-
+    #### **Limit Flow Rules**
+
+    10/s/apikey
 left_code_blocks:
     -
         code_block:

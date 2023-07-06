@@ -26,8 +26,12 @@ parameters:
         default:
         description: BUY,SELL
         ranges:
-content_markdown: |-
-        Note: The parameters should be placed in the request body in the form of json
+content_markdown: >-
+    #### **Limit Flow Rules**
+
+    10/s/apikey
+    <br>
+    Note: The parameters should be placed in the request body in the form of json
 left_code_blocks:
     -
         code_block:
