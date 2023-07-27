@@ -125,6 +125,10 @@ content_markdown: |-
     | TRANSFER_010  | 杠杆清零 划出禁止  |
     | TRANSFER_011  | 杠杆有借贷 划出禁止  |
     | TRANSFER_012  | 币种划转禁止  |
+    | GATEWAY_0001  | 触发风控  |
+    | GATEWAY_0002  | 触发风控  |
+    | GATEWAY_0003  | 触发风控  |
+    | GATEWAY_0004  | 触发风控  |
 
 left_code_blocks:
 - code_block:

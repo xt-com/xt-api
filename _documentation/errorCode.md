@@ -125,6 +125,11 @@ content_markdown: |-
     | TRANSFER_010  | Leverage cleared, transfer prohibited  |
     | TRANSFER_011  | Leverage with borrowing, transfer prohibited  |
     | TRANSFER_012  | Currency transfer prohibited  |
+    | GATEWAY_0001  | Trigger risk control  |
+    | GATEWAY_0002  | Trigger risk control  |
+    | GATEWAY_0003  | Trigger risk control  |
+    | GATEWAY_0004  | Trigger risk control  |  
+
 left_code_blocks:
 - code_block:
   title:
