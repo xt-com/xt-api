@@ -22,13 +22,13 @@ content_markdown: >-
     Header部分数据：
     
     
-    xt-validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
+    validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
 
 
-    xt-validate-timestamp: 2b5eb11e18796d12d88f13dc27dbbd02c2cc51ff7059765ed9821957d82bb4d9
+    validate-timestamp: 2b5eb11e18796d12d88f13dc27dbbd02c2cc51ff7059765ed9821957d82bb4d9
     
     
-    xt-validate-algorithms: HmacSHA256
+    validate-algorithms: HmacSHA256
     
     
 
@@ -117,7 +117,7 @@ content_markdown: >-
 
 
       2、请求头部分
-            X=”xt-validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&xt-validate-timestamp=1641446237201”
+            X=”validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&validate-timestamp=1641446237201”
 
 
 
@@ -129,7 +129,7 @@ content_markdown: >-
 
       signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, sign);
 
-      将生成的签名singature放到请求头中，以xt-validate-signature为Key，以singature为值。
+      将生成的签名singature放到请求头中，以validate-signature为Key，以singature为值。
       
 left_code_blocks:
 - code_block:

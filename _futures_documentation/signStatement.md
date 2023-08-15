@@ -28,37 +28,37 @@ content_markdown: >-
     5、5. Add algorithms (signature method/algorithm). User's signature calculation is a HSC-based protocol, where HmacSHA256 is used by default. See the specific supported protocols listed in the table below.
 examples:
   -
-    name: xt-validate-appkey
+    name: validate-appkey
     mandatory: true
     example: dbefbc809e3e83c283a984c3a1459732ea7db1360ca80c5c2c8867408d28cc83
     description:
   -
-    name: xt-validate-timestamp
+    name: validate-timestamp
     mandatory: true
     example: 1641446237201
     description:
   -
-    name: xt-validate-signature
+    name: validate-signature
     mandatory: true
     example: 0a7d0b5e802eb5e52ac0cfcd6311b0faba6e2503a9a8d1e2364b38617877574d
     description:
   -
-    name: xt-validate-recvwindow
+    name: validate-recvwindow
     mandatory: false
     example: 5000(millisecond)
     description:
   -
-    name: xt-validate-algorithms
+    name: validate-algorithms
     mandatory: false
     example: HmacSHA256
     description: HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256、HmacSHA384、HmacSHA512，默认为：HmacSHA256
   -
-    name: xt-api-version
+    name: api-version
     mandatory: false
     example: 1.0
     description: Reserved, API version number
   -
-    name: xt-validate-signversion
+    name: validate-signversion
     mandatory: false
     example: 1.0
     description: Reserved, signature version number
