@@ -12,7 +12,7 @@ content_markdown: >-
 
     各个语言的sdk：
         
-        java: https://github.com/futuresee/api-demo-java
+        java: https://github.com/xt-com/api-demo-java
         python: https://github.com/xt-com/xt4-python-demo
 
 
