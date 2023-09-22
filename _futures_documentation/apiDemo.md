@@ -12,7 +12,7 @@ content_markdown: >-
 
     Sdks for each language:
         
-        java: https://github.com/xt-com/api-demo-java
+        java: https://github.com/xt-com/xt4-java-demo
         python: https://github.com/xt-com/xt4-python-demo
 
 left_code_blocks:
