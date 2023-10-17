@@ -33,7 +33,7 @@ right_code_blocks:
                     "a": "123",           // accountId                     
                     "t": 1656043204763,   // time happened time
                     "c": "btc",           // currency
-                    "b": "123",           // balance available balance
+                    "b": "123",           // all spot balance
                     "f": "11",            // frozen
                     "z": "SPOT",           // bizType [SPOT,LEVER]
                     "s": "btc_usdt"       // symbol
