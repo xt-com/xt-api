@@ -12,6 +12,13 @@ parameters:
     default: N/A
     description: Trading pair, eg.BTC-USDT
     ranges:
+  -
+    name: level
+    type: int
+    mandatory: false
+    default: 50
+    description:
+    ranges: 1-200
         
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:
@@ -27,7 +34,6 @@ right_code_blocks:
         },
         "msgInfo": "",
         "result": {
-            "BTC-USD":{
                 "ticker_id": "BTC-USDT", 
                 "timestamp": 1698668957638,
                 "bids": [[
@@ -44,8 +50,7 @@ right_code_blocks:
                      "34794.8",
                      "4009"
                     ],...]
-            }
-        },
+            },
         "returnCode": 0
       }
     title: Response
