@@ -14,13 +14,7 @@ left_code_blocks:
     language: java
 right_code_blocks:
   - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": [{
+      [{
           "id": 123, 
           "ask": "1817.32",                 //Current lowest ask price
           "base_currency": "ETH",           //Symbol/currency code of base pair, eg. BTC
@@ -45,9 +39,7 @@ right_code_blocks:
           "target_volume": "73698647.51054371",  //24 hours trading volume
           "ticker_id": "ETH-USD",           //Identifier of a ticker with delimiter to separate base/target, eg. BTC-PERP
           "underlyingType": 1               //Target type, Coin-M,USDT-M
-        }],
-        "returnCode": 0
-      }
+        }]
     title: Response
     language: json
 ---

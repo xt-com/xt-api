@@ -28,12 +28,6 @@ left_code_blocks:
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": {
                 "ticker_id": "BTC-USDT", 
                 "timestamp": 1698668957638,
                 "bids": [[
@@ -50,8 +44,6 @@ right_code_blocks:
                      "34794.8",
                      "4009"
                     ],...]
-            },
-        "returnCode": 0
       }
     title: Response
     language: json

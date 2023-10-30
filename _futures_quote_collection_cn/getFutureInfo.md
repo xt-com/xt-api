@@ -14,13 +14,7 @@ left_code_blocks:
     language: java
 right_code_blocks:
   - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": [{
+      [{
           "id": 123, 
           "ask": "1817.32",                 //当前最低价
           "base_currency": "ETH",           //标的币种，比如 BTC
@@ -45,9 +39,7 @@ right_code_blocks:
           "target_volume": "73698647.51054371",  //24小时交易量
           "ticker_id": "ETH-USD",           //代码标识符
           "underlyingType": 1               //标的类型，币本位，u本位
-        }],
-        "returnCode": 0
-      }
+        }]
     title: Response
     language: json
 ---
