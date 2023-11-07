@@ -1,8 +1,8 @@
 ---
-title: Get Configuration Information for All Trading Pairs
+title: Get Configuration Information for Listed And Tradeable Symbols
 position_number: 3
 type: get
-description: /future/market/v1/public/symbol/list
+description: /future/market/v3/public/symbol/list
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:
