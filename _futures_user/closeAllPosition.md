@@ -1,6 +1,6 @@
 ---
 title: Close All
-position_number: 11
+position_number: 12
 type: post
 description: /future/user/v1/position/close-all
 left_code_blocks:

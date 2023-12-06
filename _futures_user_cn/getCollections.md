@@ -1,6 +1,6 @@
 ---
 title: 收藏交易对列表
-position_number: 15
+position_number: 16
 type: get
 description: /future/user/v1/user/collection/list
 left_code_blocks:

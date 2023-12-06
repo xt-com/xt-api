@@ -1,6 +1,6 @@
 ---
 title: 获取持仓爆仓信息
-position_number: 17
+position_number: 18
 type: get
 description: /future/user/v1/position/break-list
 parameters:

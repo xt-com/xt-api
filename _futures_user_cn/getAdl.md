@@ -1,6 +1,6 @@
 ---
 title: 获取ADL信息
-position_number: 12
+position_number: 13
 type: get
 description: /future/user/v1/position/adl
 left_code_blocks:

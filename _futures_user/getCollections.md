@@ -1,6 +1,6 @@
 ---
 title: List of Collected Trading Pairs
-position_number: 15
+position_number: 16
 type: get
 description: /future/user/v1/user/collection/list
 left_code_blocks:

@@ -1,6 +1,6 @@
 ---
 title: 取消收藏交易对
-position_number: 14
+position_number: 15
 type: post
 description: /future/user/v1/user/collection/cancel
 remark: Content-Type = application/x-www-form-urlencoded && application/json

@@ -1,6 +1,6 @@
 ---
 title: 收藏交易对
-position_number: 13
+position_number: 14
 type: post
 description: /future/user/v1/user/collection/add
 remark: Content-Type = application/x-www-form-urlencoded && application/json

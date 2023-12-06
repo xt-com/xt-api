@@ -1,6 +1,6 @@
 ---
 title: Get Margin Call Information
-position_number: 17
+position_number: 18
 type: get
 description: /future/user/v1/position/break-list
 parameters:

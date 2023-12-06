@@ -1,6 +1,6 @@
 ---
 title: Adjust Leverage
-position_number: 8
+position_number: 9
 type: post
 description: /future/user/v1/position/adjust-leverage
 remark: Content-Type = application/x-www-form-urlencoded && application/json
