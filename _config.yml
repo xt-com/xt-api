@@ -110,31 +110,36 @@ collections:
     type: futures
     language: en
     position_number: 1
+  futures_package:
+    title: Python Package
+    type: futures
+    language: en
+    position_number: 2
   futures_quotes:
     title: Market data
     type: futures
     language: en
-    position_number: 2
+    position_number: 3
   futures_quote_collection:
     title: Quote collection
     type: futures
     language: en
-    position_number: 3
+    position_number: 4
   futures_order:
     title: Order
     type: futures
     language: en
-    position_number: 4
+    position_number: 5
   futures_entrust:
     title: Entrust
     type: futures
     language: en
-    position_number: 5
+    position_number: 6
   futures_user:
     title: User
     type: futures
     language: en
-    position_number: 6
+    position_number: 7
   # futures_market_websocket:
   #   title: WEBSOCKET
   #   type: futures
@@ -144,42 +149,47 @@ collections:
     title: WEBSOCKET(V2)
     type: futures
     language: en
-    position_number: 7
+    position_number: 8
   futures_user_websocket_v2:
     title: USER WEBSOCKET
     type: futures
     language: en
-    position_number: 8
+    position_number: 9
   futures_documentation_cn:
     title: 接入说明
     type: futures
     language: cn
     position_number: 1
+  futures_package_cn:
+    title: Python Package
+    type: futures
+    language: cn
+    position_number: 2
   futures_quotes_cn:
     title: 行情数据
     type: futures
     language: cn
-    position_number: 2
+    position_number: 3
   futures_quote_collection_cn:
     title: 行情收录
     type: futures
     language: cn
-    position_number: 3
+    position_number: 4
   futures_order_cn:
     title: 限价委托和市价委托
     type: futures
     language: cn
-    position_number: 4
+    position_number: 5
   futures_entrust_cn:
     title: 计划委托与止盈止损
     type: futures
     language: cn
-    position_number: 5
+    position_number: 6
   futures_user_cn:
     title: 用户相关
     type: futures
     language: cn
-    position_number: 6
+    position_number: 7
   # futures_market_websocket_cn:
   #   title: 行情WEBSOCKET
   #   type: futures
@@ -189,12 +199,13 @@ collections:
     title: 行情WEBSOCKET(V2)
     type: futures
     language: cn
-    position_number: 7
+    position_number: 8
   futures_user_websocket_v2_cn:
     title: 用户WEBSOCKET
     type: futures
     language: cn
-    position_number: 8
+    position_number: 9
+
   third_party_document:
     title: Access Description
     type: third_party
