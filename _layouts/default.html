@@ -33,6 +33,10 @@
 			<input type="text" name="q" id="search-input" placeholder="Search">
 			<input type="submit" value="Search" style="display: none;">
 		</form>
+		<div id="index_sidebar">
+			<div class="sidebar_en">{% include index_sidebar_en.html %}</div>
+			<div class="sidebar_cn">{% include index_sidebar_cn.html %}</div>
+		</div>
 		<div id="spot_sidebar">
 			<div class="sidebar_en">{% include sidebar_en.html %}</div>
 			<div class="sidebar_cn">{% include sidebar_cn.html %}</div>
@@ -57,13 +61,15 @@
 				<div class="i18nButton" id="en">english</div>
 			</div>
 			<div class="trade-type-select" id="trade_type_en">
-				<a style="cursor:pointer;" class="active-type show_spot" >Spot</a>
+				<a style="cursor:pointer;" class="active-type show_index" >Index</a>
+				<a style="cursor:pointer;" class="show_spot" >Spot</a>
 				<a style="cursor:pointer;" class="show_futures">Futures</a>
 				<a style="cursor:pointer;" class="show_third_party">Third Party</a>
 				<a style="cursor:pointer;" class="show_user_center">User Center</a>
 			</div>
 			<div class="trade-type-select" id="trade_type_cn">
-				<a style="cursor:pointer;" class="active-type show_spot">现货</a>
+				<a style="cursor:pointer;" class="active-type show_index">首页</a>
+				<a style="cursor:pointer;" class="show_spot">现货</a>
 				<a style="cursor:pointer;" class="show_futures">合约</a>
 				<a style="cursor:pointer;" class="show_third_party">第三方平台</a>
 				<a style="cursor:pointer;" class="show_user_center">用户中心</a>
@@ -80,9 +86,9 @@
 			//默认显示语言
 			window.lang = "en";
 			//默认展示模块
-			var model = "spot";
+			var model = "index";
 			//所有模块数组
-			var models = new Array("spot", "futures", "third_party", "user_center");
+			var models = new Array("index","spot", "futures", "third_party", "user_center");
 
 			var query = window.location.toString();
 			//有锚点定位

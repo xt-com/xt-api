@@ -14,6 +14,17 @@ baseurl:
 timezone: Etc/UTC
 
 collections:
+  index_overview:
+    title: Overview
+    type: index
+    language: en
+    position_number: 1
+  index_overview_cn:
+    title: 概述
+    type: index
+    language: cn
+    position_number: 1
+
   documentation:
     title: Access Description
     type: spot
@@ -497,6 +508,15 @@ defaults:
       _hide_content: true
   - scope:
       type: "user_center_apikey_cn"
+    values:
+      _hide_content: true
+
+  - scope:
+      type: "index_overview"
+    values:
+      _hide_content: true
+  - scope:
+      type: "index_overview_cn"
     values:
       _hide_content: true
 # -----------
