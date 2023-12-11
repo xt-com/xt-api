@@ -4,7 +4,7 @@
     {% if collection.type=="index" and collection.language=="en" %}
     {% assign sorted_docs = collection.docs | sort: "position_number" %}
     {% for doc in sorted_docs %}
-    <section class="doc-content" style="background:linear-gradient(to right, #ffffff 0%, #ffffff 100%, #ffffff 100%)">
+    <section class="index-doc-content" >
         <section class="left-docs" >
             <h3>
                 <a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
@@ -90,7 +90,7 @@
     {% if collection.type=="index" and collection.language=="cn" %}
     {% assign sorted_docs = collection.docs | sort: "position_number" %}
     {% for doc in sorted_docs %}
-    <section class="doc-content" style="background:linear-gradient(to right, #ffffff 0%, #ffffff 100%, #ffffff 100%)">
+    <section class="index-doc-content">
         <section class="left-docs" >
             <h3>
                 <a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
