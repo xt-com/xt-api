@@ -13,6 +13,17 @@ parameters:
         description:
         ranges:
 content_markdown: |-
+  subscribe:
+  ```js
+    {
+       "method": "SUBSCRIBE/UNSUBSCRIBE",
+       "params": [
+           "{notify}@{listenKey}",
+        ],
+       "id": "{id}"
+    }
+  ```
+
 left_code_blocks:
     -
         code_block:
