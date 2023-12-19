@@ -69,6 +69,10 @@ parameters:
         description: 金额。现价不填；市价按金额下单时必填
         ranges:
 content_markdown: >-
+    #### **备注**
+
+    按照市价创建BUY订单时，quantity为空，quoteQty必填；按照市价创建SELL订单时，quoteQty为空，quantity必填。 
+  
     #### **限流规则**
 
     50/s/apikey

@@ -68,6 +68,10 @@ parameters:
         description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
         ranges:
 content_markdown: >-
+    #### **Remark**
+
+    Create a BUY order based on market price, quantity must be null, quoteQty required; Create a SELL order based on market price, quoteQty must be null, quantity required.  
+  
     #### **Limit Flow Rules**
     
     50/s/apikey
