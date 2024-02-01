@@ -86,26 +86,31 @@
 			//默认显示语言
 			window.lang = "en";
 			//默认展示模块
-			var model = "index";
+			var model = "";
 			//所有模块数组
-			var models = new Array("index","spot", "futures", "third_party", "user_center");
+			var models = new Array("index", "spot", "futures", "third_party", "user_center");
 
 			var query = window.location.toString();
 			//有锚点定位
 			if(query.indexOf("#")>0){
 				var anchorPoint = query.split("#")[1];
+				if(anchorPoint.indexOf("_cn")>0){
+					window.lang = "cn";
+				}else {
+					window.lang = "en";
+				}
 
 				for(var md in models){
 					var modelName = models[md];
 					if(anchorPoint.indexOf(modelName+"_")==0){
 						model= modelName;
-						if(anchorPoint.indexOf("_cn")>0){
-							window.lang = "cn";
-						}else {
-							window.lang = "en";
-						}
 					}
 				}
+				if(model === ""){
+					model = "spot";
+				}
+			}else {
+				model = "index";
 			}
 			//根据当前url地址，显示对应的模块
 			showModel(model);

@@ -152,7 +152,7 @@ function getShowSidebarNew(){
 	//默认显示语言
 	var lang = "en";
 	//默认展示模块
-	var model = "spot";
+	var model = "index";
 
 	var domId;
 	$('.trade-type-select').each(function (index, domEle) {
