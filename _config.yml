@@ -217,6 +217,37 @@ collections:
     language: cn
     position_number: 9
 
+  margin_document:
+    title: Access Description
+    type: margin
+    language: en
+    position_number: 1
+  margin_market:
+    title: Market
+    type: margin
+    language: en
+    position_number: 2
+  margin_balance:
+    title: Balance
+    type: margin
+    language: en
+    position_number: 3
+  margin_document_cn:
+    title: 接入说明
+    type: margin
+    language: cn
+    position_number: 1
+  margin_market_cn:
+    title: 市场
+    type: margin
+    language: cn
+    position_number: 2
+  margin_balance_cn:
+    title: 资产
+    type: margin
+    language: cn
+    position_number: 3
+
   third_party_document:
     title: Access Description
     type: third_party
@@ -470,6 +501,14 @@ defaults:
       _hide_content: true
   - scope:
       type: "futures_user_websocket_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "margin_documentation"
+    values:
+      _hide_content: true
+  - scope:
+      type: "margin_documentation"
     values:
       _hide_content: true
   - scope:

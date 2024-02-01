@@ -135,6 +135,8 @@ function getShowSidebar(){
 		//合约
 		if(anchorPoint.indexOf("futures_")==0){
 			model= "futures";
+		}else if(anchorPoint.indexOf("margin_")==0) {//杠杆
+			model= "margin";
 		}else if(anchorPoint.indexOf("third_party_")==0) {//第三方
 			model= "third_party";
 		}else if(anchorPoint.indexOf("user_center_")==0) {//用户中心
