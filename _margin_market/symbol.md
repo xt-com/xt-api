@@ -3,7 +3,7 @@ title: Get symbol list
 position_number: 1
 type: get
 split: -------------------------------------
-description: /v4/market/public/lever/symbol
+description: /v4/public/lever/symbol
 parameters:
 
 content_markdown: 
