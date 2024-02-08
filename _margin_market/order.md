@@ -22,7 +22,7 @@ parameters:
   -
     name: amount
     type: number
-    mandatory: false
+    mandatory: true
     default:
     description: 'eg: 8000'
     ranges:
