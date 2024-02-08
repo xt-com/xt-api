@@ -10,19 +10,19 @@ parameters:
     type: string
     mandatory: false
     default:
-    description:
+    description: 市场
     ranges:
   -
     name: startTime
     type: long
-    mandatory: false
+    mandatory: true
     default:
     description: 开始时间
     ranges:
   -
     name: endTime
     type: long
-    mandatory: false
+    mandatory: true
     default:
     description: 结束时间
     ranges:
@@ -36,7 +36,7 @@ parameters:
   -
     name: direction
     type: string
-    mandatory: false
+    mandatory: true
     default:
     description: 分页方向  NEXT/PREV
     ranges:
@@ -44,7 +44,7 @@ parameters:
     name: limit
     type: int
     mandatory: false
-    default:
+    default: 20
     description: 页数
     ranges:
   

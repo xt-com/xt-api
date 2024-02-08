@@ -15,7 +15,7 @@ parameters:
   -
     name: startTime
     type: long
-    mandatory: false
+    mandatory: true
     default:
     description: start time
     ranges:
@@ -36,7 +36,7 @@ parameters:
   -
     name: direction
     type: string
-    mandatory: false
+    mandatory: true
     default:
     description: page direction  NEXT/PREV
     ranges:
@@ -44,7 +44,7 @@ parameters:
     name: limit
     type: int
     mandatory: false
-    default:
+    default: 20
     description: page limit
     ranges:
   
