@@ -11,10 +11,6 @@ content_markdown: |-
     **https://oapi.xt.com**
     {: .info}
 
-    Test:
-
-    **http://oapi.xt-qa.com**  //Please use this environment for development and testing
-    {: .info}
 
 left_code_blocks:
     -

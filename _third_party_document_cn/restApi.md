@@ -11,11 +11,6 @@ content_markdown: |-
     **https://oapi.xt.com**
     {: .info}
 
-    测试环境:
-
-    **http://oapi.xt-qa.com**   //请使用该环境进行开发、测试
-    {: .info}
-
 
 
 left_code_blocks:

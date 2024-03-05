@@ -9,7 +9,7 @@ content_markdown: >-
     当第三方平台需要XT.COM用户授权某些操作时，请从第三方平台页面跳转到`http(s)://{URL}/{language}/accounts/oauth2?response_type=code&client_id={clientId}&redirect_uri={redirectUri}&scope={scope}`<br>
     **参数说明**<br>
     **1. URL**<br>
-    xt授权页面域名，正式环境为: www.xt.com，测试环境为: www.xt-qa.com<br>
+    xt授权页面域名，正式环境为: www.xt.com<br>
     **2. language**<br> 
     授权页面语言，当前支持的内容如下：<br>
     en：英语<br>
@@ -30,7 +30,7 @@ content_markdown: >-
     **5. scope**<br>
     授权作用域，和clientId一同向XT.COM获取<br>
     **例如:**<br>
-    http://www.xt-qa.com/zh-CN/accounts/oauth2?response_type=code&client_id=DDJ7BLK49YUCL97S&redirect_uri=https%3A%2F%2Fwww.baidu.com&scope=userinfo
+    http://www.xt.com/zh-CN/accounts/oauth2?response_type=code&client_id=DDJ7BLK49YUCL97S&redirect_uri=https%3A%2F%2Fwww.baidu.com&scope=userinfo
 
 left_code_blocks:
 - code_block:

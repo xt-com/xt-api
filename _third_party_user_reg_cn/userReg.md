@@ -9,7 +9,7 @@ content_markdown: >-
     如果您没有XT账号，请提前注册，注册地址：`http(s)://{URL}/{language}/accounts/register?client_id={clientId}`<br>
     **参数说明**<br>
     **1. URL**<br>
-    xt授权页面域名，正式环境为: www.xt.com，测试环境为: www.xt-qa.com<br>
+    xt授权页面域名，正式环境为: www.xt.com<br>
     **2. language**<br> 
     授权页面语言，当前支持的内容如下：<br>
     en：英语<br>
@@ -26,7 +26,7 @@ content_markdown: >-
     **3. clientId**<br>
     机构唯一标识，请提前向XT.COM申请<br>
     **例如:**<br>
-    http://www.xt-qa.com/en/accounts/register?client_id=DDJ7BLK49YUCL97S<br>
+    http://www.xt.com/en/accounts/register?client_id=DDJ7BLK49YUCL97S<br>
     通过该url注册的用户将属于机构:DDJ7BLK49YUCL97S
 
 left_code_blocks:
