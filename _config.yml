@@ -291,26 +291,56 @@ collections:
     type: third_party
     language: cn
     position_number: 4
-  third_party_copy_trade:
-    title: Copy Trade
+#  third_party_copy_trade:
+#    title: Copy Trade
+#    type: third_party
+#    language: en
+#    position_number: 5
+#  third_party_copy_trade_cn:
+#    title: 跟单接口
+#    type: third_party
+#    language: cn
+#    position_number: 5
+#  third_party_user:
+#    title: User
+#    type: third_party
+#    language: en
+#    position_number: 6
+#  third_party_user_cn:
+#    title: 用户
+#    type: third_party
+#    language: cn
+#    position_number: 6
+  third_party_order:
+    title: Order
     type: third_party
     language: en
-    position_number: 5
-  third_party_copy_trade_cn:
-    title: 跟单接口
+    position_number: 7
+  third_party_order_cn:
+    title: 订单
     type: third_party
     language: cn
-    position_number: 5
-  third_party_user:
-    title: User
+    position_number: 7
+  third_party_trade:
+    title: Trade
     type: third_party
     language: en
-    position_number: 6
-  third_party_user_cn:
-    title: 用户
+    position_number: 8
+  third_party_trade_cn:
+    title: 成交
     type: third_party
     language: cn
-    position_number: 6
+    position_number: 8
+  third_party_balance:
+    title: Balance
+    type: third_party
+    language: en
+    position_number: 9
+  third_party_balance_cn:
+    title: 资产
+    type: third_party
+    language: cn
+    position_number: 9
 
   user_center_documentation:
     title: Access Description
