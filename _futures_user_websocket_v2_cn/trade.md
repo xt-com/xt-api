@@ -43,7 +43,9 @@ right_code_blocks:
                         "timestamp":1731231231, // 时间戳
                         "symbol": "btc_usdt", //交易对
                         "orderSide": "BUY", //订单方向
-                        "positionSide": "LONG"  //持仓方向
+                        "positionSide": "LONG",  //持仓方向
+                        "isMaker": true,     //是否是maker,true:maker;false:taker
+                        "fee": 0.0002        //手续费
                    }
             }
         title: Response

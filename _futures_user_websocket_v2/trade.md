@@ -43,7 +43,9 @@ right_code_blocks:
                         "timestamp":1731231231, // Timestamp
                         "symbol": "btc_usdt", //Symbol
                         "orderSide": "BUY", //Order side
-                        "positionSide": "LONG"  //Position side
+                        "positionSide": "LONG",  //Position side
+                        "isMaker": true,     //Is maker or not, true:maker;false:taker
+                        "fee": 0.0002        //fee
                    }
             }
         title: Response
