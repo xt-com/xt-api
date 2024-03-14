@@ -40,7 +40,10 @@ right_code_blocks:
                         "price":"34244",  // Price
                         "quantity":"123", // Quantity
                         "marginUnfrozen":"123", // Quantity of unfrozen margin
-                        "timestamp":1731231231 // Timestamp
+                        "timestamp":1731231231, // Timestamp
+                        "symbol": "btc_usdt", //Symbol
+                        "orderSide": "BUY", //Order side
+                        "positionSide": "LONG"  //Position side
                    }
             }
         title: Response

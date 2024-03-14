@@ -40,7 +40,10 @@ right_code_blocks:
                         "price":"34244",  // 价格
                         "quantity":"123", // 数量
                         "marginUnfrozen":"123", // 保证金解冻数量
-                        "timestamp":1731231231 // 时间戳
+                        "timestamp":1731231231, // 时间戳
+                        "symbol": "btc_usdt", //交易对
+                        "orderSide": "BUY", //订单方向
+                        "positionSide": "LONG"  //持仓方向
                    }
             }
         title: Response
