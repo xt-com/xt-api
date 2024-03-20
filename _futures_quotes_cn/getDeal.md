@@ -1,6 +1,6 @@
 ---
 title: 获取交易对的最新成交信息
-position_number: 8
+position_number: 9
 type: get
 description: /future/market/v1/public/q/deal
 parameters:

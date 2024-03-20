@@ -1,6 +1,6 @@
 ---
 title: 获取所有交易对的指数价格
-position_number: 11
+position_number: 12
 type: get
 description: /future/market/v1/public/q/index-price
 parameters:

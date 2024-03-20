@@ -1,6 +1,6 @@
 ---
 title: Get Latest Transaction Information of Trading Pairs
-position_number: 8
+position_number: 9
 type: get
 description: /future/market/v1/public/q/deal
 parameters:

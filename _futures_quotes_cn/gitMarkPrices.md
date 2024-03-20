@@ -1,6 +1,6 @@
 ---
 title: 获取所有交易对的标记价格
-position_number: 13
+position_number: 14
 type: get
 description: /future/market/v1/public/q/mark-price
 parameters:

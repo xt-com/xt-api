@@ -1,6 +1,6 @@
 ---
 title: Get Ask Bid Market Information for Specific Trading Pair
-position_number: 17
+position_number: 18
 type: get
 description: /future/market/v1/public/q/ticker/book
 parameters:

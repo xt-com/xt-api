@@ -1,6 +1,6 @@
 ---
 title: Get Index Price for All Trading Pairs
-position_number: 11
+position_number: 12
 type: get
 description: /future/market/v1/public/q/index-price
 parameters:

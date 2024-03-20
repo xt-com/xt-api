@@ -1,6 +1,6 @@
 ---
 title: 获取资金费率
-position_number: 17
+position_number: 18
 type: get
 description: /future/market/v1/public/q/funding-rate
 parameters:

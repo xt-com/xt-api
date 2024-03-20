@@ -1,6 +1,6 @@
 ---
 title: Get Aggregated Market Information for Specific Trading Pair
-position_number: 15
+position_number: 16
 type: get
 description: /future/market/v1/public/q/agg-ticker
 parameters:

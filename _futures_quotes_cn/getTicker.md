@@ -1,6 +1,6 @@
 ---
 title: 获取指定交易对的行情信息
-position_number: 6
+position_number: 7
 type: get
 description: /future/market/v1/public/q/ticker
 parameters:

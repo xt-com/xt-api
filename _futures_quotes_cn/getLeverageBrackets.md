@@ -1,6 +1,6 @@
 ---
 title: 查询所有交易对杠杆分层
-position_number: 5
+position_number: 6
 type: get
 description: /future/market/v1/public/leverage/bracket/list
 parameters:

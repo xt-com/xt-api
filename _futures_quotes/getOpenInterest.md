@@ -1,6 +1,6 @@
 ---
 title: Get the open position of a trading pair
-position_number: 20
+position_number: 21
 type: get
 description: /future/market/v1/public/contract/open-interest
 parameters:

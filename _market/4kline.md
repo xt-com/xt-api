@@ -1,6 +1,6 @@
 ---
 title: Get K-line data
-position_number: 4
+position_number: 5
 type: get
 split: -------------------------------------
 description: /v4/public/kline

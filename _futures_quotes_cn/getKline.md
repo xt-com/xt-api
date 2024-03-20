@@ -1,6 +1,6 @@
 ---
 title: 获取交易对的k线信息
-position_number: 14
+position_number: 15
 type: get
 description: /future/market/v1/public/q/kline
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: 获取最优挂单ticker
-position_number: 9
+position_number: 10
 type: get
 description: /v4/public/ticker/book
 parameters:

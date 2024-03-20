@@ -1,6 +1,6 @@
 ---
 title: 获取资金费率记录
-position_number: 18
+position_number: 19
 type: get
 description: /future/market/v1/public/q/funding-rate-record
 parameters:

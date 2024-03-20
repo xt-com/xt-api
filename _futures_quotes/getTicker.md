@@ -1,6 +1,6 @@
 ---
 title: Get Market Information for Specific Trading Pair
-position_number: 6
+position_number: 7
 type: get
 description: /future/market/v1/public/q/ticker
 parameters:

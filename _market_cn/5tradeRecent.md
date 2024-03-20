@@ -1,6 +1,6 @@
 ---
 title: 查询近期成交列表
-position_number: 5
+position_number: 6
 type: get
 description: /v4/public/trade/recent
 parameters:

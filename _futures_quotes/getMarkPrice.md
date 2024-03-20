@@ -1,6 +1,6 @@
 ---
 title: Get Mark Price for Single Trading Pair
-position_number: 12
+position_number: 13
 type: get
 description: /future/market/v1/public/q/symbol-mark-price
 parameters:

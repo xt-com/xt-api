@@ -1,6 +1,6 @@
 ---
 title: 获取全交易对的行情信息
-position_number: 7
+position_number: 8
 type: get
 description: /future/market/v1/public/q/tickers
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: 获取交易对风险基金余额
-position_number: 19
+position_number: 20
 type: get
 description: /future/market/v1/public/contract/risk-balance
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: 获取24h统计ticker
-position_number: 10
+position_number: 11
 type: get
 description: /v4/public/ticker/24h
 parameters:

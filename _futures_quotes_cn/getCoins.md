@@ -1,6 +1,6 @@
 ---
 title: 获取交易对币种
-position_number: 1
+position_number: 2
 type: get
 description: /future/market/v1/public/symbol/coins
 

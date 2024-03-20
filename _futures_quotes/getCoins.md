@@ -1,6 +1,6 @@
 ---
 title: Get Trading Pair Currency
-position_number: 1
+position_number: 2
 type: get
 description: /future/market/v1/public/symbol/coins
 

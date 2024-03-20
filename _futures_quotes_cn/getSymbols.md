@@ -1,6 +1,6 @@
 ---
 title: 获取上架和可交易的交易对配置信息
-position_number: 3
+position_number: 4
 type: get
 description: /future/market/v3/public/symbol/list
 parameters:

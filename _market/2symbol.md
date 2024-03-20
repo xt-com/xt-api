@@ -1,6 +1,6 @@
 ---
 title: Get symbol information
-position_number: 2
+position_number: 3
 type: get
 split: -------------------------------------
 description: /v4/public/symbol

@@ -1,6 +1,6 @@
 ---
 title: 获取深度数据
-position_number: 3
+position_number: 4
 type: get
 split: -------------------------------------
 description: /v4/public/depth

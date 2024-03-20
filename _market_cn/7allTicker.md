@@ -1,6 +1,6 @@
 ---
 title: 完整ticker
-position_number: 7
+position_number: 8
 type: get
 description: /v4/public/ticker
 parameters:

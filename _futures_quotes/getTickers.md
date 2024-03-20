@@ -1,6 +1,6 @@
 ---
 title: Get Market Information for All Trading Pairs
-position_number: 7
+position_number: 8
 type: get
 description: /future/market/v1/public/q/tickers
 parameters:

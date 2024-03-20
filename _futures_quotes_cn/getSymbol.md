@@ -1,6 +1,6 @@
 ---
 title: 获取单个交易对的配置信息
-position_number: 2
+position_number: 3
 type: get
 description: /future/market/v1/public/symbol/detail
 parameters:

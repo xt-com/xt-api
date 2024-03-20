@@ -1,6 +1,6 @@
 ---
 title: Get Configuration Information for Listed And Tradeable Symbols
-position_number: 3
+position_number: 4
 type: get
 description: /future/market/v3/public/symbol/list
 parameters:

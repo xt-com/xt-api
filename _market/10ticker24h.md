@@ -1,6 +1,6 @@
 ---
 title: Get 24h statistics ticker
-position_number: 10
+position_number: 11
 type: get
 split: -------------------------------------
 description: /v4/public/ticker/24h

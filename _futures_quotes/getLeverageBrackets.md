@@ -1,6 +1,6 @@
 ---
 title: See Leverage Stratification of All Trading Pairs
-position_number: 5
+position_number: 6
 type: get
 description: /future/market/v1/public/leverage/bracket/list
 parameters:

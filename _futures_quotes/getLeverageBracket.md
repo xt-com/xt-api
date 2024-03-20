@@ -1,6 +1,6 @@
 ---
 title: See Leverage Stratification of Single Trading Pair
-position_number: 4
+position_number: 5
 type: get
 description: /future/market/v1/public/leverage/bracket/detail
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: Get the best pending order ticker
-position_number: 9
+position_number: 10
 type: get
 description: /v4/public/ticker/book
 parameters:

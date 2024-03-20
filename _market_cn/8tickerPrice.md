@@ -1,6 +1,6 @@
 ---
 title: 获取最新价格ticker
-position_number: 8
+position_number: 9
 type: get
 description: /v4/public/ticker/price
 parameters:

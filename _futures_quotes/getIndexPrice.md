@@ -1,6 +1,6 @@
 ---
 title: Get Index Price for Single Trading Pair
-position_number: 10
+position_number: 11
 type: get
 description: /future/market/v1/public/q/symbol-index-price
 parameters:

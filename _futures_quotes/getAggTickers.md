@@ -1,6 +1,6 @@
 ---
 title: Get Aggregated Market Information for All Trading Pairs
-position_number: 16
+position_number: 17
 type: get
 description: /future/market/v1/public/q/agg-tickers
 parameters:

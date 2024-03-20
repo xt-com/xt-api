@@ -1,6 +1,6 @@
 ---
 title: Get Trading Pair Information of Kline
-position_number: 14
+position_number: 15
 type: get
 description: /future/market/v1/public/q/kline
 parameters:

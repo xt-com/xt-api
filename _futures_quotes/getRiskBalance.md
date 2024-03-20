@@ -1,6 +1,6 @@
 ---
 title: Get Trading Pair Risk Fund Balance
-position_number: 19
+position_number: 20
 type: get
 description: /future/market/v1/public/contract/risk-balance
 parameters:

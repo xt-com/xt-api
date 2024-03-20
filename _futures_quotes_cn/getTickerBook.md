@@ -1,6 +1,6 @@
 ---
 title: 获取指定交易对的买一卖一行情信息
-position_number: 17
+position_number: 18
 type: get
 description: /future/market/v1/public/q/ticker/book
 parameters:

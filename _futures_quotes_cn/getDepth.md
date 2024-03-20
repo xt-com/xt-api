@@ -1,6 +1,6 @@
 ---
 title: 获取交易对的深度信息
-position_number: 9
+position_number: 10
 type: get
 description: /future/market/v1/public/q/depth
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: Get Configuration Information for Single Trading Pair
-position_number: 2
+position_number: 3
 type: get
 description: /future/market/v1/public/symbol/detail
 parameters:
