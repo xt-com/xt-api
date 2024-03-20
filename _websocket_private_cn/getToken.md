@@ -12,7 +12,12 @@ parameters:
         default:
         description:
         ranges:
-content_markdown:
+content_markdown: |-
+  备注：
+  
+  accessToken有效期是2天，重新调用接口获取token会重置有效期。
+  
+  accessToken = listenKey
 left_code_blocks:
     -
         code_block:
