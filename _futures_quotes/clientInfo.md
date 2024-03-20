@@ -1,7 +1,8 @@
 ---
 title: Get client ip
 position_number: 1
-type: get 
+type: get
+display: 0
 description: /future/public/client
 parameters:
     -

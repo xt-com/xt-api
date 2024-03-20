@@ -1,6 +1,7 @@
 ---
 title: Get client ip
 position_number: 2
+display: 0
 type: get 
 description: /v4/public/client
 parameters:

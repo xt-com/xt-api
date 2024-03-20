@@ -1,7 +1,8 @@
 ---
 title: 获取客户端IP
 position_number: 1
-type: get 
+type: get
+display: 0
 description: /future/public/client
 parameters:
     -
