@@ -50,6 +50,7 @@ right_code_blocks:
                     "mc": "SUCCESS",
                     "ma": [],
                     "result": {
+                        "user_id":"12345678",
                         "access_token": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxIiwidXNlci1pZCI6MSwic2NvcGUiOiJ1c2VyaW5mbyIsImlzcyI6Inh0LmNvbSIsImV4cCI6MTY5MTU2MTA3NiwiY2xpZW50X2lkIjoiMzVMRjJGU0xIWDVJUlFBNCJ9.vkSTiFLcQuO0qJqdm21MfmoLKb38wwhsKPCJI3x1xmOxYouH5GtmcYglk0XRxPeOMVZ-6E6tM3HGn1yMQdqTgHOVeAbtLSBBIqyUh6y-8j_MF8GyBwcEaRK2hfWBNOHw06B-0jLO_mKEduUWZXYHjNiAN2jenbj7Ba6MX7rcENk",//Token used to access the authorization interface.The default validity period is one day
                         "refresh_token": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxIiwidXNlci1pZCI6MSwic2NvcGUiOiJ1c2VyaW5mbyIsImlzcyI6Inh0LmNvbSIsImV4cCI6MTY5NDE1MzA3NiwiY2xpZW50X2lkIjoiMzVMRjJGU0xIWDVJUlFBNCJ9.UIeGGDiiybfEUEPFAteN3TtCxz5PyZxGDIULaNJjO3mCck7s28nRpXWSxONMGYMXG03XxJVUJs5WfdpNEmKUmmoQQuy-UOCuvV7zLdFmwUHd5e5tDMA7mgTCxbCeyxYE4L8Vr8StEEhxwWbDFxG_-2wdNEgEIvlgg9bI87Qcy9s",//The token used to refresh the access token.The default validity period is 180 days
                         "expires_in": 15551999,//The number of milliseconds before the access_token expires
