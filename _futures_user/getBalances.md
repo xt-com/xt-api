@@ -25,7 +25,7 @@ right_code_blocks:
               "crossedMargin": 0,         //Crossed Margin
               "bonus": 0,                 //Bouns
               "coupon": 0,                //Coupon
-              "walletBalance": 0 //Balance
+              "walletBalance": 0          //Balance
             }
           ],
           "returnCode": 0
