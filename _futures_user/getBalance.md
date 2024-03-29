@@ -25,11 +25,14 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "availableBalance": 0, //Available balance
-            "coin": "", //Currency
-            "isolatedMargin": 0, //Frozen isolated margin
+            "availableBalance": 0,      //Available balance
+            "coin": "",                 //Currency
+            "isolatedMargin": 0,        //Frozen isolated margin
             "openOrderMarginFrozen": 0, //Frozen order
-            "walletBalance": 0 //Balance
+            "crossedMargin": 0,         //Crossed Margin
+            "bonus": 0,                 //Bouns
+            "coupon": 0,                //Coupon
+            "walletBalance": 0          //Balance
           },
           "returnCode": 0
         }
