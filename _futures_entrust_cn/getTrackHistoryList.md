@@ -11,26 +11,26 @@ parameters:
         default: NEXT
         description: 方向（PREV:上一页；NEXT:下一页）
         ranges: PREV;NEXT
-    -
-        name: endTime
-        type: integer
-        mandatory: false
-        default: N/A
-        description: 结束时间
-        ranges:
-    - 
-        name: id
-        type: integer
-        mandatory: false
-        default: N/A
-        description:
-        ranges:
     - 
         name: limit
         type: integer
         mandatory: false
         default: 10
         description: 条数
+        ranges:
+    -
+        name: id
+        type: integer
+        mandatory: false
+        default: N/A
+        description:
+        ranges:
+    -
+        name: endTime
+        type: integer
+        mandatory: false
+        default: N/A
+        description: 结束时间
         ranges:
     -
         name: startTime

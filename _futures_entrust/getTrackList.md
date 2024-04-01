@@ -4,27 +4,6 @@ position_number: 16
 type: get
 description: /future/trade/v1/entrust/track-list
 parameters:
-    -
-        name: closeType
-        type: integer
-        mandatory: false
-        default: N/A
-        description: 
-        ranges:
-    -
-        name: endTime
-        type: integer
-        mandatory: false
-        default: N/A
-        description: 
-        ranges:
-    - 
-        name: isPredict
-        type: boolean
-        mandatory: false
-        default: N/A
-        description:
-        ranges:
     - 
         name: page
         type: integer
@@ -33,19 +12,19 @@ parameters:
         description: page
         ranges:
     -
-        name: positionSide
-        type: integer
-        mandatory: false
-        default: 1
-        description: position side
-        ranges: BOTH;LONG;SHORT
-    -
         name: size
         type: integer
         mandatory: false
         default: 10
         description: Quantity of a single page
-        ranges: 
+        ranges:
+    -
+        name: endTime
+        type: integer
+        mandatory: false
+        default: N/A
+        description:
+        ranges:
     -
         name: startTime
         type: integer
@@ -53,13 +32,6 @@ parameters:
         default: N/A
         description: start time
         ranges:
-    -
-        name: state
-        type: string
-        mandatory: false
-        default: N/A
-        description: track state 
-        ranges: NOT_TRIGGERED;TRIGGERING;TRIGGERED;USER_REVOCATION;PLATFORM_REVOCATION;EXPIRED;UNFINISHED;HISTORY
     - 
         name: symbol
         type: string

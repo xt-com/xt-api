@@ -12,25 +12,25 @@ parameters:
         description: Direction（PREV:Previous page；NEXT:Next page）
         ranges: PREV;NEXT
     -
-        name: endTime
+        name: limit
         type: integer
         mandatory: false
-        default: N/A
-        description: End time
+        default: 10
+        description: Limit
         ranges:
-    - 
+    -
         name: id
         type: integer
         mandatory: false
         default: N/A
         description:
         ranges:
-    - 
-        name: limit
+    -
+        name: endTime
         type: integer
         mandatory: false
-        default: 10
-        description: Limit
+        default: N/A
+        description: End time
         ranges:
     -
         name: startTime

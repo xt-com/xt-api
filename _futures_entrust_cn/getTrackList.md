@@ -4,27 +4,6 @@ position_number: 16
 type: get
 description: /future/trade/v1/entrust/track-list
 parameters:
-    -
-        name: closeType
-        type: integer
-        mandatory: false
-        default: N/A
-        description: 
-        ranges:
-    -
-        name: endTime
-        type: integer
-        mandatory: false
-        default: N/A
-        description: 
-        ranges:
-    - 
-        name: isPredict
-        type: boolean
-        mandatory: false
-        default: N/A
-        description:
-        ranges:
     - 
         name: page
         type: integer
@@ -33,32 +12,25 @@ parameters:
         description: 页码
         ranges:
     -
-        name: positionSide
-        type: integer
-        mandatory: false
-        default: 1
-        description: 持仓方向
-        ranges: BOTH;LONG;SHORT
-    -
         name: size
         type: integer
         mandatory: false
         default: 10
         description: 单页数
-        ranges: 
+        ranges:
+    -
+        name: endTime
+        type: integer
+        mandatory: false
+        default: N/A
+        description:
+        ranges:
     -
         name: startTime
         type: integer
         mandatory: false
         default: N/A
         description: 起始时间
-        ranges:
-    -
-        name: state
-        type: string
-        mandatory: false
-        default: N/A
-        description: 委托状态 NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史）
         ranges:
     - 
         name: symbol
