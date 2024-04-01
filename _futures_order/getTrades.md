@@ -37,14 +37,14 @@ parameters:
         type: integer
         mandatory: false
         default: N/A
-        description: 起始时间
+        description: start time
         ranges:
     -
         name: endTime
         type: integer
         mandatory: false
         default: N/A
-        description: 结束时间
+        description: end time
         ranges:
 left_code_blocks:
     -
