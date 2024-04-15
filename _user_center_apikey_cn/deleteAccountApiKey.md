@@ -2,7 +2,7 @@
 title: 删除用户账户apiKey
 position_number: 4
 type: delete
-description: /v4/user/account/{apikeyId}
+description: /v4/user/account/api-key/{apikeyId}
 parameters:
     -
         name: apikeyId
