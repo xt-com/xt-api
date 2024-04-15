@@ -8,7 +8,7 @@ parameters:
   -
     name: symbol
     type: string
-    mandatory: false
+    mandatory: true
     default:
     description:
     ranges:
