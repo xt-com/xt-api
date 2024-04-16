@@ -12,6 +12,13 @@ parameters:
         description: apiKey id
         ranges:
     -
+        name: accessKey
+        type: string
+        mandatory: true
+        default:
+        description: access key
+        ranges:
+    -
         name: keyName
         type: string
         mandatory: false
