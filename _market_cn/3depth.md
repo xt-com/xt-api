@@ -16,8 +16,8 @@ parameters:
         name: limit
         type: number
         mandatory: false
-        default: '50'
-        description: 数量
+        default: '100'
+        description: 数量，最小查询100条
         ranges: 1~500
 content_markdown: >-
     #### **限流规则**

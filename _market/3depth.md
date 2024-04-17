@@ -16,8 +16,8 @@ parameters:
         name: limit
         type: number
         mandatory: false
-        default: '50'
-        description: 
+        default: '100'
+        description: minimum number of queries is 100
         ranges: 1~500
 content_markdown: >-
     #### **Limit Flow Rules**
