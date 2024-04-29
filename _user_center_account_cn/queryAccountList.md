@@ -19,7 +19,7 @@ parameters:
         description: 账户名
         ranges:
     -
-        name: levle
+        name: level
         type: integer
         mandatory: false
         default:

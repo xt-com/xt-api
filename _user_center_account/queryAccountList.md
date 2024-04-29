@@ -19,7 +19,7 @@ parameters:
         description: account name
         ranges:
     -
-        name: levle
+        name: level
         type: integer
         mandatory: false
         default:
