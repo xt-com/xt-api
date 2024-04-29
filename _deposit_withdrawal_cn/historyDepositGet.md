@@ -7,14 +7,14 @@ parameters:
     -
         name: currency
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: 币种名称，可从“获取XT可充提的币种”接口中获取
         ranges:
     -
         name: chain
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: 转账网络名称，可从“获取XT可充提的币种”接口中获取
         ranges:

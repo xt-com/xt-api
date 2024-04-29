@@ -7,14 +7,14 @@ parameters:
     -
         name: currency
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: Currency name, can be obtained from the response of "Get the supported currencies for deposit or withdrawal" API
         ranges:
     -
         name: chain
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: Transfer networks, can be obtained from the response of "Get the supported currencies for deposit or withdrawal" API
         ranges:
