@@ -8,14 +8,14 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: 交易对，不传代表所有
         ranges:
     -
         name: bizType
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: >-
             业务类型  SPOT-现货, LEVER-杠杆
@@ -23,7 +23,7 @@ parameters:
     -
         name: side
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: BUY-买,SELL-卖
         ranges:

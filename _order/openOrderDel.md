@@ -8,21 +8,21 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: Trading pair, if not filled in, represents all
         ranges:
     -
         name: bizType
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: "SPOT, LEVER"
         ranges:
     -
         name: side
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: BUY,SELL
         ranges:
