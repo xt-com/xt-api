@@ -7,7 +7,7 @@ parameters:
     -
         name: 'currency'
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: >-
                 Currency name, which can be obtained from the 'Get the supported currencies for deposit or withdrawal' interface
@@ -15,7 +15,7 @@ parameters:
     -
         name: 'chain'
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: >-
                 The name of the transfer network, which can be obtained from the interface of 'Get the supported currencies for deposit or withdrawal' interface
