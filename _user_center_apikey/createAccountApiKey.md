@@ -31,7 +31,7 @@ parameters:
         mandatory: true
         default:
         description: permissions code
-        ranges: QUERY：query is enabled; TRADE：trade is enabled; WITHDRAW：withdraw is enabled
+        ranges: QUERY：query is enabled; TRADE：spot and margin trade is enabled; WITHDRAW：withdraw is enabled; LEVER_LOAN：margin pledged is enabled; FUTURE：future trade is enabled; TRANSFER：transfer is enabled
     -
         name: tags
         type: string

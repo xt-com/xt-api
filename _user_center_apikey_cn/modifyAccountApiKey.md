@@ -38,7 +38,7 @@ parameters:
         mandatory: true
         default:
         description: 权限code
-        ranges: QUERY 查询权限开启,TRADE 交易权限开启, WITHDRAW 提币权限开启
+        ranges: QUERY 查询权限开启,TRADE 现货及杠杆交易开启, WITHDRAW 提币权限开启, LEVER_LOAN 杠杆质押借币权限开启, FUTURE 合约交易开启, TRANSFER 划转权限开启
     -
         name: tags
         type: string
