@@ -7,9 +7,9 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default:
-        description: Trading pair, if one party is margin, required
+        description: Trading pair, e.g. btc3l_usdt
         ranges:
     -
         name: netWorth

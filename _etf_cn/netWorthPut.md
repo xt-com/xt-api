@@ -7,9 +7,9 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default:
-        description: 交易对，如果一方是杠杆，必传
+        description: 交易对，例如：btc3l_usdt
         ranges:
     -
         name: netWorth
