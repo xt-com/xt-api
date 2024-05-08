@@ -7,12 +7,14 @@
 		<ul>
 			{% assign sorted_docs = collection.docs | sort: "position_number" %}
 			{% for doc in sorted_docs %}
+			{% if doc.display==null or doc.display==1 %}
 			<li>
 				<a href="{% if page.url != '/' %}/{% endif %}#{{ doc.id | replace: '/', '' | replace: '.', '' }}">
 					{{ doc.title }}
 					{% if doc.type %}<span class="endpoint {{ doc.type }}"></span>{% endif %}
 				</a>
 			</li>
+			{% endif %}
 			{% endfor %}
 		</ul>
 	</section>

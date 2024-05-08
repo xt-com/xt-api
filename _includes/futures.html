@@ -4,6 +4,7 @@
     {% if collection.type=="futures" and collection.language=="en" %}
     {% assign sorted_docs = collection.docs | sort: "position_number" %}
     {% for doc in sorted_docs %}
+    {% if doc.display==null or doc.display==1 %}
     <section class="doc-content">
         <section class="left-docs">
             <h3>
@@ -89,6 +90,7 @@
         </section>
         {% endif %}
     </section>
+    {% endif %}
     {% endfor %}
     {% endif %}
     {% endfor %}
@@ -100,6 +102,7 @@
     {% if collection.type=="futures" and collection.language=="cn" %}
     {% assign sorted_docs = collection.docs | sort: "position_number" %}
     {% for doc in sorted_docs %}
+    {% if doc.display==null or doc.display==1 %}
     <section class="doc-content">
         <section class="left-docs">
             <h3>
@@ -185,6 +188,7 @@
         </section>
         {% endif %}
     </section>
+    {% endif %}
     {% endfor %}
     {% endif %}
     {% endfor %}
