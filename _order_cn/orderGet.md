@@ -58,6 +58,7 @@ right_code_blocks:
                     "feeCurrency": "string",                //手续费币种
                     "state": "NEW",                         //订单状态 NEW-新建,PARTIALLY_FILLED-部分成交,FILLED-全部成交,CANCELED-用户撤单,REJECTED-下单失败,EXPIRED-过期(time_in_force撤单或溢价撤单)
                     "time": 1655958915583,                  //订单时间
+                    "ip": "127.0.0.1",                      //ip地址
                     "updatedTime": 1655958915583            //订单更新时间
                   }
                 }

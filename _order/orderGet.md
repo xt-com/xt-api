@@ -58,6 +58,7 @@ right_code_blocks:
                         "feeCurrency": "string",   
                         "state": "NEW",                         //order stat NEW,PARTIALLY_FILLED,FILLED,CANCELED,REJECTED,EXPIRED
                         "time": 1655958915583,                  //order time
+                        "ip": "127.0.0.1",                      //ip address
                         "updatedTime": 1655958915583  
                       }
                     }
