@@ -25,8 +25,8 @@ parameters:
         mandatory: true
         default: N/A
         description: >-
-            委托类型：TAKE_PROFIT(止盈限价单)；STOP(止损限价单)；TAKE_PROFIT_MARKET（止盈市价单）；STOP_MARKET（止损市价单）；TRAILING_STOP_MARKET（跟踪止损单）
-        ranges: TAKE_PROFIT;STOP;TAKE_PROFIT_MARKET;STOP_MARKET;TRAILING_STOP_MARKET
+            委托类型：TAKE_PROFIT(止盈限价单)；STOP(止损限价单)；TAKE_PROFIT_MARKET（止盈市价单）；STOP_MARKET（止损市价单）
+        ranges: TAKE_PROFIT;STOP;TAKE_PROFIT_MARKET;STOP_MARKET
     -
         name: origQty
         type: number
@@ -53,7 +53,7 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 有效方式：GTC;IOC;FOK;GTX
+        description: 有效方式：GTC;IOC;FOK;GTX, 市价委托只支持IOC
         ranges: GTC;IOC;FOK;GTX
     -
         name: triggerPriceType
@@ -62,13 +62,13 @@ parameters:
         default: N/A
         description: 触发价格类型：INDEX_PRICE(指数价格)；MARK_PRICE(标记价格)；LATEST_PRICE(最新价格)
         ranges: INDEX_PRICE;MARK_PRICE;LATEST_PRICE
-    -
-        name: expireTime
-        type: integer
-        mandatory: false
-        default: N/A
-        description: 过期时间
-        ranges:
+#    -
+#        name: expireTime
+#        type: integer
+#        mandatory: false
+#        default: N/A
+#        description: 过期时间
+#        ranges:
     -
         name: positionSide
         type: string

@@ -25,8 +25,8 @@ parameters:
         mandatory: true
         default: N/A
         description: >-
-            Order type:TAKE_PROFIT(Take Profit Limit Order);STOP(Stop Limit Order);TAKE_PROFIT_MARKET(Take Profit Market Order);STOP_MARKET(Stop Loss Market Order);TRAILING_STOP_MARKET(trailing stop order)
-        ranges: TAKE_PROFIT;STOP;TAKE_PROFIT_MARKET;STOP_MARKET;TRAILING_STOP_MARKET
+            Order type:TAKE_PROFIT(Take Profit Limit Order);STOP(Stop Limit Order);TAKE_PROFIT_MARKET(Take Profit Market Order);STOP_MARKET(Stop Loss Market Order)
+        ranges: TAKE_PROFIT;STOP;TAKE_PROFIT_MARKET;STOP_MARKET
     -
         name: origQty
         type: number
@@ -53,7 +53,7 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: Valid way:GTC;IOC;FOK;GTX
+        description: Valid way:GTC;IOC;FOK;GTX, Market orders only support IOC
         ranges: GTC;IOC;FOK;GTX
     -
         name: triggerPriceType
@@ -62,13 +62,13 @@ parameters:
         default: N/A
         description: Trigger price type:INDEX_PRICE(Index price)；MARK_PRICE(Mark price)；LATEST_PRICE(latest price)
         ranges: INDEX_PRICE;MARK_PRICE;LATEST_PRICE
-    -
-        name: expireTime
-        type: integer
-        mandatory: false
-        default: N/A
-        description: Expiration time
-        ranges:
+#    -
+#        name: expireTime
+#        type: integer
+#        mandatory: false
+#        default: N/A
+#        description: Expiration time
+#        ranges:
     -
         name: positionSide
         type: string
