@@ -15,7 +15,6 @@ content_markdown: >-
         java : https://github.com/xt-com/xt4-java-demo
         golang : https://github.com/xt-com/xt4-go-demo
         c# : https://github.com/xt-com/xt4-c--demo
-        nodejs: https://github.com/xt-com/xt4-nodejs-demo
 
 left_code_blocks:
 - code_block:

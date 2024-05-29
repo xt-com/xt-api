@@ -2,6 +2,7 @@
 title: Get copy trade symbols
 position_number: 1
 type: get
+display: 0
 split: -------------------------------------
 description: /v4/public/copy-trade/symbol
 parameters:
