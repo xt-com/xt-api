@@ -1,5 +1,5 @@
 ---
-title: Base address
+title: General WSS information
 position_number: 1
 type:
 description: 
@@ -12,7 +12,20 @@ parameters:
         default:
         description:
         ranges:
-content_markdown: '**wss://stream.xt.com/public**'
+content_markdown: >-
+    #### **Base Address**
+
+    ##### **wss://stream.xt.com/public**
+
+
+    ---
+
+
+    #### **Request Headers**
+
+    The request header of the compression extension protocol must be added.
+  
+    <font color="#aa5500">Sec-Websocket-Extensions:permessage-deflate</font>  
 left_code_blocks:
     -
         code_block:
