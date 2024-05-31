@@ -1,6 +1,6 @@
 ---
 title: Close copy order
-position_number: 7
+position_number: 8
 type: post
 description: /v4/order/copy-trade/order/close
 parameters:

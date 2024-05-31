@@ -1,6 +1,6 @@
 ---
 title: Close all copy order
-position_number: 7
+position_number: 9
 type: post
 description: /v4/order/copy-trade/order/close-all
 parameters:
@@ -9,10 +9,10 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: 交易对
+        description: symbol
         ranges:
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:

@@ -1,6 +1,6 @@
 ---
 title: Sell all lead order
-position_number: 6
+position_number: 7
 type: post
 description: /v4/order/copy-trade/order/sell-all
 parameters:

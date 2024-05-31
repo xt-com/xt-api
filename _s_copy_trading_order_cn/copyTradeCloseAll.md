@@ -1,6 +1,6 @@
 ---
 title: 结束全部跟单
-position_number: 7
+position_number: 9
 type: post
 description: /v4/order/copy-trade/order/close-all
 parameters:
