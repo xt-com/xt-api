@@ -278,6 +278,16 @@ collections:
     type: s_copy_trading
     language: cn
     position_number: 1
+  s_copy_trading_order:
+    title: Copy Trading
+    type: s_copy_trading
+    language: en
+    position_number: 2
+  s_copy_trading_order_cn:
+    title: 跟单
+    type: s_copy_trading
+    language: cn
+    position_number: 2
 
 
   f_copy_trading_document:
