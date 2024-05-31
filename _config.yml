@@ -268,6 +268,30 @@ collections:
     language: cn
     position_number: 3
 
+  s_copy_trading_document:
+    title: Access Description
+    type: s_copy_trading
+    language: en
+    position_number: 1
+  s_copy_trading_document_cn:
+    title: 接入说明
+    type: s_copy_trading
+    language: cn
+    position_number: 1
+
+
+  f_copy_trading_document:
+    title: Access Description
+    type: f_copy_trading
+    language: en
+    position_number: 1
+  f_copy_trading_document_cn:
+    title: 接入说明
+    type: f_copy_trading
+    language: cn
+    position_number: 1
+
+
   third_party_document:
     title: Access Description
     type: third_party
