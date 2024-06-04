@@ -39,7 +39,7 @@ right_code_blocks:
                        "symbolConfig": [          //All copy trade symbols
                             "btc_usdt"
                        ],
-                       "tagsConfig": [            //tag config
+                       "tagsConfig": [            //tag config, label list
                          {
                            "id": 0,
                            "label": "string"
