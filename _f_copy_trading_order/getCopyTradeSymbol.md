@@ -1,12 +1,12 @@
 ---
-title: Get copy trade symbols
+title: 获取跟单交易对信息
 position_number: 10
 type: get
 description: /v4/market/public/copy-trade/symbol
 parameters:
- 
+  
 content_markdown: >-
-    #### **Limit Flow Rules**
+    #### **限流规则**
 
     1/s/apikey
 left_code_blocks:
@@ -26,10 +26,10 @@ right_code_blocks:
                   "mc": "SUCCESS",
                   "ma": [],
                   "result": [{
-                     symbolId: 1,        //symbol id
-                     symbol: "btc_usdt"  //symbol
-                   }]
-                }
+                      symbolId: 1,       //市场id
+                      symbol: "btc_usdt" //市场
+                  }]
+                }            
         title: Response
         language: json
 ---
