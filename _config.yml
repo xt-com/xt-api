@@ -300,7 +300,16 @@ collections:
     type: f_copy_trading
     language: cn
     position_number: 1
-
+  f_copy_trading_order:
+    title: Copy Trading
+    type: f_copy_trading
+    language: en
+    position_number: 2
+  f_copy_trading_order_cn:
+      title: 跟单
+      type: f_copy_trading
+      language: cn
+      position_number: 2
 
   third_party_document:
     title: Access Description
