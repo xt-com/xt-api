@@ -18,6 +18,28 @@ parameters:
         default:
         description: 交易对
         ranges:
+    -
+        name: direction
+        type: string
+        mandatory: false
+        default:
+        description: 方向(NEXT, PRE)
+        ranges: NEXT
+    -
+        name: limit
+        type: number
+        mandatory: false
+        default:
+        description: 翻页大小
+        ranges: 10
+    -
+        name: id
+        type: number
+        mandatory: false
+        default:
+        description: id
+        ranges:
+
 content_markdown: >-
     #### **限流规则**
 
