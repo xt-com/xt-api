@@ -1,7 +1,7 @@
 ---
 title: 带单/跟单平仓
 position_number: 8
-type: get
+type: post
 description: /v1/copy-trade/close  	
 parameters:
     -
