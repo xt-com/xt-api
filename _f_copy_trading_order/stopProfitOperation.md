@@ -1,5 +1,5 @@
 ---
-title: 新增/修改/撤销带单跟单止盈止损
+title: Add/update/cancel profit-stop order
 position_number: 10
 type: post
 description: /v1/copy-trade/update-profit-stop
@@ -9,38 +9,38 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 交易员带单特有单号
+        description: trackNo
         ranges:
     -
         name: triggerPriceType
         type: string
         mandatory: true
         default:
-        description: 触发价格类型:LATEST_PRICE,MARK_PRICE
-        ranges:
+        description: trigger Price Type
+        ranges:LATEST_PRICE,MARK_PRICE
     -
         name: leaderOrder
         type: boolean
         mandatory: true
         default:
-        description: 是否带单:true 带单,false 跟单
-        ranges:
+        description: is leader order
+        ranges:true,false
     - 
         name: triggerProfitPrice
         type: number
         mandatory: false
         default:
-        description: 止盈价
+        description: trigger profit price
         ranges:
     - 
         name: triggerStopPrice
         type: number
         mandatory: false
         default:
-        description: 止损价
+        description: trigger stop price
         ranges:
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -59,7 +59,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功 false 失败
+                        "result": boolean // true=success false=fail
                         }
         title: Response
         language: json

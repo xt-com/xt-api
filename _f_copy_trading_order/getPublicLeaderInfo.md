@@ -1,5 +1,5 @@
 ---
-title: 获取交易员详情
+title: Public get leader info
 position_number: 27
 type: get
 description: /v1/public/copy-trade/leader-detail-v2 	
@@ -9,7 +9,7 @@ parameters:
        type: number
        mandatory: true
        default:
-       description: 交易员帐号
+       description: leader accountId
        ranges:
 
 content_markdown: >-
@@ -33,22 +33,22 @@ right_code_blocks:
                     "msgInfo": "success",
                     "error": null,
                     "result": {
-                            "nickName": "string", // 名称
-                            "avatar": "string", // 头像
-                            "intro": "string", // 简介
-                            "leadDays": 0, // 入驻时间
-                            "levelId": 0, // 当前等级id
-                            "level": 0, // 当前等级
-                            "levelName": "string", // 当前等级名称
-                            "label": ["string"], // 标签
-                            "followNumber": 0, // 累计跟随人数
-                            "currentFollowNumber": 0, // 当前跟随人数
-                            "maxFollowerSize": 0, // 最多跟随人数
-                            "profitRate": 0, // 交易员分润比例
-                            "platformProfitRate": 0, // 平台分润比例
-                            "totalRights": 0, // 总权益
-                            "displayEquity": Boolean, // 是否展示权益
-                            "displayPosition": Boolean // 是否展示持仓量
+                            "nickName": "string", // nickName
+                            "avatar": "string", // avatar
+                            "intro": "string", // intro
+                            "leadDays": 0, // begin time
+                            "levelId": 0, // leader level id
+                            "level": 0, // leader level
+                            "levelName": "string", // leader level name
+                            "label": ["string"], // labels
+                            "followNumber": 0, // leader's follower count
+                            "currentFollowNumber": 0, // leader's current follower count
+                            "maxFollowerSize": 0, // leader's max follower count
+                            "profitRate": 0, // leader profit rate
+                            "platformProfitRate": 0, // platform profit rate
+                            "totalRights": 0, // total amount
+                            "displayEquity": Boolean, // is display amount
+                            "displayPosition": Boolean // is display position
                     }
                     }
         title: Response

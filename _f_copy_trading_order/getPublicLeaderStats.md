@@ -1,5 +1,5 @@
 ---
-title: 获取交易员带单情况
+title: Public get leader statistics
 position_number: 25
 type: get
 description: /v1/public/copy-trade/leader-stats
@@ -9,18 +9,18 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 交易员帐号
+        description: leader accountId
         ranges:
    -
         name: days
         type: number
         mandatory: false
         default:
-        description: 天数
+        description: days
         ranges:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -40,23 +40,22 @@ right_code_blocks:
                         "msgInfo": "success",
                         "error": null,
                         "result":{
-                        "recentRate": 0, // 收益率
-                        "totalEarnings": 0, // 总收益
-                        "maxRetraction": 0, // 最大回撤
-                        "followersEarnings": 0, // 跟单者收益
-                        "winRate": 0, // 胜率
-                        "totalTransactions": 0, // 交易次数
-                        "profitCount": 0, // 盈利次数
-                        "lossCount": 0, // 亏损次数
-                        "avgProfitAmount": 0, // 平均盈利
-                        "avgLossAmount": 0, // 平均亏损
-                        "pnlRate": 0, // 盈亏比
-                        "avgHoldTime": 0, // 平均持仓时间(秒)
-                        "weeklyTradeFrequency": 0, // 交易频次(每周)
-                        "followerTradeAmount": 0, // 带单规模(废弃)
-                        "followerMargin": 0, // 带单规模
-                        "tradeDays": 0, // 交易天数
-                        "lastTradeTime": 0, // 最近交易时间
+                        "recentRate": 0, // current rate
+                        "totalEarnings": 0, // total current
+                        "maxRetraction": 0, // max retraction
+                        "followersEarnings": 0, // follower's earning
+                        "winRate": 0, // win rate
+                        "totalTransactions": 0, // total transactions
+                        "profitCount": 0, // profit count
+                        "lossCount": 0, // loss count
+                        "avgProfitAmount": 0, // avg profit amount
+                        "avgLossAmount": 0, // avg loss amount
+                        "pnlRate": 0, // profit loss rate
+                        "avgHoldTime": 0, // avg hold time
+                        "weeklyTradeFrequency": 0, // trade frequency
+                        "followerMargin": 0, // follower total margin
+                        "tradeDays": 0, // total trade days
+                        "lastTradeTime": 0, // last tradetime
                         }
                         }
         title: Response

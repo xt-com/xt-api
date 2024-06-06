@@ -1,5 +1,5 @@
 ---
-title: 获取交易员交易偏好
+title: Public get leader's prefer
 position_number: 26
 type: get
 description: /v1/public/copy-trade/leader-symbol-prefer
@@ -9,18 +9,18 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 交易员帐号
+        description: leader accountId
         ranges:
    -
         name: recentDays
         type: number
         mandatory: false
         default:
-        description: 天数
+        description: days
         ranges:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -41,10 +41,10 @@ right_code_blocks:
                         "error": null,
                         "result":{
                         "index": 0, // 
-                        "symbol": "string", // 交易对
-                        "count": 0, // 最大回撤
-                        "percentage": 0, // 占比
-                        "pnl": 0 // 交易盈亏
+                        "symbol": "string", // symbol
+                        "count": 0, // count
+                        "percentage": 0, // percent
+                        "pnl": 0 // pnl
                         }
                         }
         title: Response

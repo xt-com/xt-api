@@ -1,12 +1,12 @@
 ---
-title: 我跟随的交易员列表(当前跟随)
+title: Get my current leaders
 position_number: 17
 type: get
 description: /v1/copy-trade/my-follow-list
 parameters:
     
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -25,7 +25,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": [number,number] // 交易员accountId
+                        "result": [number,number] // leader accountId
                         }
         title: Response
         language: json

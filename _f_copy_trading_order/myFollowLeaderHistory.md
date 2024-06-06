@@ -1,5 +1,5 @@
 ---
-title: 我的带单员(历史跟随)
+title: Get my history leaders
 position_number: 18
 type: get
 description: /v1/copy-trade/follower-leaders-page
@@ -9,21 +9,21 @@ parameters:
         type: number
         mandatory: false
         default:
-        description: 查询类型,1:当前跟随,2:历史跟随
-        ranges:
+        description: type(1:current follow,2:history follow)
+        ranges:1,2
     -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PREV)
-        ranges:
+        description: direction
+        ranges:NEXT, PREV
     -
         name: limit
         type: number
         mandatory: false
         default:
-        description: 翻页大小
+        description: page size
         ranges: 10
     -
         name: id
@@ -33,7 +33,7 @@ parameters:
         description: id
         ranges:
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -57,15 +57,15 @@ right_code_blocks:
                                "hasNext": false,
                                 "items": [
                         {
-                                "leaderName": "string", // 交易员名称
-                                "avatar": "string", // 头像
-                                "accountId": 0, // 交易员id
+                                "leaderName": "string", // leader nickname
+                                "avatar": "string", // avatar
+                                "accountId": 0, // leader accountId
                                 "id": 0, // id
-                                "level": 0, // 当前等级
-                                "levelName": "string", // 当前等级名称
-                                "followMarginU": 0, // 累计跟随本金,USDT
-                                "followProfitU": 0, // 累计跟随收益,USDT
-                                "cancel": Boolean // 状态：0跟随中，1已取消
+                                "level": 0, // level
+                                "levelName": "string", // level name
+                                "followMarginU": 0, // total follow margin
+                                "followProfitU": 0, // total follow profit
+                                "cancel": Boolean // status：0 following，1canceled
                         }
                         ]
                         }

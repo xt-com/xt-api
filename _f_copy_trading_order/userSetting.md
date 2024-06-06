@@ -1,12 +1,12 @@
 ---
-title: 获取交易员/跟单员设置信息
+title: Get user setting
 position_number: 9
 type: get
 description: /v1/copy-trade/user-settings
 parameters:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -27,19 +27,19 @@ right_code_blocks:
                     "error": null,
                     "result": {
                             "id": 0, // id
-                            "intro": "string", // 简介
-                            "followCapitalMin": 0, // 最小跟单本金
-                            "labelIds": 0, // 标签id,逗号分割;例:1,2,3,4
-                            "label": [ // 标签
+                            "intro": "string", // intro
+                            "followCapitalMin": 0, // margin
+                            "labelIds": 0, // label id
+                            "label": [ // labels
                              {
-                                "id": 0, // 标签id
-                                "label": "string", // 标签说明
+                                "id": 0, // id
+                                "label": "string", // remark
                               }
                             ], 
-                            "autoUnfollow": Boolean, // 是否自动取消跟随
-                            "displayEquity": Boolean, // 显示总权益：true:展示,false:不展示
-                            "displayPosition": Boolean, // 显示持仓量：true:展示,false:不展示
-                            "openLeader": Boolean // 开启带单
+                            "autoUnfollow": Boolean, // is auto cancel follow
+                            "displayEquity": Boolean, // is display total amount
+                            "displayPosition": Boolean, // is display position
+                            "openLeader": Boolean // is open lead trading
                     }
                     }
         title: Response
