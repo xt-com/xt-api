@@ -1,12 +1,12 @@
 ---
-title: 获取预计待分润汇总
+title: Get leader future profit total
 position_number: 6
 type: get
 description: /v1/copy-trade/my-profit-future-total
 parameters:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -25,7 +25,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": 0 // 待分润总量
+                        "result": 0 // amount
                         }
         title: Response
         language: json

@@ -13,7 +13,7 @@ parameters:
        ranges:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:

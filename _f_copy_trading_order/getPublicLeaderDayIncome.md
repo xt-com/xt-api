@@ -1,5 +1,5 @@
 ---
-title: 获取交易员收益额图表
+title: Public get leader day income
 position_number: 23
 type: get
 description: /v1/public/copy-trade/leader-day-income
@@ -9,18 +9,18 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 交易员帐号
+        description: leader accountId
         ranges:
    -
         name: days
         type: number
         mandatory: false
         default:
-        description: 天数
+        description: days
         ranges:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -41,8 +41,8 @@ right_code_blocks:
                         "error": null,
                         "result": [
                         {
-                        "amount": 0, // 收益额
-                        "time": 0 // 时间
+                        "amount": 0, // amount
+                        "time": 0 // time
                         }
                         ]
                         }

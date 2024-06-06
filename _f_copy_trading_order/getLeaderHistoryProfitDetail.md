@@ -1,5 +1,5 @@
 ---
-title: 获取历史分润明细
+title: Get leader history profit detail
 position_number: 3
 type: get
 description: /v1/copy-trade/my-profit-history-detail
@@ -9,22 +9,22 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 分润日期(时间戳)
+        description: time
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PREV)
-        ranges:
+        description: direction
+        ranges:NEXT,PREV
     -
         name: limit
         type: number
         mandatory: false
         default:
-        description: 翻页大小
-        ranges: 10
+        description: page size
+        ranges:
     -
        name: id
        type: number
@@ -33,7 +33,7 @@ parameters:
        description: id
        ranges:
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -56,11 +56,11 @@ right_code_blocks:
                     "hasPrev": false,
                     "hasNext": false,
                     "items": [{
-                    "avatar": "string", // 头像
-                    "name": "string", // 用户名称
-                    "profit": 5, // 分润数量
-                    "profitTime": "LocalDateTime", // 日期
-                    "coin": 0, // 币种
+                    "avatar": "string", // avatar
+                    "name": "string", // leader name
+                    "profit": 5, // amount
+                    "profitTime": "LocalDateTime", // time
+                    "coin": 0, // currency
                     "id":  // id
                     }]
                     }

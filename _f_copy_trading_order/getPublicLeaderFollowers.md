@@ -1,5 +1,5 @@
 ---
-title: 获取交易员的跟单人信息
+title: Public get leader's followers
 position_number: 28
 type: get
 description: /v1/public/copy-trade/leader-follower-page
@@ -9,35 +9,35 @@ parameters:
         type: number
         mandatory: false
         default:
-        description: 查询类型,1:明细,2:汇总
-        ranges:
+        description: type(1:detail,2:total)
+        ranges:1,2
     -
         name: symbol
         type: string
         mandatory: false
         default:
-        description: 交易对
+        description: symbol
         ranges:
     -
         name: leaderAccountId
         type: number
         mandatory: true
         default:
-        description: 交易员帐号
+        description: leader accountId
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PREV)
-        ranges:
+        description: direction
+        ranges:NEXT, PREV
     -
         name: limit
         type: number
         mandatory: false
         default:
-        description: 翻页大小
+        description: page size
         ranges: 10
     -
         name: id
@@ -48,7 +48,7 @@ parameters:
         ranges:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -69,15 +69,15 @@ right_code_blocks:
                         "error": null,
                         "result": [
                         {
-                        "accountId": 0, // 跟单员帐号id
-                        "followerName": "string", // 跟随用户昵称
-                        "avatar": "string", // 头像
+                        "accountId": 0, // leader accountId
+                        "followerName": "string", // follower nickname
+                        "avatar": "string", // avatar
                         "id": 0, // id
                         "pageId": 0, // pageId
-                        "followMarginU": 0, // 累计跟随本金USDT
-                        "followProfitU": 0, // 累计跟随收益USDT
-                        "followProfitRate": 0, // 跟单收益率
-                        "days": 0 // 跟单天数
+                        "followMarginU": 0, // follower total margin
+                        "followProfitU": 0, // follower total profit
+                        "followProfitRate": 0, // follower profit rate
+                        "days": 0 // days
                         }
                         ]
                         }
