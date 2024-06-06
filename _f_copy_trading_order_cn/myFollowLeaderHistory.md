@@ -1,6 +1,6 @@
 ---
 title: 我的带单员(历史跟随)
-position_number: 8
+position_number: 18
 type: get
 description: /v1/copy-trade/follower-leaders-page
 parameters:
@@ -16,8 +16,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number

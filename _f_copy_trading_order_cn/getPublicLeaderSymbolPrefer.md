@@ -1,6 +1,6 @@
 ---
 title: 获取交易员交易偏好
-position_number: 8
+position_number: 26
 type: get
 description: /v1/public/copy-trade/leader-symbol-prefer
 parameters:
@@ -11,7 +11,7 @@ parameters:
         default:
         description: 交易员帐号
         ranges:
-    -
+   -
         name: recentDays
         type: number
         mandatory: false

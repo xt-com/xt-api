@@ -1,13 +1,13 @@
 ---
-title: 获取交易员历史带单
-position_number: 8
+title: 获取当前带单
+position_number: 1
 type: get
-description: /v1/public/copy-trade/leader-order-history
+description: /v1/copy-trade/leader-order-page
 parameters:
     -
         name: type
         type: number
-        mandatory: false
+        mandatory: true
         default:
         description: 查询类型,1:明细,2:汇总
         ranges:
@@ -18,20 +18,13 @@ parameters:
         default:
         description: 交易对
         ranges:
-   -
-        name: leaderAccountId
-        type: number
-        mandatory: true
-        default:
-        description: 交易员帐号
-        ranges:
     -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number

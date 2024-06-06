@@ -1,6 +1,6 @@
 ---
 title: 获取预计待分润明细
-position_number: 8
+position_number: 5
 type: get
 description: /v1/copy-trade/my-profit-future
 parameters:
@@ -9,8 +9,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number

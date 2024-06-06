@@ -1,6 +1,6 @@
 ---
 title: 申请交易员
-position_number: 8
+position_number: 20
 type: post
 description: /v1/copy-trade/apply-leader
 parameters:

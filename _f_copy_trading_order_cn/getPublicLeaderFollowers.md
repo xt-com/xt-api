@@ -1,6 +1,6 @@
 ---
 title: 获取交易员的跟单人信息
-position_number: 8
+position_number: 28
 type: get
 description: /v1/public/copy-trade/leader-follower-page
 parameters:
@@ -18,7 +18,7 @@ parameters:
         default:
         description: 交易对
         ranges:
-   -
+    -
         name: leaderAccountId
         type: number
         mandatory: true
@@ -30,8 +30,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number

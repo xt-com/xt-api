@@ -1,6 +1,6 @@
 ---
 title: 获取当前跟单
-position_number: 8
+position_number: 13
 type: get
 description: /v1/copy-trade/follower-order-page
 parameters:
@@ -23,8 +23,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number

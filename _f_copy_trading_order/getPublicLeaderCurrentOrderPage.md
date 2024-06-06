@@ -1,13 +1,13 @@
 ---
-title: 获取历史带单
-position_number: 8
+title: 获取交易员当前带单
+position_number: 21
 type: get
-description: /v1/copy-trade/leader-order-history
+description: /v1/public/copy-trade/leader-order-page
 parameters:
     -
         name: type
         type: number
-        mandatory: true
+        mandatory: false
         default:
         description: 查询类型,1:明细,2:汇总
         ranges:
@@ -19,12 +19,19 @@ parameters:
         description: 交易对
         ranges:
     -
+        name: leaderAccountId
+        type: number
+        mandatory: true
+        default:
+        description: 交易员帐号
+        ranges:
+    -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number
@@ -60,10 +67,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": {
-                        "hasPrev": false,
-                        "hasNext": false,
-                        "items": [
+                        "result": [
                         {
                         "symbolName": "string", // 市场名称
                         "positionType": "string", // 仓位类型:CROSSED(全仓);ISOLATED(逐仓)
@@ -92,7 +96,6 @@ right_code_blocks:
                         "followOrderCount": 0 // 跟随订单数
                         }
                         ]
-                        }
                         }
         title: Response
         language: json

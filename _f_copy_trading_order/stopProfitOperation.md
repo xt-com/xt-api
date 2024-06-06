@@ -1,6 +1,6 @@
 ---
 title: 新增/修改/撤销带单跟单止盈止损
-position_number: 8
+position_number: 10
 type: post
 description: /v1/copy-trade/update-profit-stop
 parameters:

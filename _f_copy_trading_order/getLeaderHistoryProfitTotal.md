@@ -1,6 +1,6 @@
 ---
 title: 获取历史分润汇总
-position_number: 8
+position_number: 4
 type: get
 description: /v1/copy-trade/my-profit-history
 parameters:
@@ -9,8 +9,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number

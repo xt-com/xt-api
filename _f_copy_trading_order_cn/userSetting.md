@@ -1,6 +1,6 @@
 ---
 title: 获取交易员/跟单员设置信息
-position_number: 8
+position_number: 9
 type: get
 description: /v1/copy-trade/user-settings
 parameters:

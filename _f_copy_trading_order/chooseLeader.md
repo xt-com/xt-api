@@ -1,6 +1,6 @@
 ---
 title: 立即跟单
-position_number: 8
+position_number: 15
 type: post
 description: /v1/copy-trade/choose-leader
 parameters:

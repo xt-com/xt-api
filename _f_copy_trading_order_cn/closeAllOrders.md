@@ -1,6 +1,6 @@
 ---
 title: 带单/跟单一键平仓
-position_number: 8
+position_number: 11
 type: post
 description: /v1/copy-trade/close-all  	
 parameters:

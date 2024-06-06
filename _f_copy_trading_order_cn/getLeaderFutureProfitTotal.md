@@ -1,6 +1,6 @@
 ---
 title: 获取预计待分润汇总
-position_number: 8
+position_number: 6
 type: get
 description: /v1/copy-trade/my-profit-future-total
 parameters:

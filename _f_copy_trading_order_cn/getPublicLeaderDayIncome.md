@@ -1,6 +1,6 @@
 ---
 title: 获取交易员收益额图表
-position_number: 8
+position_number: 23
 type: get
 description: /v1/public/copy-trade/leader-day-income
 parameters:
@@ -11,7 +11,7 @@ parameters:
         default:
         description: 交易员帐号
         ranges:
-    -
+   -
         name: days
         type: number
         mandatory: false

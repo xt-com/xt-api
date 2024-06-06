@@ -1,6 +1,6 @@
 ---
 title: 带单员信息
-position_number: 8
+position_number: 7
 type: get
 description: /v1/copy-trade/leader-detail
 parameters:

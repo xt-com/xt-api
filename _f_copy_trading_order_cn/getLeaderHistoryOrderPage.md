@@ -1,13 +1,13 @@
 ---
-title: 获取历史跟单
-position_number: 8
+title: 获取历史带单
+position_number: 2
 type: get
-description: /v1/copy-trade/follower-order-history
+description: /v1/copy-trade/leader-order-history
 parameters:
     -
         name: type
         type: number
-        mandatory: false
+        mandatory: true
         default:
         description: 查询类型,1:明细,2:汇总
         ranges:
@@ -23,8 +23,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PRE)
-        ranges: NEXT
+        description: 方向(NEXT, PREV)
+        ranges:
     -
         name: limit
         type: number
@@ -39,6 +39,7 @@ parameters:
         default:
         description: id
         ranges:
+
 content_markdown: >-
     #### **限流规则**
 
@@ -59,7 +60,10 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": [
+                        "result": {
+                        "hasPrev": false,
+                        "hasNext": false,
+                        "items": [
                         {
                         "symbolName": "string", // 市场名称
                         "positionType": "string", // 仓位类型:CROSSED(全仓);ISOLATED(逐仓)
@@ -70,12 +74,13 @@ right_code_blocks:
                         "trackNo": 0, // 跟单trackNo
                         "openTime": 0, // 开仓时间
                         "closeTime": 0, // 平仓时间
+                        "entryPrice": 0, // 持仓均价
                         "openPrice": 0, // 开仓均价
                         "closePrice": 0, // 平仓均价
                         "profitRate": 0, // 收益率
                         "openMargin": 0, // 开仓初始保证金
                         "realizedPnl": 0, // 已实现盈亏
-                        "leaderNickname": "string", // 交易员
+                        "fee": 0, // 手续费
                         "openSize": 0, // 开仓仓位数量
                         "closeSize": 0, // 平仓仓位数量
                         "positionSize": 0, // 持仓数量
@@ -84,9 +89,10 @@ right_code_blocks:
                         "triggerProfitPrice": 0, // 止盈价
                         "triggerStopPrice": 0, // 止损价
                         "triggerPriceType": "string", // 触发价格类型:LATEST_PRICE,MARK_PRICE
-                        "avatar": "string" // 头像
+                        "followOrderCount": 0 // 跟随订单数
                         }
                         ]
+                        }
                         }
         title: Response
         language: json
