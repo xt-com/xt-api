@@ -17,7 +17,7 @@ parameters:
         mandatory: false
         default:
         description: direction
-        ranges:NEXT,PREV
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
@@ -26,12 +26,12 @@ parameters:
         description: page size
         ranges:
     -
-       name: id
-       type: number
-       mandatory: false
-       default:
-       description: id
-       ranges:
+        name: id
+        type: number
+        mandatory: false
+        default:
+        description: id
+        ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
 

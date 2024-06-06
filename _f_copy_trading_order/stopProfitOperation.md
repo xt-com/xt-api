@@ -17,14 +17,14 @@ parameters:
         mandatory: true
         default:
         description: trigger Price Type
-        ranges:LATEST_PRICE,MARK_PRICE
+        ranges: LATEST_PRICE,MARK_PRICE
     -
         name: leaderOrder
         type: boolean
         mandatory: true
         default:
         description: is leader order
-        ranges:true,false
+        ranges: true,false
     - 
         name: triggerProfitPrice
         type: number

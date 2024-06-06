@@ -10,14 +10,14 @@ parameters:
         mandatory: false
         default:
         description: type(1:current follow,2:history follow)
-        ranges:1,2
+        ranges: 1,2
     -
         name: direction
         type: string
         mandatory: false
         default:
         description: direction
-        ranges:NEXT, PREV
+        ranges: NEXT, PREV
     -
         name: limit
         type: number

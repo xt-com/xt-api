@@ -10,7 +10,7 @@ parameters:
         mandatory: false
         default:
         description: direction
-        ranges:NEXT,PREV
+        ranges: NEXT,PREV
     -
         name: limit
         type: number

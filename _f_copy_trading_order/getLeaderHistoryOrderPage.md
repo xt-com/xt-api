@@ -10,7 +10,7 @@ parameters:
         mandatory: true
         default:
         description: type,1(detail),2(total)
-        ranges:1,2
+        ranges: 1,2
     -
         name: symbol
         type: string
@@ -24,14 +24,14 @@ parameters:
         mandatory: false
         default:
         description: direction
-        ranges:NEXT,PREV
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
         mandatory: false
         default:
         description: page size
-        ranges: 10
+        ranges:
     -
         name: id
         type: number
