@@ -1,12 +1,12 @@
 ---
-title: 取消带单员身份
+title: Cancel leader
 position_number: 8
 type: get
 description: /v1/copy-trade/cancel-leader
 parameters:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -25,7 +25,7 @@ right_code_blocks:
                     "returnCode": 0,
                     "msgInfo": "success",
                     "error": null,
-                    "result": boolean true // 取消成功 false 取消失败
+                    "result": boolean // true=success  false=fail
                     }
         title: Response
         language: json

@@ -1,5 +1,5 @@
 ---
-title: 立即跟单
+title: Choose leader
 position_number: 15
 type: post
 description: /v1/copy-trade/choose-leader
@@ -9,74 +9,74 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 交易员accountId
+        description: leader accountId
         ranges:
     -
         name: symbols
         type: string
         mandatory: true
         default:
-        description: 跟单合约交易对,逗号分隔
+        description: symbol
         ranges:
     -
         name: followType
         type: string
         mandatory: false
         default:
-        description: 跟单类型:FUND(固定保证金);RATE(按倍率跟单);MARGIN_RATE(同比例跟单)
-        ranges: NEXT
+        description: follow type
+        ranges: FUND,RATE,MARGIN_RATE
     -
         name: followVal
         type: number
         mandatory: false
         default:
-        description: 跟单本金/跟单比例
+        description: 
         ranges: 
     -
         name: triggerProfitRate
         type: number
         mandatory: false
         default:
-        description: 止盈比率
+        description: profit rate
         ranges:
     -
         name: triggerStopRate
         type: number
         mandatory: false
         default:
-        description: 止损比率
+        description: stop rate
         ranges:
     -
         name: followDirection
         type: string
         mandatory: false
         default:
-        description: 跟单方向:正向:FORWARD;反向:REVERSE
-        ranges:
+        description: direction
+        ranges: FORWARD,REVERSE
     -
         name: followLoss
         type: number
         mandatory: false
         default:
-        description: 跟单止损
+        description: follow loss
         ranges: 
     -
         name: autoFollowSymbol
         type: boolean
         mandatory: false
         default:
-        description: 自动跟单新增合约市场 true是 false否
-        ranges:
+        description: is auto follow symbol
+        ranges: true,false
     -
         name: followLossOperate
         type: enum
         mandatory: false
         default:
-        description: 跟单止损仓位处理
+        description: follow loss operation
         ranges: MARKET_SELL,LEADER_CLOSE,MANUAL_PROCESS
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -95,7 +95,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功  false 失败
+                        "result": boolean // true=success  false=fail
                         }
         title: Response
         language: json

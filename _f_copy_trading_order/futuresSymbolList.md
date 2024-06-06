@@ -1,12 +1,12 @@
 ---
-title: 获取跟单合约所有交易对列表
+title: Get available symbol list
 position_number: 19
 type: get
 description: /v1/public/copy-trade/symbol-list
 parameters:
     
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -25,7 +25,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": [string,string] // 交易对名称
+                        "result": [string,string] // symbols
                         }
         title: Response
         language: json

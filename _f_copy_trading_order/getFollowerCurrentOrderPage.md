@@ -1,5 +1,5 @@
 ---
-title: 获取当前跟单
+title: Get follower current orders
 position_number: 13
 type: get
 description: /v1/copy-trade/follower-order-page
@@ -9,29 +9,29 @@ parameters:
         type: number
         mandatory: false
         default:
-        description: 查询类型,1:明细,2:汇总
-        ranges:
+        description: type,1(detail),2(total)
+        ranges:1,2
     -
         name: symbol
         type: string
         mandatory: false
         default:
-        description: 交易对
+        description: symbol
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PREV)
-        ranges:
+        description: direction
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
         mandatory: false
         default:
-        description: 翻页大小
-        ranges: 10
+        description: page size
+        ranges:
     -
         name: id
         type: number
@@ -40,7 +40,7 @@ parameters:
         description: id
         ranges:
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -61,30 +61,30 @@ right_code_blocks:
                         "error": null,
                         "result": [
                         {
-                        "symbolName": "string", // 市场名称
-                        "positionType": "string", // 仓位类型:CROSSED(全仓);ISOLATED(逐仓)
-                        "positionSide": "string", // 持仓方向:LONG;SHORT
-                        "openLeverage": 5, // 杠杆
+                        "symbolName": "string", // symbol
+                        "positionType": "string", // position type:CROSSED;ISOLATED
+                        "positionSide": "string", // direction:LONG;SHORT
+                        "openLeverage": 5, // leverage
                         "id": 0, // id
-                        "orderId": 0, // 订单id
-                        "trackNo": 0, // 跟单trackNo
-                        "openTime": 0, // 开仓时间
-                        "closeTime": 0, // 平仓时间
-                        "openPrice": 0, // 开仓均价
-                        "closePrice": 0, // 平仓均价
-                        "profitRate": 0, // 收益率
-                        "openMargin": 0, // 开仓初始保证金
-                        "realizedPnl": 0, // 已实现盈亏
-                        "leaderNickname": "string", // 交易员
-                        "openSize": 0, // 开仓仓位数量
-                        "closeSize": 0, // 平仓仓位数量
-                        "positionSize": 0, // 持仓数量
-                        "closeOrderSize": 0, // 平仓订单占用
-                        "availableCloseSize": 0, // 可平数量
-                        "triggerProfitPrice": 0, // 止盈价
-                        "triggerStopPrice": 0, // 止损价
-                        "triggerPriceType": "string", // 触发价格类型:LATEST_PRICE,MARK_PRICE
-                        "avatar": "string" // 头像
+                        "orderId": 0, // order id
+                        "trackNo": 0, // trackNo
+                        "openTime": 0, // open time
+                        "closeTime": 0, // close time
+                        "openPrice": 0, // open price
+                        "closePrice": 0, // close price
+                        "profitRate": 0, // profit rate
+                        "openMargin": 0, // open margin
+                        "realizedPnl": 0, // realized pnl
+                        "leaderNickname": "string", // leader name
+                        "openSize": 0, // open quantity
+                        "closeSize": 0, // close quantity
+                        "positionSize": 0, // position quantity
+                        "closeOrderSize": 0, // close order quantity
+                        "availableCloseSize": 0, // available close quantity
+                        "triggerProfitPrice": 0, // trigger profit price
+                        "triggerStopPrice": 0, // trigger stop price
+                        "triggerPriceType": "string", // trigger price type:LATEST_PRICE,MARK_PRICE
+                        "avatar": "string" // avatar
                         }
                         ]
                         }

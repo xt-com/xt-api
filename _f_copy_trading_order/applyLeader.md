@@ -1,5 +1,5 @@
 ---
-title: 申请交易员
+title: Apply for lead trading
 position_number: 20
 type: post
 description: /v1/copy-trade/apply-leader
@@ -9,18 +9,18 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: 昵称
+        description: nickname
         ranges:
     -
         name: images
         type: string
         mandatory: true
         default:
-        description: 上传的图片
+        description: image
         ranges:
 
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -39,7 +39,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功  false 失败
+                        "result": boolean // true=success  false=fail
                         }
         title: Response
         language: json

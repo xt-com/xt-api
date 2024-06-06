@@ -1,5 +1,5 @@
 ---
-title: 带单/跟单一键平仓
+title: Close all orders
 position_number: 11
 type: post
 description: /v1/copy-trade/close-all  	
@@ -9,17 +9,17 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 市场名称
+        description: symbol
         ranges:
     -
         name: closeLongShortType
         type: string
         mandatory: false
         default:
-        description: 平仓方向:LONG;SHORT;BOTH
-        ranges:
+        description: direction
+        ranges: LONG,SHORT,BOTH
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -38,7 +38,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功 false 失败
+                        "result": boolean // true=success  false=fail
                         }
         title: Response
         language: json

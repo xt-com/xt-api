@@ -1,5 +1,5 @@
 ---
-title: 取消跟随
+title: Cancel follow leader
 position_number: 16
 type: post
 description: /v1/copy-trade/cancel-choose-leader
@@ -9,11 +9,11 @@ parameters:
         type: number
         mandatory: true
         default:
-        description: 交易员accountId
+        description: leader accountId
         ranges:
     
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     10/s/apikey
 left_code_blocks:
@@ -32,7 +32,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功  false 失败
+                        "result": boolean // true=success  false=fail
                         }
         title: Response
         language: json
