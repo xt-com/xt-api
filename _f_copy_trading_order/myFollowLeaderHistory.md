@@ -2,7 +2,7 @@
 title: Get my history leaders
 position_number: 18
 type: get
-description: /v1/copy-trade/follower-leaders-page
+description: /copytrade/user/v1/copy-trade/follower-leaders-page
 parameters:
     -
         name: type
@@ -35,7 +35,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

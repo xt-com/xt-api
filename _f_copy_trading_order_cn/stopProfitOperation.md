@@ -2,7 +2,7 @@
 title: 新增/修改/撤销带单跟单止盈止损
 position_number: 10
 type: post
-description: /v1/copy-trade/update-profit-stop
+description: /copytrade/order/v1/copy-trade/update-profit-stop
 parameters:
     -
         name: trackNo
@@ -42,7 +42,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     - 
         code_block:
@@ -59,7 +59,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功 false 失败
+                        "result": Boolean //true成功 false失败
                         }
         title: Response
         language: json

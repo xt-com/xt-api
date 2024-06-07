@@ -2,13 +2,13 @@
 title: 取消带单员身份
 position_number: 8
 type: get
-description: /v1/copy-trade/cancel-leader
+description: /copytrade/user/v1/copy-trade/cancel-leader
 parameters:
 
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -25,7 +25,7 @@ right_code_blocks:
                     "returnCode": 0,
                     "msgInfo": "success",
                     "error": null,
-                    "result": boolean true // 取消成功 false 取消失败
+                    "result": Boolean //true成功 false失败
                     }
         title: Response
         language: json

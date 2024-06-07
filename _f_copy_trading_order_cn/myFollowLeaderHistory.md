@@ -2,7 +2,7 @@
 title: 我的带单员(历史跟随)
 position_number: 18
 type: get
-description: /v1/copy-trade/follower-leaders-page
+description: /copytrade/user/v1/copy-trade/follower-leaders-page
 parameters:
     -
         name: type
@@ -10,14 +10,14 @@ parameters:
         mandatory: false
         default:
         description: 查询类型,1:当前跟随,2:历史跟随
-        ranges:
+        ranges: 1,2
     -
         name: direction
         type: string
         mandatory: false
         default:
         description: 方向(NEXT, PREV)
-        ranges:
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
@@ -35,7 +35,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -56,18 +56,18 @@ right_code_blocks:
                                "hasPrev": false,
                                "hasNext": false,
                                 "items": [
-                        {
-                                "leaderName": "string", // 交易员名称
-                                "avatar": "string", // 头像
-                                "accountId": 0, // 交易员id
-                                "id": 0, // id
-                                "level": 0, // 当前等级
-                                "levelName": "string", // 当前等级名称
-                                "followMarginU": 0, // 累计跟随本金,USDT
-                                "followProfitU": 0, // 累计跟随收益,USDT
-                                "cancel": Boolean // 状态：0跟随中，1已取消
-                        }
-                        ]
+                                        {
+                                        "leaderName": "string", // 交易员名称
+                                        "avatar": "string", // 头像
+                                        "accountId": 0, // 交易员id
+                                        "id": 0, // id
+                                        "level": 0, // 当前等级
+                                        "levelName": "string", // 当前等级名称
+                                        "followMarginU": 0, // 累计跟随本金,USDT
+                                        "followProfitU": 0, // 累计跟随收益,USDT
+                                        "cancel": Boolean // 状态：0跟随中，1已取消
+                                         }
+                                  ]
                         }
         title: Response
         language: json

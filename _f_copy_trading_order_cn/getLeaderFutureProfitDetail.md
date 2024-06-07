@@ -2,7 +2,7 @@
 title: 获取预计待分润明细
 position_number: 5
 type: get
-description: /v1/copy-trade/my-profit-future
+description: /copytrade/user/v1/copy-trade/my-profit-future
 parameters:
     -
         name: direction
@@ -10,7 +10,7 @@ parameters:
         mandatory: false
         default:
         description: 方向(NEXT, PREV)
-        ranges:
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
@@ -28,7 +28,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -46,16 +46,16 @@ right_code_blocks:
                     "msgInfo": "success",
                     "error": null,
                     "result": {
-                    "hasPrev": false,
-                    "hasNext": false,
-                    "items": [{
-                    "avatar": "string", // 头像
-                    "name": "string", // 用户名称
-                    "profit": 5, // 分润数量
-                    "profitTime": "LocalDateTime", // 日期
-                    "coin": 0, // 币种
-                    "id":  // id
-                    }]
+                        "hasPrev": false,
+                        "hasNext": false,
+                        "items": [{
+                                "avatar": "string", // 头像
+                                "name": "string", // 用户名称
+                                "profit": 5, // 分润数量
+                                "profitTime": "time", // 日期
+                                "coin": 0, // 币种
+                                "id":  // id
+                        }]
                     }
                     }
         title: Response

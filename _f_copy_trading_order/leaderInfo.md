@@ -2,13 +2,13 @@
 title: Get leader info
 position_number: 7
 type: get
-description: /v1/copy-trade/leader-detail
+description: /copytrade/user/v1/copy-trade/leader-detail
 parameters:
 
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -42,7 +42,7 @@ right_code_blocks:
                             "totalRights": 0, // total amount
                             "displayEquity": Boolean, // is display amount
                             "displayPosition": Boolean // is display position
-                    }
+                     }
                     }
         title: Response
         language: json

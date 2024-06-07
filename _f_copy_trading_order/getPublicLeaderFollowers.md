@@ -2,7 +2,7 @@
 title: Public get leader's followers
 position_number: 28
 type: get
-description: /v1/public/copy-trade/leader-follower-page
+description: /copytrade/user/v1/public/copy-trade/leader-follower-page
 parameters:
     -
         name: type
@@ -50,7 +50,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -68,17 +68,17 @@ right_code_blocks:
                         "msgInfo": "success",
                         "error": null,
                         "result": [
-                        {
-                        "accountId": 0, // leader accountId
-                        "followerName": "string", // follower nickname
-                        "avatar": "string", // avatar
-                        "id": 0, // id
-                        "pageId": 0, // pageId
-                        "followMarginU": 0, // follower total margin
-                        "followProfitU": 0, // follower total profit
-                        "followProfitRate": 0, // follower profit rate
-                        "days": 0 // days
-                        }
+                                {
+                                "accountId": 0, // leader accountId
+                                "followerName": "string", // follower nickname
+                                "avatar": "string", // avatar
+                                "id": 0, // id
+                                "pageId": 0, // pageId
+                                "followMarginU": 0, // follower total margin
+                                "followProfitU": 0, // follower total profit
+                                "followProfitRate": 0, // follower profit rate
+                                "days": 0 // days
+                                }
                         ]
                         }
         title: Response

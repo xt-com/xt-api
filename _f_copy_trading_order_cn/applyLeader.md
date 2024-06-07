@@ -2,7 +2,7 @@
 title: 申请交易员
 position_number: 20
 type: post
-description: /v1/copy-trade/apply-leader
+description: /copytrade/user/v1/copy-trade/apply-leader
 parameters:
     -
         name: nickName
@@ -22,7 +22,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -39,7 +39,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功  false 失败
+                        "result": Boolean //true成功 false失败
                         }
         title: Response
         language: json

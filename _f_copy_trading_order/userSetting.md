@@ -2,7 +2,7 @@
 title: Get user setting
 position_number: 9
 type: get
-description: /v1/copy-trade/user-settings
+description: /copytrade/user/v1/copy-trade/user-settings
 parameters:
 
 content_markdown: >-
@@ -40,7 +40,7 @@ right_code_blocks:
                             "displayEquity": Boolean, // is display total amount
                             "displayPosition": Boolean, // is display position
                             "openLeader": Boolean // is open lead trading
-                    }
+                     }
                     }
         title: Response
         language: json

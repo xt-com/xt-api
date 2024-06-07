@@ -2,13 +2,13 @@
 title: 获取预计待分润汇总
 position_number: 6
 type: get
-description: /v1/copy-trade/my-profit-future-total
+description: /copytrade/user/v1/copy-trade/my-profit-future-total
 parameters:
 
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

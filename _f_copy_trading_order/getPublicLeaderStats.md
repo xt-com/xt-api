@@ -2,7 +2,7 @@
 title: Public get leader statistics
 position_number: 25
 type: get
-description: /v1/public/copy-trade/leader-stats
+description: /copytrade/user/v1/public/copy-trade/leader-stats
 parameters:
    -
         name: accountId
@@ -22,7 +22,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

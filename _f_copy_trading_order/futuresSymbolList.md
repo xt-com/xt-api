@@ -2,13 +2,13 @@
 title: Get available symbol list
 position_number: 19
 type: get
-description: /v1/public/copy-trade/symbol-list
+description: /copytrade/user/v1/public/copy-trade/symbol-list
 parameters:
     
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

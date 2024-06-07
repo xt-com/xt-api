@@ -2,7 +2,7 @@
 title: Public get leader info
 position_number: 27
 type: get
-description: /v1/public/copy-trade/leader-detail-v2 	
+description: /copytrade/user/v1/public/copy-trade/leader-detail-v2 	
 parameters:
     -
        name: accountId
@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -49,7 +49,7 @@ right_code_blocks:
                             "totalRights": 0, // total amount
                             "displayEquity": Boolean, // is display amount
                             "displayPosition": Boolean // is display position
-                    }
+                     }
                     }
         title: Response
         language: json

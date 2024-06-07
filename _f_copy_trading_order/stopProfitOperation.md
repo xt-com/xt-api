@@ -2,7 +2,7 @@
 title: Add/update/cancel profit-stop order
 position_number: 10
 type: post
-description: /v1/copy-trade/update-profit-stop
+description: /copytrade/order/v1/copy-trade/update-profit-stop
 parameters:
     -
         name: trackNo
@@ -59,7 +59,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true=success false=fail
+                        "result": Boolean // true=success false=fail
                         }
         title: Response
         language: json

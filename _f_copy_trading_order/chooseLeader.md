@@ -2,7 +2,7 @@
 title: Choose leader
 position_number: 15
 type: post
-description: /v1/copy-trade/choose-leader
+description: /copytrade/user/v1/copy-trade/choose-leader
 parameters:
     -
         name: leaderAccountId
@@ -78,7 +78,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -95,7 +95,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true=success  false=fail
+                        "result": Boolean //true=success false=fail
                         }
         title: Response
         language: json

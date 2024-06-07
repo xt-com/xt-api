@@ -2,7 +2,7 @@
 title: 获取交易员详情
 position_number: 27
 type: get
-description: /v1/public/copy-trade/leader-detail-v2 	
+description: /copytrade/user/v1/public/copy-trade/leader-detail-v2 	
 parameters:
     -
        name: accountId
@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -49,7 +49,7 @@ right_code_blocks:
                             "totalRights": 0, // 总权益
                             "displayEquity": Boolean, // 是否展示权益
                             "displayPosition": Boolean // 是否展示持仓量
-                    }
+                     }
                     }
         title: Response
         language: json

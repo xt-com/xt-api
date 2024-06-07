@@ -2,7 +2,7 @@
 title: Get leader history profit detail
 position_number: 3
 type: get
-description: /v1/copy-trade/my-profit-history-detail
+description: /copytrade/user/v1/copy-trade/my-profit-history-detail
 parameters:
     -
         name: divideTime
@@ -24,7 +24,7 @@ parameters:
         mandatory: false
         default:
         description: page size
-        ranges:
+        ranges: 10
     -
         name: id
         type: number
@@ -35,7 +35,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -53,16 +53,18 @@ right_code_blocks:
                     "msgInfo": "success",
                     "error": null,
                     "result": {
-                    "hasPrev": false,
-                    "hasNext": false,
-                    "items": [{
-                    "avatar": "string", // avatar
-                    "name": "string", // leader name
-                    "profit": 5, // amount
-                    "profitTime": "LocalDateTime", // time
-                    "coin": 0, // currency
-                    "id":  // id
-                    }]
+                            "hasPrev": false,
+                            "hasNext": false,
+                            "items": [
+                                    {
+                                    "avatar": "string", // avatar
+                                    "name": "string", // leader name
+                                    "profit": 5, // amount
+                                    "profitTime": "time", // time
+                                    "coin": 0, // currency
+                                    "id":  // id
+                                    }
+                            ]
                     }
                     }
         title: Response

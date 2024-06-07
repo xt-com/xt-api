@@ -2,7 +2,7 @@
 title: 获取交易员的跟单人信息
 position_number: 28
 type: get
-description: /v1/public/copy-trade/leader-follower-page
+description: /copytrade/user/v1/public/copy-trade/leader-follower-page
 parameters:
     -
         name: type
@@ -31,7 +31,7 @@ parameters:
         mandatory: false
         default:
         description: 方向(NEXT, PREV)
-        ranges:
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
@@ -68,17 +68,17 @@ right_code_blocks:
                         "msgInfo": "success",
                         "error": null,
                         "result": [
-                        {
-                        "accountId": 0, // 跟单员帐号id
-                        "followerName": "string", // 跟随用户昵称
-                        "avatar": "string", // 头像
-                        "id": 0, // id
-                        "pageId": 0, // pageId
-                        "followMarginU": 0, // 累计跟随本金USDT
-                        "followProfitU": 0, // 累计跟随收益USDT
-                        "followProfitRate": 0, // 跟单收益率
-                        "days": 0 // 跟单天数
-                        }
+                                {
+                                "accountId": 0, // 跟单员帐号id
+                                "followerName": "string", // 跟随用户昵称
+                                "avatar": "string", // 头像
+                                "id": 0, // id
+                                "pageId": 0, // pageId
+                                "followMarginU": 0, // 累计跟随本金USDT
+                                "followProfitU": 0, // 累计跟随收益USDT
+                                "followProfitRate": 0, // 跟单收益率
+                                "days": 0 // 跟单天数
+                                }
                         ]
                         }
         title: Response

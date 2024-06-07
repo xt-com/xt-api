@@ -2,7 +2,7 @@
 title: 带单/跟单平仓
 position_number: 12
 type: post
-description: /v1/copy-trade/close  	
+description: /copytrade/order/v1/copy-trade/close  	
 parameters:
     -
         name: trackNo
@@ -17,11 +17,11 @@ parameters:
         mandatory: false
         default:
         description: 是否带单:true 带单,false 跟单
-        ranges:
+        ranges: true,false
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    5/s/apikey
 left_code_blocks:
     - 
         code_block:
@@ -38,7 +38,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功 false 失败
+                        "result": boolean //true成功 false失败
                         }
         title: Response
         language: json

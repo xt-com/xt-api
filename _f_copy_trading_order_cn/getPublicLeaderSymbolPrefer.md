@@ -2,7 +2,7 @@
 title: 获取交易员交易偏好
 position_number: 26
 type: get
-description: /v1/public/copy-trade/leader-symbol-prefer
+description: /copytrade/user/v1/public/copy-trade/leader-symbol-prefer
 parameters:
    -
         name: accountId
@@ -22,7 +22,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -40,11 +40,11 @@ right_code_blocks:
                         "msgInfo": "success",
                         "error": null,
                         "result":{
-                        "index": 0, // 
-                        "symbol": "string", // 交易对
-                        "count": 0, // 最大回撤
-                        "percentage": 0, // 占比
-                        "pnl": 0 // 交易盈亏
+                                "index": 0, // 
+                                "symbol": "string", // 交易对
+                                "count": 0, // 最大回撤
+                                "percentage": 0, // 占比
+                                "pnl": 0 // 交易盈亏
                         }
                         }
         title: Response

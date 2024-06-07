@@ -2,13 +2,13 @@
 title: 我跟随的交易员列表(当前跟随)
 position_number: 17
 type: get
-description: /v1/copy-trade/my-follow-list
+description: /copytrade/user/v1/copy-trade/my-follow-list
 parameters:
     
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -25,7 +25,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": [number,number] // 交易员accountId
+                        "result": [number,number] //交易员accountId
                         }
         title: Response
         language: json

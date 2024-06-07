@@ -2,7 +2,7 @@
 title: 立即跟单
 position_number: 15
 type: post
-description: /v1/copy-trade/choose-leader
+description: /copytrade/user/v1/copy-trade/choose-leader
 parameters:
     -
         name: leaderAccountId
@@ -52,7 +52,7 @@ parameters:
         mandatory: false
         default:
         description: 跟单方向:正向:FORWARD;反向:REVERSE
-        ranges:
+        ranges: FORWARD,REVERSE
     -
         name: followLoss
         type: number
@@ -66,7 +66,7 @@ parameters:
         mandatory: false
         default:
         description: 自动跟单新增合约市场 true是 false否
-        ranges:
+        ranges: true,false
     -
         name: followLossOperate
         type: enum
@@ -78,7 +78,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -95,7 +95,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": boolean // true 成功  false 失败
+                        "result": Boolean //true成功  false失败
                         }
         title: Response
         language: json

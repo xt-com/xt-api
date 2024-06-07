@@ -2,7 +2,7 @@
 title: Public get leader's prefer
 position_number: 26
 type: get
-description: /v1/public/copy-trade/leader-symbol-prefer
+description: /copytrade/user/v1/public/copy-trade/leader-symbol-prefer
 parameters:
    -
         name: accountId
@@ -22,7 +22,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -40,12 +40,12 @@ right_code_blocks:
                         "msgInfo": "success",
                         "error": null,
                         "result":{
-                        "index": 0, // 
-                        "symbol": "string", // symbol
-                        "count": 0, // count
-                        "percentage": 0, // percent
-                        "pnl": 0 // pnl
-                        }
+                                "index": 0, // 
+                                "symbol": "string", // symbol
+                                "count": 0, // count
+                                "percentage": 0, // percent
+                                "pnl": 0 // pnl
+                         }
                         }
         title: Response
         language: json

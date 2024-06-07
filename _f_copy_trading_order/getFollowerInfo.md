@@ -2,7 +2,7 @@
 title: Get follower info
 position_number: 28
 type: get
-description: /v1/copy-trade/leader-relation 	
+description: /copytrade/user/v1/copy-trade/leader-relation 	
 parameters:
     -
        name: leaderAccountId
@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -2,13 +2,13 @@
 title: 带单员信息
 position_number: 7
 type: get
-description: /v1/copy-trade/leader-detail
+description: /copytrade/user/v1/copy-trade/leader-detail
 parameters:
 
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -42,7 +42,7 @@ right_code_blocks:
                             "totalRights": 0, // 总权益
                             "displayEquity": Boolean, // 是否展示权益
                             "displayPosition": Boolean // 是否展示持仓量
-                    }
+                      }
                     }
         title: Response
         language: json

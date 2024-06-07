@@ -2,13 +2,13 @@
 title: Get my current leaders
 position_number: 17
 type: get
-description: /v1/copy-trade/my-follow-list
+description: /copytrade/user/v1/copy-trade/my-follow-list
 parameters:
     
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

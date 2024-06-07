@@ -2,7 +2,7 @@
 title: Public get leader current orders
 position_number: 21
 type: get
-description: /v1/public/copy-trade/leader-order-page
+description: /copytrade/order/v1/public/copy-trade/leader-order-page
 parameters:
     -
         name: type
@@ -38,7 +38,7 @@ parameters:
         mandatory: false
         default:
         description: page size
-        ranges:
+        ranges: 10
     -
         name: id
         type: number
@@ -50,7 +50,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
@@ -68,33 +68,33 @@ right_code_blocks:
                         "msgInfo": "success",
                         "error": null,
                         "result": [
-                        {
-                        "symbolName": "string", // symbol
-                        "positionType": "string", // position type:CROSSED;ISOLATED
-                        "positionSide": "string", // direction:LONG;SHORT
-                        "openLeverage": 5, // leverage
-                        "id": 0, // id
-                        "orderId": 0, // order id
-                        "trackNo": 0, // trackNo
-                        "openTime": 0, // open time
-                        "closeTime": 0, // close time
-                        "entryPrice": 0, // position price
-                        "openPrice": 0, // open price
-                        "closePrice": 0, // close price
-                        "profitRate": 0, // profit rate
-                        "openMargin": 0, // open margin
-                        "realizedPnl": 0, // realized pnl
-                        "fee": 0, // fee
-                        "openSize": 0, // open quantity
-                        "closeSize": 0, // close quantity
-                        "positionSize": 0, // position quantity
-                        "closeOrderSize": 0, // close order quantity
-                        "availableCloseSize": 0, // available close quantity
-                        "triggerProfitPrice": 0, // trigger profit price
-                        "triggerStopPrice": 0, // trigger stop price
-                        "triggerPriceType": "string", // trigger price type:LATEST_PRICE,MARK_PRICE
-                        "followOrderCount": 0 // follow order count
-                        }
+                                {
+                                "symbolName": "string", // symbol
+                                "positionType": "string", // position type:CROSSED;ISOLATED
+                                "positionSide": "string", // direction:LONG;SHORT
+                                "openLeverage": 5, // leverage
+                                "id": 0, // id
+                                "orderId": 0, // order id
+                                "trackNo": 0, // trackNo
+                                "openTime": 0, // open time
+                                "closeTime": 0, // close time
+                                "entryPrice": 0, // position price
+                                "openPrice": 0, // open price
+                                "closePrice": 0, // close price
+                                "profitRate": 0, // profit rate
+                                "openMargin": 0, // open margin
+                                "realizedPnl": 0, // realized pnl
+                                "fee": 0, // fee
+                                "openSize": 0, // open quantity
+                                "closeSize": 0, // close quantity
+                                "positionSize": 0, // position quantity
+                                "closeOrderSize": 0, // close order quantity
+                                "availableCloseSize": 0, // available close quantity
+                                "triggerProfitPrice": 0, // trigger profit price
+                                "triggerStopPrice": 0, // trigger stop price
+                                "triggerPriceType": "string", // trigger price type:LATEST_PRICE,MARK_PRICE
+                                "followOrderCount": 0 // follow order count
+                                }
                         ]
                         }
         title: Response
