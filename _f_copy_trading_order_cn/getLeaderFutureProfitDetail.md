@@ -1,23 +1,16 @@
 ---
-title: 获取历史分润明细
-position_number: 3
+title: 获取预计待分润明细
+position_number: 5
 type: get
-description: /copytrade/user/v1/copy-trade/my-profit-history-detail
+description: /copytrade/user/v1/copy-trade/my-profit-future
 parameters:
-    -
-        name: divideTime
-        type: number
-        mandatory: true
-        default:
-        description: 分润日期(时间戳)
-        ranges:
     -
         name: direction
         type: string
         mandatory: false
         default:
         description: 方向(NEXT, PREV)
-        ranges:
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
@@ -62,8 +55,8 @@ right_code_blocks:
                                 "profitTime": "time", // 日期
                                 "coin": 0, // 币种
                                 "id":  // id
-                                }]
-                        }
+                        }]
+                    }
                     }
         title: Response
         language: json

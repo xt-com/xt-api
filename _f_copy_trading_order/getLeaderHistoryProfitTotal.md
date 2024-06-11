@@ -1,5 +1,5 @@
 ---
-title: 获取历史分润汇总
+title: Get leader future profit total
 position_number: 4
 type: get
 description: /copytrade/user/v1/copy-trade/my-profit-history
@@ -9,14 +9,14 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 方向(NEXT, PREV)
-        ranges:
+        description: direction
+        ranges: NEXT,PREV
     -
         name: limit
         type: number
         mandatory: false
         default:
-        description: 翻页大小
+        description: page size
         ranges: 10
     -
        name: id
@@ -26,7 +26,7 @@ parameters:
        description: id
        ranges:
 content_markdown: >-
-    #### **限流规则**
+    #### **Limit Flow Rules**
 
     2/s/apikey
 left_code_blocks:
@@ -48,14 +48,16 @@ right_code_blocks:
                         "result": {
                             "hasPrev": false,
                             "hasNext": false,
-                             "items": [{
-                                        "avatar": "string", // 头像
-                                        "name": "string", // 用户名称
-                                        "profit": 5, // 分润数量
-                                        "profitTime": "time", // 日期
-                                        "coin": 0, // 币种
+                             "items": [
+                                       {
+                                        "avatar": "string", // avatar
+                                        "name": "string", // leader name
+                                        "profit": 5, // amount
+                                        "profitTime": "time", // time
+                                        "coin": 0, // currency
                                         "id":  // id
-                             }]
+                                        }
+                               ]
                         }
                         }
         title: Response
