@@ -5,17 +5,13 @@ parameters:
 - name:
 content:
 content_markdown: >-
-  #### **<span id="orderStatus">Order state</span>**
+  #### **<span id="leaderOrderRequestType">Leader order request type</span>**
 
 
-    | State | Description |
+    | Type | Description |
     | --- | --- |
-    | NEW | The order has been accepted by the engine. |
-    | PARTIALLY_FILLED | A part of the order has been filled. |
-    | FILLED | The order has been completed. |
-    | CANCELED | The order has been canceled by the user. |
-    | REJECTED | The order was not accepted by the engine and not processed. |
-    | EXPIRED | The order has expired (e.g. Order canceled due to timeout or canceled due to premium) |  
+    | 1 | Query order details. |
+    | 2 | Query order summary information. |
 
   #### **<span id="orderType">Order type</span>**
 

@@ -2,7 +2,7 @@
 title: 获取历史带单
 position_number: 3
 type: get
-description: /v4/order/copy-trade/order/his-leader-order
+description: /v1/copy-trade-order/copy-trade/order/his-leader-order
 parameters:
     -
         name: symbol
@@ -11,10 +11,31 @@ parameters:
         default:
         description: 交易对，不传表示查询所有的交易对
         ranges:
+    -
+        name: direction
+        type: string
+        mandatory: true
+        default:
+        description: 分页查询方向
+        ranges: PREV-上一页,NEXT-下一页
+    -
+        name: limit
+        type: number
+        mandatory: false
+        default: 20
+        description:  每页的数量
+        ranges: 1-100
+    -
+        name: id
+        type: object
+        mandatory: false
+        default:
+        description: 起始ID，例如 6216559590087220004
+        ranges:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -5,17 +5,13 @@ parameters:
 - name:
 content:
 content_markdown: >-
-  #### **<span id="orderStatusCn">订单状态码及含义</span>**
+  #### **<span id="leaderOrderRequestTypeCn">订单状态码及含义</span>**
 
 
-    | State | 说明 |
+    | Type | 说明 |
     | --- | --- |
-    | NEW | 新建 |
-    | PARTIALLY_FILLED | 部分成交 |
-    | FILLED | 全部成交 |
-    | CANCELED | 用户撤单 |
-    | REJECTED | 下单失败 |
-    | EXPIRED | 过期(time_in_force撤单或溢价撤单) |
+    | 1 | 请求订单明细信息 |
+    | 2 | 请求订单汇总信息 |
 
   #### **<span id="orderTypeCn">订单类型及含义</span>**
 

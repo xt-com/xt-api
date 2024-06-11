@@ -2,7 +2,7 @@
 title: 获取当前带单
 position_number: 1
 type: get
-description: /v4/order/copy-trade/order/cur-leader-order
+description: /v1/copy-trade-order/copy-trade/order/cur-leader-order
 parameters:
     -
         name: symbol
@@ -11,10 +11,17 @@ parameters:
         default:
         description: 交易对，不传表示查询所有的交易对
         ranges:
+    -
+        name: type
+        type: number
+        mandatory: false
+        default: 2
+        description: <a href="#leaderOrderRequestTypeCn">订单请求类型</a>， 1：明细；2：汇总
+        ranges:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

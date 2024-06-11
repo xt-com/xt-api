@@ -2,7 +2,7 @@
 title: Get historical lead order
 position_number: 3
 type: get
-description: /v4/order/copy-trade/order/his-leader-order
+description: /v1/copy-trade-order/copy-trade/order/his-leader-order
 parameters:
     -
         name: symbol
@@ -11,10 +11,31 @@ parameters:
         default:
         description: Trading pair, if not filled in, represents all
         ranges:
+    -
+        name: direction
+        type: string
+        mandatory: true
+        default:
+        description: query direction
+        ranges: PREV-previous page,NEXT-next page
+    -
+        name: limit
+        type: number
+        mandatory: false
+        default: 20
+        description:  number of pages
+        ranges: 1-100
+    -
+        name: id
+        type: object
+        mandatory: false
+        default:
+        description: start ID，e.g. 6216559590087220004
+        ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
