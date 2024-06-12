@@ -2,7 +2,7 @@
 title: Get lead trader weekly income rate chart
 position_number: 26
 type: get
-description: /v4/balance/public/copy-trade/leader-income-rate
+description: /v1/copy-trade-balance/public/copy-trade/leader-income-rate
 parameters:
     -
         name: accountId
@@ -14,7 +14,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

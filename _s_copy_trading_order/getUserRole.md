@@ -2,13 +2,13 @@
 title: Get user role
 position_number: 11
 type: get
-description: /v4/account/copy-trade/user-status
+description: /v1/copy-trade-account/copy-trade/user-status
 parameters:
  
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

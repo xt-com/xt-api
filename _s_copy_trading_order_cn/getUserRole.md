@@ -2,13 +2,13 @@
 title: 获取用户觉得
 position_number: 11
 type: get
-description: /v4/account/copy-trade/user-status
+description: /v1/copy-trade-account/copy-trade/user-status
 parameters:
  
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

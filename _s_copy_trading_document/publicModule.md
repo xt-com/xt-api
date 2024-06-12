@@ -7,61 +7,40 @@ content:
 content_markdown: >-
   #### **<span id="leaderOrderRequestType">Leader order request type</span>**
 
-
     | Type | Description |
     | --- | --- |
     | 1 | Query order details. |
     | 2 | Query order summary information. |
 
-  #### **<span id="orderType">Order type</span>**
+  #### **<span id="copyTradeUserStatus">Copy trade user status</span>**
+
+    | User status | Description |
+    | --- | --- |
+    | LEADER | Copy trade leader |
+    | FOLLOWER | Copy trade follower |
+    | NONE | None |
+
+  #### **<span id="leaderType">Leader type</span>**
 
     | Type | Description |
     | --- | --- |
-    | LIMIT | Limit price order |
-    | MARKET | Market price order |
+    | 1 | Current follow |
+    | 2 | History follow |
 
-  #### **<span id="symbolStatuCn">Symbol state</span>**
+  #### **<span id="followType">Copy trade follow type</span>**
 
-    | State | Description |
+    | Follow type | Description |
     | --- | --- |
-    | ONLINE | The symbol is online |
-    | OFFLINE | The symbol is offline |
-    | DELISTED | The symbol has been delisted |
+    | FUND | Copy trading according to fixed amount. |
+    | RATE | Copy trading according to fund ratio. |
 
-  #### **<span id="timeInForces">Time in force</span>**
-    This sets how long an order will be active before expiration.
+  #### **<span id="followLossOperate">Copy stop loss position processing</span>**
 
-    | TimeInForces | Description |
+    | FollowLossOperate | Description |
     | --- | --- |
-    | GTC | It remains valid until the transaction is concluded. |
-    | IOC | Cancel the part that cannot be transacted immediately (taking orders) |
-    | FOK | Cancellation if all transactions cannot be completed immediately |
-    | GTX | Revoke if unable to become a pending party |
-
-  #### **<span id="depositWithdrawStatus">Deposit/Withdraw status</span>**
-
-
-    | Status | Description |
-    | --- | --- |
-    | SUBMIT | The withdrawal amount is not frozen. |
-    | REVIEW | The withdrawal amount has been frozen and is pending review. |
-    | AUDITED | The withdraw has been reviewed and is ready to on-chaining. |
-    | AUDITED_AGAIN | Reexamine |
-    | PENDING | The deposit or withdraw is already on-chaining.  |
-    | SUCCESS | The deposit or withdraw is success. |
-    | FAIL | The deposit or withdraw failed. |
-    | CANCEL | The deposit or withdraw has been canceled by the user. |
-
-  #### **<span id="bizType">BizType</span>**
-
-
-    | Status | Description |
-    | --- | --- |
-    | SPOT | spot account |
-    | LEVER | Leverage account |
-    | FINANCE | Financial account |
-    | FUTURES_U | USDT-M futures account  |
-    | FUTURES_C | COIN-M futures account |
+    | MARKET_SELL | Immediately settle at market price |
+    | LEADER_CLOSE | Follow the lead to close the position |
+    | MANUAL_PROCESS | Manual Processing |
   
 
 left_code_blocks:

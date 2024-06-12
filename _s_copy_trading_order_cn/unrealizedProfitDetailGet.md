@@ -2,7 +2,7 @@
 title: 获取预计待分润明细
 position_number: 17
 type: get
-description: /v4/balance/copy-trade/share-profit/expected-detail
+description: /v1/copy-trade-balance/copy-trade/share-profit/expected-detail
 parameters:
     -
         name: direction
@@ -28,7 +28,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

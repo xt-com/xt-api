@@ -2,7 +2,7 @@
 title: Stop copy trading
 position_number: 24
 type: post
-description: /v4/account/copy-trade/cancel-follow
+description: /v1/copy-trade-account/copy-trade/cancel-follow
 parameters:
     -
         name: leaderOrderId
@@ -14,7 +14,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

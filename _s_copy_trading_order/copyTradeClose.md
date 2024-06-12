@@ -2,7 +2,7 @@
 title: Close copy order
 position_number: 8
 type: post
-description: /v4/order/copy-trade/order/close
+description: /v1/copy-trade-order/copy-trade/order/close
 parameters:
     -
         name: leaderOrderId
@@ -21,7 +21,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

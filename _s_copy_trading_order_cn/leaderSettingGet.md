@@ -2,13 +2,13 @@
 title: 获取带单设置
 position_number: 12
 type: get
-description: /v4/account/copy-trade/leader-settings
+description: /v1/copy-trade-account/copy-trade/leader-settings
 parameters:
 
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

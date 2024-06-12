@@ -2,7 +2,7 @@
 title: 查询带单员历史带单
 position_number: 29
 type: get
-description: /v4/order/public/copy-trade/order/leader-order-history
+description: /v1/copy-trade-order/public/copy-trade/order/leader-order-history
 parameters:
     -
         name: leaderAccountId
@@ -42,7 +42,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

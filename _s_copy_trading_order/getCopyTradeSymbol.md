@@ -2,13 +2,13 @@
 title: Get copy trade symbols
 position_number: 10
 type: get
-description: /v4/market/public/copy-trade/symbol
+description: /v1/copy-trade-market/public/copy-trade/symbol
 parameters:
  
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -2,13 +2,13 @@
 title: Apply for lead trading
 position_number: 18
 type: post
-description: /v4/account/copy-trade/apply
+description: /v1/copy-trade-account/copy-trade/apply
 parameters:
 
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

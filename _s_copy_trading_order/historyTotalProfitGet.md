@@ -2,7 +2,7 @@
 title: Get historical total profit sharing
 position_number: 14
 type: get
-description: /v4/balance/copy-trade/share-profit/his
+description: /v1/copy-trade-balance/copy-trade/share-profit/his
 parameters:
     -
         name: direction

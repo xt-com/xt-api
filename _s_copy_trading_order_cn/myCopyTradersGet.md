@@ -2,7 +2,7 @@
 title: 获取我的跟单员列表
 position_number: 30
 type: get
-description: /v4/account/copy-trade/leader-followers
+description: /v1/copy-trade-account/copy-trade/leader-followers
 parameters:
     -
         name: direction
@@ -28,7 +28,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

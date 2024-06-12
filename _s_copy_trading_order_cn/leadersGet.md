@@ -2,7 +2,7 @@
 title: 获取我的带单员
 position_number: 21
 type: get
-description: /v4/account/copy-trade/my-leaders
+description: /v1/copy-trade-account/copy-trade/my-leaders
 parameters:
     -
         name: type
@@ -10,7 +10,7 @@ parameters:
         mandatory: true
         default:
         description: 带单员类型
-        ranges:  1-当前带单员; 2- 历史带单员
+        ranges:  <a href="#leaderTypeCn">带单员类型</a>，1：当前带单员; 2：历史带单员
     -
         name: direction
         type: string
