@@ -11,6 +11,13 @@ parameters:
         default:
         description: 带单员账号id
         ranges:
+    -
+        name: days
+        type: number
+        mandatory: false
+        default: 7
+        description: 查询天数
+        ranges: 7,30,90,180
 content_markdown: >-
     #### **限流规则**
 

@@ -16,7 +16,7 @@ parameters:
         type: string
         mandatory: false
         default: 7
-        description: 
+        description: query days
         ranges: 7,30,90,180,all
 content_markdown: >-
     #### **Limit Flow Rules**

@@ -1,5 +1,5 @@
 ---
-title: Get lead trader weekly income rate chart
+title: Get leader daily cumulative income chart
 position_number: 26
 type: get
 description: /v1/copy-trade-balance/public/copy-trade/leader-income-rate
@@ -11,6 +11,13 @@ parameters:
         default:
         description: leader account id
         ranges:
+    -
+        name: days
+        type: number
+        mandatory: false
+        default: 7
+        description: query days
+        ranges: 7,30,90,180
 content_markdown: >-
     #### **Limit Flow Rules**
 
