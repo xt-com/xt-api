@@ -2,7 +2,7 @@
 title: 获取交易员历史带单
 position_number: 22
 type: get
-description: /future/copytrade/order/v1/public/copy-trade/leader-order-history
+description: /future/copytrade/order/public/v1/public/copy-trade/leader-order-history
 parameters:
     -
         name: type

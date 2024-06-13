@@ -2,7 +2,7 @@
 title: Public get leader statistics
 position_number: 25
 type: get
-description: /future/copytrade/user/v1/public/copy-trade/leader-stats
+description: /future/copytrade/user/public/v1/public/copy-trade/leader-stats
 parameters:
    -
         name: accountId
