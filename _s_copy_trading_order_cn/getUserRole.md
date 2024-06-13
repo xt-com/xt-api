@@ -1,5 +1,5 @@
 ---
-title: 获取用户觉得
+title: 获取用户角色
 position_number: 11
 type: get
 description: /v1/copy-trade-account/copy-trade/user-status
