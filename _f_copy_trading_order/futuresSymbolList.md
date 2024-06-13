@@ -2,7 +2,7 @@
 title: Get available symbol list
 position_number: 19
 type: get
-description: /copytrade/user/v1/public/copy-trade/symbol-list
+description: /future/copytrade/user/v1/public/copy-trade/symbol-list
 parameters:
     
 content_markdown: >-

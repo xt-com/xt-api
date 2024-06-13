@@ -2,7 +2,7 @@
 title: Add/update/cancel profit-stop order
 position_number: 10
 type: post
-description: /copytrade/order/v1/copy-trade/update-profit-stop
+description: /future/copytrade/order/v1/copy-trade/update-profit-stop
 parameters:
     -
         name: trackNo

@@ -2,7 +2,7 @@
 title: 查看杠杆倍数
 position_number: 31
 type: get
-description: /copytrade/order/v1/position/list
+description: /future/copytrade/order/v1/position/list
 parameters:
     -
         name: symbol

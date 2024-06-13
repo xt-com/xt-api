@@ -2,7 +2,7 @@
 title: Get follower info
 position_number: 28
 type: get
-description: /copytrade/user/v1/copy-trade/leader-relation 	
+description: /future/copytrade/user/v1/copy-trade/leader-relation 	
 parameters:
     -
        name: leaderAccountId

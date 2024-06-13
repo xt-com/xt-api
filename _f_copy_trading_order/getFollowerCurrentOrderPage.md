@@ -2,7 +2,7 @@
 title: Get follower current orders
 position_number: 13
 type: get
-description: /copytrade/order/v1/copy-trade/follower-order-page
+description: /future/copytrade/order/v1/copy-trade/follower-order-page
 parameters:
     -
         name: type

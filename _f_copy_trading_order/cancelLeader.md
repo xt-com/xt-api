@@ -2,7 +2,7 @@
 title: Cancel leader
 position_number: 8
 type: get
-description: /copytrade/user/v1/copy-trade/cancel-leader
+description: /future/copytrade/user/v1/copy-trade/cancel-leader
 parameters:
 
 content_markdown: >-

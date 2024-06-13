@@ -2,7 +2,7 @@
 title: Get follower history orders
 position_number: 14
 type: get
-description: /copytrade/order/v1/copy-trade/follower-order-history
+description: /future/copytrade/order/v1/copy-trade/follower-order-history
 parameters:
     -
         name: type

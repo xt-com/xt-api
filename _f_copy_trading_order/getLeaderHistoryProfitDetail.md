@@ -2,7 +2,7 @@
 title: Get leader history profit detail
 position_number: 3
 type: get
-description: /copytrade/user/v1/copy-trade/my-profit-history-detail
+description: /future/copytrade/user/v1/copy-trade/my-profit-history-detail
 parameters:
     -
         name: divideTime

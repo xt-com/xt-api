@@ -2,7 +2,7 @@
 title: adjust leverage
 position_number: 32
 type: post
-description: /copytrade/order/v1/position/adjust-leverage
+description: /future/copytrade/order/v1/position/adjust-leverage
 parameters:
     -
         name: symbol

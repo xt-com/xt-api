@@ -2,7 +2,7 @@
 title: 取消跟随
 position_number: 16
 type: post
-description: /copytrade/user/v1/copy-trade/cancel-choose-leader
+description: /future/copytrade/user/v1/copy-trade/cancel-choose-leader
 parameters:
     -
         name: leaderAccountId

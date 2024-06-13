@@ -2,7 +2,7 @@
 title: 带单员信息
 position_number: 7
 type: get
-description: /copytrade/user/v1/copy-trade/leader-detail
+description: /future/copytrade/user/v1/copy-trade/leader-detail
 parameters:
 
 content_markdown: >-

@@ -2,7 +2,7 @@
 title: Apply for lead trading
 position_number: 20
 type: post
-description: /copytrade/user/v1/copy-trade/apply-leader
+description: /future/copytrade/user/v1/copy-trade/apply-leader
 parameters:
     -
         name: nickName

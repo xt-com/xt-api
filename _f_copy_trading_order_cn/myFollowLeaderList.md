@@ -2,7 +2,7 @@
 title: 我跟随的交易员列表(当前跟随)
 position_number: 17
 type: get
-description: /copytrade/user/v1/copy-trade/my-follow-list
+description: /future/copytrade/user/v1/copy-trade/my-follow-list
 parameters:
     
 content_markdown: >-

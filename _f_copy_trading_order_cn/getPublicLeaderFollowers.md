@@ -2,7 +2,7 @@
 title: 获取交易员的跟单人信息
 position_number: 28
 type: get
-description: /copytrade/user/v1/public/copy-trade/leader-follower-page
+description: /future/copytrade/user/v1/public/copy-trade/leader-follower-page
 parameters:
     -
         name: type

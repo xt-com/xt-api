@@ -2,7 +2,7 @@
 title: 获取历史跟单
 position_number: 14
 type: get
-description: /copytrade/order/v1/copy-trade/follower-order-history
+description: /future/copytrade/order/v1/copy-trade/follower-order-history
 parameters:
     -
         name: type

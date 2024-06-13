@@ -2,7 +2,7 @@
 title: 获取历史分润明细
 position_number: 3
 type: get
-description: /copytrade/user/v1/copy-trade/my-profit-history-detail
+description: /future/copytrade/user/v1/copy-trade/my-profit-history-detail
 parameters:
     -
         name: divideTime

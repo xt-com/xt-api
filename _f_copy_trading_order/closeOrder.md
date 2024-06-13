@@ -2,7 +2,7 @@
 title: Close order
 position_number: 12
 type: post
-description: /copytrade/order/v1/copy-trade/close  	
+description: /future/copytrade/order/v1/copy-trade/close  	
 parameters:
     -
         name: trackNo

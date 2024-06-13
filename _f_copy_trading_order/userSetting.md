@@ -2,7 +2,7 @@
 title: Get user setting
 position_number: 9
 type: get
-description: /copytrade/user/v1/copy-trade/user-settings
+description: /future/copytrade/user/v1/copy-trade/user-settings
 parameters:
 
 content_markdown: >-

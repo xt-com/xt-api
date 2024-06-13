@@ -2,7 +2,7 @@
 title: Get leader future profit detail
 position_number: 5
 type: get
-description: /copytrade/user/v1/copy-trade/my-profit-future
+description: /future/copytrade/user/v1/copy-trade/my-profit-future
 parameters:
     -
         name: direction

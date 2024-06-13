@@ -2,7 +2,7 @@
 title: 我的带单员(历史跟随)
 position_number: 18
 type: get
-description: /copytrade/user/v1/copy-trade/follower-leaders-page
+description: /future/copytrade/user/v1/copy-trade/follower-leaders-page
 parameters:
     -
         name: type

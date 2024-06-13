@@ -2,7 +2,7 @@
 title: 获取交易员交易偏好
 position_number: 26
 type: get
-description: /copytrade/user/v1/public/copy-trade/leader-symbol-prefer
+description: /future/copytrade/user/v1/public/copy-trade/leader-symbol-prefer
 parameters:
    -
         name: accountId

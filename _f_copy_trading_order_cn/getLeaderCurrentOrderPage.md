@@ -2,7 +2,7 @@
 title: 获取当前带单
 position_number: 1
 type: get
-description: /copytrade/order/v1/copy-trade/leader-order-page
+description: /future/copytrade/order/v1/copy-trade/leader-order-page
 parameters:
     -
         name: type

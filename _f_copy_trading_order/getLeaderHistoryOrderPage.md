@@ -2,7 +2,7 @@
 title: Get leader history orders
 position_number: 2
 type: get
-description: /copytrade/order/v1/copy-trade/leader-order-history
+description: /future/copytrade/order/v1/copy-trade/leader-order-history
 parameters:
     -
         name: type

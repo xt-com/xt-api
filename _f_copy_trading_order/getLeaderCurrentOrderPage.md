@@ -2,7 +2,7 @@
 title: Get leader current orders
 position_number: 1
 type: get
-description: /copytrade/order/v1/copy-trade/leader-order-page
+description: /future/copytrade/order/v1/copy-trade/leader-order-page
 parameters:
     -
         name: type

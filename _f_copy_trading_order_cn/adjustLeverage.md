@@ -2,7 +2,7 @@
 title: 调整杠杆倍数
 position_number: 32
 type: post
-description: /copytrade/order/v1/position/adjust-leverage
+description: /future/copytrade/order/v1/position/adjust-leverage
 parameters:
     -
         name: symbol

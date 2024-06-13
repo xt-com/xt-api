@@ -2,7 +2,7 @@
 title: 获取预计待分润汇总
 position_number: 6
 type: get
-description: /copytrade/user/v1/copy-trade/my-profit-future-total
+description: /future/copytrade/user/v1/copy-trade/my-profit-future-total
 parameters:
 
 content_markdown: >-
