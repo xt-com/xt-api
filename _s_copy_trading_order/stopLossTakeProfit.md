@@ -2,7 +2,7 @@
 title: Set stop-loss or stop-profit for lead or copy order
 position_number: 5
 type: get
-description: /v4/order/copy-trade/order/stop-profit-loss
+description: /v1/copy-trade-order/copy-trade/order/stop-profit-loss
 parameters:
     -
         name: symbol
@@ -35,7 +35,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -1,8 +1,8 @@
 ---
-title: 查询带单员每周收益图图表
+title: 查询带单员每日累计收益图图表
 position_number: 26
 type: get
-description: /v4/balance/public/copy-trade/leader-income-rate
+description: /v1/copy-trade-balance/public/copy-trade/leader-income-rate
 parameters:
     -
         name: accountId
@@ -11,10 +11,17 @@ parameters:
         default:
         description: 带单员账号id
         ranges:
+    -
+        name: days
+        type: string
+        mandatory: false
+        default: 7
+        description: 查询天数
+        ranges: 7,30,90,180,all
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

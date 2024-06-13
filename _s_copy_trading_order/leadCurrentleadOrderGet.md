@@ -2,7 +2,7 @@
 title: Get lead trader current lead order
 position_number: 28
 type: get
-description: /v4/order/public/copy-trade/order/leader-order-page
+description: /v1/copy-trade-order/public/copy-trade/order/leader-order-page
 parameters:
     -
         name: leaderAccountId
@@ -24,11 +24,11 @@ parameters:
         mandatory: true
         default:
         description: type
-        ranges: 1-detail;2-total
+        ranges: <a href="#leaderOrderRequestType">search type</a>, 1：detail;2：total
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

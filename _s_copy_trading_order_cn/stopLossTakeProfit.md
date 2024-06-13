@@ -2,7 +2,7 @@
 title: 设置带单或跟单止盈止损
 position_number: 5
 type: post
-description: /v4/order/copy-trade/order/stop-profit-loss
+description: /v1/copy-trade-order/copy-trade/order/stop-profit-loss
 parameters:
     -
         name: symbol
@@ -35,7 +35,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

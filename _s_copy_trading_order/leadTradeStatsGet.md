@@ -2,7 +2,7 @@
 title: Get lead trader stats
 position_number: 25
 type: get
-description: /v4/balance/public/copy-trade/leader-stats
+description: /v1/copy-trade-balance/public/copy-trade/leader-stats
 parameters:
     -
         name: accountId
@@ -16,12 +16,12 @@ parameters:
         type: string
         mandatory: false
         default: 7
-        description: 
+        description: query days
         ranges: 7,30,90,180,all
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

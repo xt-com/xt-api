@@ -2,7 +2,7 @@
 title: 获取历史分润明细
 position_number: 15
 type: get
-description: /v4/balance/copy-trade/share-profit/his-detail
+description: /v1/copy-trade-balance/copy-trade/share-profit/his-detail
 parameters:
     -
         name: time
@@ -35,7 +35,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

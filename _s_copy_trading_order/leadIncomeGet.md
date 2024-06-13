@@ -1,8 +1,8 @@
 ---
-title: Get lead trader currency preferences
-position_number: 27
+title: Get leader daily income chart
+position_number: 26
 type: get
-description: /v1/copy-trade-balance/public/copy-trade/leader-trading-prefer
+description: /v1/copy-trade-balance/public/copy-trade/leader-income-chart
 parameters:
     -
         name: accountId
@@ -42,11 +42,9 @@ right_code_blocks:
                       "rc": 0,
                       "result": [
                         {
-                          "count": 0,           //trade count
-                          "index": 0,
-                          "percentage": 0,      //percentage
-                          "pnl": 0,             //trading Profit and Loss
-                          "symbol": "string"    //symbol, others return others
+                          "amount": 0,
+                          "id": "string",
+                          "time": 0
                         }
                       ]
                     }

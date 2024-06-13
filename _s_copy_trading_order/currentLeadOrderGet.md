@@ -2,7 +2,7 @@
 title: Get current lead order
 position_number: 1
 type: get
-description: /v4/order/copy-trade/order/cur-leader-order
+description: /v1/copy-trade-order/copy-trade/order/cur-leader-order
 parameters:
     -
         name: symbol
@@ -11,10 +11,17 @@ parameters:
         default:
         description: Trading pair, if not filled in, represents all
         ranges:
+    -
+        name: type
+        type: number
+        mandatory: false
+        default: 2
+        description: <a href="#leaderOrderRequestType">Leader order request type</a>, 1,detail; 2,summarize
+        ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

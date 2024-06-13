@@ -2,13 +2,13 @@
 title: 申请成为带单员
 position_number: 18
 type: post
-description: /v4/account/copy-trade/apply
+description: /v1/copy-trade-account/copy-trade/apply
 parameters:
 
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -2,7 +2,7 @@
 title: Get my lead trades
 position_number: 21
 type: get
-description: /v4/account/copy-trade/my-leaders
+description: /v1/copy-trade-account/copy-trade/my-leaders
 parameters:
     -
         name: type
@@ -10,7 +10,7 @@ parameters:
         mandatory: true
         default:
         description: the type of lead trade
-        ranges:  1-current lead trades; 2- historical lead trades
+        ranges: <a href="#leaderTypeCn">leader type</a>, 1：current lead trades; 2：historical lead trades
     -
         name: direction
         type: string

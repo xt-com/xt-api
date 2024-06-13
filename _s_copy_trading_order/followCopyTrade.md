@@ -2,7 +2,7 @@
 title: Follow copy trading
 position_number: 23
 type: post
-description: /v4/account/copy-trade/follow
+description: /v1/copy-trade-account/copy-trade/follow
 parameters:
     -
         name: leaderOrderId
@@ -17,7 +17,7 @@ parameters:
         mandatory: true
         default:
         description: follow type
-        ranges: FUND;RATE
+        ranges: <a href="#followType">follow type</a>, FUND;RATE
     -
         name: followVal
         type: number
@@ -38,7 +38,7 @@ parameters:
         mandatory: true
         default:
         description: follow loss operate
-        ranges: MARKET_SELL;LEADER_CLOSE;MANUAL_PROCESS 
+        ranges: <a href="#followLossOperate">follow loss operate</a>, MARKET_SELL;LEADER_CLOSE;MANUAL_PROCESS 
     -
         name: triggerStopRate
         type: number

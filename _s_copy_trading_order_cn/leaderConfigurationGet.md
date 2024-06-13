@@ -2,13 +2,19 @@
 title: 获取带单员详情
 position_number: 20
 type: get
-description: /v4/account/copy-trade/leader-detail
+description: /v1/copy-trade-account/public/copy-trade/leader-detail
 parameters:
-
+    -
+        name: accountId
+        type: number
+        mandatory: true
+        default:
+        description: 带单员账号id
+        ranges:
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

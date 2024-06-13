@@ -2,7 +2,7 @@
 title: 立即跟单/跟单设置
 position_number: 23
 type: post
-description: /v4/account/copy-trade/follow
+description: /v1/copy-trade-account/copy-trade/follow
 parameters:
     -
         name: leaderOrderId
@@ -17,7 +17,7 @@ parameters:
         mandatory: true
         default:
         description: 跟单方式
-        ranges: FUND(固定保证金);RATE(按倍率跟单)
+        ranges: <a href="#followTypeCn">跟单类型</a>, FUND(固定保证金);RATE(按倍率跟单)
     -
         name: followVal
         type: number
@@ -38,7 +38,7 @@ parameters:
         mandatory: true
         default:
         description: 跟单止损仓位处理
-        ranges: MARKET_SELL;LEADER_CLOSE;MANUAL_PROCESS 
+        ranges: <a href="#followLossOperateCn">跟单止损仓位处理类型</a>, MARKET_SELL;LEADER_CLOSE;MANUAL_PROCESS 
     -
         name: triggerStopRate
         type: number

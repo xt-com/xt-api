@@ -2,7 +2,7 @@
 title: 卖出带单
 position_number: 6
 type: post
-description: /v4/order/copy-trade/order/sell
+description: /v1/copy-trade-order/copy-trade/order/sell
 parameters:
     -
         name: leaderOrderId
@@ -21,7 +21,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -2,26 +2,26 @@
 title: Sell all lead order
 position_number: 7
 type: post
-description: /v4/order/copy-trade/order/sell-all
+description: /v1/copy-trade-order/copy-trade/order/sell-all
 parameters:
     -
-        name: leaderOrderId
-        type: number
+        name: leaderOrder
+        type: bool
         mandatory: true
         default:
-        description: leader order id
+        description: true：sell all lead order; false：sell all copy order
         ranges:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: symbol
         ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

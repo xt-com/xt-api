@@ -2,26 +2,26 @@
 title: 卖出全部带单
 position_number: 7
 type: post
-description: /v4/order/copy-trade/order/sell-all
+description: /v1/copy-trade-order/copy-trade/order/sell-all
 parameters:
     -
-        name: leaderOrderId
-        type: number
+        name: leaderOrder
+        type: bool
         mandatory: true
         default:
-        description: 带单订单id
+        description: true：卖出全部带单；false：卖出全部跟单
         ranges:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: 交易对
         ranges:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

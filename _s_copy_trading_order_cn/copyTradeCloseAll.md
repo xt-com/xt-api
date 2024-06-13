@@ -2,7 +2,7 @@
 title: 结束全部跟单
 position_number: 9
 type: post
-description: /v4/order/copy-trade/order/close-all
+description: /v1/copy-trade-order/copy-trade/order/close-all
 parameters:
     -
         name: symbol
@@ -14,7 +14,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    10/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block:

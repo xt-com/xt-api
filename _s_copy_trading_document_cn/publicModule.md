@@ -5,67 +5,42 @@ parameters:
 - name:
 content:
 content_markdown: >-
-  #### **<span id="orderStatusCn">订单状态码及含义</span>**
-
-
-    | State | 说明 |
-    | --- | --- |
-    | NEW | 新建 |
-    | PARTIALLY_FILLED | 部分成交 |
-    | FILLED | 全部成交 |
-    | CANCELED | 用户撤单 |
-    | REJECTED | 下单失败 |
-    | EXPIRED | 过期(time_in_force撤单或溢价撤单) |
-
-  #### **<span id="orderTypeCn">订单类型及含义</span>**
+  #### **<span id="leaderOrderRequestTypeCn">查询类型</span>**
 
     | Type | 说明 |
     | --- | --- |
-    | LIMIT | 限价单 |
-    | MARKET | 市价单 |
+    | 1 | 请求订单明细信息 |
+    | 2 | 请求订单汇总信息 |
 
-  #### **<span id="symbolStatuCn">交易对状态及含义</span>**
+  #### **<span id="copyTradeUserStatusCn">跟单用户类型</span>**
 
-    | State | 说明 |
+    | User status | 说明 |
     | --- | --- |
-    | ONLINE | 上线的 |
-    | OFFLINE | 下线的 |
-    | DELISTED | 退市的 |
+    | LEADER | 带单员 |
+    | FOLLOWER | 跟单员 |
+    | NONE | 其他 |
 
-  #### **<span id="timeInForcesCn">有效方式及含义</span>**
-    这里定义了订单多久能够失效
+  #### **<span id="leaderTypeCn">跟单员类型</span>**
 
-    | TimeInForces | 说明 |
+    | Type | Description |
     | --- | --- |
-    | GTC | 成交为止,一直有效 |
-    | IOC | 无法立即成交(吃单)的部分就撤销 |
-    | FOK | 无法全部立即成交就撤销 |
-    | GTX | 无法成为挂单方就撤销 |
+    | 1 | 当前跟随 |
+    | 2 | 历史跟随 |
 
-  #### **<span id="depositWithdrawStatusCn">充值/提现记录状态码及含义</span>**
+  #### **<span id="followTypeCn">跟随类型</span>**
 
-
-    | Status | 说明 |
+    | Follow type | Description |
     | --- | --- |
-    | SUBMIT | 提现: 未冻结 |
-    | REVIEW | 提现: 已冻结,待审核 |
-    | AUDITED | 提现: 已审核,发送钱包,待上链 |
-    | AUDITED_AGAIN | 复审中 |
-    | PENDING | 充值/提现: 已上链 |
-    | SUCCESS | 完成 |
-    | FAIL | 失败 |
-    | CANCEL | 已取消 |
+    | FUND | 按照固定金额跟单. |
+    | RATE | 按照资金比例跟单. |
 
-  #### **<span id="bizTypeCn">BizType</span>**
+  #### **<span id="followLossOperateCn">跟单止损仓位处理</span>**
 
-
-    | Status | Description |
+    | FollowLossOperate | 说明 |
     | --- | --- |
-    | SPOT | 现货 |
-    | LEVER | 杠杠 |
-    | FINANCE | 理财 |
-    | FUTURES_U | 合约u本位  |
-    | FUTURES_C | 合约币本位 |
+    | MARKET_SELL | 立即市价全平 |
+    | LEADER_CLOSE | 跟随带单员平仓 |
+    | MANUAL_PROCESS | 手动处理 |
   
 
 left_code_blocks:

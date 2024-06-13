@@ -2,13 +2,13 @@
 title: Get unrealized total profit sharing
 position_number: 16
 type: get
-description: /v4/balance/copy-trade/share-profit/expected
+description: /v1/copy-trade-balance/copy-trade/share-profit/expected
 parameters:
     
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

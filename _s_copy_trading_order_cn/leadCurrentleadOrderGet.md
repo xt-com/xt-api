@@ -2,7 +2,7 @@
 title: 查询带单员当前带单
 position_number: 28
 type: get
-description: /v4/order/public/copy-trade/order/leader-order-page
+description: /v1/copy-trade-order/public/copy-trade/order/leader-order-page
 parameters:
     -
         name: leaderAccountId
@@ -24,11 +24,11 @@ parameters:
         mandatory: true
         default:
         description: 查询类型
-        ranges: 1:明细,2:汇总
+        ranges: <a href="#leaderOrderRequestTypeCn">查询类型</a>，1:明细,2:汇总
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

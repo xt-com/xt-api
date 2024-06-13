@@ -2,7 +2,7 @@
 title: Get my copy setting
 position_number: 22
 type: get
-description: /v4/account/copy-trade/follow-leader-config
+description: /v1/copy-trade-account/copy-trade/follow-leader-config
 parameters:
     -
         name: leaderAccountId
@@ -14,7 +14,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

@@ -2,7 +2,7 @@
 title: 修改带单设置
 position_number: 13
 type: post
-description: /v4/account/copy-trade/leader-settings
+description: /v1/copy-trade-account/copy-trade/leader-settings
 parameters:
     -
         name: leaderIntro
@@ -35,7 +35,7 @@ parameters:
     -
         name: symbols
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: 带单市场，逗号分割；例：btc_usdt,eth_usdt
         ranges:
@@ -49,7 +49,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

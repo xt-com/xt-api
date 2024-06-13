@@ -2,13 +2,13 @@
 title: 获取跟单交易对信息
 position_number: 10
 type: get
-description: /v4/market/public/copy-trade/symbol
+description: /v1/copy-trade-market/public/copy-trade/symbol
 parameters:
   
 content_markdown: >-
     #### **限流规则**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:

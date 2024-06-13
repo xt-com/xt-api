@@ -2,13 +2,19 @@
 title: Get leader account configuration
 position_number: 20
 type: get
-description: /v4/account/copy-trade/leader-detail
+description: /v1/copy-trade-account/public/copy-trade/leader-detail
 parameters:
-
+    -
+        name: accountId
+        type: number
+        mandatory: true
+        default:
+        description: leader account id
+        ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    1/s/apikey
+    2/s/apikey
 left_code_blocks:
     -
         code_block:
