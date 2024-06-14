@@ -2,7 +2,7 @@
 title: Public get leader history orders
 position_number: 22
 type: get
-description: /future/copytrade/order/public/v1/public/copy-trade/leader-order-history
+description: /future/copytrade/public/order/v1/public/copy-trade/leader-order-history
 parameters:
     -
         name: type

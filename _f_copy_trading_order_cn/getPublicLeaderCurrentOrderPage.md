@@ -2,7 +2,7 @@
 title: 获取交易员当前带单
 position_number: 21
 type: get
-description: /future/copytrade/order/public/v1/public/copy-trade/leader-order-page
+description: /future/copytrade/public/order/v1/public/copy-trade/leader-order-page
 parameters:
     -
         name: type

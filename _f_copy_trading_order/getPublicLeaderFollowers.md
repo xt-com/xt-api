@@ -2,7 +2,7 @@
 title: Public get leader's followers
 position_number: 28
 type: get
-description: /future/copytrade/user/public/v1/public/copy-trade/leader-follower-page
+description: /future/copytrade/public/user/v1/public/copy-trade/leader-follower-page
 parameters:
     -
         name: type

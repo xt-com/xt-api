@@ -2,7 +2,7 @@
 title: Public get leader info
 position_number: 27
 type: get
-description: /future/copytrade/user/public/v1/public/copy-trade/leader-detail-v2 	
+description: /future/copytrade/public/user/v1/public/copy-trade/leader-detail-v2 	
 parameters:
     -
        name: accountId
