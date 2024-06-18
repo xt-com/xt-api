@@ -7,15 +7,15 @@ parameters:
     -
         name: direction
         type: string
-        mandatory: true
-        default:
+        mandatory: false
+        default: NEXT
         description: query direction
         ranges: PREV-previous page,NEXT-next page
     -
         name: limit
         type: number
         mandatory: false
-        default: 20
+        default: 10
         description:  number of pages
         ranges: 1-100
     -
