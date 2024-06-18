@@ -7,15 +7,15 @@ parameters:
     -
         name: direction
         type: string
-        mandatory: true
-        default:
+        mandatory: false
+        default: NEXT
         description: 分页查询方向
         ranges: PREV-上一页,NEXT-下一页
     -
         name: limit
         type: number
         mandatory: false
-        default: 20
+        default: 10
         description:  每页的数量
         ranges: 1-100
     -
