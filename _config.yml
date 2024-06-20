@@ -45,11 +45,6 @@ collections:
     type: spot
     language: en
     position_number: 4
-  copy_trade:
-    title: Copy trade
-    type: spot
-    language: en
-    position_number: 6
   balance:
     title: Balance
     type: spot
@@ -95,11 +90,6 @@ collections:
     type: spot
     language: cn
     position_number: 15
-  copy_trade_cn:
-    title: 跟单
-    type: spot
-    language: cn
-    position_number: 17
   balance_cn:
     title: 资产
     type: spot
