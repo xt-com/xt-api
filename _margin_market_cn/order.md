@@ -17,7 +17,7 @@ parameters:
     type: string
     mandatory: true
     default:
-    description: 币种 例如：BTC
+    description: 币种，小写。 例如：btc
     ranges:
   -
     name: amount

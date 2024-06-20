@@ -17,7 +17,7 @@ parameters:
     type: string
     mandatory: true
     default:
-    description: 'eg: BTC'
+    description:  coin name,lower case.  e.g. btc
     ranges:
   -
     name: amount
