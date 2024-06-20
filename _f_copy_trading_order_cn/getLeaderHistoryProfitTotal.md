@@ -1,5 +1,5 @@
 ---
-title: 获取历史分润汇总
+title: 获取带单员历史分润汇总
 position_number: 4
 type: get
 description: /future/copytrade/user/v1/copy-trade/my-profit-history

@@ -1,5 +1,5 @@
 ---
-title: 获取历史跟单
+title: 获取跟单员历史跟单
 position_number: 14
 type: get
 description: /future/copytrade/order/v1/copy-trade/follower-order-history

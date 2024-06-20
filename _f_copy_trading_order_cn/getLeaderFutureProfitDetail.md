@@ -1,5 +1,5 @@
 ---
-title: 获取预计待分润明细
+title: 获取带单员预计待分润明细
 position_number: 5
 type: get
 description: /future/copytrade/user/v1/copy-trade/my-profit-future

@@ -1,8 +1,8 @@
 ---
-title: 获取带单员当前带单
+title: 获取当前带单
 position_number: 1
 type: get
-description: /future/copytrade/order/v1/copy-trade/leader-order-page
+description: /future/copytrade/order/v1/copy-trade/leader-order-list
 parameters:
     -
         name: type

@@ -1,5 +1,5 @@
 ---
-title: 获取当前跟单
+title: 获取跟单员当前跟单
 position_number: 13
 type: get
 description: /future/copytrade/order/v1/copy-trade/follower-order-page

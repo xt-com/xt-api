@@ -1,5 +1,5 @@
 ---
-title: 获取历史带单
+title: 获取带单员历史带单
 position_number: 2
 type: get
 description: /future/copytrade/order/v1/copy-trade/leader-order-history

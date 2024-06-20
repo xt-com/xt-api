@@ -1,8 +1,8 @@
 ---
-title: Get leader current order page
+title: Get leader current order
 position_number: 1
 type: get
-description: /future/copytrade/order/v1/copy-trade/leader-order-page
+description: /future/copytrade/order/v1/copy-trade/leader-order-list
 parameters:
     -
         name: type

@@ -1,13 +1,13 @@
 ---
-title: Get leader history order page
-position_number: 2
+title: Get follower current order
+position_number: 13
 type: get
-description: /future/copytrade/order/v1/copy-trade/leader-order-history
+description: /future/copytrade/order/v1/copy-trade/follower-order-list
 parameters:
     -
         name: type
         type: number
-        mandatory: true
+        mandatory: false
         default:
         description: type,1(detail),2(total)
         ranges: 1,2
@@ -39,7 +39,6 @@ parameters:
         default:
         description: id
         ranges:
-
 content_markdown: >-
     #### **Limit Flow Rules**
 
@@ -60,10 +59,7 @@ right_code_blocks:
                         "returnCode": 0,
                         "msgInfo": "success",
                         "error": null,
-                        "result": {
-                            "hasPrev": false,
-                            "hasNext": false,
-                            "items": [
+                        "result": [
                                     {
                                     "symbolName": "string", // symbol
                                     "positionType": "string", // position type:CROSSED;ISOLATED
@@ -74,13 +70,12 @@ right_code_blocks:
                                     "trackNo": 0, // trackNo
                                     "openTime": 0, // open time
                                     "closeTime": 0, // close time
-                                    "entryPrice": 0, // position price
                                     "openPrice": 0, // open price
                                     "closePrice": 0, // close price
                                     "profitRate": 0, // profit rate
                                     "openMargin": 0, // open margin
                                     "realizedPnl": 0, // realized pnl
-                                    "fee": 0, // fee
+                                    "leaderNickname": "string", // leader name
                                     "openSize": 0, // open quantity
                                     "closeSize": 0, // close quantity
                                     "positionSize": 0, // position quantity
@@ -89,10 +84,9 @@ right_code_blocks:
                                     "triggerProfitPrice": 0, // trigger profit price
                                     "triggerStopPrice": 0, // trigger stop price
                                     "triggerPriceType": "string", // trigger price type:LATEST_PRICE,MARK_PRICE
-                                    "followOrderCount": 0 // follow order count
+                                    "avatar": "string" // avatar
                                     }
-                                ]
-                        }
+                        ]
                         }
         title: Response
         language: json
