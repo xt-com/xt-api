@@ -45,11 +45,6 @@ collections:
     type: spot
     language: en
     position_number: 4
-  etf:
-    title: ETF
-    type: spot
-    language: en
-    position_number: 5
   copy_trade:
     title: Copy trade
     type: spot
@@ -100,11 +95,6 @@ collections:
     type: spot
     language: cn
     position_number: 15
-  etf_cn:
-    title: ETF
-    type: spot
-    language: cn
-    position_number: 16
   copy_trade_cn:
     title: 跟单
     type: spot
