@@ -8,8 +8,8 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
-        default: N/A
+        mandatory: true
+        default: 
         description: 交易对
         ranges:
     -
