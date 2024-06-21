@@ -8,9 +8,9 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
-        default: N/A
-        description: 交易对（不传时撤销所有交易对）
+        mandatory: true
+        default: 
+        description: 交易对，例如btc_usdt
         ranges:
 left_code_blocks:
     -

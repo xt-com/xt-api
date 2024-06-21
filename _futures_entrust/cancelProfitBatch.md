@@ -8,9 +8,9 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
-        description: Trading pair (cancel all trading pair orders if don't pass parameters)
+        description: Trading pair, e.g. btc_usdt
         ranges:
 left_code_blocks:
     -
