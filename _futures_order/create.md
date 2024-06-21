@@ -15,8 +15,8 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
-        default: N/A
+        mandatory: true
+        default: 
         description: Trading pair
         ranges:
     -
