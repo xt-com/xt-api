@@ -9,7 +9,7 @@ parameters:
     type: String
     mandatory: true
     default: N/A
-    description: Trading pair (cancel all trading pair orders if don't pass parameters)
+    description: Trading pair (cancel all trading pair orders if pass "")
     ranges:
 right_code_blocks:
   - code_block: |-

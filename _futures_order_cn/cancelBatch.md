@@ -9,7 +9,7 @@ parameters:
     type: String
     mandatory: true
     default: N/A
-    description: 交易对（不传时撤销所有交易对订单）
+    description: 交易对（传空字符串撤销所有交易对订单）
     ranges:
 right_code_blocks:
   - code_block: |-
