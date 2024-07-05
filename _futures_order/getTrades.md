@@ -62,14 +62,15 @@ right_code_blocks:
           "result": {
             "items": [
               {
-                "fee": 0, //Fee
-                "feeCoin": "", //Currency of fee
-                "orderId": 0, //Order ID
-                "execId": 0, //Trade ID
-                "price": 0, //Price
-                "quantity": 0, //Volume
-                "symbol": "", //Trading pair
-                "timestamp": 0 //Time
+                "fee": 0,                //Fee
+                "feeCoin": "",           //Currency of fee
+                "orderId": 0,            //Order ID
+                "execId": 0,             //Trade ID
+                "price": 0,              //Price
+                "quantity": 0,           //Volume
+                "symbol": "",            //Trading pair
+                "timestamp": 0,          //Time
+                "takerMaker": "TAKER"    //taker or maker
               }
             ],
             "page": 0,
