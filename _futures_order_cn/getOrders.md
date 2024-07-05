@@ -36,7 +36,7 @@ parameters:
     ranges:
   - name: state
     type: string
-    mandatory: true
+    mandatory: false
     default: NEW
     description: >-
       订单状态
