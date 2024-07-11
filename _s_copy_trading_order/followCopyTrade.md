@@ -5,11 +5,11 @@ type: post
 description: /v1/copy-trade-account/copy-trade/follow
 parameters:
     -
-        name: leaderOrderId
+        name: leaderAccountId
         type: number
         mandatory: true
         default:
-        description: leader order id
+        description: leader account id
         ranges:
     -
         name: followType
