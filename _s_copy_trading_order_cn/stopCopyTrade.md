@@ -5,7 +5,7 @@ type: post
 description: /v1/copy-trade-account/copy-trade/cancel-follow
 parameters:
     -
-        name: leaderOrderId
+        name: leaderAccountId
         type: number
         mandatory: true
         default:
