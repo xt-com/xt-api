@@ -51,8 +51,8 @@ parameters:
         type: string
         mandatory: false
         default:
-        description: 跟单方向:正向:FORWARD;反向:REVERSE
-        ranges: FORWARD,REVERSE
+        description: 跟单方向:正向:forward;反向:reverse
+        ranges: forward,reverse
     -
         name: followLoss
         type: number
@@ -73,7 +73,7 @@ parameters:
         mandatory: false
         default:
         description: 跟单止损仓位处理
-        ranges: MARKET_SELL,LEADER_CLOSE,MANUAL_PROCESS
+        ranges: market_sell,leader_close,manual_process
 
 content_markdown: >-
     #### **限流规则**
