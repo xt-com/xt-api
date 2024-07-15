@@ -21,10 +21,10 @@ parameters:
     -
         name: followType
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: 跟单类型:FUND(固定保证金);RATE(按倍率跟单);MARGIN_RATE(同比例跟单)
-        ranges: NEXT
+        ranges: FUND,RATE,MARGIN_RATE
     -
         name: followVal
         type: number

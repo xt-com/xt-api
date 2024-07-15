@@ -21,7 +21,7 @@ parameters:
     -
         name: followType
         type: string
-        mandatory: false
+        mandatory: true
         default:
         description: follow type
         ranges: FUND,RATE,MARGIN_RATE
