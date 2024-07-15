@@ -52,7 +52,7 @@ parameters:
         mandatory: false
         default:
         description: direction
-        ranges: forward,forward
+        ranges: FORWARD,REVERSE
     -
         name: followLoss
         type: number
@@ -73,7 +73,7 @@ parameters:
         mandatory: false
         default:
         description: follow loss operation
-        ranges: market_sell,leader_close,manual_process
+        ranges: MARKET_SELL,LEADER_CLOSE,MANUAL_PROCESS
 
 content_markdown: >-
     #### **Limit Flow Rules**
