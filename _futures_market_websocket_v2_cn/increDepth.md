@@ -15,11 +15,12 @@ parameters:
 content_markdown: |-
     **请求**
 
-    语法: depth\_update@\{symbol\}
+    语法: depth\_update@\{symbol\},\{interval\}
 
-    示例: depth\_update@btc\_usdt
+    interval: 100/250/500/1000 默认速率100ms
+
+    示例: depth\_update@btc\_usdt,100
     
-    速率：100ms
 left_code_blocks:
     -
         code_block:

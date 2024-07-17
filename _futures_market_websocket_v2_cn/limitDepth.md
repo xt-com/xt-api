@@ -17,13 +17,14 @@ content_markdown: |-
 
     &nbsp;
 
-    语法: depth@\{symbol\},\{levels\}
+    语法: depth@\{symbol\},\{levels\},\{interval\}
 
-    levels: 50
+    levels: 5/10/20/50
+  
+    interval: 100/250/500/1000 默认速率1000ms
 
-    示例: depth@btc\_usdt,50
-    
-    速率: 1000ms
+    示例: depth@btc\_usdt,50,1000
+  
 left_code_blocks:
     -
         code_block:

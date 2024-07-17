@@ -17,13 +17,14 @@ content_markdown: |-
 
     &nbsp;
 
-    format: depth@\{symbol\},\{levels\}
+    format: depth@\{symbol\},\{levels\},\{interval\}
 
-    levels: 50
+    levels: 5/10/20/50
+  
+    interval: 100/250/500/1000 &nbsp; default rate 1000ms
 
-    eg: depth@btc\_usdt,50
+    eg: depth@btc\_usdt,50,1000
     
-    rate: 1000ms
 left_code_blocks:
     -
         code_block:
