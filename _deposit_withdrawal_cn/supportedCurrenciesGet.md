@@ -38,7 +38,8 @@ right_code_blocks:
                                 "withdrawEnabled": true,    //是否支持提现，true:支持，false:不支持
                                 "withdrawFeeAmount": 0.2,   //提现手续费
                                 "withdrawMinAmount": 10,    //最小提现数量
-                                "depositFeeRate": 0.2       //充值费率，百分比
+                                "depositFeeRate": 0.2,      //充值费率，百分比
+                                "contract": "contractaddress", //合约地址
                             }
                         ]           
                     },
