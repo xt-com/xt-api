@@ -39,7 +39,7 @@ right_code_blocks:
                                 "withdrawFeeAmount": 0.2,   //withdraw fee
                                 "withdrawMinAmount": 10,    //minimum withdrawal amount
                                 "depositFeeRate": 0.2       //deposit fee rate
-                                "contract": "contractaddress", //contract address
+                                "contract": "contractaddress" //contract address
                             }
                         ]           
                     },
@@ -52,7 +52,8 @@ right_code_blocks:
                                 "withdrawEnabled": true     //withdraw is supported or not
                                 "withdrawFeeAmount": 0.2,   //withdraw fee
                                 "withdrawMinAmount": 10,    //minimum withdrawal amount
-                                "depositFeeRate": 0.2       //deposit fee rate
+                                "depositFeeRate": 0.2,       //deposit fee rate
+                                "contract": "contractaddress" //contract address
                             }
                         ]
                     }
