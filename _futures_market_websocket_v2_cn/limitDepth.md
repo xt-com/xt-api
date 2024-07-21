@@ -23,7 +23,7 @@ content_markdown: |-
   
     interval: 100/250/500/1000 默认速率1000ms
 
-    示例: depth@btc\_usdt,50,1000
+    示例: depth@btc\_usdt,50,1000ms
   
 left_code_blocks:
     -

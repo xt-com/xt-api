@@ -19,7 +19,7 @@ content_markdown: |-
   
     interval: 100/250/500/1000 &nbsp; default rate 100ms
 
-    eg: depth\_update@btc\_usdt,100
+    eg: depth\_update@btc\_usdt,100ms
 
 left_code_blocks:
     -
