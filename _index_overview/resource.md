@@ -20,6 +20,10 @@ content_markdown: >-
 
   A lightweight Java code library: [Java SDK](https://github.com/xt-com/xt4-java-demo)
 
+  #### JavaScript SDK
+
+  This JavaScript SDK provides access to various endpoints for interacting with the XT platform: [JavaScript SDK](https://www.npmjs.com/package/xt-open-api)
+
   #### Customer service
 
   Get support in our telegram group: [XT API Support Group](https://t.me/XT_api)<br />
