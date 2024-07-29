@@ -60,48 +60,58 @@ collections:
     type: spot
     language: en
     position_number: 9
+  commission:
+    title: Referral Commission
+    type: spot
+    language: en
+    position_number: 10
   websocket_public:
     title: WEBSOCKET(public)
     type: spot
     language: en
-    position_number: 10
+    position_number: 11
   websocket_private:
     title: WEBSOCKET(private)
     type: spot
     language: en
-    position_number: 11
+    position_number: 12
   documentation_cn:
     title: 接入说明
     type: spot
     language: cn
-    position_number: 12
+    position_number: 13
   market_cn:
     title: 市场数据
     type: spot
     language: cn
-    position_number: 13
+    position_number: 14
   order_cn:
     title: 订单
     type: spot
     language: cn
-    position_number: 14
+    position_number: 15
   trade_cn:
     title: 成交
     type: spot
     language: cn
-    position_number: 15
+    position_number: 16
   balance_cn:
     title: 资产
     type: spot
     language: cn
-    position_number: 18
+    position_number: 17
   deposit_withdrawal_cn:
     title: 充值/提现
     type: spot
     language: cn
-    position_number: 19
+    position_number: 18
   transfer_cn:
     title: 划转
+    type: spot
+    language: cn
+    position_number: 19
+  commission_cn:
+    title: 邀请返佣
     type: spot
     language: cn
     position_number: 20
