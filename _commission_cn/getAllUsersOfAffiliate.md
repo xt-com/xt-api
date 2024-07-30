@@ -12,7 +12,7 @@ parameters:
         description: 开始时间
         ranges:
     -
-        name: startTime
+        name: endTime
         type: number
         mandatory: false
         default:
