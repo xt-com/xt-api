@@ -60,11 +60,6 @@ collections:
     type: spot
     language: en
     position_number: 9
-  commission:
-    title: Referral Commission
-    type: spot
-    language: en
-    position_number: 10
   websocket_public:
     title: WEBSOCKET(public)
     type: spot
@@ -110,11 +105,6 @@ collections:
     type: spot
     language: cn
     position_number: 19
-  commission_cn:
-    title: 邀请返佣
-    type: spot
-    language: cn
-    position_number: 20
   websocket_public_cn:
     title: WEBSOCKET(public)
     type: spot
@@ -410,6 +400,11 @@ collections:
     type: user_center
     language: en
     position_number: 3
+  user_center_commission:
+    title: Referral Commission
+    type: user_center
+    language: en
+    position_number: 4
 
   user_center_documentation_cn:
     title: 接入说明
@@ -426,6 +421,11 @@ collections:
     type: user_center
     language: cn
     position_number: 6
+  user_center_commission_cn:
+    title: 邀请返佣
+    type: user_center
+    language: cn
+    position_number: 7
 
 plugins:
   - jekyll-sitemap
