@@ -30,7 +30,7 @@ right_code_blocks:
             "hasPrev": false, //是否有上一页
             "items": [ //数据列表
               {
-                "collectionInternal": 0, //收取时间间隔（秒）
+                "collectionInternal": 0, //收取时间间隔（时）
                 "createdTime": 0, //时间
                 "fundingRate": 0, //最新资金费率
                 "id": 0, //id

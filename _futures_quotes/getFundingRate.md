@@ -30,7 +30,7 @@ right_code_blocks:
             "hasPrev": false, //Is there a previous page
             "items": [ //Datasheets
               {
-                "collectionInternal": 0, //Billing Cycle (second)
+                "collectionInternal": 0, //Billing Cycle (hour)
                 "createdTime": 0, //Time
                 "fundingRate": 0, //Latest funding rate
                 "id": 0, //id
