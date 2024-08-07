@@ -69,6 +69,14 @@ right_code_blocks:
                       "fee": "string",
                       "feeCurrency": "string",
                       "state": "NEW",
+                      "deductServices":[{   //如果设置手续费抵扣，使用该字段代表手续费，没有抵扣使用原有fee、feeCurrency字段代表手续费
+                                            "fee":"0.1",     
+                                            "feeCurrency":"xt"
+                                        },
+                                        {   
+                                            "fee":"0.001",
+                                            "feeCurrency":"btc"
+                                        }],
                       "time": 1655958915583,
                       "ip": "127.0.0.1",
                       "updatedTime": 1655958915583

@@ -61,6 +61,14 @@ right_code_blocks:
                         "fee": "string",                    //handling fee
                         "feeCurrency": "string",   
                         "state": "NEW",                     //order stat NEW,PARTIALLY_FILLED,FILLED,CANCELED,REJECTED,EXPIRED
+                        "deductServices":[{                 //If set XT deduction fees, use this field to represent the trade fee. Otherwise, use the original fee and feeCurrency fields to represent the trade fee.  
+                                              "fee":"0.1",     
+                                              "feeCurrency":"xt"
+                                          },
+                                          {   
+                                              "fee":"0.001",
+                                              "feeCurrency":"btc"
+                                          }],
                         "time": 1655958915583,              //order time
                         "updatedTime": 1655958915583  
                       }

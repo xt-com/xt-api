@@ -68,6 +68,14 @@ right_code_blocks:
                       "fee": "string",
                       "feeCurrency": "string",
                       "state": "NEW",
+                      "deductServices":[{   //If set XT deduction fees, use this field to represent the trade fee. Otherwise, use the original fee and feeCurrency fields to represent the trade fee. 
+                                            "fee":"0.1",     
+                                            "feeCurrency":"xt"
+                                        },
+                                        {   
+                                            "fee":"0.001",
+                                            "feeCurrency":"btc"
+                                        }],
                       "time": 1655958915583,
                       "ip": "127.0.0.1",
                       "updatedTime": 1655958915583

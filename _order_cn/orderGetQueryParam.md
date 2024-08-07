@@ -61,6 +61,14 @@ right_code_blocks:
                         "fee": "string",                        //手续费
                         "feeCurrency": "string",                //手续费币种
                         "state": "NEW",                         //订单状态 NEW-新建,PARTIALLY_FILLED-部分成交,FILLED-全部成交,CANCELED-用户撤单,REJECTED-下单失败,EXPIRED-过期(time_in_force撤单或溢价撤单)
+                        "deductServices":[{                     //如果设置手续费抵扣，使用该字段代表手续费，没有抵扣使用原有fee、feeCurrency字段代表手续费 
+                                              "fee":"0.1",     
+                                              "feeCurrency":"xt"
+                                          },
+                                          {   
+                                              "fee":"0.001",
+                                              "feeCurrency":"btc"
+                                          }],
                         "time": 1655958915583,                  //订单时间
                         "updatedTime": 1655958915583            //订单更新时间
                       }
