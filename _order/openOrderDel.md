@@ -8,7 +8,7 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: Trading pair, if not filled in, represents all
         ranges:
@@ -22,7 +22,7 @@ parameters:
     -
         name: side
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: BUY,SELL
         ranges:

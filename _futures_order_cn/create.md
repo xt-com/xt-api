@@ -47,13 +47,13 @@ parameters:
         default: N/A
         description: 价格
         ranges:
-    -
-        name: reduceOnly
-        type: boolean
-        mandatory: false
-        default: false
-        description: 只减仓
-        ranges:
+#    -
+#        name: reduceOnly
+#        type: boolean
+#        mandatory: false
+#        default: false
+#        description: 只减仓
+#        ranges:
     -
         name: timeInForce
         type: string

@@ -8,7 +8,7 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: 交易对，不传代表所有
         ranges:
@@ -23,7 +23,7 @@ parameters:
     -
         name: side
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: BUY-买,SELL-卖
         ranges:

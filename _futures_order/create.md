@@ -47,13 +47,13 @@ parameters:
         default: N/A
         description: Price
         ranges:
-    -
-        name: reduceOnly
-        type: boolean
-        mandatory: false
-        default: false
-        description: Reduce only
-        ranges:
+#    -
+#        name: reduceOnly
+#        type: boolean
+#        mandatory: false
+#        default: false
+#        description: Reduce only
+#        ranges:
     -
         name: timeInForce
         type: string
