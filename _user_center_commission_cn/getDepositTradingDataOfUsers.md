@@ -54,6 +54,7 @@ right_code_blocks:
           "depositDetails": [
               {
                   "amount": 100,              //充值数量
+                  "amountU": 100,             //充值兑U数量
                   "currency": "USDT",         //充值币种
                   "timestamp": 1721962593000  //充值时间
               }

@@ -54,6 +54,7 @@ right_code_blocks:
                     "depositDetails": [
                         {
                             "amount": 100,              //Deposit amount
+                            "amountU": 100,             //Deposit amount (converted to USDT)
                             "currency": "USDT",         //Deposit currency
                             "timestamp": 1721962593000  //Deposit time
                         }
