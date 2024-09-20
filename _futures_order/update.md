@@ -9,35 +9,35 @@ parameters:
         name: orderId
         type: number
         mandatory: true
-        default: N/A
+        default: 
         description: Order ID
         ranges:
     -
         name: price
         type: number
         mandatory: true
-        default: N/A
+        default: 
         description: Target price
         ranges:
     -
         name: origQty
         type: number
         mandatory: true
-        default: N/A
+        default: 
         description: Target quantity (cont)
         ranges:
     -
         name: triggerProfitPrice
         type: number
         mandatory: false
-        default: 
+        default: N/A
         description: Profit target price
         ranges:
     -
         name: triggerStopPrice
         type: number
         mandatory: false
-        default:
+        default: N/A
         description: Stop-Loss price
         ranges:
     -
@@ -51,14 +51,14 @@ parameters:
         name: profitDelegateOrderType
         type: string
         mandatory: false
-        default: 
+        default: N/A
         description: Take-Profit order type
         ranges: LIMIT；MARKET
     -
         name: profitDelegateTimeInForce
         type: string
         mandatory: false
-        default:
+        default: N/A
         description: Take-Profit order validity method
         ranges: GTC;IOC;FOK;GTX
     -
@@ -72,7 +72,7 @@ parameters:
         name: stopDelegateOrderType
         type: string
         mandatory: false
-        default:
+        default: N/A
         description: Stop-Loss order type
         ranges: LIMIT；MARKET
     -

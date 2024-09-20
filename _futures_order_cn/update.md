@@ -9,35 +9,35 @@ parameters:
         name: orderId
         type: number
         mandatory: true
-        default: N/A
+        default: 
         description: 订单id
         ranges:
     -
         name: price
         type: number
         mandatory: true
-        default: N/A
+        default: 
         description: 目标价格
         ranges:
     -
         name: origQty
         type: number
         mandatory: true
-        default: N/A
+        default: 
         description: 目标数量（张）
         ranges:
     -
         name: triggerProfitPrice
         type: number
         mandatory: false
-        default: 
+        default: N/A
         description: 止盈价格
         ranges:
     -
         name: triggerStopPrice
         type: number
         mandatory: false
-        default:
+        default: N/A
         description: 止损价格
         ranges:
     -
@@ -51,14 +51,14 @@ parameters:
         name: profitDelegateOrderType
         type: string
         mandatory: false
-        default: 
+        default: N/A
         description: 止盈委托订单类型
         ranges: LIMIT(限价)；MARKET(市价)
     -
         name: profitDelegateTimeInForce
         type: string
         mandatory: false
-        default:
+        default: N/A
         description: 止盈委托有效方式
         ranges: GTC;IOC;FOK;GTX
     -
@@ -72,7 +72,7 @@ parameters:
         name: stopDelegateOrderType
         type: string
         mandatory: false
-        default:
+        default: N/A
         description: 止损委托订单类型
         ranges:  LIMIT(限价)；MARKET(市价)
     -
