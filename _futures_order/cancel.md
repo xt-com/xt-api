@@ -1,6 +1,6 @@
 ---
 title: Cancel Orders
-position_number: 5
+position_number: 6
 type: post
 description: /future/trade/v1/order/cancel
 remark: Content-Type = application/x-www-form-urlencoded && application/json
