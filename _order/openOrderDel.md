@@ -1,6 +1,6 @@
 ---
 title: Cancel the current pending order
-position_number: 8
+position_number: 9
 type: delete
 split: -------------------------------------
 description: /v4/open-order

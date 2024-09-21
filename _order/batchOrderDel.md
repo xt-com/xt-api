@@ -1,6 +1,6 @@
 ---
 title: Cancell batch order
-position_number: 6
+position_number: 7
 type: delete
 split: -------------------------------------
 description: /v4/batch-order

@@ -1,6 +1,6 @@
 ---
 title: Query historical orders
-position_number: 9
+position_number: 10
 type: get
 description: /v4/history-order
 parameters:
