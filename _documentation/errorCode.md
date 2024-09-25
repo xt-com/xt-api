@@ -43,6 +43,7 @@ content_markdown: |-
     | SYMBOL_003 | Symbol suspend trading |
     | SYMBOL_004 | Symbol country disallow trading |
     | SYMBOL_005 | The symbol does not support trading via API |
+    | SYMBOL_007 | The trading pair does not support order modification |
     | ORDER_001 | Platform rejection |
     | ORDER_002 | insufficient funds |
     | ORDER_003 | Trading Pair Suspended |
@@ -62,6 +63,7 @@ content_markdown: |-
     | ORDER_F0501 | Trigger PROTECTION_LIMIT Filter - Buy Max Deviation |
     | ORDER_F0502 | Trigger PROTECTION_LIMIT Filter - Sell Max Deviation |
     | ORDER_F0601 | Trigger PROTECTION_MARKET Filter |
+    | ORDER_F0704 | Liquidation price limit for leveraged limit orders |
     | COMMON_001  | The user does not exist |
     | COMMON_002  | System busy, please try it later |
     | COMMON_003  | Operation failed, please try it later |
