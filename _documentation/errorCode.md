@@ -44,6 +44,7 @@ content_markdown: |-
     | SYMBOL_004 | Symbol country disallow trading |
     | SYMBOL_005 | The symbol does not support trading via API |
     | SYMBOL_007 | The trading pair does not support order modification |
+    | SYMBOL_010 | This market does not support your trading |
     | ORDER_001 | Platform rejection |
     | ORDER_002 | insufficient funds |
     | ORDER_003 | Trading Pair Suspended |
