@@ -167,7 +167,7 @@ content_markdown: >-
     ##### **现价保护过滤器 PROTECTION\_LIMIT FILTER**
 
 
-    对于订单类型(orderType)为LIMIT(现价) 类型的订单具有价格保护限制，包含以下两个部分
+    对于订单类型(orderType)为LIMIT(限价) 类型的订单具有价格保护限制，包含以下两个部分
 
 
     1\.buyMaxDeviation 买单最大偏离度，限制了买单价格与最新成交价之间的差值

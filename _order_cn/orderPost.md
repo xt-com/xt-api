@@ -30,7 +30,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: "订单类型 \_LIMIT-现价,MARKET-市价\_"
+        description: "订单类型 \_LIMIT-限价,MARKET-市价\_"
         ranges:
     -
         name: timeInForce

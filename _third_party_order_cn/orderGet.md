@@ -44,7 +44,7 @@ right_code_blocks:
                     "baseCurrency": "string",               //标的币种
                     "quoteCurrency": "string",              //报价币种
                     "side": "BUY",                          //订单方向 BUY-买,SELL-卖
-                    "type": "LIMIT",                        //订单类型  LIMIT-现价,MARKET-市价 
+                    "type": "LIMIT",                        //订单类型  LIMIT-限价,MARKET-市价 
                     "timeInForce": "GTC",                   //有效方式  GTC,IOC,FOK,GTX
                     "price": "40000",                       //价格
                     "origQty": "2",                         //原始数量
