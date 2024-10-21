@@ -6,6 +6,13 @@ description: /future/trade/v1/entrust/create-plan
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
+        name: clientOrderId
+        type: string
+        mandatory: false
+        default: N/A
+        description: 自定义订单id
+        ranges:
+    -
         name: symbol
         type: string
         mandatory: true
