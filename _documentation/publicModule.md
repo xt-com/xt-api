@@ -40,7 +40,7 @@ content_markdown: >-
     | GTC | It remains valid until the transaction is concluded. |
     | IOC | Cancel the part that cannot be transacted immediately (taking orders) |
     | FOK | Cancellation if all transactions cannot be completed immediately |
-    | GTX | Revoke if unable to become a pending party |
+    | GTX | Only pending orders, the triggering of transaction conditions will be cancelled immediately |
 
   #### **<span id="depositWithdrawStatus">Deposit/Withdraw status</span>**
 

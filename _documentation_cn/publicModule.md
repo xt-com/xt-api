@@ -40,7 +40,7 @@ content_markdown: >-
     | GTC | 成交为止,一直有效 |
     | IOC | 无法立即成交(吃单)的部分就撤销 |
     | FOK | 无法全部立即成交就撤销 |
-    | GTX | 无法成为挂单方就撤销 |
+    | GTX | 只挂单，触发成交条件会被立即撤销 |
 
   #### **<span id="depositWithdrawStatusCn">充值/提现记录状态码及含义</span>**
 
