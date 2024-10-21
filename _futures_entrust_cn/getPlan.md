@@ -65,6 +65,7 @@ right_code_blocks:
           "result": {
             "items": [
               {
+                "clientOrderId": "", //自定义订单id
                 "closePosition": false, //是否触发全平
                 "createdTime": 0, //创建时间
                 "entrustId": 0, //委托id

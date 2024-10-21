@@ -65,6 +65,7 @@ right_code_blocks:
           "result": {
             "items": [
               {
+                "clientOrderId": "", //Client order ID
                 "closePosition": false, //Whether triggered to close all
                 "createdTime": 0, //Create time
                 "entrustId": 0, //Order ID

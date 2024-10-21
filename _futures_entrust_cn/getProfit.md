@@ -66,7 +66,6 @@ right_code_blocks:
           "result": {
             "items": [
               {
-                "clientOrderId": "", //自定义订单id
                 "createdTime": 0, //时间
                 "entryPrice": 0, //开仓均价
                 "executedQty": 0, //实际成交

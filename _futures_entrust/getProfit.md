@@ -65,7 +65,6 @@ right_code_blocks:
           "result": {
             "items": [
               {
-                "clientOrderId": "", //Client order ID
                 "createdTime": 0, //Time
                 "entryPrice": 0, //Open position average price
                 "executedQty": 0, //Actual transaction
