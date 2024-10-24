@@ -250,7 +250,9 @@ right_code_blocks:
                         "quoteCurrencyPrecision": 6,        
                         "quoteCurrencyId": 11,             
                         "pricePrecision": 4,         //Transaction price accuracy
-                        "quantityPrecision": 6,           
+                        "quantityPrecision": 6,
+                        "takerFeeRate": 0.001,       //Taker fee rate
+                        "makerFeeRate": 0.002,       //Maker fee rate
                         "orderTypes": [              //Order Type [LIMIT;MARKET]
                           "LIMIT",
                           "MARKET"
