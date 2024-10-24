@@ -44,7 +44,7 @@ parameters:
         type: string
         mandatory: true
         default:
-        description: '订单类型  LIMIT-现价,MARKET-市价 '
+        description: '订单类型  LIMIT-限价,MARKET-市价 '
         ranges:
     -
         name: item.timeInForce
