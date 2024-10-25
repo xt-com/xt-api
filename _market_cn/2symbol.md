@@ -250,6 +250,8 @@ right_code_blocks:
                         "quoteCurrencyId": 11,                      //报价资产ID
                         "pricePrecision": 4,                        //交易价格精度
                         "quantityPrecision": 6,                     //交易数量精度
+                        "takerFeeRate": 0.001,                      //吃单手续费率
+                        "makerFeeRate": 0.002,                      //挂单手续费率
                         "orderTypes": [                             //订单类型[LIMIT=限价单;MARKET=市价单]
                           "LIMIT",
                           "MARKET"
