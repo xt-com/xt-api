@@ -68,6 +68,13 @@ parameters:
         default:
         description: 金额。现价不填；市价按金额下单时必填
         ranges:
+    -
+        name: nftId
+        type: string
+        mandatory: false
+        default:
+        description: nft id
+        ranges:
 content_markdown: >-
     #### **备注**
 

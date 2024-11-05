@@ -67,6 +67,13 @@ parameters:
         default:
         description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
         ranges:
+    -
+        name: nftId
+        type: string
+        mandatory: false
+        default:
+        description: nft id
+        ranges:
 content_markdown: >-
     #### **Remark**
 
