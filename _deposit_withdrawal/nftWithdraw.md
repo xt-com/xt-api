@@ -5,11 +5,11 @@ type: post
 description: /v4/nft/withdraw
 parameters:
     -
-        name: 'currencyId'
-        type: number
+        name: 'currency'
+        type: string
         mandatory: true
         default:
-        description: currency id
+        description: currency
         ranges:
     -
         name: 'serial'
