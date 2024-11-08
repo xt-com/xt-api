@@ -14,7 +14,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    100/s/apikey
+    50/s/apikey
 left_code_blocks:
     -
         code_block: |-
