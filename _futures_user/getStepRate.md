@@ -5,6 +5,11 @@ type: get
 description: /future/user/v1/user/step-rate
 parameters:
     -
+content_markdown: |-
+  
+              #### **Limit Flow Rules**
+
+              200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getStepRate() {\r\n\tString text = HttpUtil.get(URL + \"/future/user/v1/user/step-rate\");\r\n\tSystem.out.println(text);\r\n}"

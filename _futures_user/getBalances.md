@@ -3,6 +3,11 @@ title: Get User's Funds Information
 position_number: 4
 type: get
 description: /future/user/v1/balance/list
+content_markdown: |-
+
+              #### **Limit Flow Rules**
+
+              200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

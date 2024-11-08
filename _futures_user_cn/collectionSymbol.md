@@ -12,6 +12,11 @@ parameters:
         default: N/A
         description: 交易对
         ranges:
+content_markdown: |-
+
+              #### **限流规则**
+
+              200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
