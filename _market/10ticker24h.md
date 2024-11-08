@@ -30,7 +30,7 @@ content_markdown: >-
     #### **Limit Flow Rules**
 
 
-    1\.single symbol：100/s/ip
+    1\.single symbol：10/s/ip
 
 
     2\.multiple symbols：10/s/ip

@@ -45,7 +45,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    100/s/ip
+    10/s/ip
 
 
 left_code_blocks:

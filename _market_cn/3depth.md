@@ -22,7 +22,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    200/s/ip
+    10/s/ip
 
 
 

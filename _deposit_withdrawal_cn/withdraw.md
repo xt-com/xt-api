@@ -46,6 +46,9 @@ parameters:
         ranges:
 content_markdown: |-
                 注意：参数以json形式放在body中
+                #### **限流规则**
+
+                1/s/apikey
 left_code_blocks:
     -
         code_block:

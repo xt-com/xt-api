@@ -22,7 +22,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
     
-    200/s/ip
+    10/s/ip
 
 
 left_code_blocks:

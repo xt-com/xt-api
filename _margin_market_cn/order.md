@@ -47,7 +47,10 @@ parameters:
     default:
     description: 媒体渠道
       
-content_markdown: 
+content_markdown: |-
+                #### **限流规则**
+
+                30/s/apikey
 
 left_code_blocks:
     -
