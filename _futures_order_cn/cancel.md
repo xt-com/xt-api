@@ -11,6 +11,11 @@ parameters:
     default: N/A
     description: 订单id
     ranges:
+content_markdown: |-
+
+              #### **限流规则**
+
+              200/s/apikey
 right_code_blocks:
   - code_block: |-
       {

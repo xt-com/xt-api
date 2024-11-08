@@ -96,6 +96,10 @@ parameters:
         default: N/A
         description: 过期时间
         ranges:
+content_markdown: |-
+                #### **限流规则**
+
+                200/s/apikey
 left_code_blocks:
     -
         code_block: 

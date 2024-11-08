@@ -23,6 +23,11 @@ parameters:
     default: N/A
     description: 止损触发价
     ranges:
+content_markdown: |-
+
+               #### **限流规则**
+
+               200/s/apikey
 right_code_blocks:
   - code_block: |-
       {

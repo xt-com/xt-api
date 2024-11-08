@@ -47,6 +47,11 @@ parameters:
         default:
         description: 仓位方向：LONG;SHORT
         ranges: LONG;SHORT
+content_markdown: |-
+
+                #### **限流规则**
+
+                200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"

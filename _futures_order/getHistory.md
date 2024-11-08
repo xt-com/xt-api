@@ -46,6 +46,11 @@ parameters:
         default: N/A
         description: End time
         ranges:
+content_markdown: |-
+
+               #### **Limit Flow Rules**
+
+               200/s/apikey
 left_code_blocks:
   - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
     title: Java

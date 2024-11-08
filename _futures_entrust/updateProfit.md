@@ -23,6 +23,11 @@ parameters:
     default: N/A
     description: SL trigger price
     ranges:
+content_markdown: |-
+
+                 #### **Limit Flow Rules**
+
+                 200/s/apikey
 right_code_blocks:
   - code_block: |-
       {

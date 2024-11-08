@@ -11,6 +11,11 @@ parameters:
     default: N/A
     description: 交易对（传空字符串撤销所有交易对订单）
     ranges:
+content_markdown: |-
+
+                #### **限流规则**
+
+                200/s/apikey
 right_code_blocks:
   - code_block: |-
       {

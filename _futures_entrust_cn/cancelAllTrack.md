@@ -5,7 +5,11 @@ type: post
 description: /future/trade/v1/entrust/cancel-all-track
 remark: Content-Type = application/x-www-form-urlencoded
 parameters:
+content_markdown: |-
 
+                #### **限流规则**
+
+                200/s/apikey
 left_code_blocks:
     -
         code_block: 
