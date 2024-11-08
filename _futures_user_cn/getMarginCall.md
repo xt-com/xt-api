@@ -11,7 +11,11 @@ parameters:
         default: N/A
         description: 交易对（不传时查询所有交易对的持仓爆仓信息）
         ranges:
-content_markdown: 限流规则：1/s/ip.
+content_markdown: |-
+
+                #### **限流规则**
+
+                200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/future/user/v1/position/break-list\");\r\n\tSystem.out.println(text);\r\n}"

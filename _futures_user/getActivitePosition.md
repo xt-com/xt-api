@@ -11,6 +11,11 @@ parameters:
     default: N/A
     description: Trading pairs (query the position information of all trading pairs when not uploaded)
     ranges:
+content_markdown: |-
+
+             #### **Limit Flow Rules**
+
+             200/s/apikey
 left_code_blocks:
   -
     code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

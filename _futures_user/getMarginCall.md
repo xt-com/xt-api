@@ -11,7 +11,11 @@ parameters:
         default: N/A
         description: Trading pair (see the margin call of all trading pairs if don't pass parameters)
         ranges:
-content_markdown: Limit Flow Rules：1/s/ip.
+content_markdown: |-
+
+               #### **Limit Flow Rules**
+
+               200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/future/user/v1/position/break-list\");\r\n\tSystem.out.println(text);\r\n}"

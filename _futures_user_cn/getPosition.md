@@ -11,6 +11,11 @@ parameters:
         default: N/A
         description: 交易对（不传时查询所有交易对的持仓信息）
         ranges:
+content_markdown: |-
+
+              #### **限流规则**
+
+              200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
