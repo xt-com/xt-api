@@ -49,7 +49,7 @@ parameters:
 content_markdown: >-
     #### **Limit Flow Rules**
 
-    2/s/apikey
+    2/s/ip
 left_code_blocks:
     -
         code_block:

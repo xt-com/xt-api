@@ -8,7 +8,7 @@ parameters:
 content_markdown: >-
     #### **限流规则**
 
-    2/s/apikey
+    2/s/ip
 left_code_blocks:
     -
         code_block:

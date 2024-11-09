@@ -13,9 +13,7 @@ parameters:
         description: 订单ID
         ranges:
 content_markdown: >-
-    #### **限流规则**
 
-    50/s/apikey
 left_code_blocks:
     -
         code_block: |-
