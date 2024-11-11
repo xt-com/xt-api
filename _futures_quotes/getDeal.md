@@ -18,7 +18,7 @@ parameters:
         default: N/A
         description: Quantity
         ranges:
-content_markdown: 注：**此方法不需要签名**
+content_markdown: 
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
