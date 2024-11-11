@@ -1,5 +1,5 @@
 ---
-title: nft deposit
+title: BTCsn deposit
 position_number: 6
 type: post
 description: /v4/nft/deposit
