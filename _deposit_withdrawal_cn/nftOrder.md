@@ -40,14 +40,14 @@ parameters:
         description: 结束时间（时间戳）
         ranges:
     -
-        name: 'pageIndex'
+        name: 'page'
         type: number
         mandatory: false
         default:
         description: 页码
         ranges:
     -
-        name: 'pageSize'
+        name: 'size'
         type: number
         mandatory: false
         default:

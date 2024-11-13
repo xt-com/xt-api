@@ -40,18 +40,18 @@ parameters:
         description: end time (timestamp)
         ranges:
     -
-        name: 'pageIndex'
+        name: 'page'
         type: number
         mandatory: false
         default:
-        description: pageIndex
+        description: page index
         ranges:
     -
-        name: 'pageSize'
+        name: 'size'
         type: number
         mandatory: false
         default:
-        description: pageSize
+        description: page size
         ranges:
 content_markdown: |-
                 
