@@ -21,7 +21,7 @@ content_markdown: >-
     \{"pong": 1562979600\}
 
 
-    If the Websocket server continuously sent ping messages for three times without receiving any “pong” messages, the server will automatically disconnect with the client. However, after connecting to the server, the user can also send a message "ping" to the server. When the server received the information of ping , it will reply a "pong" message.
+    If the Websocket server continuously sent ping messages for three times without receiving any "pong" messages, the server will automatically disconnect with the client. However, after connecting to the server, the user can also send a message "ping" to the server. When the server received the information of ping , it will reply a "pong" message.
 left_code_blocks:
 -
     code_block:
