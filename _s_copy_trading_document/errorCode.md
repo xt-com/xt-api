@@ -58,7 +58,7 @@ content_markdown: |-
     | ORDER_F0202 | Trigger Quantity Filter - Max |
     | ORDER_F0203 | Trigger Quantity Filter - Step Value |
     | ORDER_F0301 | Trigger QUOTE_QTY Filter - Min Value |
-    | ORDER_F0401 | Trigger PROTECTION_ONLINE Filter |
+    | ORDER_F0401 | Trigger PROTECTION_ONLINE Filter or PROTECTION_LIMIT Filter |
     | ORDER_F0501 | Trigger PROTECTION_LIMIT Filter - Buy Max Deviation |
     | ORDER_F0502 | Trigger PROTECTION_LIMIT Filter - Sell Max Deviation |
     | ORDER_F0601 | Trigger PROTECTION_MARKET Filter |
