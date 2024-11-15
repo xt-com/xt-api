@@ -143,13 +143,19 @@ content_markdown: >-
     ##### **PROTECTION\_LIMIT FILTER**
 
 
-    There are price protection restrictions for orders whose order type (orderType) is LIMIT, including the following two parts：
+    There are price protection restrictions for orders whose order type (orderType) is LIMIT, including the following four parts：
 
 
-    1\.buyMaxDeviation The maximum deviation of the buy order, which limits the difference between the buy order price and the latest transaction price
+    1\.buyMaxDeviation: The maximum deviation of the buy order, determine the minimum buy order price based on this value and the latest transaction price
 
 
-    2\.sellMaxDeviation The maximum deviation of the sell order, which limits the difference between the sell order price and the latest transaction price
+    2\.buyPriceLimitCoefficient: The buy limit coefficient, determine the maximum buy order price based on this value and the latest transaction price
+
+
+    3\.sellMaxDeviation: The maximum deviation of the sell order, determine the maximum sell order price based on this value and the latest transaction price
+
+
+    4\.sellPriceLimitCoefficient: The sell limit coefficient, determine the minimum sell order price based on this value and the latest transaction price
 
 
     If there is no latest transaction price, there will be no restrictions, or if the above parameters are null, the corresponding direction type orders will not be restricted.
@@ -158,10 +164,10 @@ content_markdown: >-
     In order to pass the limit price protection, the order price must meet the following conditions (latestPrice is the latest transaction price)
 
 
-    buy order: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
+    buy order: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;  &&  price &lt;= latestPrice+latestPrice\*buyPriceLimitCoefficient
 
 
-    sell order: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
+    sell order: price &lt;= latestPrice+latestPrice\*sellMaxDeviation&nbsp;  &&  price &gt;= latestPrice-latestPrice\*sellPriceLimitCoefficient
 
 
     ---

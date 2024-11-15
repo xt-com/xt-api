@@ -167,13 +167,19 @@ content_markdown: >-
     ##### **限价保护过滤器 PROTECTION\_LIMIT FILTER**
 
 
-    对于订单类型(orderType)为LIMIT(限价) 类型的订单具有价格保护限制，包含以下两个部分
+    对于订单类型(orderType)为LIMIT(限价) 类型的订单具有价格保护限制，包含以下四个部分
 
 
-    1\.buyMaxDeviation 买单最大偏离度，限制了买单价格与最新成交价之间的差值
+    1\.buyMaxDeviation: 买单最大偏离度，根据该值和最新成交价确定买单价格最小值
 
 
-    2\.sellMaxDeviation 卖单最大偏离度，限制了卖单价格与最新成交价之间的差值
+    2\.buyPriceLimitCoefficient: 买单限制系数，根据该值和最新成交价确定买单价格最大值
+  
+
+    3\.sellMaxDeviation: 卖单最大偏离度，根据该值和最新成交价确定卖单价格最大值
+  
+
+    4\.sellPriceLimitCoefficient: 卖单限制系数，根据该值和最新成交价确定卖单价格最小值
 
 
     若没有最新成交价则不做限制，或者以上参数为null,则对应方向类型订单不做限制
@@ -182,10 +188,10 @@ content_markdown: >-
     为了通过限价保护，订单price必须满足以下条件(latestPrice为最新成交价)
 
 
-    买单: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;
+    买单: price &gt;= latestPrice-latestPrice\*buyMaxDeviation&nbsp;  &&  price &lt;= latestPrice+latestPrice\*buyPriceLimitCoefficient
 
 
-    卖单: price &lt;= latestPrice+latestPrice\*sellMaxDeviation
+    卖单: price &lt;= latestPrice+latestPrice\*sellMaxDeviation&nbsp;  &&  price &gt;= latestPrice-latestPrice\*sellPriceLimitCoefficient
 
 
     ---
