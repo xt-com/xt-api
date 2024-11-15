@@ -37,7 +37,7 @@ right_code_blocks:
                         "p": "43000",              //price
                         "q": "0.21",               //quantity
                         "v": "9030"                //quoteQty
-                        "b": "BUY"                 //side 'BUY'/'SELL'
+                        "b": true                  //whether is buyerMaker or not
                     }
                 }
         title: Example of transaction record (real-time push message)

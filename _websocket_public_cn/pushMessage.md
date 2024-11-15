@@ -37,7 +37,7 @@ right_code_blocks:
                         "p": "43000",              //价格
                         "q": "0.21",               //数量
                         "v": "9030"                //金额
-                        "b": "BUY"                 //成交方向 'BUY'/'SELL'
+                        "b": true                  //是否是buyerMaker
                     }
                 }
         title: 成交记录(实时推送报文)样例

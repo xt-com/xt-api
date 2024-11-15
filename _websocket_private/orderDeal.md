@@ -30,13 +30,14 @@ right_code_blocks:
                     "topic": "trade", 
                     "event": "trade", 
                     "data": {
-                        "s": "btc_usdt",                // symbol
-                        "t": 1656043204763,             //time 
-                        "i": "6316559590087251233",     // tradeId
-                        "oi": "6216559590087220004",    // orderId
-                        "p": "30000",                   // trade price
-                        "q": "3",                       // qty quantity
-                        "v": "90000"                    //volumn trade amount
+                        "s": "btc_usdt",           //symbol
+                        "i": 6316559590087222000,  //tradeId
+                        "t": 1655992403617,        //time
+                        "oi": 6616559590087222666, //orderId
+                        "p": "43000",              //price
+                        "q": "0.21",               //quantity
+                        "v": "9030"                //quoteQty
+                        "b": "BUY"                 //whether is buyerMaker or not
                     }
                 }
         title: push
