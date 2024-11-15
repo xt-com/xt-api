@@ -61,6 +61,8 @@ content_markdown: |-
     | ORDER_F0401 | Trigger PROTECTION_ONLINE Filter or PROTECTION_LIMIT Filter |
     | ORDER_F0501 | Trigger PROTECTION_LIMIT Filter - Buy Max Deviation |
     | ORDER_F0502 | Trigger PROTECTION_LIMIT Filter - Sell Max Deviation |
+    | ORDER_F0503 | Trigger PROTECTION_LIMIT Filter - Buy Limit Coefficient |
+    | ORDER_F0504 | Trigger PROTECTION_LIMIT Filter - Sell Limit Coefficient |
     | ORDER_F0601 | Trigger PROTECTION_MARKET Filter |
     | COMMON_001  | The user does not exist |
     | COMMON_002  | System busy, please try it later |
