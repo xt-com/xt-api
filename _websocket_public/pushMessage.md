@@ -30,12 +30,14 @@ right_code_blocks:
                     "topic": "trade", 
                     "event": "trade@btc_usdt", 
                     "data": {
-                        "s": "btc_usdt", 
-                        "i": 6316559590087222000, 
-                        "t": 1655992403617, 
-                        "p": "43000", 
-                        "q": "0.21", 
-                        "b": true
+                        "s": "btc_usdt",           //symbol
+                        "i": 6316559590087222000,  //tradeId
+                        "t": 1655992403617,        //time
+                        "oi": 6616559590087222666, //orderId
+                        "p": "43000",              //price
+                        "q": "0.21",               //quantity
+                        "v": "9030"                //quoteQty
+                        "b": "BUY"                 //side 'BUY'/'SELL'
                     }
                 }
         title: Example of transaction record (real-time push message)
