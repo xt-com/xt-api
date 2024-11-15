@@ -33,11 +33,13 @@ right_code_blocks:
                 "event": "trade@btc_usdt", 
                 "data": {
                     "s": "btc_usdt",          // symbol
-                    "i": 6316559590087222000, // trade id
-                    "t": 1655992403617,       // trade time
-                    "p": "43000",             // trade price
-                    "q": "0.21",              // qty，trade quantity
-                    "b": true                 // whether is buyerMaker or not
+                    "i": 6316559590087222000,  //tradeId
+                    "t": 1655992403617,        //time
+                    "oi": 6616559590087222666, //orderId
+                    "p": "43000",              //price
+                    "q": "0.21",               //quantity
+                    "v": "9030"                //quoteQty
+                    "b": "BUY"                 //side 'BUY'/'SELL'
                 }
             }
         title: Response
