@@ -83,10 +83,31 @@ parameters:
         description: Position side:LONG;SHORT
         ranges: LONG;SHORT
 content_markdown: |-
+  #### **OrigQty Calculation Formula**
 
-                #### **Limit Flow Rules**
+  ###### **Formula**  
 
-                200/s/apikey
+  origQty = Truncate ((Balance * Percent * Leverage ) / (Mark_price * Contract_size))
+
+  ###### **Explain**
+
+      Truncate : take the integer part 
+
+      Balance : (walletBalance - openOrderMarginFrozen) , api: /future/user/v1/compat/balance/list  
+
+      Percent : user input , exp: 0.2 
+
+      Leverage : leverage your want , exp: 20 
+
+      Mark_price : current symobl mark price , exp: 88888 (btc_usdt) 
+
+      Contract_size : contractSize , api: /future/market/v1/public/symbol/detail , Contract multiplier(face value)  
+
+  ###### **Example**
+  truncate(10000 * 0.2 * 20 / 88888 / 0.0001) = 4500
+
+  #### **Limit Flow Rules**
+  200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"

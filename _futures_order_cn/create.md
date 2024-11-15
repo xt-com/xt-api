@@ -83,10 +83,31 @@ parameters:
         description: 仓位方向：LONG;SHORT
         ranges: LONG;SHORT
 content_markdown: |-
+  #### **OrigQty 计算公式**
 
-                #### **限流规则**
+  ###### **公式**  
 
-                200/s/apikey
+   origQty = Truncate ((Balance * Percent * Leverage ) / (Mark_price * Contract_size))
+
+  ###### **解释**
+
+      Truncate : 取整数部分 
+
+      Balance : (walletBalance - openOrderMarginFrozen) , api: /future/user/v1/compat/balance/list  
+
+      Percent : 用户输入 , 例如: 0.2 
+
+      Leverage : 杠杆倍数 , 例如: 20 
+
+      Mark_price : 市场标记价格 , 例如: 88888 (btc_usdt) 
+
+      Contract_size : 合约面值 , api: /future/market/v1/public/symbol/detail , Contract multiplier(face value)  
+
+  ###### **举例**
+   truncate(10000 * 0.2 * 20 / 88888 / 0.0001) = 4500
+
+  #### **限流规则**
+  200/s/apikey
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
