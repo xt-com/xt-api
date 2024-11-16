@@ -131,7 +131,7 @@ content_markdown: >-
     否则限制规则如下：
 
 
-    1\.对于现价LIMIT类型的订单，需满足 price\*quantity&gt;=min
+    1\.对于限价LIMIT类型的订单，需满足 price\*quantity&gt;=min
 
 
     2\.对于市价MARKET类型并且是购买类型(orderSide=BUY)订单，需满足quoteQty&gt;=min,(quoteQty,市价按金额下单时必填的金额)
@@ -143,13 +143,13 @@ content_markdown: >-
     ##### **开盘保护过滤器 PROTECTION\_ONLINE FILTER**
 
 
-    对处于开盘之后指定的时间范围内，对于现价类型的订单的价格进行限制
+    对处于开盘之后指定的时间范围内，对于限价类型的订单的价格进行限制
 
 
     该过滤器内部定义了最大价格倍数(maxPriceMultiple)，持续时间(durationSeconds)。
 
 
-    限制逻辑:当处于交易对开盘后durationSeconds时间范围内，订单类型为现价类（LIMIT）的订单
+    限制逻辑:当处于交易对开盘后durationSeconds时间范围内，订单类型为限价类（LIMIT）的订单
 
 
     须满足订单价格price&lt;=openPrice\*maxPriceMultiple,才会通过（openPrice为开盘价）。

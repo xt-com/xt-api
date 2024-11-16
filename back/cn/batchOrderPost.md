@@ -66,21 +66,21 @@ parameters:
         type: number
         mandatory: false
         default:
-        description: 价格。现价必填; 市价不填
+        description: 价格。限价必填; 市价不填
         ranges:
     -
         name: item.quantity
         type: number
         mandatory: false
         default:
-        description: 数量。现价必填；市价按数量下单时必填
+        description: 数量。限价必填；市价按数量下单时必填
         ranges:
     -
         name: item.quoteQty
         type: number
         mandatory: false
         default:
-        description: 金额。现价不填；市价按金额下单时必填
+        description: 金额。限价不填；市价按金额下单时必填
         ranges:
 content_markdown: >-
     #### **限流规则**
