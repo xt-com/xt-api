@@ -51,7 +51,7 @@ parameters:
     -
         name: stopPrice
         type: number
-        mandatory: false
+        mandatory: true
         default: N/A
         description: Trigger price
         ranges:
