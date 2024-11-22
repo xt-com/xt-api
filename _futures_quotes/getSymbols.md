@@ -22,7 +22,6 @@ right_code_blocks:
               {
                  "baseCoin": "",      //Target Assets
                  "baseCoinDisplayPrecision": 0,  //Displayed target currency precision
-                 "baseCoinPrecision": 0,  //Target currency precision
                  "cnDesc": "",  //Chinese description of the contract
                  "cnName": "",  //Contract Chinese name
                  "cnRemark": "",  //Contract Remarks (Chinese)
@@ -61,10 +60,11 @@ right_code_blocks:
                  "predictEventType": "",    //Forecast event type: PERPETUAL perpetual event, ONCE single event
                  "pricePrecision": 0,       //Price precision
                  "productType": "",         //Contract type, perpetual, futures, regardless of delivery interval
-                 "quantityPrecision": 0,     //Quantity precision
+                 "quantityPrecision": 0,     //Quantity precision (Deprecated)
                  "quoteCoin": "",            //Quote currency
                  "quoteCoinDisplayPrecision": 0,  //Displayed quote currency precision
                  "quoteCoinPrecision": 0,         //Quote currency precision
+                 "baseCoinPrecision": 0,          //Target currency precision
                  "state": 0,                    //Status
                  "supportEntrustType": "",      //Trigger order type supported
                  "supportOrderType": "",        //Order type supported

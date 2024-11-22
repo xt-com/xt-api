@@ -22,7 +22,6 @@ right_code_blocks:
               {
                "baseCoin": "",      //标的资产
                "baseCoinDisplayPrecision": 0,  //标的币种显示精度
-               "baseCoinPrecision": 0,  //标的币种精度
                "cnDesc": "",  //合约中文描述
                "cnName": "",  //合约中文名称
                "cnRemark": "",  //合约备注(中文)
@@ -61,10 +60,11 @@ right_code_blocks:
                "predictEventType": "",    //预测事件类型:PERPETUAL 永续事件，ONCE 单事件
                "pricePrecision": 0,       //价格精度
                "productType": "",         //合约类型，perpetual, futures，不区分交割间隔
-               "quantityPrecision": 0,     //数量精度
+               "quantityPrecision": 0,     //数量精度(废弃)
                "quoteCoin": "",            //报价资产
                "quoteCoinDisplayPrecision": 0,  //报价币种显示精度
                "quoteCoinPrecision": 0,         //报价币种精度
+               "baseCoinPrecision": 0,          //标的币种精度
                "state": 0,                    //状态
                "supportEntrustType": "",      //支持计划委托类型
                "supportOrderType": "",        //支持订单类型
