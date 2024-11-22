@@ -1,92 +1,96 @@
 ---
-title: Submit order
-position_number: 2
+title: Submit batch order
+position_number: 5
 type: post
-description: /v4/order
+description: /v4/batch-order
 parameters:
     -
-        name: symbol
+        name: clientBatchId
+        type: string
+        mandatory: false
+        default:
+        description: 'Client batch number. Pattern: ^[a-zA-Z0-9_]{4,32}$'
+        ranges:
+    -
+        name: items
+        type: array
+        mandatory: true
+        default:
+        description: array
+        ranges:
+    -
+        name: item.symbol
         type: string
         mandatory: true
         default:
         description: 
         ranges:
     -
-        name: clientOrderId
+        name: item.clientOrderId
         type: string
         mandatory: false
         default:
         description: 'Pattern: ^[a-zA-Z0-9_]{4,32}$'
         ranges:
     -
-        name: side
+        name: item.side
         type: string
         mandatory: true
         default:
         description: "BUY,SELL"
         ranges:
     -
-        name: type
+        name: item.type
         type: string
         mandatory: true
         default:
         description: "order type:LIMIT,MARKET"
         ranges:
     -
-        name: timeInForce
+        name: item.timeInForce
         type: string
         mandatory: true
         default:
         description: effective way:GTC, FOK, IOC, GTX
         ranges:
     -
-        name: bizType
+        name: item.bizType
         type: string
         mandatory: true
         default:
         description: "SPOT, LEVER"
         ranges:
     -
-        name: price
+        name: item.price
         type: number
         mandatory: false
         default:
         description: price. Required if it is the LIMIT price; blank if it is the MARKET price
         ranges:
     -
-        name: quantity
+        name: item.quantity
         type: number
         mandatory: false
         default:
         description: quantity. Required if it is the LIMIT price or the order is placed at the market price by quantity
         ranges:
     -
-        name: quoteQty
+        name: item.quoteQty
         type: number
         mandatory: false
         default:
         description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
         ranges:
-    -
-        name: nftId
-        type: string
-        mandatory: false
-        default:
-        description: nft id
-        ranges:
 content_markdown: >-
-    #### **Remark**
-
-    Create a BUY order based on market price, quantity must be null, quoteQty required; Create a SELL order based on market price, quoteQty must be null, quantity required.  
-  
     #### **Limit Flow Rules**
     
-    50/s/apikey
+    30/s/apikey
+
 
 left_code_blocks:
     -
         code_block: |-
-            public String orderPost(){
+            public String batchOrderPost(){
 
 
             }
@@ -100,16 +104,45 @@ right_code_blocks:
     -
         code_block: |-
                 {
+                  "clientBatchId": "51232",
+                  "items": [
+                    {
+                      "symbol": "BTC_USDT",
+                      "clientOrderId": "16559590087220001",
+                      "side": "BUY",
+                      "type": "LIMIT",
+                      "timeInForce": "GTC",
+                      "bizType": "SPOT",
+                      "price": 40000,
+                      "quantity": 2,
+                      "quoteQty": 80000
+                    }
+                  ]
+                }
+        title: Request
+        language: json
+    -
+        code_block: |-
+                {
                   "rc": 0,
                   "mc": "string",
                   "ma": [
                     {}
                   ],
                   "result": {
-                    "orderId": "6216559590087220004",
-                    "ip": "127.0.0.1",                  // ip address
+                    "batchId": "123", 
+                    "items": [   
+                      {
+                        "index": "0", // start with 0 
+                        "clientOrderId": "123", 
+                        "orderId": "123", 
+                        "reject": "false", 
+                        "reason": "invalid price precision" 
+                      }
+                    ]
                   }
                 }
         title: Response
         language: json
 ---
+
