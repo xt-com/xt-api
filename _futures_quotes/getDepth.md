@@ -22,7 +22,7 @@ content_markdown: >-
 
   #### **Limit Flow Rules**
 
-  1/s/ip
+  10/s/ip
   <br>
   Note：This method does not require a signature.
   

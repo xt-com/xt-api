@@ -22,7 +22,7 @@ content_markdown: >-
 
   #### **限流规则**
 
-  1/s/ip
+  10/s/ip
   <br>
   注：此方法不需要签名
 
