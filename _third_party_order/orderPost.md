@@ -74,7 +74,7 @@ content_markdown: >-
   
     #### **Limit Flow Rules**
     
-    50/s/apikey
+    20/s/apikey
 
 left_code_blocks:
     -
