@@ -39,13 +39,6 @@ parameters:
         default: N/A
         description: 起始时间
         ranges: 
-    -
-        name: state
-        type: string
-        mandatory: false
-        default: N/A
-        description: 订单状态
-        ranges: NOT_ACTIVATION;NOT_TRIGGERED;TRIGGERING;TRIGGERED;USER_REVOCATION;PLATFORM_REVOCATION;EXPIRED;DELEGATION_FAILED
     - 
         name: symbol
         type: string

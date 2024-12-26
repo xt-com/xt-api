@@ -39,13 +39,6 @@ parameters:
         default: N/A
         description: start time
         ranges: 
-    -
-        name: state
-        type: string
-        mandatory: false
-        default: N/A
-        description: track state
-        ranges: NOT_ACTIVATION;NOT_TRIGGERED;TRIGGERING;TRIGGERED;USER_REVOCATION;PLATFORM_REVOCATION;EXPIRED;DELEGATION_FAILED
     - 
         name: symbol
         type: string
