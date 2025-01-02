@@ -13,7 +13,11 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-  备注：
+
+  #### **限流规则**
+  1/10s/apikey
+  
+  #### **备注**
   
   accessToken有效期是2天，重新调用接口获取token会重置有效期。
   

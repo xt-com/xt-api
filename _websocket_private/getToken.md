@@ -13,7 +13,12 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-  Note：
+
+  #### **Limit Flow Rules**
+  1/10s/apikey
+  
+
+  #### **Note**
   
   The accessToken is valid for 2 days. Calling the endpoint again will reset the validity period. 
   
