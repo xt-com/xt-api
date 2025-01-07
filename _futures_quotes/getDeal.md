@@ -14,8 +14,8 @@ parameters:
     -
         name: num
         type: integer
-        mandatory: true
-        default: N/A
+        mandatory: false
+        default: 50
         description: Quantity
         ranges:
 content_markdown: Note：This method does not require a signature.

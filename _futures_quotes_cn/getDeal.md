@@ -14,8 +14,8 @@ parameters:
     -
         name: num
         type: integer
-        mandatory: true
-        default: N/A
+        mandatory: false
+        default: 50
         description: 数量
         ranges:
 content_markdown: 注：**此方法不需要签名**
