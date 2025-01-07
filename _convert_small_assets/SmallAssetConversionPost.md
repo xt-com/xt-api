@@ -6,10 +6,10 @@ description: /balance/convert
 parameters:
     -
         name: currencies
-        type: string
+        type: array
         mandatory: true
         default:
-        description: 'Currency collection, separated by commas. eg: usdt,btc'
+        description: collection
         ranges: Up to 5 currencys can be converted
 content_markdown: >-
     #### **Limit Flow Rules**
@@ -21,7 +21,14 @@ content_markdown: >-
     Can only be converted once every 24 hours
 left_code_blocks:
     -
-        code_block:
+        code_block: |-
+                    {
+                        "currencies": [
+                                    "usdt",
+                                    "btc",
+                                    "eth"
+                        ]
+                    }
         title: Java
         language: java
     -

@@ -6,10 +6,10 @@ description: /balance/convert
 parameters:
     -
         name: currencies
-        type: string
+        type: array
         mandatory: true
         default:
-        description: '加密币集合，逗号分割 eg:  usdt,btc'
+        description: 集合
         ranges: 最多支持5个加密币转换
 content_markdown: >-
     #### **限流规则**
@@ -21,9 +21,16 @@ content_markdown: >-
     24小时只能兑换一次
 left_code_blocks:
     -
-        code_block:
-        title: Java
-        language: java
+      code_block: |-
+                    {
+                        "currencies": [
+                            "usdt",
+                            "btc",
+                            "eth"
+                        ]
+                    }
+      title: Java
+      language: java
     -
         code_block:
         title: Python
