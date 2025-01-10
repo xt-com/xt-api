@@ -60,6 +60,11 @@ collections:
     type: spot
     language: en
     position_number: 9
+  convert_small_assets:
+    title: Convert Small Assets to XT
+    type: spot
+    language: en
+    position_number: 10
   websocket_public:
     title: WEBSOCKET(public)
     type: spot
@@ -105,6 +110,11 @@ collections:
     type: spot
     language: cn
     position_number: 19
+  convert_small_assets_cn:
+    title: 小额资产兑换XT
+    type: spot
+    language: cn
+    position_number: 20
   websocket_public_cn:
     title: WEBSOCKET(public)
     type: spot
