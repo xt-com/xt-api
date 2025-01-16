@@ -45,6 +45,7 @@ content_markdown: |-
     | SYMBOL_005 | The symbol does not support trading via API |
     | SYMBOL_007 | The trading pair does not support order modification |
     | SYMBOL_010 | This market does not support your trading |
+    | SYMBOL_011 | Due to the high-risk nature of this trading pair, the platform has temporarily restricted trading for it. If you wish to trade, please contact our online customer service for approval. |
     | ORDER_001 | Platform rejection |
     | ORDER_002 | insufficient funds |
     | ORDER_003 | Trading Pair Suspended |
