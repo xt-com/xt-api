@@ -58,7 +58,7 @@ parameters:
         mandatory: false
         default:
         description: >-
-          客户端ID
+          收款用户ID
         ranges:
 content_markdown: |-
                 注意：参数以json形式放在body中

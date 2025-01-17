@@ -1,6 +1,6 @@
 ---
 title: BTCsn withdraw
-position_number: 7
+position_number: 9
 type: post
 description: /v4/nft/withdraw
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: 提现历史
-position_number: 5
+position_number: 6
 type: get
 description: /v4/withdraw/history
 parameters:
@@ -94,6 +94,8 @@ right_code_blocks:
                         "items": [
                             {
                                 "id": 763111,                  //提现记录id
+                                "clientOrderId": 10,           //客户端ID
+                                "type": 0,                     //提现类型 0-区块链提现 1-内部提现
                                 "currency": "usdt",            //币种名称
                                 "chain": "Ethereum",           //提现网络
                                 "address": "0xfa3abfa50eb2",   //提现目标地址
@@ -107,6 +109,8 @@ right_code_blocks:
                             },
                             {
                                 "id": 763107,
+                                "clientOrderId": 10, 
+                                "type": 0,  
                                 "currency": "usdt",
                                 "chain": "Tron",
                                 "address": "TYnJJwaJKkqVvE2zEfUvFbHgKxVBY5zGq9",

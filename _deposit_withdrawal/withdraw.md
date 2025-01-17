@@ -57,7 +57,7 @@ parameters:
         mandatory: false
         default:
         description: >-
-          Client ID
+          Receiving user ID
 content_markdown: |-
                 Note: The parameters are placed in the body in the form of json
                 #### **Limit Flow Rules**
