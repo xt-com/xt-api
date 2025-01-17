@@ -15,10 +15,18 @@ parameters:
     -
         name: 'chain'
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: >-
                 转账网络名称，可从'获取XT可充提的币种'接口中获取
+        ranges:
+    -
+        name: 'clientOrderId'
+        type: string
+        mandatory: false
+        default:
+        description: >-
+                自定义客户端ID，正则：^[a-zA-Z0-9_]{4,32}$
         ranges:
     -
         name: 'amount'
@@ -43,6 +51,14 @@ parameters:
         default:
         description: >-
                 memo，对于EOS类似的需要memo的链必传
+        ranges:
+    -
+        name: 'toAccountId'
+        type: number
+        mandatory: false
+        default:
+        description: >-
+          客户端ID
         ranges:
 content_markdown: |-
                 注意：参数以json形式放在body中

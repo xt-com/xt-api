@@ -15,11 +15,18 @@ parameters:
     -
         name: 'chain'
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: >-
                 The name of the transfer network, which can be obtained from the interface of 'Get the supported currencies for deposit or withdrawal' interface
         ranges:
+    -
+        name: 'clientOrderId'
+        type: string
+        mandatory: false
+        default:
+        description: >-
+          Custom Client ID, regular：^[a-zA-Z0-9_]{4,32}$
     -
         name: 'amount'
         type: number
@@ -44,6 +51,13 @@ parameters:
         description: >-
                 memo，For EOS similar chains that require memo must be transferred
         ranges:
+    -
+        name: 'toAccountId'
+        type: number
+        mandatory: false
+        default:
+        description: >-
+          Client ID
 content_markdown: |-
                 Note: The parameters are placed in the body in the form of json
                 #### **Limit Flow Rules**
