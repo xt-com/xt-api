@@ -1,6 +1,6 @@
 ---
 title: Withdrawal history
-position_number: 5
+position_number: 6
 type: get
 description: /v4/withdraw/history
 parameters:
@@ -94,19 +94,23 @@ right_code_blocks:
                         "items": [
                             {
                                 "id": 763111,                 //Withdrawal record id 
-                                "currency": "usdt",           //currency name 
+                                "clientOrderId": 10,          //Client ID
+                                "type": 0,                    //Type CHAIN_TRANSFER-Blockchain withdrawal INTERNAL_TRANSFER-Internal withdrawal
+                                "currency": "usdt",           //Currency 
                                 "chain": "Ethereum",          //Withdraw network 
                                 "address": "0xfa3abf",        //Withdrawal target address 
                                 "memo": "",
                                 "status": "REVIEW",           //Refer to public module-Deposit/withdrawal record status
                                 "amount": "30",               //Withdrawal Amount
                                 "fee": "0",                   //Withdrawal fee
-                                "confirmations": 0,           //number of block confirmations
-                                "transactionId": "",          //transaction hash
+                                "confirmations": 0,           //Number of block confirmations
+                                "transactionId": "",          //Transaction hash
                                 "createdTime": 1667763470000  //Withdrawal application time, timestamp in milliseconds
                             },
                             {
                                 "id": 763107,
+                                "clientOrderId": 10,  
+                                "type": 0,       
                                 "currency": "usdt",
                                 "chain": "Tron",
                                 "address": "TYnJJw",
