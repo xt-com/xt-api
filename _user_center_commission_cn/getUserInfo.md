@@ -6,7 +6,7 @@ description: /openapi/invite/single/user/info
 parameters:
   -
     name: uid
-    type: string
+    type: number
     mandatory: true
     default:
     description: 用户id
@@ -36,8 +36,8 @@ right_code_blocks:
           "countryCode": "86",             //国家编码
           "mobile": "123****4567",         //手机号，脱敏处理
           "email": "639***3@gmail.com",    //邮箱，脱敏处理
-          "riskControlStatus": "",         //封控状态
-          "kycStatus": "",                 //kyc状态
+          "riskControlStatus": 0,          //风控状态(0-未风控 1-已被风控)
+          "kycStatus": 2,                  //kyc状态(0-未认证，1-初级认证，2-高级认证，3-企业认证)
           "registerInviteCode": 23456,     //注册邀请码
         }
       }

@@ -6,10 +6,10 @@ description: /openapi/invite/single/user/info
 parameters:
   -
     name: uid
-    type: string
+    type: number
     mandatory: true
     default:
-    description: 用户id
+    description: User ID
     ranges:
 content_markdown: >-
 
@@ -31,14 +31,14 @@ right_code_blocks:
         "mc": "SUCCESS",
         "rc": 0,
         "result": {
-          "uid": 123456789,                //用户id
-          "registerTime": 1737095389000,   //注册时间
-          "countryCode": "86",             //国家编码
-          "mobile": "123****4567",         //手机号，脱敏处理
-          "email": "639***3@gmail.com",    //邮箱，脱敏处理
-          "riskControlStatus": "",         //封控状态
-          "kycStatus": "",                 //kyc状态
-          "registerInviteCode": 23456,     //注册邀请码
+          "uid": 123456789,                //User ID
+          "registerTime": 1737095389000,   //Registration Time
+          "countryCode": "86",             //Country code
+          "mobile": "123****4567",         //Phone number, desensitization
+          "email": "639***3@gmail.com",    //Email address, desensitization
+          "riskControlStatus": 0,          //Risk Control Status (0 - No Risk Control, 1 - Risk Controlled)
+          "kycStatus": 2,                  //KYC Status (0 - Not Verified, 1 - Basic Verification, 2 - Advanced Verification, 3 - Corporate Verification)
+          "registerInviteCode": 23456,     //Registration Invitation Code
         }
       }
     title: Response

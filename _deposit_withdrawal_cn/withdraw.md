@@ -46,7 +46,7 @@ parameters:
         ranges: 
     -
         name: 'memo'
-        type: String
+        type: string
         mandatory: false
         default:
         description: >-
