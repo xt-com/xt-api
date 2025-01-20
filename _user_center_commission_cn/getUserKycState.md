@@ -9,7 +9,7 @@ parameters:
     type: number
     mandatory: true
     default:
-    description: 用户id
+    description: 用户ID
     ranges:
 content_markdown: >-
 
