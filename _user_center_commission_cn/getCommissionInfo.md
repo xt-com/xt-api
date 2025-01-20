@@ -74,7 +74,7 @@ right_code_blocks:
                   "totalTradeUsdtAmount": 2222,       //总交易量
                   "type": 1,                          //1-spot 2-future 3-etf
                   "sourceType": 1,                    //1-直客 2-子代理
-                  "state": 1,                         //返佣状态
+                  "state": 1,                         //返佣状态 0-正常 1-异常
                   "date": 1736870400000 ,             //交易日期
                   "rate": 2,                          //返佣比例
                   "symbol": "btc_usdt",               //交易对

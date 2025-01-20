@@ -74,7 +74,7 @@ right_code_blocks:
                   "totalTradeUsdtAmount": 2222,       //Total trading volume
                   "type": 1,                          //Commission type. 1-spot 2-future 3-etf
                   "sourceType": 1,                    //Commission source type. 1 - Direct customer, 2 - Sub-agent
-                  "state": 1,                         //Commission state
+                  "state": 1,                         //Commission state 0 - Normal, 1 - Abnormal
                   "date": 1736870400000 ,             //Transaction date
                   "rate": 2,                          //Commission rate
                   "symbol": "btc_usdt",               //Symbol
