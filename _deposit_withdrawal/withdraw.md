@@ -38,7 +38,7 @@ parameters:
     -
         name: 'address'
         type: string
-        mandatory: true
+        mandatory: false
         default:
         description: >-
                 Withdrawal address
