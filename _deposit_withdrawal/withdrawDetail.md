@@ -43,7 +43,7 @@ right_code_blocks:
                     "result": {      
                         "id": 100,                     //Withdrawal record id
                         "clientOrderId": 10,           //Client ID
-                        "type": 0,                     //Type 0-Blockchain withdrawal 1-Internal withdrawal
+                        "type": 0,                     //Type CHAIN_TRANSFER-Blockchain withdrawal INTERNAL_TRANSFER-Internal withdrawal
                         "currency": "btc",             //currency
                         "address": "xxxxx",            //Withdrawal address
                         "status": "REVIEW",            //Refer to public module-Deposit/withdrawal record status

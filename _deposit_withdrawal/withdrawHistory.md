@@ -95,7 +95,7 @@ right_code_blocks:
                             {
                                 "id": 763111,                 //Withdrawal record id 
                                 "clientOrderId": 10,          //Client ID
-                                "type": 0,                    //Type 0-Blockchain withdrawal 1-Internal withdrawal
+                                "type": 0,                    //Type CHAIN_TRANSFER-Blockchain withdrawal INTERNAL_TRANSFER-Internal withdrawal
                                 "currency": "usdt",           //Currency 
                                 "chain": "Ethereum",          //Withdraw network 
                                 "address": "0xfa3abf",        //Withdrawal target address 

@@ -43,7 +43,7 @@ right_code_blocks:
                     "result": {      
                         "id": 100,                     //提现记录id，用于后期查询提现历史记录
                         "clientOrderId": 10,           //客户端ID
-                        "type": 0,                     //提现类型 0-区块链提现 1-内部提现
+                        "type": 0,                     //提现类型 CHAIN_TRANSFER-区块链提现 INTERNAL_TRANSFER-内部提现
                         "currency": "btc",             //币种
                         "address": "xxxxx",            //提现目标地址
                         "status": "REVIEW",            //状态，含义见公共模块-充值/提现记录状态码及含义
