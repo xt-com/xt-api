@@ -2,7 +2,7 @@
 title: Query user information
 position_number: 4
 type: get
-description: /openapi/invite/single/user/info
+description: /v4/referal/invite/single/user/info
 parameters:
   -
     name: uid

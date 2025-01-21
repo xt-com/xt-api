@@ -2,7 +2,7 @@
 title: Batch query user information
 position_number: 5
 type: get
-description: /openapi/multi/single/user/info
+description: /v4/referal/multi/single/user/info
 parameters:
   -
     name: uidList
