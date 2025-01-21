@@ -2,7 +2,7 @@
 title: Query user KYC status
 position_number: 6
 type: get
-description: /openapi/invite/kyc/status
+description: /v4/referal/invite/kyc/status
 parameters:
   -
     name: uid

@@ -2,7 +2,7 @@
 title: Query agent commission data
 position_number: 7
 type: get
-description: /openapi/multi/single/user/info
+description: /v4/referal/multi/single/user/info
 parameters:
   -
     name: startTime

@@ -2,7 +2,7 @@
 title: 查询代理商返佣数据
 position_number: 7
 type: get
-description: /openapi/multi/single/user/info
+description: /v4/referal/multi/single/user/info
 parameters:
   -
     name: startTime

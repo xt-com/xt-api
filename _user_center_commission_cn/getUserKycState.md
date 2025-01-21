@@ -2,7 +2,7 @@
 title: 查询用户KYC状态
 position_number: 6
 type: get
-description: /openapi/invite/kyc/status
+description: /v4/referal/invite/kyc/status
 parameters:
   -
     name: uid
