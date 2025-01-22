@@ -36,8 +36,9 @@ right_code_blocks:
                     "oi": 6616559590087222666, //订单id
                     "p": "43000",              //价格
                     "q": "0.21",               //数量
-                    "v": "9030"                //金额
-                    "b": true                  //是否是buyerMaker
+                    "v": "9030",               //金额
+                    "b": true,                 //是否是buyerMaker
+                    "tm": 1                    //1-taker 2-maker
                 }
             }
         title: 推送
