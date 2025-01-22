@@ -2,19 +2,19 @@
 title: Query agent commission data
 position_number: 7
 type: get
-description: /v4/referal/multi/single/user/info
+description: /v4/referal/invite/agent/rebate/data
 parameters:
   -
     name: startTime
     type: number
-    mandatory: true
+    mandatory: false
     default:
     description: Commission deposit start time
     ranges:
   -
     name: endTime
     type: number
-    mandatory: true
+    mandatory: false
     default:
     description: Commission deposit end time
     ranges:
@@ -29,23 +29,30 @@ parameters:
     name: type
     type: number
     mandatory: true
-    default:
+    default: 
     description: Commission type
-    ranges: 1-spot 2-future 3-etf
+    ranges: 1-spot 2-future
   -
-    name: pageNum
+    name: fromId
     type: number
     mandatory: false
-    default: 1
-    description: Page number
+    default:
+    description: Starting ID
     ranges:
   -
-    name: pageSize
-    type: number
+    name: direction
+    type: string
+    mandatory: false
+    default: NEXT
+    description: query direction
+    ranges: PREV, NEXT
+  -
+    name: limit
+    type: int
     mandatory: false
     default: 10
-    description: Page size
-    ranges: Cannot exceed 100
+    description: Limit number, max 100
+    ranges: 1<=limit<=100
 content_markdown: >-
 
 left_code_blocks:
@@ -70,20 +77,20 @@ right_code_blocks:
            "pageCount": 20,
            "items": [
               {
-                  "totalCommissionUsdtAmount": 123,   //Total commission
-                  "totalTradeUsdtAmount": 2222,       //Total trading volume
-                  "type": 1,                          //Commission type. 1-spot 2-future 3-etf
-                  "sourceType": 1,                    //Commission source type. 1 - Direct customer, 2 - Sub-agent
-                  "state": 1,                         //Commission state 0 - Normal, 1 - Abnormal
-                  "date": 1736870400000 ,             //Transaction date
-                  "rate": 2,                          //Commission rate
-                  "symbol": "btc_usdt",               //Symbol
-                  "takerAmount": 23,                  //Taker amount
-                  "makerAmount": 32,                  //Maker amount
                   "amountCurrency": 666,              //Currency amount
-                  "usdtAmount": 243253,               //USDT amount
                   "commission": 23,                   //Commission amount
                   "currency": "usdt"                  //Commission currency
+                  "date": "2025-01-22T09:57:01.601Z", //Transaction date
+                  "makerAmount": 32,                  //Maker amount
+                  "rate": 2,                          //Commission rate
+                  "sourceType": 1,                    //Commission source type. 1 - Direct customer, 2 - Sub-agent
+                  "state": 1,                         //Commission state 0 - Normal, 1 - Abnormal
+                  "symbol": "btc_usdt",               //Symbol
+                  "takerAmount": 23,                  //Taker amount
+                  "totalCommissionUsdtAmount": 123,   //Total commission
+                  "totalTradeUsdtAmount": 2222,       //Total trading volume
+                  "type": 1,                          //Commission type. 1-spot 2-future
+                  "usdtAmount": 243253                //USDT amount
               }
            ]
         }
