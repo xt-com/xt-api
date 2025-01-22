@@ -2,29 +2,36 @@
 title: 批量查询用户信息
 position_number: 5
 type: get
-description: /v4/referal/multi/single/user/info
+description: /v4/referal/invite/multi/user/info
 parameters:
   -
     name: uidList
     type: array
-    mandatory: false
+    mandatory: true
     default:
     description: 用户ID集合
     ranges: 
   -
-    name: pageNum
+    name: fromId
     type: number
     mandatory: false
-    default: 1
-    description: 页码
+    default:
+    description: 分页查询开始id
     ranges:
   -
-    name: pageSize
-    type: number
+    name: direction
+    type: string
+    mandatory: false
+    default: NEXT
+    description: 上一页/下一页
+    ranges: PREV, NEXT
+  -
+    name: limit
+    type: int
     mandatory: false
     default: 10
-    description: 页数
-    ranges: 最大不能超过100
+    description: 每页数量，最大100
+    ranges: 1<=limit<=100
 content_markdown: >-
 
 left_code_blocks:

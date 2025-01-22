@@ -31,7 +31,7 @@ right_code_blocks:
         "mc": "SUCCESS",
         "rc": 0,
         "result": {
-          "uid": 123456789,                //User ID
+          "userid": 123456789,                //User ID
           "status": 2,                     //KYC Status (0 - Not Verified, 1 - Basic Verification, 2 - Advanced Verification, 3 - Corporate Verification)
         }
       }

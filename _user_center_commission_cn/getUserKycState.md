@@ -31,7 +31,7 @@ right_code_blocks:
         "mc": "SUCCESS",
         "rc": 0,
         "result": {
-          "uid": 123456789,                //用户id
+          "userid": 123456789,                //用户id
           "status": 2,                     //kyc状态(0-未认证，1-初级认证，2-高级认证，3-企业认证)
         }
       }

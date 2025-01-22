@@ -2,29 +2,36 @@
 title: Batch query user information
 position_number: 5
 type: get
-description: /v4/referal/multi/single/user/info
+description: /v4/referal/invite/multi/user/info
 parameters:
   -
     name: uidList
     type: array
-    mandatory: false
+    mandatory: true
     default:
     description: User ID list
     ranges: 
   -
-    name: pageNum
+    name: fromId
     type: number
     mandatory: false
-    default: 1
-    description: Page number
+    default:
+    description: Starting ID
     ranges:
   -
-    name: pageSize
-    type: number
+    name: direction
+    type: string
+    mandatory: false
+    default: NEXT
+    description: query direction
+    ranges: PREV, NEXT
+  -
+    name: limit
+    type: int
     mandatory: false
     default: 10
-    description: Page size
-    ranges: Cannot exceed 100
+    description: Limit number, max 100
+    ranges: 1<=limit<=100
 content_markdown: >-
 
 left_code_blocks:
