@@ -33,13 +33,17 @@ right_code_blocks:
                         "currency": "BTC",                  //币种
                         "supportChains": [
                             {
-                                "chain": "Bitcon",          //支持的转账网络
-                                "depositEnabled": true,     //是否支持充值，true:支持，false:不支持
-                                "withdrawEnabled": true,    //是否支持提现，true:支持，false:不支持
-                                "withdrawFeeAmount": 0.2,   //提现手续费
-                                "withdrawMinAmount": 10,    //最小提现数量
-                                "depositFeeRate": 0.2,      //充值费率，百分比
-                                "contract": "contractaddress" //合约地址
+                                "chain": "Bitcon",             //支持的转账网络
+                                "depositEnabled": true,        //是否支持充值，true:支持，false:不支持
+                                "withdrawEnabled": true,       //是否支持提现，true:支持，false:不支持
+                                "contract": "futureAddress",   //合约地址
+                                "depositMinAmount": 1,         //最小充值数量
+                                "depositFeeRate": 0.2,         //充值费率，百分比
+                                "depositConfirmations": 2,     //充值确认块数
+                                "withdrawMinAmount": 10,       //最小提现数量
+                                "withdrawPrecision": 4,        //提币数量精度
+                                "withdrawFeeAmount": 0.2,      //提现手续费
+                                "withdrawFeeCurrency": "btc",  //提币手续费币种名称
                             }
                         ]           
                     },
@@ -47,13 +51,17 @@ right_code_blocks:
                         "currency": "ETF",                  //币种
                         "supportChains": [
                             {
-                                "chain": "Ethereum",        //支持的转账网络
-                                "depositEnabled": true,     //是否支持充值，true:支持，false:不支持
-                                "withdrawEnabled": true,    //是否支持提现，true:支持，false:不支持
-                                "withdrawFeeAmount": 0.2,   //提现手续费
-                                "withdrawMinAmount": 10,    //最小提现数量
-                                "depositFeeRate": 0.2,      //充值费率，百分比
-                                "contract": "contractaddress" //合约地址
+                                "chain": "Ethereum",           //支持的转账网络
+                                "depositEnabled": true,        //是否支持充值，true:支持，false:不支持
+                                "withdrawEnabled": true,       //是否支持提现，true:支持，false:不支持
+                                "contract": "futureAddress",   //合约地址
+                                "depositMinAmount": 1,         //最小充值数量
+                                "depositFeeRate": 0.2,         //充值费率，百分比
+                                "depositConfirmations": 2,     //充值确认块数
+                                "withdrawMinAmount": 10,       //最小提现数量
+                                "withdrawPrecision": 4,        //提币数量精度
+                                "withdrawFeeAmount": 0.2,      //提现手续费
+                                "withdrawFeeCurrency": "eth",  //提币手续费币种名称
                             }
                         ]
                     }
