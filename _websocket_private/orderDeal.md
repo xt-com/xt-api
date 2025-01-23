@@ -36,8 +36,9 @@ right_code_blocks:
                         "oi": 6616559590087222666, //orderId
                         "p": "43000",              //price
                         "q": "0.21",               //quantity
-                        "v": "9030"                //quoteQty
-                        "b": true                  //whether is buyerMaker or not
+                        "v": "9030",               //quoteQty
+                        "b": true,                 //whether is buyerMaker or not
+                        "tm": 1                    //1-taker 2-maker
                     }
                 }
         title: push
