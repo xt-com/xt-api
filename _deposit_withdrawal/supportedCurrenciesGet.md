@@ -30,30 +30,38 @@ right_code_blocks:
                   ],
                   "result": [
                     {
-                        "currency": "BTC",                  //currency name
+                        "currency": "BTC",                  //Currency
                         "supportChains": [
                             {
-                                "chain": "Bitcon",          //supported transfer network
-                                "depositEnabled": true,     //deposit is supported or not
-                                "withdrawEnabled": true     //withdraw is supported or not
-                                "withdrawFeeAmount": 0.2,   //withdraw fee
-                                "withdrawMinAmount": 10,    //minimum withdrawal amount
-                                "depositFeeRate": 0.2,      //deposit fee rate
-                                "contract": "contractaddress" //contract address
+                                "chain": "Bitcon",             //Supported Transfer Networks
+                                "depositEnabled": true,        //Deposit Supported
+                                "withdrawEnabled": true,       //Withdrawal Supported
+                                "contract": "futureAddress",   //Future Address
+                                "depositMinAmount": 1,         //Minimum Deposit Amount
+                                "depositFeeRate": 0.2,         //Recharge Fee Rate, Percentage
+                                "depositConfirmations": 2,     //Recharge Confirmation Block Count
+                                "withdrawMinAmount": 10,       //Minimum Withdrawal Amount
+                                "withdrawPrecision": 4,        //Withdrawal Amount Precision
+                                "withdrawFeeAmount": 0.2,      //Withdrawal Fee
+                                "withdrawFeeCurrency": "btc",  //Withdrawal Fee Currency
                             }
                         ]           
                     },
                     {
-                        "currency": "ETH",                  //currency name
+                        "currency": "ETH",                  //Currency
                         "supportChains": [
                             {
-                                "chain": "Ethereum",        //supported transfer network
-                                "depositEnabled": true,     //deposit is supported or not
-                                "withdrawEnabled": true     //withdraw is supported or not
-                                "withdrawFeeAmount": 0.2,   //withdraw fee
-                                "withdrawMinAmount": 10,    //minimum withdrawal amount
-                                "depositFeeRate": 0.2,       //deposit fee rate
-                                "contract": "contractaddress" //contract address
+                                "chain": "Ethereum",           //Supported Transfer Networks
+                                "depositEnabled": true,        //Deposit Supported
+                                "withdrawEnabled": true,       //Withdrawal Supported
+                                "contract": "futureAddress",   //Future Address
+                                "depositMinAmount": 1,         //Minimum Deposit Amount
+                                "depositFeeRate": 0.2,         //Recharge Fee Rate, Percentage
+                                "depositConfirmations": 2,     //Recharge Confirmation Block Count
+                                "withdrawMinAmount": 10,       //Minimum Withdrawal Amount
+                                "withdrawPrecision": 4,        //Withdrawal Amount Precision
+                                "withdrawFeeAmount": 0.2,      //Withdrawal Fee
+                                "withdrawFeeCurrency": "eth",  //Withdrawal Fee Currency
                             }
                         ]
                     }

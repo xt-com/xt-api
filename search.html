@@ -83,6 +83,16 @@ permalink: /search/
 	</div>
 </div>
 
+<!--更新日志-->
+<div id="change_log_search">
+	<div class="search-page">
+		<h2>Search Results</h2>
+
+		<p><span id="change-log-search-process">Loading</span> results <span id="change-log-search-query-container" style="display: none;">for "<strong id="change-log-search-query"></strong>"</span></p>
+		<ul id="change-log-search-results"></ul>
+	</div>
+</div>
+
 <script>
 	window.data = {
 		{% for collection in site.collections %}

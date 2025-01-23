@@ -437,6 +437,19 @@ collections:
     language: cn
     position_number: 7
 
+
+  change_log_doc:
+    title: Changelog
+    type: change_log
+    language: en
+    position_number: 1
+
+  change_log_doc_cn:
+    title: 更新日志
+    type: change_log
+    language: cn
+    position_number: 2
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -649,6 +662,15 @@ defaults:
       _hide_content: true
   - scope:
       type: "index_overview_cn"
+    values:
+      _hide_content: true
+
+  - scope:
+      type: "change_log_doc"
+    values:
+      _hide_content: true
+  - scope:
+      type: "change_log_doc_cn"
     values:
       _hide_content: true
 # -----------
