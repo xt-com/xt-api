@@ -65,6 +65,10 @@
 			<div class="sidebar_en">{% include user_center_sidebar_en.html %}</div>
 			<div class="sidebar_cn">{% include user_center_sidebar_cn.html %}</div>
 		</div>
+		<div id="change_log_sidebar">
+			<div class="sidebar_en">{% include change_log_sidebar_en.html %}</div>
+			<div class="sidebar_cn">{% include change_log_sidebar_cn.html %}</div>
+		</div>
 	</header>
 
 		<div class="main">
@@ -81,6 +85,7 @@
 				<a style="cursor:pointer;" class="show_f_copy_trading">Futures Copy Trading</a>
 				<a style="cursor:pointer;" class="show_third_party">Third Party</a>
 				<a style="cursor:pointer;" class="show_user_center">User Center</a>
+				<a style="cursor:pointer;" class="show_change_log">Changelog</a>
 			</div>
 			<div class="trade-type-select" id="trade_type_cn">
 				<a style="cursor:pointer;" class="active-type show_index">首页</a>
@@ -91,6 +96,7 @@
 				<a style="cursor:pointer;" class="show_f_copy_trading">合约跟单</a>
 				<a style="cursor:pointer;" class="show_third_party">第三方平台</a>
 				<a style="cursor:pointer;" class="show_user_center">用户中心</a>
+				<a style="cursor:pointer;" class="show_change_log">更新日志</a>
 			</div>
       <div id="content" style="margin-top: 40px;">
 			    {{ content }}
@@ -106,7 +112,7 @@
 			//默认展示模块
 			var model = "";
 			//所有模块数组
-			var models = new Array("index", "spot", "futures", "margin", "s_copy_trading", "f_copy_trading", "third_party", "user_center");
+			var models = ["index", "spot", "futures", "margin", "s_copy_trading", "f_copy_trading", "third_party", "user_center", "change_log"];
 
 			var query = window.location.toString();
 			//有锚点定位
