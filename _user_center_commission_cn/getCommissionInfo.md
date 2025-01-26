@@ -77,6 +77,9 @@ right_code_blocks:
            "pageCount": 20,
            "items": [
               {
+                  "id": 1,                            //ID
+                  "spotRebateRate": 0.1,              //现货返佣比例
+                  "futuresRebateRate": 0.2,           //合约返佣比例
                   "amountCurrency": 666,              //币种金额
                   "commission": 23,                   //返佣金额
                   "currency": "usdt"                  //返佣币种

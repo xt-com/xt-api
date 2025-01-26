@@ -76,7 +76,10 @@ right_code_blocks:
            "totalCount": 1,
            "pageCount": 20,
            "items": [
-              {
+              { 
+                  "id": 1,                            //ID
+                  "spotRebateRate": 0.1,              //Spot commission ratio
+                  "futuresRebateRate": 0.2,           //Future commission ratio
                   "amountCurrency": 666,              //Currency amount
                   "commission": 23,                   //Commission amount
                   "currency": "usdt"                  //Commission currency
