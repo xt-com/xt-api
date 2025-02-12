@@ -78,6 +78,7 @@ right_code_blocks:
            "items": [
               {
                   "id": 1,                            //ID
+                  "uid": 123,                         //用户id
                   "spotRebateRate": 0.1,              //现货返佣比例
                   "futuresRebateRate": 0.2,           //合约返佣比例
                   "amountCurrency": 666,              //币种金额

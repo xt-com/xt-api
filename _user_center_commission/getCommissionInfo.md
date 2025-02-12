@@ -78,6 +78,7 @@ right_code_blocks:
            "items": [
               { 
                   "id": 1,                            //ID
+                  "uid": 123,                         //User ID
                   "spotRebateRate": 0.1,              //Spot commission ratio
                   "futuresRebateRate": 0.2,           //Future commission ratio
                   "amountCurrency": 666,              //Currency amount
