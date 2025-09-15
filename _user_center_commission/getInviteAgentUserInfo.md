@@ -6,45 +6,45 @@ description: /v4/referal/invite/agent/user/info
 parameters:
   -
     name: uidList
-    type: List<Long>
+    type: String
     mandatory: true
     default:
-    description: uid list, e.g：[6118530023996, 6118530023997]
+    description: 'uid list, e.g：[6118530023996, 6118530023997]'
     ranges:
   -
     name: startTime
     type: number
     mandatory: true
     default:
-    description: start time， e.g：20250902
+    description: 'start time， e.g：20250902'
     ranges:
   -
     name: endTime
     type: number
     mandatory: true
     default:
-    description: end time， e.g：20250905
+    description: 'end time， e.g：20250905'
     ranges:
   -
     name: fromId
     type: number
     mandatory: true
     default:
-    description: from id，e.g：48739
+    description: 'from id，e.g：48739'
     ranges:
   -
     name: direction
     type: String
     mandatory: true
     default:
-    description: query direction: PREV, NEXT
+    description: 'query direction: PREV, NEXT'
     ranges: PREV、NEXT
   -
     name: limit
     type: number
     mandatory: true
     default:
-    description: query page size limit，e.g：100
+    description: 'query page size limit，e.g：100'
     ranges:
 
 content_markdown: >-
