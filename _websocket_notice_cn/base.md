@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **基地址**
 
-    ##### **wss://stream.xt.com/public**
+    ##### **wss://stream.xt.com/notice**
 
 
     ---
