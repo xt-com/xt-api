@@ -1,6 +1,6 @@
 ---
 title: Get Invite Agent User Info
-position_number: 10
+position_number: 11
 type: get
 description: /v4/referal/invite/agent/user/info
 parameters:
