@@ -63,75 +63,75 @@ right_code_blocks:
   -
     code_block: |-
        {
-        "rc": 0,
-        "mc": "SUCCESS",
-        "ma": [],
-        "result": [
-            {
-                "id": 48739,    // Auto-increment primary key
-                "userId": 6118530023996,    // User ID
-                "agentId": 5951540495512,    // Agent ID (superior agent)
-                "regDate": "2024-08-07",    // Registration date
-                "agentLevel": 1,    // Agent level
-                "lstLoginDeviceType": "web",    // Recent login device type
-                "registerInviteCode": "BOAHBL",    // Registration invitation code
-                "totalAssetAmtU": 156.76358008000000000000,    // Total balance of all accounts converted to U
-                "depositAmtU1d": 0,    // Daily deposit amount
-                "depositAmtUCw": 0,    // Natural week deposit amount
-                "depositAmtUCm": 0,    // Natural month deposit amount
-                "withdrawAmtU1d": 0,    // Daily withdrawal amount
-                "withdrawAmtUCw": 0,    // Natural week withdrawal amount
-                "withdrawAmtUCm": 0,    // Natural month withdrawal amount
-                "fstDepositDate": "2025-06-13",    // First deposit date
-                "spotTradeAmtU1d": 0,    // Daily spot trading amount
-                "spotTradeAmtUCw": 25.76560000000000000000,    // Natural week spot trading amount
-                "spotTradeAmtUCm": 25.76560000000000000000,    // Natural month spot trading amount
-                "spotTradeFeeU1d": 0,    // Daily spot trading fee
-                "spotTradeFeeUCw": 0.05041839999999999500,    // Natural week spot trading fee
-                "spotTradeFeeUCm": 0.05041839999999999500,    // Natural month spot trading fee
-                "contractTradeAmtU1d": 0,    // Daily contract trading amount
-                "contractTradeAmtUCw": 0,    // Natural week contract trading amount
-                "contractTradeAmtUCm": 0,    // Natural month contract trading amount
-                "contractTradeFeeU1d": 0,    // Daily contract trading fee
-                "contractTradeFeeUCw": 0,    // Natural week contract trading fee
-                "contractTradeFeeUCm": 0,    // Natural month contract trading fee
-                "spotAffiliateDisburseU1d": 0,    // Daily estimated spot rebate
-                "spotAffiliateDisburseUCw": 0.03097008000000000000,    // Natural week estimated spot rebate
-                "spotAffiliateDisburseUCm": 0.03097008000000000000,    // Natural month estimated spot rebate
-                "contractAffiliateDisburseU1d": 0,    // Daily estimated contract rebate
-                "contractAffiliateDisburseUCw": 0,    // Natural week estimated contract rebate
-                "contractAffiliateDisburseUCm": 0,    // Natural month estimated contract rebate
-                "closeProfitU1d": 0,    // Daily closed profit and loss
-                "closeProfitUCw": 0,    // Natural week closed profit and loss
-                "closeProfitUCm": 0,    // Natural month closed profit and loss
-                "userTradesTimes1d": "0",    // User's daily transaction time span
-                "userTradesTimesCw": "0",    // User's natural week transaction time span
-                "userTradesTimesCm": "0",    // User's natural month transaction time span
-                "userTransactionHours1d": "0",    // User's daily transaction hours
-                "userTransactionHoursCw": "0.5",    // User's natural week transaction hours
-                "userTransactionHoursCm": "0.5",    // User's natural month transaction hours
-                "tradesNumber1d": "0",    // Daily number of trades
-                "tradesNumberCw": "0.3333333333333333",    // Natural week number of trades
-                "tradesNumberCm": "0.3333333333333333",    // Natural month number of trades
-                "contractAvgLeverage1d": "0.00000000000000000000",    // Daily average leverage multiple
-                "contractAvgLeverageCw": "0.00000000000000000000",    // Natural week average leverage multiple
-                "contractAvgLeverageCm": "0.00000000000000000000",    // Natural month average leverage multiple
-                "bizDate": "20250902",    // Business date
-                "adsUserAllSymbolTradeRespDTOList": [    // List of user's trading details by symbol
-                    {
-                        "symbolId": 9605,    // Symbol ID
-                        "symbol": "fet_usdt",    // Symbol name
-                        "spotTradeAmtU1d": 0,    // Daily spot trading volume
-                        "contractTradeAmtU1d": 0,    // Daily contract trading volume
-                        "bizDate": "20250902",    // Business date
-                        "spotTradeAmtUCw": 25.76560000000000000000,    // Weekly spot trading volume
-                        "spotTradeAmtUCm": 25.76560000000000000000,    // Monthly spot trading volume
-                        "contractTradeAmtUCw": 0,    // Weekly contract trading volume
-                        "contractTradeAmtUCm": 0    // Monthly contract trading volume
-                    }
-                ]
-              }
-            ]
+          "rc": 0,
+          "mc": "SUCCESS",
+          "ma": [],
+          "result": [
+                {
+                    "id": 48739,  
+                    "userId": 6118530023996,  
+                    "agentId": 5951540495512,  
+                    "regDate": "2024-08-07",  
+                    "agentLevel": 1,    
+                    "lstLoginDeviceType": "web", 
+                    "registerInviteCode": "BOAHBL",  
+                    "totalAssetAmtU": 156.76358008000000000000,   
+                    "depositAmtU1d": 0,  
+                    "depositAmtUCw": 0,    
+                    "depositAmtUCm": 0,   
+                    "withdrawAmtU1d": 0,   
+                    "withdrawAmtUCw": 0,   
+                    "withdrawAmtUCm": 0,   
+                    "fstDepositDate": "2025-06-13",   
+                    "spotTradeAmtU1d": 0,  
+                    "spotTradeAmtUCw": 25.76560000000000000000,   
+                    "spotTradeAmtUCm": 25.76560000000000000000,  
+                    "spotTradeFeeU1d": 0,    
+                    "spotTradeFeeUCw": 0.05041839999999999500,    
+                    "spotTradeFeeUCm": 0.05041839999999999500,   
+                    "contractTradeAmtU1d": 0,    
+                    "contractTradeAmtUCw": 0,   
+                    "contractTradeAmtUCm": 0,   
+                    "contractTradeFeeU1d": 0,    
+                    "contractTradeFeeUCw": 0,    
+                    "contractTradeFeeUCm": 0,    
+                    "spotAffiliateDisburseU1d": 0,  
+                    "spotAffiliateDisburseUCw": 0.03097008000000000000,   
+                    "spotAffiliateDisburseUCm": 0.03097008000000000000, 
+                    "contractAffiliateDisburseU1d": 0,   
+                    "contractAffiliateDisburseUCw": 0,  
+                    "contractAffiliateDisburseUCm": 0,   
+                    "closeProfitU1d": 0,   
+                    "closeProfitUCw": 0,  
+                    "closeProfitUCm": 0,    
+                    "userTradesTimes1d": "0",   
+                    "userTradesTimesCw": "0",    
+                    "userTradesTimesCm": "0",   
+                    "userTransactionHours1d": "0",   
+                    "userTransactionHoursCw": "0.5",   
+                    "userTransactionHoursCm": "0.5",  
+                    "tradesNumber1d": "0",   
+                    "tradesNumberCw": "0.3333333333333333",   
+                    "tradesNumberCm": "0.3333333333333333",   
+                    "contractAvgLeverage1d": "0.00000000000000000000", 
+                    "contractAvgLeverageCw": "0.00000000000000000000",   
+                    "contractAvgLeverageCm": "0.00000000000000000000",    
+                    "bizDate": "20250902",    
+                    "adsUserAllSymbolTradeRespDTOList": [   
+                        {
+                            "symbolId": 9605,    
+                            "symbol": "fet_usdt",   
+                            "spotTradeAmtU1d": 0,   
+                            "contractTradeAmtU1d": 0,   
+                            "bizDate": "20250902",    
+                            "spotTradeAmtUCw": 25.76560000000000000000,   
+                            "spotTradeAmtUCm": 25.76560000000000000000,  
+                            "contractTradeAmtUCw": 0,   
+                            "contractTradeAmtUCm": 0   
+                        }
+                                                        ]
+                }
+                   ]
         }
     title: Response
     language: json
