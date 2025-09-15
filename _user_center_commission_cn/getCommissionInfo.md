@@ -1,6 +1,6 @@
 ---
 title: 查询代理商返佣数据
-position_number: 7
+position_number: 3
 type: get
 description: /v4/referal/invite/agent/rebate/data
 parameters:

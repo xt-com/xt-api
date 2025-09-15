@@ -415,28 +415,37 @@ collections:
     type: user_center
     language: en
     position_number: 4
+  websocket_notice:
+    title: Websocket Notice
+    type: user_center
+    language: en
+    position_number: 5
 
   user_center_documentation_cn:
     title: 接入说明
     type: user_center
     language: cn
-    position_number: 4
+    position_number: 6
   user_center_account_cn:
     title: 账户
     type: user_center
     language: cn
-    position_number: 5
+    position_number: 7
   user_center_apikey_cn:
     title: ApiKey
     type: user_center
     language: cn
-    position_number: 6
+    position_number: 8
   user_center_commission_cn:
     title: 邀请返佣
     type: user_center
     language: cn
-    position_number: 7
-
+    position_number: 9
+  websocket_notice_cn:
+    title: 公告WEBSOCKET
+    type: user_center
+    language: cn
+    position_number: 10
 
   change_log_doc:
     title: Changelog
