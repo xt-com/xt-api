@@ -6,7 +6,7 @@ description: /v4/referal/invite/agent/user/info
 parameters:
   -
     name: uidList
-    type: List<Long>
+    type: String
     mandatory: true
     default:
     description: uid list, e.g：[6118530023996, 6118530023997]
@@ -41,24 +41,24 @@ parameters:
     ranges: PREV、NEXT
   -
     name: limit
-    type: number
+    type: int
     mandatory: true
     default:
-    description: query page size limit，e.g：100
-    ranges:
+    description: Limit number, max 100
+    ranges: 1<=limit<=100
 
 content_markdown: >-
 
 left_code_blocks:
-    -
-        code_block: |-
+  -
+    code_block: |-
 
-        title: Java
-        language: java
-    -
-        code_block:
-        title: Python
-        language: python
+    title: Java
+    language: java
+  -
+    code_block:
+    title: Python
+    language: python
 right_code_blocks:
   -
     code_block: |-
@@ -129,9 +129,9 @@ right_code_blocks:
                             "contractTradeAmtUCw": 0,   
                             "contractTradeAmtUCm": 0   
                         }
-                                                        ]
+                     ]
                 }
-                   ]
+              ]
         }
     title: Response
     language: json
