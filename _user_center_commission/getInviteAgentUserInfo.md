@@ -129,7 +129,7 @@ right_code_blocks:
                             "contractTradeAmtUCm": 0  // Monthly contract trading volume
                         }
                     ]
-                }
+                  }
                 ]
             }
         title: Response

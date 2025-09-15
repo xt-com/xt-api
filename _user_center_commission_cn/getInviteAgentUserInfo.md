@@ -129,7 +129,7 @@ right_code_blocks:
                         "contractTradeAmtUCm": 0  // 月合约交易额
                     }
                 ]
-            }
+              }
             ]
         }
       title: Response

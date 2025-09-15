@@ -1,6 +1,6 @@
 ---
 title: Query agent commission data
-position_number: 7
+position_number: 3
 type: get
 description: /v4/referal/invite/agent/rebate/data
 parameters:
