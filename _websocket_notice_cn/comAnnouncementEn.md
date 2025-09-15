@@ -1,5 +1,5 @@
 ---
-title: com announcement en
+title: 公告推送
 position_number: 7
 type:
 description: 
@@ -15,7 +15,7 @@ parameters:
 content_markdown: |-
     **request**
     
-    Users can subscribe via the new WebSocket to receive real-time English announcements, helping you stay updated on the latest developments, event information, and important news as soon as they become available.
+    用户可通过WebSocket订阅功能，实时接收英文公告，帮助您在最新动态、活动信息及重要资讯发布的第一时间掌握相关内容。
 
     &nbsp;
 
