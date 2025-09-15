@@ -1,8 +1,8 @@
 ---
-title: Query User Commissions
+title: Get Invite Agent User Info
 position_number: 10
 type: get
-description: /v4/referal/invite/commissions
+description: /v4/referal/invite/agent/user/info
 parameters:
   -
     name: uid
