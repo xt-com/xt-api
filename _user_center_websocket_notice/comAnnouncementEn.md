@@ -19,9 +19,9 @@ content_markdown: |-
 
     &nbsp;
 
-    format: com_announcement
+    format: com_announcement_en
 
-    eg: com_announcement
+    eg: com_announcement_en
     
 
     &nbsp;
