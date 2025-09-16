@@ -17,7 +17,7 @@ left_code_blocks:
     -
         code_block:
         title: Python
-        language: python
+        language: python 
 right_code_blocks:
     -
         code_block:

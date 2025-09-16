@@ -25,6 +25,7 @@ content_markdown: |-
     
 
     &nbsp;
+    
 left_code_blocks:
     -
         code_block:
