@@ -12,7 +12,8 @@ parameters:
         default:
         description:
         ranges:
-content_markdown:
+content_markdown: >-
+
 left_code_blocks:
     -
         code_block: |-
