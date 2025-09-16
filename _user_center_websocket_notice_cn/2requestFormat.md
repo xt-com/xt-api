@@ -2,7 +2,7 @@
 title: 请求报文格式
 position_number: 2
 type:
-description: 请求报文格式
+description: 
 parameters:
     -
         name:
@@ -14,18 +14,17 @@ parameters:
 content_markdown: |-
     **param结构**
     \{topic\}@\{arg\},\{arg\},…
-
 left_code_blocks:
     -
         code_block: |-
-            {
-                "method": "subscribe", 
-                "params": [
-                    "{topic}@{arg},{arg}", 
-                    "{topic}@{arg}"
-                ], 
-                "id": "{id}"    //回调ID
-            }
+                {
+                    "method": "subscribe", 
+                    "params": [
+                        "{topic}@{arg},{arg}", 
+                        "{topic}@{arg}"
+                    ], 
+                    "id": "{id}"    //回调ID
+                }
         title: 订阅
         language: javascript
     -
