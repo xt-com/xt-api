@@ -1,5 +1,5 @@
 ---
-title: 获取代理用户信息
+title: 获取代理用户交易信息
 position_number: 10
 type: get
 description: /v4/referal/invite/agent/user/info
