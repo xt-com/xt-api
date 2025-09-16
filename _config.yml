@@ -415,12 +415,11 @@ collections:
     type: user_center
     language: en
     position_number: 4
-  websocket_notice:
+  user_center_websocket_notice:
     title: Websocket Notice
     type: user_center
     language: en
     position_number: 5
-
   user_center_documentation_cn:
     title: 接入说明
     type: user_center
@@ -441,7 +440,7 @@ collections:
     type: user_center
     language: cn
     position_number: 9
-  websocket_notice_cn:
+  user_center_websocket_notice_cn:
     title: 公告WEBSOCKET
     type: user_center
     language: cn
@@ -662,6 +661,14 @@ defaults:
       _hide_content: true
   - scope:
       type: "user_center_apikey_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_websocket_notice"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_websocket_notice_cn"
     values:
       _hide_content: true
 
