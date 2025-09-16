@@ -37,18 +37,18 @@ right_code_blocks:
                     "topic": "com_announcement_en", 
                     "event": "com_announcement_en", 
                     "data": {
-                        "id": 10304809153689,                   // -- Announcement ID
-                        "catalogId": 10304809153689,           // -- Category ID (see: https://xtsupport.zendesk.com/api/v2/help_center/en-us/categories)
-                        "catalogName": "Latest Promotions",    // -- Category Name 
-                        "sectionId": 10304809153689,           // -- Subcategory ID
-                        "sectionName": "Trading Contest",      // -- Subcategory Name (see: https://xtsupport.zendesk.com/api/v2/help_center/en-us/sections)
-                        "publishDate": 1753257631403,         // -- Publication Timestamp (in milliseconds)
-                        "title": "Notice of...",              // -- Announcement Title
-                        "content": "This is...",              // -- Announcement Content
-                        "disclaimer": "Trade on-the-go...",    // -- Disclaimer
-                        "url": "",                             // -- Announcement Link (plain text)
-                        "htmlUrl": ""                          // -- Announcement HTML Link (for web access)
-                    }
+                                "id": 10304809153689                  // --公告ID
+                                "catalogId": 10304809153689,           //--栏目ID https://xtsupport.zendesk.com/api/v2/help_center/en-us/categories
+                                "catalogName": "Latest Promotions",    //--栏目名称 
+                                "sectionId": 10304809153689,           //--子栏目ID
+                                "sectionName": "Trading Contest",     // --子栏目名称 https://xtsupport.zendesk.com/api/v2/help_center/en-us/sections
+                                "publishDate": 1753257631403,         //--发布时间戳
+                                "title": "Notice of...",              //--公告标题 
+                                "content": "This is...",               // --公告内容 
+                                "disclaimer": "Trade on-the-go...",    //--免责申明 
+                                "url":"",                              //--公告链接
+                                "htmlUrl":""                           //--公告html链接
+                            }
                 }
         title: Response
         language: json
