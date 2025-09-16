@@ -12,15 +12,15 @@ parameters:
         default:
         description:
         ranges:
-content_markdown: >-
+content_markdown:
 left_code_blocks:
     -
         code_block: |-
-            {
-                "id": "{id}",   //请求回调ID
-                "code": 1,      //结果0=成功;1=失败;2=listenKey⽆效
-                "msg": ""
-            }
+                {
+                    "id": "{id}",   //请求回调ID
+                    "code": 1,      //结果0=成功;1=失败;2=listenKey⽆效
+                    "msg": ""
+                }
         title: 响应报文格式
         language: javascript
 right_code_blocks:
