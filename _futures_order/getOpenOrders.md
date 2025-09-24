@@ -1,5 +1,5 @@
 ---
-title: ListOpenOrder
+title: List Open Order
 position_number: 5.1
 type: get
 description: /future/trade/v1/order/list-open-order
@@ -16,7 +16,7 @@ content_markdown: |-
 
                10/s/apikey
 left_code_blocks:
-  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+  - code_block: |-
     title: Java
     language: java
 right_code_blocks:

@@ -1,5 +1,5 @@
 ---
-title: 查询订单
+title: 获取当前委托订单列表
 position_number: 5.1
 type: get
 description: /future/trade/v1/order/list-open-order
