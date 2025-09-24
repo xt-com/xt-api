@@ -663,14 +663,14 @@ defaults:
       type: "user_center_apikey_cn"
     values:
       _hide_content: true
-  - scope:
-      type: "user_center_websocket_notice"
-    values:
-      _hide_content: true
-  - scope:
-      type: "user_center_websocket_notice_cn"
-    values:
-      _hide_content: true
+  # - scope:
+  #     type: "user_center_websocket_notice"
+  #   values:
+  #     _hide_content: true
+  # - scope:
+  #     type: "user_center_websocket_notice_cn"
+  #   values:
+  #     _hide_content: true
 
   - scope:
       type: "index_overview"
