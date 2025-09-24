@@ -1,7 +1,7 @@
 ---
 title: 获取当前委托订单列表
 position_number: 5.1
-type: get
+type: post
 description: /future/trade/v1/order/list-open-order
 parameters:
   - name: symbol

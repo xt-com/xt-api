@@ -1,7 +1,7 @@
 ---
 title: List Open Order
 position_number: 5.1
-type: get
+type: post
 description: /future/trade/v1/order/list-open-order
 parameters:
   - name: symbol
